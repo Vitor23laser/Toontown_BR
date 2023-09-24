@@ -18,18 +18,19 @@ import gc
 
 class AIBase:
     notify = directNotify.newCategory('AIBase')
-    
+
     def __init__(self):
         self.config = getConfigShowbase()
         __builtins__['__dev__'] = self.config.GetBool('want-dev', 0)
         if self.config.GetBool('want-variable-dump', 0):
             ExceptionVarDump.install()
+                    
         if self.config.GetBool('use-vfs', 1):
             vfs = VirtualFileSystem.getGlobalPtr()
         else:
             vfs = None
         self.wantTk = self.config.GetBool('want-tk', 0)
-        self.AISleep = self.config.GetFloat('ai-sleep', 0.040000000000000001)
+        self.AISleep = self.config.GetFloat('ai-sleep', 0.04)
         self.AIRunningNetYield = self.config.GetBool('ai-running-net-yield', 0)
         self.AIForceSleep = self.config.GetBool('ai-force-sleep', 0)
         self.eventMgr = eventMgr
@@ -68,8 +69,7 @@ class AIBase:
         self.wantPets = self.config.GetBool('want-pets', 1)
         if self.wantPets:
             if game.name == 'toontown':
-                PetConstants = PetConstants
-                import toontown.pets
+                from toontown.pets import PetConstants
                 self.petMoodTimescale = self.config.GetFloat('pet-mood-timescale', 1.0)
                 self.petMoodDriftPeriod = self.config.GetFloat('pet-mood-drift-period', PetConstants.MoodDriftPeriod)
                 self.petThinkPeriod = self.config.GetFloat('pet-think-period', PetConstants.ThinkPeriod)
@@ -87,7 +87,7 @@ class AIBase:
         self.sqlAvailable = self.config.GetBool('sql-available', 1)
         self.createStats()
         self.restart()
-    
+
     def setupCpuAffinities(self, minChannel):
         if game.name == 'uberDog':
             affinityMask = self.config.GetInt('uberdog-cpu-affinity-mask', -1)
@@ -113,7 +113,7 @@ class AIBase:
                     channelSet -= 240
                     affinity = channelSet + 3
                     TrueClock.getGlobalPtr().setCpuAffinity(1 << affinity % 4)
-                
+
     def taskManagerDoYield(self, frameStartTime, nextScheuledTaksTime):
         minFinTime = frameStartTime + self.MaxEpockSpeed
         if nextScheuledTaksTime > 0 and nextScheuledTaksTime < minFinTime:
@@ -134,20 +134,20 @@ class AIBase:
             port = -1
         PStatClient.connect(hostname, port)
         return PStatClient.isConnected()
-        
-    def _AIBase__sleepCycleTask(self, task):
+
+    def __sleepCycleTask(self, task):
         time.sleep(self.AISleep)
         return Task.cont
-        
-    def _AIBase__resetPrevTransform(self, state):
+
+    def __resetPrevTransform(self, state):
         PandaNode.resetAllPrevTransform()
         return Task.cont
-        
-    def _AIBase__ivalLoop(self, state):
+
+    def __ivalLoop(self, state):
         ivalMgr.step()
         return Task.cont
-        
-    def _AIBase__igLoop(self, state):
+
+    def __igLoop(self, state):
         self.graphicsEngine.renderFrame()
         return Task.cont
 
@@ -156,19 +156,18 @@ class AIBase:
         self.taskMgr.remove('igLoop')
         self.taskMgr.remove('aiSleep')
         self.eventMgr.shutdown()
-        
+
     def restart(self):
         self.shutdown()
-        self.taskMgr.add(self._AIBase__resetPrevTransform, 'resetPrevTransform', priority = -51)
-        self.taskMgr.add(self._AIBase__ivalLoop, 'ivalLoop', priority = 20)
-        self.taskMgr.add(self._AIBase__igLoop, 'igLoop', priority = 50)
-        if self.AISleep >= 0:
-            if not (self.AIRunningNetYield) or self.AIForceSleep:
-                self.taskMgr.add(self._AIBase__sleepCycleTask, 'aiSleep', priority = 55)
+        self.taskMgr.add(self.__resetPrevTransform, 'resetPrevTransform', priority=-51)
+        self.taskMgr.add(self.__ivalLoop, 'ivalLoop', priority=20)
+        self.taskMgr.add(self.__igLoop, 'igLoop', priority=50)
+        if self.AISleep >= 0 and (not self.AIRunningNetYield or self.AIForceSleep):
+            self.taskMgr.add(self.__sleepCycleTask, 'aiSleep', priority=55)
         self.eventMgr.restart()
-        
+
     def getRepository(self):
         return self.air
-    
+
     def run(self):
         self.taskMgr.run()
