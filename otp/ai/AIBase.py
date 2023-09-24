@@ -18,13 +18,11 @@ import gc
 
 class AIBase:
     notify = directNotify.newCategory('AIBase')
-
     def __init__(self):
         self.config = getConfigShowbase()
         __builtins__['__dev__'] = self.config.GetBool('want-dev', 0)
         if self.config.GetBool('want-variable-dump', 0):
             ExceptionVarDump.install()
-                    
         if self.config.GetBool('use-vfs', 1):
             vfs = VirtualFileSystem.getGlobalPtr()
         else:
