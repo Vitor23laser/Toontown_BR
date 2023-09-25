@@ -1,138 +1,70 @@
+from panda3d.core import *
+from otp.otpbase import PythonUtil
+import __builtin__
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Toontown Online - AI Server')
+parser.add_argument('--base-channel', help='The base channel that the server will use.')
+parser.add_argument('--max-channels', help='The number of channels that the server will be able to use.')
+parser.add_argument('--stateserver', help='The control channel of this AI\'s designated State Server.')
+parser.add_argument('--district-name', help='The name of the district on this AI server.')
+parser.add_argument('--astron-ip',
+                    help='The IP address of the Astron Message Director that this AI will connect to.')
+parser.add_argument('--eventlogger-ip', help='The IP address of the Astron Event Logger that this AI will log to.')
+parser.add_argument('config', nargs='*', default=['config/general.prc', 'config/dev.prc'],
+                    help='PRC file(s) that will be loaded on this AI instance.')
+args = parser.parse_args()
+
+for prc in args.config:
+    loadPrcFile(prc)
+
+localConfig = ''
+if args.base_channel:
+    localConfig += 'air-base-channel %s\n' % args.base_channel
+if args.max_channels:
+    localConfig += 'air-channel-allocation %s\n' % args.max_channels
+if args.stateserver:
+    localConfig += 'air-stateserver %s\n' % args.stateserver
+if args.district_name:
+    localConfig += 'district-name %s\n' % args.district_name
+if args.astron_ip:
+    localConfig += 'air-connect %s\n' % args.astron_ip
+if args.eventlogger_ip:
+    localConfig += 'eventlog-host %s\n' % args.eventlogger_ip
+
+loadPrcFileData('AI Args Config', localConfig)
+
+
 class game:
-    name = "toontown"
-    process = "ai"
-builtins.game = game()
+    name = 'toontown'
+    process = 'server'
 
-import time
-import os
-import sys
-import string
-import getopt
 
-import ihooks
-ihooks.install()
-
-from direct.directnotify import RotatingLog
-
-try:
-    opts, pargs = getopt.getopt(sys.argv[1:], '', [
-        'mdip=',
-        'mdport=',
-        'esip=',
-        'esport=',
-        'logpath=',
-        'district_number=',
-        'district_name=',
-        'ssid=',
-        'min_objid=',
-        'max_objid=',
-        'dcfile=',
-        ])
-except Exception as e:
-    print(e)
-    print(helpString)
-    sys.exit(1)
-
-if len(opts) < 4:
-    print(helpString)
-    sys.exit(1)
-
-mdip = "localhost"
-mdport = 6666
-esip = "localhost"
-esport = 4343
-logpath = ""
-dcFileNames = []
-districtType = 0
-
-for opt in opts:
-    flag, value = opt
-    if (flag == '--district_number'):
-        districtNumber = int(value)
-    elif (flag == '--district_name'):
-        origDistrictName = value
-        districtName = string.replace(value, "_", " ")
-    elif (flag == '--logpath'):
-        logpath = value
-    elif (flag == '--ssid'):
-        ssId = int(value)
-    elif (flag == '--min_objid'):
-        minObjId = int(value)
-    elif (flag == '--max_objid'):
-        maxObjId = int(value)
-    elif (flag == '--mdip'):
-        mdip = value
-    elif (flag == '--mdport'):
-        mdport = int(value)
-    elif (flag == '--esip'):
-        esip = value
-    elif (flag == '--esport'):
-        esport = int(value)
-    elif (flag == '--dcfile'):
-        dcFileNames.append(value)
-    else:
-        print("Error: Illegal option: " + flag)
-        print(helpString)
-        sys.exit(1)
-
-if not dcFileNames:
-    dcFileNames = ['otp.dc', 'toon.dc']
-
-logfile = logpath + 'aidistrict_' + origDistrictName + "_" +str(districtNumber)
-
-class LogAndOutput:
-    def __init__(self, orig, log):
-        self.orig = orig
-        self.log = log
-    def write(self, str):
-        self.log.write(str)
-        self.log.flush()
-        self.orig.write(str)
-        self.orig.flush()
-    def flush(self):
-        self.log.flush()
-        self.orig.flush()
-
-log = RotatingLog.RotatingLog(logfile, hourInterval=24, megabyteLimit=1024)
-logOut = LogAndOutput(sys.__stdout__, log)
-logErr = LogAndOutput(sys.__stderr__, log)
-sys.stdout = logOut
-sys.stderr = logErr
-
-from pandac.PandaModules import *
-
-nout = MultiplexStream()
-Notify.ptr().setOstreamPtr(nout, 0)
-nout.addFile(Filename(logfile))
-nout.addStandardOutput()
-nout.addSystemDebug()
-
-print("\n\nStarting %s (number: %s) on %s port %s. %s %s" % (
-    districtName, districtNumber, mdip, mdport,
-    time.asctime(time.localtime(time.time())), time.tzname[0]))
-
-print("Initializing...")
+__builtin__.game = game
 
 from otp.ai.AIBaseGlobal import *
-from toontown.ai import ToontownAIRepository
-from direct.showbase import PythonUtil
 
-simbase.air = ToontownAIRepository.ToontownAIRepository(
-    mdip, mdport,
-    esip, esport,
-    dcFileNames,
-    districtNumber,
-    districtName,
-    districtType,
-    ssId,
-    minObjId,
-    maxObjId)
+from toontown.ai.ToontownAIRepository import ToontownAIRepository
 
-simbase.aiService = 1
+simbase.air = ToontownAIRepository(config.GetInt('air-base-channel', 401000000),
+                                   config.GetInt('air-stateserver', 10000),
+                                   config.GetString('district-name', 'Toon Valley'))
+
+host = config.GetString('air-connect', '127.0.0.1')
+port = 7199
+if ':' in host:
+    host, port = host.split(':', 1)
+    port = int(port)
+
+simbase.air.connect(host, port)
 
 try:
     run()
-except:
+except SystemExit:
+    raise
+except Exception:
     info = PythonUtil.describeException()
-    simbase.air.writeServerEvent('ai-exception', districtNumber, info)
+    simbase.air.writeServerEvent('ai-exception', avId=simbase.air.getAvatarIdFromSender(),
+                                 accId=simbase.air.getAccountIdFromSender(), exception=info)
     raise
