@@ -15,7 +15,20 @@ SuitFont = 'phase_3/models/fonts/HGHanKointai.ttc'
 SignFont = 'phase_3/models/fonts/MickeyFont'
 MinnieFont = 'phase_3/models/fonts/MinnieFont'
 FancyFont = 'phase_3/models/fonts/Comedy'
-NametagFonts = ('phase_3/models/fonts/AnimGothic', 'phase_3/models/fonts/Aftershock', 'phase_3/models/fonts/JiggeryPokery', 'phase_3/models/fonts/Ironwork', 'phase_3/models/fonts/HastyPudding', 'phase_3/models/fonts/Comedy', 'phase_3/models/fonts/Humanist', 'phase_3/models/fonts/Portago', 'phase_3/models/fonts/Musicals', 'phase_3/models/fonts/Scurlock', 'phase_3/models/fonts/Danger', 'phase_3/models/fonts/Alie', 'phase_3/models/fonts/OysterBar', 'phase_3/models/fonts/RedDogSaloon')
+NametagFonts = ('phase_3/models/fonts/AnimGothic', 
+                'phase_3/models/fonts/Aftershock', 
+                'phase_3/models/fonts/JiggeryPokery', 
+                'phase_3/models/fonts/Ironwork', 
+                'phase_3/models/fonts/HastyPudding', 
+                'phase_3/models/fonts/Comedy', 
+                'phase_3/models/fonts/Humanist', 
+                'phase_3/models/fonts/Portago', 
+                'phase_3/models/fonts/Musicals', 
+                'phase_3/models/fonts/Scurlock', 
+                'phase_3/models/fonts/Danger', 
+                'phase_3/models/fonts/Alie', 
+                'phase_3/models/fonts/OysterBar', 
+                'phase_3/models/fonts/RedDogSaloon')
 NametagFontNames = ('Usu\xc3\xa1rio', 'Tremido', 'Arrepiante', 'Exorbitante', 'Bobo', 'Doido', 'Pratico', 'Nautico', 'Caprichoso', 'Estremecer', 'A\xc3\xa7\xc3\xa3o', 'Po\xc3\xa9tico', 'Passeio', 'Ocidental')
 NametagLabel = 'Nome'
 UnpaidNameTag = 'Basico'
@@ -62,7 +75,7 @@ GlobalStreetNames = {20000: ('para o', 'no', 'Terra\xc3\xa7o do Tutorial'),
  1200: ('para a', 'na', 'Rua da Alga Marinha'),
  1300: ('para a', 'na', 'Travessa do Farol'),
  2000: ('para o', 'no', 'Parque'),
-    2100: ('para a', 'na', 'Rua da Bobeira'),
+ 2100: ('para a', 'na', 'Rua da Bobeira'),
     2200: ('para a', 'na', 'Travessa dos Tontos'),
     2300: ('para o', 'no', 'Largo do Auge da Gra\xc3\xa7a'),
     3000: ('para o', 'no', 'Parque'),
