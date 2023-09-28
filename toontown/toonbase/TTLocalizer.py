@@ -1,14 +1,12 @@
 from pandac.libpandaexpressModules import *
 import string
 import types
-
 try:
     language = getConfigExpress().GetString('language', 'english')
     checkLanguage = getConfigExpress().GetBool('check-language', 0)
 except:
     language = simbase.config.GetString('language', 'english')
     checkLanguage = simbase.config.GetBool('check-language', 0)
-
 
 def getLanguage():
     return language
@@ -43,11 +41,9 @@ if checkLanguage:
                 if not val.has_key(dkey):
                     print 'WARNING: Foreign module: %s extra key: %s.%s' % (_languageModule, key, dkey)
                     continue
-            
-    
+                    
     for key in foreignModule.__dict__.keys():
         if not englishModule.__dict__.has_key(key):
             print 'WARNING: Foreign module: %s extra key: %s' % (_languageModule, key)
             continue
     
-
