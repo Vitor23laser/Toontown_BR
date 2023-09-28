@@ -4,7 +4,7 @@ import __builtin__
 
 import argparse
 
-parser = argparse.ArgumentParser(description='Toontown Online - AI Server')
+parser = argparse.ArgumentParser(description='Toontown Br - AI Server')
 parser.add_argument('--base-channel', help='The base channel that the server will use.')
 parser.add_argument('--max-channels', help='The number of channels that the server will be able to use.')
 parser.add_argument('--stateserver', help='The control channel of this AI\'s designated State Server.')
