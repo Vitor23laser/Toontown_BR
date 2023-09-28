@@ -1,5 +1,3 @@
-# File: U (Python 2.4)
-
 import os
 import sys
 import socket
@@ -94,8 +92,6 @@ class UserFunnel:
         if os.path.isfile(self.cfCookieFile) == False:
             firstRun('write', True)
         
-
-    
     def whatOSver(self):
         if sys.platform == 'win32':
             self.osMajorver = str(sys.getwindowsversion()[0])
@@ -818,7 +814,6 @@ def reportMemoryLeaks():
     reporthttp = HTTPClient()
     reporthttp.postForm(URLSpec(finalURL), reportdata)
 
-
 def checkParamFile():
     if os.path.exists('parameters.txt') == 1:
         paramfile = open('parameters.txt', 'r')
@@ -839,4 +834,3 @@ def checkParamFile():
         else:
             return newURL + 'patcher.ver'
     
-
