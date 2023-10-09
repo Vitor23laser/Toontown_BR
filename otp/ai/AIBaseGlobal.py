@@ -1,3 +1,5 @@
+# File: A (Python 2.4)
+
 from AIBase import *
 __builtins__['simbase'] = AIBase()
 __builtins__['ostream'] = Notify.out()
@@ -15,11 +17,13 @@ __builtins__['loader'] = simbase.loader
 directNotify.setDconfigLevels()
 
 def inspect(anObject):
-    import direct.tkpanels import Inspector
+    Inspector = Inspector
+    import direct.tkpanels
     Inspector.inspect(anObject)
 
 __builtins__['inspect'] = inspect
 if not __debug__ and __dev__:
     notify = directNotify.newCategory('ShowBaseGlobal')
     notify.error("You must set 'want-dev' to false in non-debug mode.")
+
 taskMgr.finalInit()
