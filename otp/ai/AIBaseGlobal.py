@@ -1,5 +1,3 @@
-# File: A (Python 2.4)
-
 from AIBase import *
 __builtins__['simbase'] = AIBase()
 __builtins__['ostream'] = Notify.out()
