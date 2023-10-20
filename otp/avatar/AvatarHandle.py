@@ -1,5 +1,3 @@
-
-
 class AvatarHandle:
     dclassName = 'AvatarHandle'
 
