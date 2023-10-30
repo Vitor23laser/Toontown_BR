@@ -18,6 +18,7 @@ import gc
 
 class AIBase:
     notify = directNotify.newCategory('AIBase')
+
     def __init__(self):
         self.config = getConfigShowbase()
         __builtins__['__dev__'] = self.config.GetBool('want-dev', 0)
