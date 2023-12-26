@@ -76,5 +76,6 @@ AIMsgId2Names = invertDictLossless(AIMsgName2Id)
 for (name, value) in AIMsgName2Id.items():
     exec '%s = %s' % (name, value)
 
-del name, value
+del name
+del value
 DBSERVER_ID = 4003
