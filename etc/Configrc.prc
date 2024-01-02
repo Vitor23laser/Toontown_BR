@@ -38,23 +38,15 @@ lock-to-one-cpu 1
 # feature.
 collect-tcp 1
 collect-tcp-interval 0.2
-
-# The ID of the server that we are compatible with
-server-version sv1.0.40.25
-server-version-suffix 
-
+server-version sv1.4.33.0
+server-version-suffix
 cull-bin shadow 15 fixed
 cull-bin ground 14 fixed 
-
 model-path      .
 sound-path      .
 plugin-path     .
-
-dc-file phase_3/etc/toon.dc
-dc-file phase_3/etc/otp.dc
-
+dc-file etc/ttbr.dc
 window-title Toontown
-
 verify-ssl 0
 
 ssl-certificates phase_3/etc/certificates.txt
@@ -81,7 +73,7 @@ expected-ssl-server /O=Disney Enterprises/OU=DOS/CN=toontown.go.com
 
 chan-config-sanity-check #f
 require-window 0
-language english
+language portuguese
 icon-filename toontown.ico
 
 # DirectX 9: DirectX will manage textures, but not vertex and index buffers
