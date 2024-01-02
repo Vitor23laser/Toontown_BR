@@ -61,10 +61,9 @@ server-version-suffix
 cull-bin shadow 15 fixed
 cull-bin ground 14 fixed 
 
-dc-file $PANDA3D_ROOT/toon.dc
-dc-file $PANDA3D_ROOT/otp.dc
+dc-file phase_3/etc/ttbr.dc
 
-plugin-path $PANDA3D_ROOT
+plugin-path .
 
 window-title Toontown
 
@@ -73,16 +72,13 @@ verify-ssl 0
 # For now, restrict SSL communications to the cheaper RC4-MD5
 # cipher.  This should lighten the CPU load on the gameserver.
 ssl-cipher-list RC4-MD5
-
-# Itemize the SSL certificates we might expect to encounter on our
-# servers.
 http-preapproved-server-certificate-filename ttown4.online.disney.com:46667 $PANDA3D_ROOT/gameserver.txt
 
 
 chan-config-sanity-check #f
 require-window 0
-language english
-icon-filename $PANDA3D_ROOT/toontown.ico
+language portuguese
+icon-filename phase_3/models/etc/toontown.ico
 
 # DirectX 9: DirectX will manage textures, but not vertex and index buffers
 dx-management 1
@@ -130,7 +126,6 @@ default-model-extension .bam
 decompressor-step-time 0.5
 extractor-step-time 0.5
 
-# Server version
 required-login playToken
 server-failover 80 443
 want-fog #t
