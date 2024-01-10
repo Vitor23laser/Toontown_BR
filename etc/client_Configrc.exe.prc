@@ -8,7 +8,7 @@ window-title Toontown Online
 console-output false
 
 # Server settings
-server-version SERVER_VERSION
+server-version sv1.4.40.32
 
 # Developer settings
 want-dev false
@@ -39,3 +39,4 @@ vfs-mount phase_12.mf /
 vfs-mount phase_13.mf /
 model-cache-models false
 model-cache-textures false
+
