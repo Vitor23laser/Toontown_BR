@@ -12,7 +12,7 @@ parser.add_argument('--district-name', help='The name of the district on this AI
 parser.add_argument('--astron-ip',
                     help='The IP address of the Astron Message Director that this AI will connect to.')
 parser.add_argument('--eventlogger-ip', help='The IP address of the Astron Event Logger that this AI will log to.')
-parser.add_argument('config', nargs='*', default=['etc/client_Configrc.prc'],
+parser.add_argument('config', nargs='*', default=['etc/client_Configrc.exe.prc'],
                     help='PRC file(s) that will be loaded on this AI instance.')
 args = parser.parse_args()
 
