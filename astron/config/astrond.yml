@@ -1,26 +1,25 @@
+daemon:
+    name: Toontown BR Astron Cluster
+
 general:
     eventlogger: 127.0.0.1:7197
     dc_files:
-        - ../../etc/ttbr.dc
+        - ../../etc/otp.dc
+        - ../../etc/toon.dc
 
 messagedirector:
     bind: 127.0.0.1:7199
-    threaded: false
 
 uberdogs:
     - class: CentralLogger
       id: 4688
       anonymous: false
 
-    - class: TTGameServicesManager
-      id: 4670
-      anonymous: true
-
     - class: AvatarFriendsManager
       id: 4686
       anonymous: false
 
-    - class: PlayerFriendsManager
+    - class: TTPlayerFriendsManager
       id: 4687
       anonymous: false
 
@@ -36,30 +35,14 @@ uberdogs:
       id: 4695
       anonymous: false
 
-    - class: FriendManager
-      id: 4501
-      anonymous: false
-
-    - class: TTOffFriendsManager
-      id: 4707
-      anonymous: false
-
-    - class: TTOffChatManager
-      id: 4681
-      anonymous: false
-
-    - class: NonRepeatableRandomSource
-      id: 4697
-      anonymous: false
-      
-    - class: DistributedPartyManager
-      id: 4691
-      anonymous: false
+    - class: AstronLoginManager
+      id: 4670
+      anonymous: true
 
 roles:
     - type: clientagent
       bind: 0.0.0.0:7198
-      version: "v1.4.33.0"
+      version: "sv1.0.47.38"
       client:
           relocate: true
           add_interest: enabled
