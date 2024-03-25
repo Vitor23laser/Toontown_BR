@@ -1,12 +1,13 @@
-from pandac.PandaModules import *
+from panda3d.core import *
 from direct.directnotify.DirectNotifyGlobal import *
+from direct.showbase import DConfig
 from direct.showbase.MessengerGlobal import *
 from direct.showbase.BulletinBoardGlobal import *
 from direct.task.TaskManagerGlobal import *
 from direct.showbase.JobManagerGlobal import *
 from direct.showbase.EventManagerGlobal import *
 from direct.showbase.PythonUtil import *
-from direct.showbase import PythonUtil
+from otp.otpbase import PythonUtil
 from direct.interval.IntervalManager import ivalMgr
 from direct.task import Task
 from direct.showbase import EventManager
@@ -20,7 +21,7 @@ class AIBase:
     notify = directNotify.newCategory('AIBase')
 
     def __init__(self):
-        self.config = getConfigShowbase()
+        self.config = DConfig
         __builtins__['__dev__'] = self.config.GetBool('want-dev', 0)
         if self.config.GetBool('want-variable-dump', 0):
             ExceptionVarDump.install()
@@ -114,7 +115,7 @@ class AIBase:
                     affinity = channelSet + 3
                     TrueClock.getGlobalPtr().setCpuAffinity(1 << (affinity % 4)
     
-    def  taskManagerDoYield(self , frameStartTime, nextScheuledTaksTime):
+    def taskManagerDoYield(self, frameStartTime, nextScheuledTaksTime):
         minFinTime = frameStartTime + self.MaxEpockSpeed
         if nextScheuledTaksTime > 0 and nextScheuledTaksTime < minFinTime:
             minFinTime = nextScheuledTaksTime;
@@ -122,7 +123,6 @@ class AIBase:
         while delta > 0.002:
             time.sleep(delta)           
             delta = minFinTime - globalClock.getRealTime();
-        
 
     def createStats(self, hostname=None, port=None):
         if not self.wantStats:
@@ -164,7 +164,7 @@ class AIBase:
             self.__resetPrevTransform, 'resetPrevTransform', priority = -51)
         self.taskMgr.add(self.__ivalLoop, 'ivalLoop', priority = 20)
         self.taskMgr.add(self.__igLoop, 'igLoop', priority = 50)
-        if self.AISleep >= 0 and  (not self.AIRunningNetYield or self.AIForceSleep):
+        if self.AISleep >= 0 and (not self.AIRunningNetYield or self.AIForceSleep):
             self.taskMgr.add(self.__sleepCycleTask, 'aiSleep', priority = 55)
         self.eventMgr.restart()
 
