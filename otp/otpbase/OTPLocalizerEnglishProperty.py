@@ -10,17 +10,17 @@ APgoToButton = 0.042
 APignoreButton = 0.042
 
 #friends/FriendSecret.py
-FSenterSecretTextPos = (0, 0, -0.25)
-FSgotSecretPos = (0, 0, 0.47)
-FSgetSecretButton = 0.06
-FSnextText = 1.0
-FSgetSecret = (1.55,1,1)
-FSok1 = (1.55,1,1)
+FSenterSecretTextPos = (0, 0, -0.22)
+FSgotSecretPos = (0, 0, 0.42)
+FSgetSecretButton = 0.045
+FSnextText = 0.8
+FSgetSecret = (1,1,1)
+FSok1 = (1,1,1)
 FSok2 = (0.6,1,1)
 FScancel = (0.6,1,1)
 
 #login/LeaveToPayDialog.py
-LTPDdirectButtonYesText = 0.05
+LTPDdirectButtonYesText = 0.04
 LTPDdirectButtonNoText = 0.05
 LTPDdirectFrameText = 0.06
 
@@ -28,4 +28,4 @@ LTPDdirectFrameText = 0.06
 ODbuttonTextScale = 0.4
 
 #speedchat/SCObject.py
-SCOsubmenuOverlap = 2./3
+SCOsubmenuOverlap = 2.5/3
