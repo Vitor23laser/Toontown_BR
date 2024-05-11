@@ -4,7 +4,7 @@ icon-filename phase_3/models/gui/toontown.ico
 cursor-filename phase_3/models/gui/toonmono.cur
 
 # Audio/Video
-audio-library-name miles_audio
+audio-library-name p3miles_audio
 load-display pandagl
 aux-display pandagl
 aux-display pandadx9
