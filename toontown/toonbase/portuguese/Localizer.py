@@ -1,5 +1,4 @@
 import string
-from otp.otpbase.portuguese.OTPLocalizer_Property import *
 
 # common locations
 lTheBrrrgh = 'O Brrrgh'
