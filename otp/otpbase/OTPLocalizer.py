@@ -1,9 +1,10 @@
-from pandac.libpandaexpressModules import *
+from panda3d.libpandaexpressModules import *
+from direct.showbase import DConfig
 import string
 import types
 try:
-    language = getConfigExpress().GetString('language', 'portuguese')
-    checkLanguage = getConfigExpress().GetBool('check-language', 0)
+    language = DConfig.GetString('language', 'portuguese')
+    checkLanguage = DConfig.GetBool('check-language', 0)
 except:
     language = simbase.config.GetString('language', 'portuguese')
     checkLanguage = simbase.config.GetBool("check-language", 0)
@@ -12,7 +13,7 @@ def getLanguage():
     return language
     
 print ('OTPLocalizer: Running in language: %s' % (language)
-if language == "english":
+if language == 'english':
     _languageModule = "otp.otpbase.OTPLocalizer" + string.capitalize(language)
 else:
     checkLanguage = 1
@@ -28,18 +29,17 @@ if checkLanguage:
         if not foreignModule.__dict__.has_key(key):
             print ('WARNING: Foreign module: %s missing key: %s' % (_languageModule, key))
             locals()[key] = val
-        else:
-            if isinstance(val, types.DictType):
-                fval = foreignModule.__dict__.get(key)
-                for dkey, dval in val.items():
-                    if not fval.has_key(dkey):
-                        print ('WARNING: Foreign module: %s missing key: %s.%s' % (_languageModule, key, dkey))
-                        fval[dkey] = dval
-                      
-                for dkey in fval.keys():
-                    if not val.has_key(dkey):
-                        print ('WARNING: Foreign module: %s extra key: %s.%s' % (_languageModule, key, dkey))
-                  
-    for key in foreignModule.__dict__.keys():
-        if not englishModule.__dict__.has_key(key):
-            print ('WARNING: Foreign module: %s extra key: %s' % (_languageModule, key))
+        elif isinstance(val, dict):
+            fval = foreignModule.__dict__.get(key)
+            for dkey, dval in list(val.items()):
+                if dkey not in fval:
+                    print('WARNING: Foreign module: %s missing key: %s.%s' % (_languageModule, key, dkey))
+                    fval[dkey] = dval
+
+            for dkey in list(fval.keys()):
+                if dkey not in val:
+                    print('WARNING: Foreign module: %s extra key: %s.%s' % (_languageModule, key, dkey))
+
+    for key in list(foreignModule.__dict__.keys()):
+        if key not in englishModule.__dict__:
+            print('WARNING: Foreign module: %s extra key: %s' % (_languageModule, key))
