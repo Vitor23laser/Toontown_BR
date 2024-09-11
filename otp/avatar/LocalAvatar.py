@@ -1,4 +1,4 @@
-# File: o (Python 2.4)
+# File: L (Python 2.4)
 
 from pandac.PandaModules import *
 from libotp import Nametag, WhisperPopup
