@@ -10,7 +10,7 @@ taskkill /f /fi "windowtitle eq Toontown_BR - Game Client"
 start start_astron_server.bat
 
 ping 127.0.0.1 -n 1 > nul
-start start_uberdog_server.bat
+start Toontown_uberdog_server.bat
 
 ping 127.0.0.1 -n 1 > nul
 start ToontownBRQA.bat
