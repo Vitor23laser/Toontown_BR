@@ -13,7 +13,7 @@ ping 127.0.0.1 -n 1 > nul
 start Toontown_uberdog_server.bat
 
 ping 127.0.0.1 -n 1 > nul
-start ToontownBRQA.bat
+start Toontown_ai_server.bat
 
 ping 127.0.0.1 -n 3 > nul
 start toontownlauncher.bat
