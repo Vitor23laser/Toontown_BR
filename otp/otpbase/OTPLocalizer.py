@@ -1,12 +1,12 @@
-from panda3d.libpandaexpressModules import *
+from panda3d.core import *
 from direct.showbase import DConfig
 import string
 import types
 try:
-    language = DConfig.GetString('language', 'portuguese')
+    language = DConfig.GetString('language', 'english')
     checkLanguage = DConfig.GetBool('check-language', 0)
 except:
-    language = simbase.config.GetString('language', 'portuguese')
+    language = simbase.config.GetString('language', 'english')
     checkLanguage = simbase.config.GetBool("check-language", 0)
 
 def getLanguage():
@@ -23,7 +23,7 @@ exec('from ' + _languageModule + ' import *')
 if checkLanguage:
     l = {}
     g = {}
-    englishModule = __import__('otp.otpbase.OTPLocalizer_portuguese', g, l)
+    englishModule = __import__('otp.otpbase.OTPLocalizerEnglish', g, l)
     foreignModule = __import__(_languageModule, g, l)
     for key, val in englishModule.__dict__.items():
         if not foreignModule.__dict__.has_key(key):
