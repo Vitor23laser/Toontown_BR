@@ -3,7 +3,7 @@ title Toontown_BR - UberDOG Server
 cd..
 
 rem Read the contents of PPYTHON_PATH into %PPYTHON_PATH%:
-set /P PPYTHON_PATH=<PPYTHON_PATH
+set /P PPYTHON_PATH=p3d/python/ppython.exe
 
 %PPYTHON_PATH% -m toontown.uberdog.UDStart --base-channel 1000000 ^
                --max-channels 999999 --stateserver 4002 ^
