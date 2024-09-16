@@ -91,7 +91,7 @@ clock-mode limited
 clock-frame-rate 120
 prefer-parasite-buffer 0
 audio-library-name miles_audio
-cursor-filename toonmono.cur
+cursor-filename phase_3/toonmono.cur
 audio-loader mp3
 audio-loader midi
 audio-loader wav
