@@ -26,7 +26,7 @@ http-preapproved-server-certificate-filename ttown4.online.disney.com:46667 game
 chan-config-sanity-check #f
 require-window 0
 language english
-icon-filename toontown.ico
+icon-filename phase_2/toontown.ico
 dx-management 1
 tt-specific-login 1
 decompressor-buffer-size 32768
