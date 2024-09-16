@@ -94,7 +94,7 @@ class AIBase:
         self.sqlAvailable = self.config.GetBool('sql-available', 1)
         self.createStats()
         self.restart()
-
+return
     
     def setupCpuAffinities(self, minChannel):
         if game.name == 'uberDog':
