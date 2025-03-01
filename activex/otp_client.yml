@@ -45,7 +45,7 @@ roles:
       proxy: true
       version: "sv1.4.40.32"
       dc_hash: 1972755209
-      lua_file: "otpserver/ToontownClient.lua"
+      lua_file: "otpserver/lua/ToontownClient.lua"
       database: 4003
       client:
           relocate: true
