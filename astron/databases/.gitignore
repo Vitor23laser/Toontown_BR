@@ -1,4 +1,2 @@
-*.db
-*.bak
-*.dat
-*.dir
+accounts.json
+friendCodes.json
