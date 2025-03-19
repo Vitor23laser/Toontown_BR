@@ -3,8 +3,8 @@ daemon:
 general:
     eventlogger: 127.0.0.1:4343
     dc_files:
-        - etc/otp.dc
-        - etc/toon.dc
+        - phase_3/etc/otp.dc
+        - phase_3/etc/toon.dc
 
 debug:
     pprof: true
