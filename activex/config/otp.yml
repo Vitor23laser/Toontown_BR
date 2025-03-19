@@ -1,5 +1,5 @@
 daemon:
-    name: Toontown_BR Client
+    name: Toontown_BR
 general:
     eventlogger: 127.0.0.1:4343
     dc_files:
