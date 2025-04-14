@@ -99,3 +99,4 @@ win-size 640 480
 #
 
 server-type prod
+want-magic-word 1
