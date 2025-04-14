@@ -65,7 +65,7 @@ for i in xrange(1, 20+1):
         if i != 1:
             break
 
-print "-"*30, "creating toontown district %s" % districtNumber, "-"*30
+print("-"*30, "creating toontown district %s" % districtNumber, "-"*30)
 
 simbase.air = ToontownAIRepository.ToontownAIRepository(
         simbase.mdip,
