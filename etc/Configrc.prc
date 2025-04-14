@@ -98,10 +98,9 @@ win-size 640 480
 # server type
 #
 
-server-type dev
+server-type prod
 
 teleport-all 1
 want-magic-words 1
 verify-ssl 0
-want-otp-server 0
 model-path resources
