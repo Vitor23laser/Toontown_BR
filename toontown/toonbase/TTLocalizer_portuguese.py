@@ -10217,40 +10217,21 @@ HolidayNamesInCalendar = {
    101: ("Maratona de Ano-Novo dos Toons", "Chances de vencer a toda hora! "),
    # Translate
    #105: ("Idos de Março", "Os Idos de Março estão aqui!"),
-   105: ("Toons de Verde!", "Toons faz uma cena verrde com as Balinhas Verdes na Rua do Carvalho nos Jardins Da Margarida !"),
-
-    }
+   105: ("Toons de Verde!", "Toons faz uma cena verrde com as Balinhas Verdes na Rua do Carvalho nos Jardins Da Margarida !")}
 
 UnknownHoliday = "Feriado Desconhecido %d"
 HolidayFormat = "%m/%d "
-
-# parties/ToontownTimeManager.py
 TimeZone = "Brazil/West"
-
-# Cogdo Memos
 CogdoMemoGuiTitle = "Memorando:"
 CogdoMemoNames = "Memorandos de destruição-de-barril"
-
-# Cogdo Stomper Game
 CogdoStomperName = "Pisar-A-Matemática"
-
-# Cogdo Boardroom Game
 BoardroomGameTitle = "Sala de Quadro de Caminhas"
-BoardroomGameInstructions = ("Os cogs estão tendo uma reunião para decidir o que fazer com as piadas roubadas."
-                          "Deslize através e pegue como muitos memorandos de destruição da piada que você pode!")
-
-# Cogdo Crane Game
+BoardroomGameInstructions = ("Os cogs estão tendo uma reunião para decidir o que fazer com as piadas roubadas. Deslize através e pegue como muitos memorandos de destruição da piada que você pode!")
 CogdoCraneGameTitle = "Vender-Um-Sinistro"
-CogdoCraneGameInstructions = ("Os COGS estão usando uma operação-moeda da máquina para destruir barris de risadas."
-                           "Usa os guindastes para pegar e lançar sacos de dinheiros, na ordem para evitar"                           "destruções de Barris!")
-
-# Cogdo Maze Game
+CogdoCraneGameInstructions = ("Os COGS estão usando uma operação-moeda da máquina para destruir barris de risadas. Usa os guindastes para pegar e lançar sacos de dinheiros, na ordem para evitar destruções de Barris!")
 CogdoMazeGameTitle = "Escritórios de Campo do\nAgitador"
 CogdoMazeGameInstructions = "Os Grandes Agitadores Cogs tem o código para abrir a porta. Detorra eles com seus balões de água na ordem para pegar eles!"
-CogdoMazeIntroMovieDialogue = (("Esse é a Resistência Toon! Os Agitadores\ntem nossas Piadas, e eles tem bloqueado a saída!",),
-                               ("Agarra balões de água nos galões, e lança eles nos Cogs!\nPequenos Cogs dropam Piadas, GRANDES COGS abrem a saída.",),
-                               ("A mais Piadas você resgasta, o maior seu Toonar\nno fim. Boa sorte!",),
-                               )
+CogdoMazeIntroMovieDialogue = (("Esse é a Resistência Toon! Os Agitadores\ntem nossas Piadas, e eles tem bloqueado a saída!"), ("Agarra balões de água nos galões, e lança eles nos Cogs!\nPequenos Cogs dropam Piadas, GRANDES COGS abrem a saída.",), ("A mais Piadas você resgasta, o maior seu Toonar\nno fim. Boa sorte!"))
 CogdoMazeGameDoorOpens = "A SAÍDA ESTÁ ABRERTA PARA 60 SEGUNDOS!\nPEGA LÁ RÁPIDO PARA UM MAIOR TOONAR!"
 CogdoMazeGameLocalToonFoundExit = "A saída vai abrir quando\nvocê tiver pegado todos quatros GRANDES COGS!"
 CogdoMazeGameWaitingForToons = "Aguardando para outros Toons..."
@@ -10262,20 +10243,14 @@ CogdoMazeThrowHint = "Pressiona 'Ctrl' para lançar seu balão de água!"
 CogdoMazeSquashHint = "Objetos caindo pop seu balão!"
 CogdoMazeBossHint = "Grandes Cogs leva DOIS golpes para derrotar"
 CogdoMazeMinionHint = "Pequenos Cogs derrubam piadas!"
-
-# Cogdo Flying Game
 CogdoFlyingGameTitle = "Escritórios do Macaco Velho"
 CogdoFlyingGameInstructions = "Voe pelo covil dos Macacos Velhos. Cuidado com obstáculos e com os cogs pelo caminho, e não se esqueça de reabastecer seu helicóptero!"
-CogdoFlyingIntroMovieDialogue = (("Vocês não vão babar na nossas penas, Toons! Nós estavamos destruindo seus barris da sua Risada, e vocês não podem nos impedir!",
-                               "Um rebanho de Toons! Nós estamos esmagando seus barris da sua Risadas em nossos %s, e não há nada que vocês possam fazer sobre isso!" % CogdoStomperName,
-                               "Vocês não podem sob nos inicitar, Toons! Nós estamos abastecendo nossos escritórios com suas risadas, e vocês não tem poder para nos impedir!"),
-                                 ("Esta é a Resistência Toon falando! Um passarinho me disse que você pode usar hélices para voar por aí, pegar Barris de Destruição de Memorados e evitar que Risada seja destruída! Boa sorte, Toons!",
+CogdoFlyingIntroMovieDialogue = (("Vocês não vão babar na nossas penas, Toons! Nós estavamos destruindo seus barris da sua Risada, e vocês não podem nos impedir!", "Um rebanho de Toons! Nós estamos esmagando seus barris da sua Risadas em nossos %s, e não há nada que vocês possam fazer sobre isso!" % CogdoStomperName, "Vocês não podem sob nos inicitar, Toons! Nós estamos abastecendo nossos escritórios com suas risadas, e vocês não tem poder para nos impedir!"), ("Esta é a Resistência Toon falando! Um passarinho me disse que você pode usar hélices para voar por aí, pegar Barris de Destruição de Memorados e evitar que Risada seja destruída! Boa sorte, Toons!",
                                "Atenção Toons! Voe com uma hélice e colete Barris de Destruição de Memorados para evitar que nossa Risada seja pisoteada! Resistência Toon desligando!",
                                "Resistência Toon aqui de novo! Cause uma aba por procurar hélices, vôo para os Barris de Destruição de Memorados, e mantendo nossa Risada de ser esmagada! Tenha Diversão!"),
                                  ("Squawk! Eu sou ganhador do prêmio Roda dentada de Prata, não preciso disso!",
                                "Faça o seu melhor, Toons! Vocês vão encontrar nos para ser bastante garratão!",
-                               "Nós vamos ensinar vocês para obedecer a ordem de bicando, Toons!"),
-                                  )
+                               "Nós vamos ensinar vocês para obedecer a ordem de bicando, Toons!"))
 CogdoFlyingGameWaiting = "Aguardando outros Toons%s"
 CogdoFlyingGameFuelLabel = "Combustível"
 CogdoFlyingGameLegalEagleTargeting = "Um Macaco Velho tem percebido vocês!"
@@ -10307,7 +10282,6 @@ SillySurgeTerms = {1:  "Ascensão Divertida!",
     10: "Caminhada Alegre!",
     11: "Aumento Insano!",
     12: "Aumento Forçado!"}
-# Interactive Prop Text
 InteractivePropTrackBonusTerms = {0:  "Super Toonar",
     1:  "",
     2:  "",
