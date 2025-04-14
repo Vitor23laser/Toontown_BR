@@ -1,16 +1,8 @@
 import string
 import time
 from toontown.toonbase.TTLocalizer_portuguese_Property import *
-from toontown.catalog import CatalogAccesoryItemGlobals
-from otp.otpbase import OTPLocalizer as OL
-OL.SpeedChatStaticText = OL.SpeedChatStaticTextToontown.copy()
-for key in OL.SpeedChatStaticTextCommon.iterkeys():
-    OL.SpeedChatStaticText[key] = OL.SpeedChatStaticTextCommon[key]
 
 ExtraKeySanityCheck = "Ignore-me"
-commitmanString = "bugfix! I changed this"
-commitmanSting2 = "another string!"
-commitmantst = "kptmptest - removable"
 InterfaceFont = 'phase_3/models/fonts/ImpressBT.ttf'
 ToonFont = 'phase_3/models/fonts/ImpressBT.ttf'
 SuitFont = 'phase_3/models/fonts/vtRemingtonPortable.ttf'
@@ -47,10 +39,8 @@ NametagFontNames = ('Usuário',
  'Ocidental')
 NametagLabel = "Nome"
 UnpaidNameTag = "Basico"
-GM_NAMES = ('CONSELHO TOON', 
- 'TROPA TOONS', 	 
- 'TOON DA RESISTÊNCIA',
- 'GC')
+GM_1 = 'CONSELHO TOON' 
+GM_2 = 'TROPA TOONS'
 BuildingNametagFont = 'phase_3/models/fonts/MickeyFont'
 BuildingNametagShadow = None
 ProductPrefix = 'TT'
@@ -70,8 +60,6 @@ WesternPluto = "WesternPluto"
 Flippy = "Flippy"
 Chip   = "Tico"
 Dale   = "Teco"
-JailbirdDale = "JailbirdDale"
-PoliceChip = "PoliceChip"
 lTheBrrrgh = 'O Brrrgh'
 lDaisyGardens = 'Jardim da Margarida'
 lDonaldsDock = "Porto do Donald"
@@ -1923,14 +1911,11 @@ LawbotSkelP = "Esqueletocogs %s" % (LawbotP)
 CashbotSkelP = "Esqueletocogs %s" % (CashbotP)
 SellbotSkelP = "Esqueletocogs %s" % (SellbotP)
 SkeleRevivePostFix = " v2.0"
-
-# AvatarDetailPanel.py
 AvatarDetailPanelOK = lOK
 AvatarDetailPanelCancel = lCancel
 AvatarDetailPanelClose = lClose
 AvatarDetailPanelLookup = "Procurando detalhes de %s."
 AvatarDetailPanelFailedLookup = "Não foi possível obter detalhes de %s."
-# sublocation is not working now
 AvatarDetailPanelPlayer = "Jogador: %(player)s\nMundo: %(world)s"
 AvatarDetailPanelPlayerShort = "%(player)s\nMundo: %(world)s\nLocal: %(location)s"
 AvatarDetailPanelRealLife = "Off-line"
@@ -1939,13 +1924,9 @@ AvatarDetailPanelOnlinePlayer = "Região: %(district)s\nLocal: %(location)s\nJog
 AvatarDetailPanelOffline = "Região: off-line\nLocal: off-line"
 AvatarShowPlayer = "Exibir Jogador"
 OfflineLocation = "Off-line"
-
-#PlayerDetailPanel
 PlayerToonName = "Toon: %(toonname)s"
 PlayerShowToon = "Mostrar Toon"
 PlayerPanelDetail = "Detalhes do jogador"
-
-# AvatarPanel.py
 AvatarPanelFriends = "Amigos"
 AvatarPanelWhisper = "Cochichar"
 AvatarPanelSecrets = "Secretos"
@@ -1963,43 +1944,26 @@ AvatarPanelGroupInvite = "Convidar para Grupo"
 AvatarPanelGroupRetract = "Retirar Convite"
 AvatarPanelGroupMember = "Já no Grupo"
 AvatarPanelGroupMemberKick = "Remova"
-
-# grouping messages
-groupInviteMessage = "%s quer que você entre em seu grupo"
-
-
-# Report Panel
 ReportPanelTitle = "Denunciar um Jogador"
 ReportPanelBody = "Este recurso enviará uma denúncia completa a um Moderador. Em vez de denunciar, você pode optar pelo seguinte:\n\n  - Teleportar-se para outra região\n  - Usar \"Ignorar\" no painel do Toon\n\nQuer mesmo denunciar %s para um Moderador?" 
 ReportPanelBodyFriends = "Este recurso enviará uma denúncia completa a um Moderador. Em vez de denunciar, você pode optar pelo seguinte:\n\n  - Teleportar-se para outra região\n  - Romper sua amizade\n\nQuer mesmo denunciar %s para um Moderador?\n\n(Isso também vai romper sua amizade)"
 ReportPanelCategoryBody = "Você está prestes a denunciar %s. Um Moderador será alertado sobre sua reclamação e tomará medidas apropriadas contra quem estiver quebrando as regras. Escolha o motivo pelo qual está denunciando %s:"
 ReportPanelBodyPlayer = "Este recurso ainda está sendo desenvolvido e será disponibilizado em breve. Enquanto isso, você pode fazer o seguinte:\n\n  - Vá até o DXD e termine a amizade por lá.\n – Conte aos pais ou responsáveis o que está acontecendo."
-
 ReportPanelCategoryLanguage = "Linguagem Rude"
 ReportPanelCategoryPii = "Compartilhar/Solicitar Informações Pessoais"
 ReportPanelCategoryRude = "Comportamento Rude ou Mau"
 ReportPanelCategoryName = "Nome Ruim"
 ReportPanelCategoryHacking = "Hackear"
-
-ReportPanelConfirmations = (
- "Você está prestes a denunciar que %s usou linguagem obscena, intolerante, preconceituosa ou sexualmente explícita.",
+ReportPanelConfirmations = ("Você está prestes a denunciar que %s usou linguagem obscena, intolerante, preconceituosa ou sexualmente explícita.",
  "Você está prestes a denunciar %s está promovendo insegurança ao divulgar ou solicitar um número de telefone, sobrenome, endereço de e-mail, senha ou nome de conta.",
  "Você está prestes a relatar que %s está importunando, atormentando ou usando de comportamento radical para atrapalhar o jogo.",
  "Você está prestes a relatar que %s criou um nome que não segue as regras da Disney.",
- "Você está prestes a denunciar que %s hackeou/adulterou o jogo ou usou software de terceiros.",
-    )
-
-# Put on confirmation screen!
+ "Você está prestes a denunciar que %s hackeou/adulterou o jogo ou usou software de terceiros.")
 ReportPanelWarning = "Levamos as denúncias muito a sério. Sua denúncia será vista por um Moderador, que tomará medidas contra qualquer um que quebrar nossas regras. Se for descoberto que sua conta também quebrou as regras, ou se você fizer denúncias falsas ou abusar do sistema 'Denunciar um Jogador', um Moderador pode tomar medidas contra sua conta. Tem certeza absoluta de que quer denunciar este jogador?"
-
 ReportPanelThanks = "Obrigado! Sua denúncia foi enviada a um Moderador para análise. Não há necessidade de nos contatarmos novamente sobre o problema. A equipe de moderação tomará medidas adequadas contra um jogador que for descoberto quebrando as regras."
-
 ReportPanelRemovedFriend = "Removemos automaticamente %s da sua Lista de Amigos."
 ReportPanelRemovedPlayerFriend = "Removemos automaticamente %s como amigo Jogador, e você não o verá mais como seu amigo em nenhum produto Disney."
-
 ReportPanelAlreadyReported = "Você já denunciou %s nesta sessão. Um Moderador vai analisar sua denúncia anterior."
-
-# Report Panel
 IgnorePanelTitle = "Ignorar um Jogador"
 IgnorePanelAddIgnore = "Quer ignorar %s pelo restante da sessão?"
 IgnorePanelIgnore = "Você agora está ignorando %s."
@@ -2007,31 +1971,21 @@ IgnorePanelRemoveIgnore = "Deseja parar de ignorar %s?"
 IgnorePanelEndIgnore = "Você não está mais ignorando %s."
 IgnorePanelAddFriendAvatar = "%s está entre seus amigos, você não pode ignorá-lo(la)enquanto forem amigos(as)."
 IgnorePanelAddFriendPlayer = "%s (%s)está entre seus amigos, você não pode ignorá-lo(la) enquanto forem amigos(as)."
-
-# PetAvatarPanel.py
 PetPanelFeed = "Alimentar"
 PetPanelCall = "Chamar"
 PetPanelGoTo = "Ir para"
 PetPanelOwner = "Mostrar dono"
 PetPanelDetail = "Detalhes do bichinho"
 PetPanelScratch = "Coçar"
-
-# PetDetailPanel.py
 PetDetailPanelTitle = "Adestramento"
-# NOTE: these are replicated from OTPLocalizerEnglish sans "!"
-PetTrickStrings = {
-    0: 'Pular',
+PetTrickStrings = {0: 'Pular',
     1: 'Dar a pata',
     2: 'Fingir de morto',
     3: 'Rolar',
     4: 'Dar cambalhota',
     5: 'Dançar',
-    6: 'Falar',
-    }
-
-# PetMood.py
-PetMoodAdjectives = {
-    'neutral': 'neutro',
+    6: 'Falar'}
+PetMoodAdjectives = {'neutral': 'neutro',
     'hunger': 'faminto',
     'boredom': 'chateado',
     'excitement': 'animado',
@@ -2043,62 +1997,43 @@ PetMoodAdjectives = {
     'confusion': 'confuso',
     'anger': 'zangado',
     'surprise': 'surpreso',
-    'affection': 'carinhoso',
-    }
-
-SpokenMoods = {
-    'neutral': 'neutro',
+    'affection': 'carinhoso'}
+SpokenMoods = {'neutral': 'neutro',
     'hunger':['Eu\estou cansado de Balinhas! Que tal me dar uma fatia de torta?',
- "Que tal uma Balinha vermelha? Estou cansado das verdes!",
- "Ah, essas Balinhas eram para plantar?!! Mas eu estou com fome!",
-    ],
+	      "Que tal uma Balinha vermelha? Estou cansado das verdes!",
+              "Ah, essas Balinhas eram para plantar?!! Mas eu estou com fome!"],
     'boredom': ["Estou morrendo de tédio aqui!",
-     'Você não\ achou que eu entenderia, hein?', 
-     'Poderíamos, tipo, FAZER algo já?',
-     ],
+                'Você não\ achou que eu entenderia, hein?', 
+                'Poderíamos, tipo, FAZER algo já?'],
    'excitement': ["Uau, é você, é você, é você!",
-"mmm, balinhas, mmm",
-   'Tem algo melhor que isso?',
-"Feliz da Semana da Mentira Toons!",
-   ],
+                  "mmm, balinhas, mmm",
+                  'Tem algo melhor que isso?',
+                  "Feliz da Semana dos Toons de Abril!"],
     'sadness': ["Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá...",
- "Eu serei bom, eu prometo!",
- "Eu não sei POR QUE que eu estou triste, eu apenas estou!!!",
-    ],
-    'restlessness': ['Eu\estou tãooo inquieto',
-    ],
+                "Eu serei bom, eu prometo!",
+                "Eu não sei POR QUE que eu estou triste, eu apenas estou!!!"],
+    'restlessness': ['Eu\estou tãooo inquieto'],
     'playfulness': ["Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar...",
     'Brinque comigo ou eu\vou desenterrar algumas flores!',
-    'Vamos correr em volta e em volta e em volta e em volta e em volta e em volta...', 
-    ],
+    'Vamos correr em volta e em volta e em volta e em volta e em volta e em volta...'],
     'loneliness': ['Onde você esteve?',
-      'Quer abraçar?',
-      'Quero lutar com os Cogs com você!',
-    ],
+                   'Quer abraçar?',
+                   'Quero lutar com os Cogs com você!'],
     'fatigue': ['Aquele mergulho na lagoa realmente me cansou!',
-    'Ser um Rabisco é exaustivo',
-    'Eu tenho que ir para a Sonholândia!',
-    ],
+                'Ser um Rabisco é exaustivo',
+                'Eu tenho que ir para a Sonholândia!'],
     'confusion':  ['Onde estou? Quem é mesmo você?',
- "O que é um Toon-ar mesmo?",
- "Uau, estou entre você e os Cogs! Fuja!",
-    ],
+                   "O que é um Toon-ar mesmo?",
+                   "Uau, estou entre você e os Cogs! Fuja!"],
     'anger': ['... e você se pergunta por que eu nunca te dou um Toon-ar?!!!',
-    'Você sempre me deixa para trás',
-    'Você ama suas piadas mais do que a mim',
-    ],
-    'surprise': ['Claro que os Rabiscos podem falar!',
-    'Toons podem falar?!!',
-    'Opa, de onde você surgiu?',
-    ],
+              'Você sempre me deixa para trás',
+              'Você ama suas piadas mais do que a mim'],
+              'surprise': ['Claro que os Rabiscos podem falar!',
+              'Toons podem falar?!!',
+              'Opa, de onde você surgiu?'],
     'affection': ['Você é o melhor Toon de SEMPRE!!!!!!!!!!',
-    'Você ao menos SABE o quão incrível você é?!?',
-      'Tenho TANTA sorte de estar com você!!!',
-    ],
-    }
-
-# DistributedAvatar.py
-DialogExclamation = "!"
+                  'Você ao menos SABE o quão incrível você é?!?',
+                  'Tenho TANTA sorte de estar com você!!!']}
 DialogQuestion = '?'
 FriendsListLabel = "Amigos"
 TeleportPanelOK = lOK
@@ -2531,67 +2466,67 @@ SuitAttackNames = {'Audit': 'Auditoria!',
  'Withdrawal': 'Retirada!',
  'WriteOff': 'Baixa!'}
 SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
-       "Parece que você está no vermelho.",
-       "Deixe-me ajudá-lo com esses livros.",
-       "Sua coluna de débitos é muito alta.",
-       "Vamos verificar os seus bens.",
-       "Assim, você vai ficar endividado.",
-       "Vamos conferir direitinho o que você deve.",
-       "Assim, a sua conta vai ficar zerada.",
-       "É hora de você se responsabilizar pelas suas despesas.",
-       "Encontrei um erro nos seus livros."],
+           "Parece que você está no vermelho.",
+           "Deixe-me ajudá-lo com esses livros.",
+           "Sua coluna de débitos é muito alta.",
+           "Vamos verificar os seus bens.",
+           "Assim, você vai ficar endividado.",
+           "Vamos conferir direitinho o que você deve.",
+           "Assim, a sua conta vai ficar zerada.",
+           "É hora de você se responsabilizar pelas suas despesas.",
+           "Encontrei um erro nos seus livros."],
  'Bite': ["Quer uma mordida?",
-       "Dá uma mordida!",
-       "A sua mordida é maior do que você pode mastigar.",
-       "Minha mordida é maior do que o meu latido.",
-       "Morde logo!",
-       "Tome cuidado, eu mordo.",
-       "Eu não mordo só quando estou encurralado.",
-       "Só vou dar uma mordidinha.",
-       "Não dei uma mordida o dia todo.",
-       "Só quero uma mordida. É pedir muito?"],
+          "Dá uma mordida!",
+          "A sua mordida é maior do que você pode mastigar.",
+          "Minha mordida é maior do que o meu latido.",
+          "Morde logo!",
+          "Tome cuidado, eu mordo.",
+          "Eu não mordo só quando estou encurralado.",
+          "Só vou dar uma mordidinha.",
+          "Não dei uma mordida o dia todo.",
+          "Só quero uma mordida. É pedir muito?"],
  'BounceCheck': ["Ah, que pena, você não tem graça.",
-              "Você tem uma dívida.",
-              "Acho que este cheque é seu.",
-              "Você me devia isso.",
-              "Estou cobrando esta dívida.",
-              "Este cheque não vai ser mole.",
-              "Você será cobrado por isso.",
-              "Feche a conta.",
-              "Isso terá um custo para você.",
-              "Queria trocar por dinheiro.",
-              "Vou mandar isso de volta para você.",
-              "Esta conta está salgada.",
-              "Estou descontando o serviço."],
- 'BrainStorm':["Acho que vai chover.",
-            "Espero que você esteja com o guarda-chuva.",
-            "Quero orientar você.",
-            "Que tal uma saraivada básica?",
-            "Cadê o seu brilho agora, Toon?",
-            "Pronto para a chuvarada?",
-            "Vou atacar você como um furacão.",
-            "Chamo isso de ataque-relâmpago.",
-            "Adoro ser um desmancha-prazeres."],
-    'BuzzWord':["Desculpe-me se estou te aborrecendo.",
-          "Ouviu a última?",
-          "Veja se você pega esta.",
-          "Vamos cantarolar, Toon?",
-          "Deixe-me defender você.",
-          "Vou \"C\" perfeitamente claro.",
-          "Você devia \"C\" mais cuidadoso.",
-          "Veja se você consegue desviar desse enxame.",
-          "Cuidado, você está prestes a ser picado.",
-          "Parece que a sua urticária é séria."],
-    'Calculate': ["Estes números fazem mesmo uma diferença!",
-            "Você contou com isso?",
-            "Faça as contas, você está caindo.",
-            "Deixe-me ajudar você a somar isso.",
-            "Você registrou todas as suas despesas?",
-            "De acordo com os meus cálculos, você não ficará por muito tempo aqui.",
-            "Aqui está o total.",
-               "Uau, a sua conta está se multiplicando.",
-               "Tente brincar com esses números!",
-                  Cogs + ": 1 Toons: 0"],
+                 "Você tem uma dívida.",
+                 "Acho que este cheque é seu.",
+                 "Você me devia isso.",
+                 "Estou cobrando esta dívida.",
+                 "Este cheque não vai ser mole.",
+                 "Você será cobrado por isso.",
+                 "Feche a conta.",
+                 "Isso terá um custo para você.",
+                 "Queria trocar por dinheiro.",
+                 "Vou mandar isso de volta para você.",
+                 "Esta conta está salgada.",
+                 "Estou descontando o serviço."],
+ 'BrainStorm': ["Acho que vai chover.",
+                "Espero que você esteja com o guarda-chuva.",
+                "Quero orientar você.",
+                "Que tal uma saraivada básica?",
+                "Cadê o seu brilho agora, Toon?",
+                "Pronto para a chuvarada?",
+                "Vou atacar você como um furacão.",
+                "Chamo isso de ataque-relâmpago.",
+                "Adoro ser um desmancha-prazeres."],
+ 'BuzzWord': ["Desculpe-me se estou te aborrecendo.",
+              "Ouviu a última?",
+              "Veja se você pega esta.",
+              "Vamos cantarolar, Toon?",
+              "Deixe-me defender você.",
+              "Vou \"C\" perfeitamente claro.",
+              "Você devia \"C\" mais cuidadoso.",
+              "Veja se você consegue desviar desse enxame.",
+              "Cuidado, você está prestes a ser picado.",
+              "Parece que a sua urticária é séria."],
+ 'Calculate': ["Estes números fazem mesmo uma diferença!",
+              "Você contou com isso?",
+              "Faça as contas, você está caindo.",
+              "Deixe-me ajudar você a somar isso.",
+              "Você registrou todas as suas despesas?",
+              "De acordo com os meus cálculos, você não ficará por muito tempo aqui.",
+              "Aqui está o total.",
+              "Uau, a sua conta está se multiplicando.",
+              "Tente brincar com esses números!",
+              Cogs + ": 1 Toons: 0"],
     'Canned': ["Gosta fora da lata?",
             "\"Lata\" limpo?",
             "Fresquinho, saído da lata!",
@@ -3073,8 +3008,7 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "Você não é mais bem-vindo por aqui.",
            "O seu tempo acabou aqui, você vai ser ensacado!",
            "Deixe-me ensacar isto para você.",
-           "Nenhuma defesa se iguala ao meu ataque com sacos!",
-              ],
+           "Nenhuma defesa se iguala ao meu ataque com sacos!"],
     'Schmooze':["Você nunca vai ver quando chega.",
              "Vai ficar legal em você.",
              "Você conseguiu.",
@@ -3085,9 +3019,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
              "Vou ressaltar o seu lado bom.",
              "Isso merece um bom tapinha nas costas.",
              "Vou falar bem de você para todo mundo.",
-             "Detesto tirá-lo do seu pedestal, mas...",
-                ],
-    'Shake': ["Você está bem no epicentro.",
+             "Detesto tirá-lo do seu pedestal, mas..."],
+  'Shake': ["Você está bem no epicentro.",
            "Você está em cima da falha.",
            "Vai ser um sacolejo só.",
            "Acho que isso é um desastre natural.",
@@ -3098,9 +3031,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "Preparado para os solavancos?",
            "Você vai sacolejar, e não centrifugar.",
            "Isso vai agitar você.",
-           "Sugiro um bom plano de fuga.",
-              ],
-    'Shred': ["Preciso me livrar de alguns fragmentos perigosos.",
+           "Sugiro um bom plano de fuga."],
+ 'Shred': ["Preciso me livrar de alguns fragmentos perigosos.",
            "As porções produzidas estão aumentando de quantidade.",
            "Acho que vou dispor de você agora mesmo.",
            "Assim, a prova é eliminada.",
@@ -3110,19 +3042,17 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "Vou retalhar esta ideia todinha.",
            "Não queremos que isto caia nas mãos erradas.",
            "Fácil se tem, fácil se perde.",
-           "Não é o seu último fio de esperança?",
-              ],
-    'Spin': ["O que me diz de sairmos para um giro?",
+           "Não é o seu último fio de esperança?"],
+ 'Spin': ["O que me diz de sairmos para um giro?",
           "Você usa a centrifugação?",
           "Isto vai fazer a sua cabeça girar de verdade!",
           "Este é o meu giro das coisas.",
           "Vou levar você para uma volta.",
-          "Como é que você dá a \"volta\" no seu tempo?",
+          'Como é que você dá a "volta" no seu tempo?',
           "Olha só: você não quer girar até ficar tonto?",
           "Nossa, você está no meio de um furacão!",
-          "Meus ataques vão fazer sua cabeça rodar!",
-             ],
-    'Synergy': ["Vou encaminhar ao comitê.",
+          "Meus ataques vão fazer sua cabeça rodar!"],
+ 'Synergy': ["Vou encaminhar ao comitê.",
              "O seu projeto foi cancelado.",
              "O seu centro de custos será cortado.",
              "Estamos reestruturando o seu setor.",
@@ -3131,9 +3061,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
              "Uma boa equipe pode se livrar de qualquer problema.",
              "Já dou um retorno a você sobre isso.",
              "Vamos direto ao que interessa.",
-             "Vamos encarar isto como uma crise de sinergia.",
-                ],
-    'Tabulate': ["Isto não soma em nada.",
+             "Vamos encarar isto como uma crise de sinergia."],
+ 'Tabulate': ["Isto não soma em nada.",
               "Pela minha conta, você perdeu.",
               "Você está fazendo um bom cálculo.",
               "Vou fazer o seu total em um minuto.",
@@ -3142,9 +3071,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
               "É hora de calcular.",
               "Gosto de colocar as coisas em ordem.",
               "E a contagem é...",
-              "Estes números devem ser muito poderosos.",
-                 ],
-    'TeeOff': ["Você não vai bem de condições.",
+              "Estes números devem ser muito poderosos."],
+ 'TeeOff': ["Você não vai bem de condições.",
             "Olha a frente!",
             "Confio no meu taco.",
             "Gandula, preciso do meu taco!",
@@ -3155,9 +3083,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
             "Repara só a precisão.",
             "Cuidado com o passarinho!",
             "Fique de olho na bola!",
-            "Você se importa se eu continuar a jogar?",
-               ],
-    'Tremor': ["Você sentiu?",
+            "Você se importa se eu continuar a jogar?"],
+ 'Tremor': ["Você sentiu?",
             "Você não tem medo de um tremorzinho de nada, ou tem?",
             "O tremor é apenas o começo.",
             "Você parece tenso.",
@@ -3165,9 +3092,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
             "Tudo preparado para retumbar?",
             "O que houve? Você parece balançado.",
             "Tremedeira de medo!",
-            "Por que está tremendo de medo?",
-               ],
-    'Watercooler': ["Certamente, isto vai refrescar você.",
+            "Por que está tremendo de medo?"],
+ 'Watercooler': ["Certamente, isto vai refrescar você.",
                  "Não é refrescante?",
                  "Faço a entrega.",
                  "Direto da fonte - até a sua boca.",
@@ -3178,9 +3104,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                  "Espero que as suas cores não desbotem.",
                  "Quer beber?",
                  "Sai tudo na lavagem.",
-                 "A bebida é com você.",
-                    ],
-    'Withdrawal': ["Acho que você está no vermelho.",
+                 "A bebida é com você."],
+ 'Withdrawal': ["Acho que você está no vermelho.",
                 "Espero que o seu saldo seja o suficiente para cobrir isto.",
                 "Olha que vou cobrar juros.",
                 "O seu saldo está diminuindo.",
@@ -3189,9 +3114,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                 "Acho que você está em baixa.",
                 "Suas finanças decaíram.",
                 "Prevejo um período de vacas magras.",
-                "É uma inversão de valores.",
-                   ],
-    'WriteOff': ["Deixe-me aumentar as suas perdas.",
+                "É uma inversão de valores."],
+ 'WriteOff': ["Deixe-me aumentar as suas perdas.",
               "Vamos tirar o melhor proveito possível de um mau negócio.",
               "É hora de fazer o balanço dos caixas.",
               "Isso não vai ficar bom nos livros-caixa.",
@@ -3213,7 +3137,8 @@ KartMinLaff = "Você precisa de %s pontos de risada para poder andar neste carte
 CogsIncExt = ", Ltda."
 CogsIncModifier = "%s" + CogsIncExt
 CogsInc = Cogs.upper + CogsIncExt
-CogdominiumsExt = " Escritório de Campo"
+CogdominiumsExt = " Cogdomínios"
+Cogdominiums = Cog.upper() + CogdominiumsExt	       
 DoorKnockKnock = "Toc, toc."
 DoorWhosThere = "Quem é?"
 DoorWhoAppendix = " Quem?"
@@ -3228,10 +3153,10 @@ FADoorCodes_DEFEAT_FLUNKY_TOM = "Ande até o Puxa-saco para lutar com ele!"
 FADoorCodes_TALK_TO_HQ_TOM = "Vá pegar a sua recompensa no Quartel dos Toons!"
 FADoorCodes_SUIT_APPROACHING = None
 FADoorCodes_BUILDING_TAKEOVER = "Cuidado! Tem um COG lá dentro!"
-FADoorCodes_SB_DISGUISE_INCOMPLETE = "Você vai ser pego se entrar lá como um Toon! Você precisa completar o seu Disfarce de Cog primeiro!\n\nMonte o seu Disfarce de Cog com pedaços da Fábrica."
+FADoorCodes_SB_DISGUISE_INCOMPLETE = "Você vai ser pego se entrar lá como um Toon! Você precisa completar o seu Disfarce de Robô Vendedor!\n\nMonte o seu Disfarce de Robô Vendedor com pedaços da Fábrica."
 FADoorCodes_CB_DISGUISE_INCOMPLETE = "Você vai ser pego se entrar lá como um Toon! Você precisa completar o seu Disfarce de Robô Mercenário primeiro!\n\nMonte o seu Disfarce de Robô Mercenário executando Tarefas Toon na Sonholândia."
-FADoorCodes_LB_DISGUISE_INCOMPLETE = "Você vai ser pego se entrar lá como um Toon! Você precisa completar o seu Disfarce de Cog primeiro!\n\nMonte o seu Disfarce de Cog com pedaços da Fábrica."
-FADoorCodes_BB_DISGUISE_INCOMPLETE = "Você vai ser pego se entrar lá como Toon! Primeiramente, você precisa concluir seu Disfarce de Robô Chefe!\n\nConstrua seu Disfarce de Robô Chefe cumprindo as TarefasToon depois da Sonholândia do Donald."
+FADoorCodes_LB_DISGUISE_INCOMPLETE = "Você vai ser pego se entrar lá como um Toon! Você precisa completar o seu Disfarce de Robô da Lei!\n\nMonte o seu Disfarce de Robô da Lei executando as Tarefas Toon depois da Sonholândia do Donald."
+FADoorCodes_BB_DISGUISE_INCOMPLETE = "Você vai ser pego se entrar lá como um Toon! Você precisa completar o seu Disfarce de Robô Chefe!\n\nMonte o seu Disfarce de Robô Chefe executando as Tarefas Toon depois da Sonholândia do Donald."
 KnockKnockContestJokes = {2100: ["Wally", "Wally não está olhando, joga torta nele!"],
  2200: {28:["Biscoito", "Biscoitos me mordam, os Cogs vêm aí!"], 
         41:["Dewey", "Dewemos ir detonar mais alguns Cogs?"],
@@ -3241,7 +3166,7 @@ KnockKnockContestJokes = {2100: ["Wally", "Wally não está olhando, joga torta 
 3300: {10: ["Aladdin", "Quartel do Aladdin quer uma palavra com você."],
         6: ["Adon", "Adondé que esses Cogs tão saindo?"],
        30: ["Bacon", "Bacon uma torta ia bem."],
-       28: ["Isaías", "Isaías mas voltou-se."],
+       28: ["Isaías", "Isaías mas voltou no bondinho."],
        12: ["Julieta", "Julieta me chamando praquele prédio Cog com você pra eu te Toonar."]}}
 KnockKnockJokes = [["Quem", "Aqui tem eco, não?"],
  ["Kika", "Kikalor!"],
@@ -3406,147 +3331,93 @@ SharedChatterGoodbyes = ["Tenho que ir agora, tchau!",
  "Eu vou me juntar a um grupo para deter alguns  "+Cogs+".",
  "Foi legal ver você hoje, %.",
  "Tenho muito a fazer hoje. É melhor começar logo."]
-MickeyChatter = (
-    [ # Greetings specific to Mickey
-     "Bem-vindo ao "+lToontownCentral+".",
-     "Oi, meu nome é " + Mickey + ". Qual é o seu?",
-        ],
-    [ # Comments
-     "Ei, você viu o "+ Donald +"?",
-     "Vou ver o nevoeiro passar no "+lDonaldsDock+".",
-     "Se você vir o meu camarada "+Goofy+", dê um oi para ele por mim.",
-     "Ouvi falar que a "+Daisy+" plantou novas flores no jardim."
-        ],
-   [ # Goodbyes
-     "\Vou para a Melodilândia ver a "+Minnie+"!",
-     "Caramba, estou atrasado para meu encontro com a "+ Minnie +"!",
-     "Parece que é hora de "+ Pluto +" jantar.",
-     "Acho que vou nadar no "+lDonaldsDock+".",
-     "É hora de tirar um cochilo. Vou para a Sonholândia.",
-        ]
-    )
-
-WinterMickeyCChatter = (
-    [ # Greetings specific to Mickey
-     "Olá, eu sou o Mickey Natalino!",
-     "Bem-vindo ao Tinseltown... Quero dizer, Toontown!",
-     "Feliz Feriado de Inverno!",
-     "Feliz Feriado de Inverno, %",
-        ],
-    [ # Comments
-     "Cante sua alegria sazonal nas Campainhas Alegre para o mundo e a alegria certamente retribuirá o favor!",
-     "Caramba, esses corredores com certeza estão enfeitados!",
-     "Cante sua alegria sazonal nas Campainhas Alegre para o mundo e a alegria certamente retribuirá o favor!",
-     "Basta olhar para aquelas luzes das árvores! Que Visão!",
-     "Cante sua alegria sazonal nas Campainhas Alegre para o mundo e a alegria certamente retribuirá o favor!",
-     "Nenhuma criatura está se mexendo, exceto este rato aqui!",
-     "Cante sua alegria sazonal nas Campainhas Alegre para o mundo e a alegria certamente retribuirá o favor!",
-     "Adoro esta época do ano!",
-     "Cante sua alegria sazonal nas Campainhas Alegre para o mundo e a alegria certamente retribuirá o favor!",
-     "Estou me sentindo alegria, e você?",
-     "Cante sua alegria sazonal nas Campainhas Alegre para o mundo e a alegria certamente retribuirá o favor!",
-     "Conhece todas as canções natalinas?",
-     "Cante sua alegria sazonal nas Campainhas Alegre para o mundo e a alegria certamente retribuirá o favor!",
-     "Oh puxa vida! Eu amo Feriado de Inverno!",
-     "Cante sua alegria sazonal nas Campainhas Alegre para o mundo e a alegria certamente retribuirá o favor!",
-     "Acho que troco minhas luvas por luvas de Inverno",
-        ],
-    [ # Goodbyes
-     "Tenha um Feliz Feriado de Inverno!",
-     "Desejos calorosos para você!",
-     "Caramba, desculpe, você tem que ir. Até mais!",
-     "Vou cantar com a Minnie!",
-        ]
-    )
-
-ValentinesMickeyChatter = (
-  [
- "Olá, eu sou o Mickey!",
- "Bem-vindo ao Centro de Toontown dos namorados!",
- "Feliz Toon dos namorados!",
- "Feliz Toon dos namorados, %",
-    ],
-  [
- "O Amor estar no ar! E borboletas!",
- "Esses corações são bons para aumentar a Risada!",
- "Espero que a Minnie goste do que eu dei a ela!",
- "O Catálogo tem muitos presentes do Toon dos namorados!",
- "Lança uma festa de Toon dos namorados!",
- "Mostre aos Cogs, com uma torta na cara, que você os ama!",
- "Vou levar a Minnie para o Café Maluco!",
- "A Minnie vai querer chocolates ou flores?",
-    ],
-  [
- "Adorei sua visita!",
- "Diga a Minnie que eu vou buscá-la em breve!",
-    ]
-    )
-
-WinterMickeyDChatter = (
-    [ # Greetings specific to Mickey
-     "Olá, eu sou o Mickey Natalino!",
-     "Bem-vindo ao Cidade do Ouropel... Quero dizer, Toontown!",
-        'Feliz Feriado de Inverno!',
-        'Feliz Feriado de Inverno, %',
-        ],
-    [ # Comments
-        'Caramba, esses corredores com certeza estão enfeitados!',
-        'Basta olhar para aquelas luzes das árvores! Que Visão!',
-        'Nenhuma criatura está se mexendo, exceto este rato aqui!',
-        'Eu amo essa época do ano!',
-        'Estou me sentindo alegria, e você?',
-        'Conhece todas as canções natalinas?',
-        'Oh puxa vida! Eu amo Feriado de Inverno!',
-        'Acho que está na hora de colocar luvas mais quentinhas!',
-        ],
-    [ # Goodbyes
-        'Tenha um Feliz Feriado de Inverno!',
-        'Desejos calorosos para você!',
-        'Caramba, desculpe, você tem que ir. Até mais!',
-        'Vou cantar com a Minnie!',
-        ]
-    )
-
-VampireMickeyChatter = (
-    [ # Greetings specific to Vampire Mickey
-     "Bem-vindo ao "+lToontownCentral+".",
-     "Oi, meu nome é "+Mickey+". Qual é o seu?",
-     "Feliz Halloween!",
-     "Feliz Halloween, %!",
-     "Bem-vindo ao Centro da Cidade Assombrada... quero dizer ao "+lToontownCentral+"!",
-        ],
-    [ # Comments
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!",
-     "É divertido se vestir para o Halloween!",
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
-     "Gostou da minha fantasia?",
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
-     "%, cuidado com os  Cogs Sanguessugas!",
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
-     "As decorações de Halloween não são fantásticas?",
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
-     "Cuidado com os gatos pretos",
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
-     "Você viu o Toon com a cabeça de abóbora?",
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
-     "Buu!  Assustei você?",
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
-     "Não se esqueça de escovar suas presas",
-     "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
-     "Não tenha medo, sou um vampiro amigável",
-     "Gostou da minha capa?",
-     "Assustei você?  Foi a melhor brincadeira da minha vida!",
-     "Espero que esteja curtindo nossa festa de Halloween!",
-     "Assombroso, está escuro como a noite!", 
-        ],
-    [ # Goodbyes
-     "Vou olhar as decorações curiosas de Halloween.",
-     "Vou a Melodilândia fazer uma surpresa à "+Minnie+"!",
-     "Vou assustar outro Toon!  Shhh!",
-     "Vou brincar de doces ou travessuras!",
-     "Shhh, vem comigo.",
-        ]
-    )
+MickeyChatter = (["Bem-vindo ao "+lToontownCentral+".", "Oi, meu nome é " + Mickey + ". Qual é o seu?"], ["Ei, você viu o "+ Donald +"?",
+  "Vou ver o nevoeiro passar no "+lDonaldsDock+".",
+  "Se você vir o meu camarada "+Goofy+", dê um oi para ele por mim.",
+  "Ouvi falar que a "+Daisy+" plantou novas flores no jardim."], ["Eu vou para a Melodilândia ver a "+Minnie+"!",
+  "Caramba, estou atrasado para meu encontro com a "+ Minnie +"!",
+  "Parece que é hora de "+ Pluto +" jantar.",
+  "Acho que vou nadar no "+lDonaldsDock+".",
+  "É hora de tirar um cochilo. Vou para a Sonholândia."])
+WinterMickeyCChatter = (["Olá, eu sou o Mickey Natalino!",
+  "Bem-vindo ao Tinseltown... Quero dizer, Toontown!",
+  "Feliz Feriado de Inverno!",
+  "Feliz Feriado de Inverno, %"], ["Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Felícia certamente retribuirá o favor!",
+  "Caramba, esses corredores com certeza estão enfeitados!",
+  "Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Felícia certamente retribuirá o favor!",
+  "Basta olhar para aquelas luzes das árvores! Que Visão!",
+  "Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Felícia certamente retribuirá o favor!",
+  "Nenhuma criatura está se mexendo, exceto este rato aqui!",
+  "Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Felícia certamente retribuirá o favor!",
+  "Adoro esta época do ano!",
+  "Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Felícia certamente retribuirá o favor!",
+  "Estou me sentindo alegria, e você?",
+  "Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Felícia certamente retribuirá o favor!",
+  "Conhece todas as canções natalinas?",
+  "Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Felícia certamente retribuirá o favor!",
+  "Oh puxa vida! Eu amo Feriado de Inverno!",
+  "Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Felícia certamente retribuirá o favor!",
+  "Acho que troco minhas luvas por luvas de Inverno"], ["Tenha um Feliz Feriado de Inverno!",
+  "Desejos calorosos para você!",
+  "Caramba, desculpe, você tem que ir. Até mais!",
+  "Vou cantar com a Minnie!"])
+ValentinesMickeyChatter = (["Olá, eu sou o Mickey!",
+  "Bem-vindo ao Centro de Toontown dos namorados!",
+  "Feliz Toon dos namorados!",
+  "Feliz Toon dos namorados, %"], ["O Amor estar no ar! E borboletas!",
+  "Esses corações são bons para aumentar a Risada!",
+  "Espero que a Minnie goste do que eu dei a ela!",
+  "O Catálogo tem muitos presentes do Toon dos namorados!",
+  "Lança uma festa de Toon dos namorados!",
+  "Mostre aos Cogs, com uma torta na cara, que você os ama!",
+  "Vou levar a Minnie para o Café Maluco!",
+  "A Minnie vai querer chocolates ou flores?"], ["Adorei sua visita!",
+  "Diga a Minnie que eu vou buscá-la em breve!"])
+WinterMickeyDChatter = (["Olá, eu sou o Mickey Natalino!",  
+  "Bem-vindo ao Cidade do Ouropel... Quero dizer, Toontown!",
+  'Feliz Feriado de Inverno!',
+  'Feliz Feriado de Inverno, %'], ['Caramba, esses corredores com certeza estão enfeitados!',
+  'Basta olhar para aquelas luzes das árvores! Que Visão!',
+  'Nenhuma criatura está se mexendo, exceto este rato aqui!',
+  'Eu amo essa época do ano!',
+  'Estou me sentindo alegria, e você?',
+  'Conhece todas as canções natalinas?',
+  'Oh puxa vida! Eu amo Feriado de Inverno!',
+  'Acho que está na hora de colocar luvas mais quentinhas!'],
+  ['Tenha um Feliz Feriado de Inverno!',
+   'Desejos calorosos para você!',
+   'Caramba, desculpe, você tem que ir. Até mais!',
+   'Vou cantar com a Minnie!'])
+VampireMickeyChatter = (["Bem-vindo ao "+lToontownCentral+".",
+  "Oi, meu nome é "+Mickey+". Qual é o seu?",
+  "Feliz Halloween!",
+  "Feliz Halloween, %!",
+  "Bem-vindo ao Centro da Cidade Assombrada... quero dizer ao "+lToontownCentral+"!"], ["Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!",
+  "É divertido se vestir para o Halloween!",
+  "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
+  "Gostou da minha fantasia?",
+  "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
+  "%, cuidado com os  Cogs Sanguessugas!",
+  "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
+  "As decorações de Halloween não são fantásticas?",
+  "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
+  "Cuidado com os gatos pretos",
+  "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
+  "Você viu o Toon com a cabeça de abóbora?",
+  "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
+  "Buu!  Assustei você?",
+  "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
+  "Não se esqueça de escovar suas presas",
+  "Se você pensa jogar travessura está na Loja de Diversões e Jogos, vá ver Ralf Desocupado para uma travessura!"
+  "Não tenha medo, sou um vampiro amigável",
+  "Gostou da minha capa?",
+  "Assustei você?  Foi a melhor brincadeira da minha vida!",
+  "Espero que esteja curtindo nossa festa de Halloween!",
+  "Assombroso, está escuro como a noite!"], ["Vou olhar as decorações curiosas de Halloween.",
+  "Vou a Melodilândia fazer uma surpresa à "+Minnie+"!",
+  "Vou assustar outro Toon!  Shhh!",
+  "Vou brincar de doces ou travessuras!",
+  "Shhh, vem comigo."])
 FieldOfficeMickeyChatter = [
  "Você já ouviu falar do Escritórios de Campo do Agitador?"
     ]
@@ -3592,35 +3463,31 @@ WinterMinnieCChatter = (
       "Feliz feriado de inverno, %!",
          ],
 [ # Comments
-"Você obterá mais do que uma Barbearia Musical se você cantar para Barbara Seville!",
+"Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
 "Cante uma melodia, Toon!",
-"Você obterá mais do que uma Barbearia Musical se você cantar para Barbara Seville!",
+"Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
 "Mostre-nos como cantar, Toon!",
-"Você obterá mais do que uma Barbearia Musical se você cantar para Barbara Seville!",
+"Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
 "Você consegue cantar uma melodia aqui na Melodyland?",
-"Você obterá mais do que uma Barbearia Musical se cantar para Barbara Seville!",
+"Você obterá mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
 "Essas lâmpadas parecem quentes em seus cachecóis!",
-"Você obterá mais do que uma Barbearia Musical se cantar para Barbara Seville!",
+"Você obterá mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
 "O canto é a coisa!",
-"Você vai ganhar mais do que uma Barbearia Musical se cantar para Barbara Seville!",
+"Você vai ganhar mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
 "Eu sempre vou gostar de você, para melhor ou para verso!",
-"Você vai ganhar mais do que uma Barbearia Musical se cantar para Barbara Seville!",
+"Você vai ganhar mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
 "Tudo fica melhor com uma coroa de flores!",
 ],
 [ # Adeus
 "Tenham um feriado de inverno divertido!",
 "Boas trilhas!",
-"Mickey vai me levar para cantar!",
-]
-)
+"Mickey vai me levar para cantar!"])
 
-WinterMinnieDChatter = (
-[ # Saudações
+WinterMinnieDChatter = ([
 "Oi, eu sou a Merry Minnie!",
 "Bem-vindo à terra dos cânticos!",
 "Feliz feriado de inverno!",
-"Feliz feriado de inverno, %!",
-],
+"Feliz feriado de inverno, %!"],
 [ # Comentários
 "Cante uma melodia, Toon!",
 "Mostre-nos como cantar, Toon!",
