@@ -3418,10 +3418,7 @@ VampireMickeyChatter = (["Bem-vindo ao "+lToontownCentral+".",
   "Vou assustar outro Toon!  Shhh!",
   "Vou brincar de doces ou travessuras!",
   "Shhh, vem comigo."])
-FieldOfficeMickeyChatter = [
- "Você já ouviu falar do Escritórios de Campo do Agitador?"
-    ]
-
+FieldOfficeMickeyChatter = ["Você já ouviu falar do Escritórios de Campo do Agitador?"]
 MinnieChatter = (
     [ # Greetings
      "Bem-vindo à Melodilândia.",
