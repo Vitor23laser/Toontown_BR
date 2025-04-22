@@ -1,8 +1,15 @@
 import string
 import time
 from toontown.toonbase.TTLocalizer_portuguese_Property import *
+from otp.otpbase import OTPLocalizer as OL
+OL.SpeedChatStaticText = OL.SpeedChatStaticTextToontown.copy()
+for key in OL.SpeedChatStaticTextCommon.iterkeys():
+    OL.SpeedChatStaticText[key] = OL.SpeedChatStaticTextCommon[key]
 
 ExtraKeySanityCheck = "Ignore-me"
+commitmanString = "bugfix! I changed this"
+commitmanSting2 = "another string!"
+commitmantst = "kptmptest - removable"
 InterfaceFont = 'phase_3/models/fonts/ImpressBT.ttf'
 ToonFont = 'phase_3/models/fonts/ImpressBT.ttf'
 SuitFont = 'phase_3/models/fonts/vtRemingtonPortable.ttf'
@@ -41,6 +48,8 @@ NametagLabel = "Nome"
 UnpaidNameTag = "Basico"
 GM_1 = 'CONSELHO TOON' 
 GM_2 = 'TROPA TOONS'
+GM_3 = 'TOON DA RESISTÊNCIA'
+GM_4 = 'GC'
 BuildingNametagFont = 'phase_3/models/fonts/MickeyFont'
 BuildingNametagShadow = None
 ProductPrefix = 'TT'
@@ -635,9 +644,9 @@ QuestDialogDict = {160: {GREETING: "",
        LEAVING: QuestsDefaultLeaving},
  1039: {QUEST: "Visite _toNpcName_ se desejar transitar pela cidade com mais facilidade._where_"},
  1040: {QUEST: "Visite _toNpcName_ se desejar transitar pela cidade com mais facilidade._where_"},
- 1041: {QUEST: "Oi! O que o traz aqui?\aTodo mundo usa o buraco portátil para andar por Toontown.\aÉ, você pode se teletransportar até seus amigos, usando a Lista de amigos, ou até qualquer bairro, usando o mapa no Álbum Toon.\aÉ claro que você precisa consegui-lo!\aOlha, eu posso ativar seu acesso por teletransporte até o Centro de Toontown se você ajudar um amigo meu.\aParece que os Cogs estão dando problema na Travessa dos Tontos. Visite _toNpcName_._where_"},
- 1042: {QUEST: "Oi! O que o traz aqui?\aTodo mundo usa o buraco portátil para andar por Toontown.\aÉ, você pode se teletransportar até seus amigos, usando a Lista de amigos, ou até qualquer bairro, usando o mapa no Álbum Toon.\aÉ claro que você precisa consegui-lo!\aOlha, eu posso ativar seu acesso por teletransporte até o Centro de Toontown se você ajudar um amigo meu.\aParece que os Cogs estão dando problema na Travessa dos Tontos. Visite _toNpcName_._where_"},
- 1043: {QUEST: "Oi! O que o traz aqui?\aTodo mundo usa o buraco portátil para andar por Toontown.\aÉ, você pode se teletransportar até seus amigos, usando a Lista de amigos, ou até qualquer bairro, usando o mapa no Álbum Toon.\aÉ claro que você precisa consegui-lo!\aOlha, eu posso ativar seu acesso por teletransporte até o Centro de Toontown se você ajudar um amigo meu.\aParece que os Cogs estão dando problema na Travessa dos Tontos. Visite _toNpcName_._where_"},
+ 1041: {QUEST: "Oi! O que o traz aqui?\aTodo mundo usa o buraco portátil para andar por Toontown.\aÉ, você pode se teletransportar até seus amigos, usando a Lista de amigos, ou até qualquer bairro, usando o mapa no Álbum Toon.\aÉ claro que você precisa consegui-lo!\aOlha, eu posso ativar seu acesso por teletransporte até o "+lToontownCentral+" se você ajudar um amigo meu.\aParece que os Cogs estão dando problema na Travessa dos Tontos. Visite _toNpcName_._where_"},
+ 1042: {QUEST: "Oi! O que o traz aqui?\aTodo mundo usa o buraco portátil para andar por Toontown.\aÉ, você pode se teletransportar até seus amigos, usando a Lista de amigos, ou até qualquer bairro, usando o mapa no Álbum Toon.\aÉ claro que você precisa consegui-lo!\aOlha, eu posso ativar seu acesso por teletransporte até o "+lToontownCentral+" se você ajudar um amigo meu.\aParece que os Cogs estão dando problema na Travessa dos Tontos. Visite _toNpcName_._where_"},
+ 1043: {QUEST: "Oi! O que o traz aqui?\aTodo mundo usa o buraco portátil para andar por Toontown.\aÉ, você pode se teletransportar até seus amigos, usando a Lista de amigos, ou até qualquer bairro, usando o mapa no Álbum Toon.\aÉ claro que você precisa consegui-lo!\aOlha, eu posso ativar seu acesso por teletransporte até o "+lToontownCentral+" se você ajudar um amigo meu.\aParece que os Cogs estão dando problema na Travessa dos Tontos. Visite _toNpcName_._where_"},
  1044: {QUEST: "Puxa, obrigado por passar por aqui. Eu realmente preciso de ajuda.\aComo você pode ver, eu não tenho clientes.\aO meu livro de receitas secreto está perdido e ninguém mais vem ao meu restaurante.\aA última vez que eu o vi foi pouco antes de os Cogs tomarem meu edifício.\aVocê pode me ajudar recuperando quatro de minhas receitas favoritas?",
         LEAVING: "",
         INCOMPLETE_PROGRESS: "Conseguiu recuperar minhas receitas?"},
@@ -1404,8 +1413,8 @@ QuestDialogDict = {160: {GREETING: "",
  6251: {QUEST: "Pobre Zéfiro, o zíper dela quebrou e, agora, ela não consegue fazer as entregas de seus clientes. Ela certamente precisa de sua ajuda._where_"},
  6252: {GREETING: "",
         LEAVING: "",
-        QUEST: "Oi _avName_. Você está aqui para ajudar com minhas entregas?\aIsso é ótimo! Com esse zíper quebrado é muito difícil fazer as entregas sozinha.\aDeixe-me ver... Ok, vai ser fácil. O Vaqueiro George pediu uma cítara semana passada.\aVocê poderia levá-la para ele? _where_",
-        INCOMPLETE_PROGRESS: "Oi! Esqueceu alguma coisa? O Vaqueiro George está esperando pela cítara."},
+        QUEST: "Oi _avName_. Você está aqui para ajudar com minhas entregas?\aIsso é ótimo! Com esse zíper quebrado é muito difícil fazer as entregas sozinha.\aDeixe-me ver... Ok, vai ser fácil. O caubói George pediu uma cítara semana passada.\aVocê poderia levá-la para ele? _where_",
+        INCOMPLETE_PROGRESS: "Oi! Esqueceu alguma coisa? O caubói George está esperando pela cítara."},
  6253: {GREETING: "",
         LEAVING: "",
         QUEST: "Minha cítara! Finalmente! Caramba, mal posso esperar para tocá-la.\aPoderia agradecer à Zéfiro por mim?",
@@ -1592,12 +1601,12 @@ QuestDialogDict = {160: {GREETING: "",
         LEAVING: "",
         QUEST: "Que pena. Estes são os únicos pijamas com pés que eu tenho.\aAh, tive uma ideia. Vá perguntar à outra Cuca. Ela talvez tenha algum pijama com pés._where_",
         INCOMPLETE_PROGRESS: "Não, aqueles são os únicos que eu tenho. Vá até a outra Cuca para ver o que ela tem._where_",
-        COMPLETE: "",
+        COMPLETE: ""},
  7233: {GREETING: "",
         LEAVING: "",
         QUEST: "Pijama com pés? Sem dúvida.\aComo assim, este é azul? Ela não quer azul?\aNossa, vai ser um pouco difícil. Veja, que tal este?\aEle não é azul e TEM pés.",
         INCOMPLETE_PROGRESS: "Eu adoro marrom, você não?\aEspero que a Cuca P. Gol goste....",
-        COMPLETE: "",
+        COMPLETE: ""},
  7234: {GREETING: "",
         LEAVING: "",
         QUEST: "Não, este não é azul, mas ninguém com o meu tom de pele poderia usar marrom.\aNão e não. Ele vai fazer o caminho de volta, e você irá com ele! Veja o que mais a Cuca tem.",
@@ -1607,7 +1616,7 @@ QuestDialogDict = {160: {GREETING: "",
         LEAVING: "",
         QUEST: "Não pode ser marrom também. Hmm....\aEu sei que tenho outros.\aVai demorar um pouquinho para encontrá-los. Vamos fazer um trato.\aEu procuro outro pijama se você derrotar alguns desses edifícios de Cog. Eles perturbam demais.\aTerei o pijama quando você voltar, _avName_.",
         INCOMPLETE_PROGRESS: "Você precisa eliminar mais alguns edifícios de Cog enquanto eu procuro outro pijama.",
-        COMPLETE: ""}
+        COMPLETE: ""},
  7236: {GREETING: "",
         LEAVING: "",
         QUEST: "Você fez um excelente trabalho com esses Cogs! Valeu!\aAchei este pijama para a Cuca P. Gol; espero que ela goste.\aLeve-o para ela. Obrigada.",
@@ -1979,61 +1988,41 @@ PetPanelDetail = "Detalhes do bichinho"
 PetPanelScratch = "Coçar"
 PetDetailPanelTitle = "Adestramento"
 PetTrickStrings = {0: 'Pular',
-    1: 'Dar a pata',
-    2: 'Fingir de morto',
-    3: 'Rolar',
-    4: 'Dar cambalhota',
-    5: 'Dançar',
-    6: 'Falar'}
+ 1: 'Dar a pata',
+ 2: 'Fingir de morto',
+ 3: 'Rolar',
+ 4: 'Dar cambalhota',
+ 5: 'Dançar',
+ 6: 'Falar'}
 PetMoodAdjectives = {'neutral': 'neutro',
-    'hunger': 'faminto',
-    'boredom': 'chateado',
-    'excitement': 'animado',
-    'sadness': 'triste',
-    'restlessness': 'inquieto',
-    'playfulness': 'brincalhão',
-    'loneliness': 'solitário',
-    'fatigue': 'cansado',
-    'confusion': 'confuso',
-    'anger': 'zangado',
-    'surprise': 'surpreso',
-    'affection': 'carinhoso'}
+ 'hunger': 'faminto',
+ 'boredom': 'chateado',
+ 'excitement': 'animado',
+ 'sadness': 'triste',
+ 'restlessness': 'inquieto',
+ 'playfulness': 'brincalhão',
+ 'loneliness': 'solitário',
+ 'fatigue': 'cansado',
+ 'confusion': 'confuso',
+ 'anger': 'zangado',
+ 'surprise': 'surpreso',
+ 'affection': 'carinhoso'}
 SpokenMoods = {'neutral': 'neutro',
-    'hunger':['Eu\estou cansado de Balinhas! Que tal me dar uma fatia de torta?',
-	      "Que tal uma Balinha vermelha? Estou cansado das verdes!",
-              "Ah, essas Balinhas eram para plantar?!! Mas eu estou com fome!"],
-    'boredom': ["Estou morrendo de tédio aqui!",
-                'Você não\ achou que eu entenderia, hein?', 
-                'Poderíamos, tipo, FAZER algo já?'],
-   'excitement': ["Uau, é você, é você, é você!",
-                  "mmm, balinhas, mmm",
-                  'Tem algo melhor que isso?',
-                  "Feliz da Semana dos Toons de Abril!"],
-    'sadness': ["Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá...",
-                "Eu serei bom, eu prometo!",
-                "Eu não sei POR QUE que eu estou triste, eu apenas estou!!!"],
-    'restlessness': ['Eu\estou tãooo inquieto'],
-    'playfulness': ["Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar...",
-    'Brinque comigo ou eu\vou desenterrar algumas flores!',
-    'Vamos correr em volta e em volta e em volta e em volta e em volta e em volta...'],
-    'loneliness': ['Onde você esteve?',
-                   'Quer abraçar?',
-                   'Quero lutar com os Cogs com você!'],
-    'fatigue': ['Aquele mergulho na lagoa realmente me cansou!',
-                'Ser um Rabisco é exaustivo',
-                'Eu tenho que ir para a Sonholândia!'],
-    'confusion':  ['Onde estou? Quem é mesmo você?',
-                   "O que é um Toon-ar mesmo?",
-                   "Uau, estou entre você e os Cogs! Fuja!"],
-    'anger': ['... e você se pergunta por que eu nunca te dou um Toon-ar?!!!',
-              'Você sempre me deixa para trás',
-              'Você ama suas piadas mais do que a mim'],
-              'surprise': ['Claro que os Rabiscos podem falar!',
-              'Toons podem falar?!!',
-              'Opa, de onde você surgiu?'],
-    'affection': ['Você é o melhor Toon de SEMPRE!!!!!!!!!!',
-                  'Você ao menos SABE o quão incrível você é?!?',
-                  'Tenho TANTA sorte de estar com você!!!']}
+ 'hunger':['Eu\estou cansado de Balinhas! Que tal me dar uma fatia de torta?', "Que tal uma Balinha vermelha? Estou cansado das verdes!", "Ah, essas Balinhas eram para plantar?!! Mas eu estou com fome!"],
+ 'boredom': ["Estou morrendo de tédio aqui!", 'Você não achou que eu entenderia, hein?', 'Poderíamos, tipo, FAZER algo já?'],
+ 'excitement': ["Uau, é você, é você, é você!",
+                "mmm, balinhas, mmm",
+                'Tem algo melhor que isso?',
+                "Feliz da Semana dos Toons de Abril!"],
+ 'sadness': ["Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá, Não vá...", "Eu serei bom, eu prometo!", "Eu não sei POR QUE que eu estou triste, eu apenas estou!!!"],
+ 'restlessness': ['Eu estou tãooo inquieto'],
+ 'playfulness': ["Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar, Vamos brincar...", 'Brinque comigo ou eu vou desenterrar algumas flores!', 'Vamos correr em volta e em volta e em volta e em volta e em volta e em volta...'],
+ 'loneliness': ['Onde você esteve?', 'Quer abraçar?', 'Quero lutar com os Cogs com você!'],
+ 'fatigue': ['Aquele mergulho na lagoa realmente me cansou!', 'Ser um Rabisco é exaustivo', 'Eu tenho que ir para a Sonholândia!'],
+ 'confusion': ['Onde estou? Quem é mesmo você?', "O que é um Toon-ar mesmo?", "Uau, estou entre você e os Cogs! Fuja!"],
+ 'anger': ['... e você se pergunta por que eu nunca te dou um Toon-ar?!!!', 'Você sempre me deixa para trás', 'Você ama suas piadas mais do que a mim'],
+ 'surprise': ['Claro que os Rabiscos podem falar!', 'Toons podem falar?!!', 'Opa, de onde você surgiu?'],
+ 'affection': ['Você é o melhor Toon de SEMPRE!!!!!!!!!!', 'Você ao menos SABE o quão incrível você é?!?', 'Tenho TANTA sorte de estar com você!!!']}
 DialogQuestion = '?'
 FriendsListLabel = "Amigos"
 TeleportPanelOK = lOK
@@ -2278,7 +2267,7 @@ RewardPanelMeritsMaxed = "Maximizados"
 RewardPanelMeritBarLabels = ["Bilhetes azuis",
 "Intimações",
 "Granas Cog",
-"Méritos" ]
+"Méritos"]
 RewardPanelMeritAlert = "Pronto para a promoção!"
 RewardPanelCogPart = "Você ganhou uma parte de disfarce de Cog!"
 RewardPanelPromotion = "%s prepare-se para a promoção!"
@@ -2518,16 +2507,16 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
               "Cuidado, você está prestes a ser picado.",
               "Parece que a sua urticária é séria."],
  'Calculate': ["Estes números fazem mesmo uma diferença!",
-              "Você contou com isso?",
-              "Faça as contas, você está caindo.",
-              "Deixe-me ajudar você a somar isso.",
-              "Você registrou todas as suas despesas?",
-              "De acordo com os meus cálculos, você não ficará por muito tempo aqui.",
-              "Aqui está o total.",
-              "Uau, a sua conta está se multiplicando.",
-              "Tente brincar com esses números!",
-              Cogs + ": 1 Toons: 0"],
-    'Canned': ["Gosta fora da lata?",
+               "Você contou com isso?",
+               "Faça as contas, você está caindo.",
+               "Deixe-me ajudar você a somar isso.",
+               "Você registrou todas as suas despesas?",
+               "De acordo com os meus cálculos, você não ficará por muito tempo aqui.",
+               "Aqui está o total.",
+               "Uau, a sua conta está se multiplicando.",
+               "Tente brincar com esses números!",
+               Cogs + ": 1 Toons: 0"],
+ 'Canned': ["Gosta fora da lata?",
             "\"Lata\" limpo?",
             "Fresquinho, saído da lata!",
             "Já foi atacado alguma vez por enlatados?",
@@ -2536,17 +2525,15 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
             "Você acha que pode abrir a lata, na lata.",
             "Vou te jogar na lata!",
             "Vou transformar você em um a-Toon em lata!",
-            "Seu gosto não é tão bom fora da lata.",
-               ],
-    'Chomp': ["Olha só esses comilões!",
+            "Seu gosto não é tão bom fora da lata."],
+ 'Chomp': ["Olha só esses comilões!",
            "Nhac, nhac, nhac!",
            "Aqui tem algo para mastigar.",
            "Procurando alguma coisa para mastigar?",
            "Por que você não mastiga um pouco disto?",
            "Eu vou jantar você.",
-           "Adoro comer Toons no café da manhã!",
-              ],
-    'ClipOnTie': ["Melhor se arrumar para a reunião.",
+           "Adoro comer Toons no café da manhã!"],
+ 'ClipOnTie': ["Melhor se arrumar para a reunião.",
                "Você não pode SAIR sem a gravata.",
                "Os  "+ Cogs +" mais bem vestidos usam isto."
                "Experimente este tamanho.",
@@ -2557,9 +2544,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                "Vamos ver se serve.",
                "Esta vai apertar você.",
                "Você vai querer se vestir antes de SAIR.",
-               "Acho que vou dar uma gravata em você.",
-                  ],
-    'Crunch': ["Parece que você está espremido contra a parede.",
+               "Acho que vou dar uma gravata em você."],
+ 'Crunch': ["Parece que você está espremido contra a parede.",
             "Hora de mexer a mandíbula!",
             "Vou dar alguma coisa para você mascar!",
             "Triture isso!",
@@ -2567,9 +2553,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
             "Qual você prefere, molinho ou crocante?",
             "Espero que esteja preparado para a hora da mandíbula.",
             "Parece que você está ficando amassadinho!",
-            "Vou amassar você como uma latinha."
-               ],
-    'Demotion': ["Você está descendo os degraus da empresa.",
+            "Vou amassar você como uma latinha."],
+ 'Demotion': ["Você está descendo os degraus da empresa.",
               "Vou mandar você de volta para a Expedição.",
               "Está na hora de virar a sua placa de identificação.",
               "Você está caidaço, palhaço.",
@@ -2578,9 +2563,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
               "Você está em um beco sem saída.",
               "Você não vai se mover tão cedo.",
               "Você não vai a lugar nenhum.",
-              "Vai ficar registrado em seu arquivo permanente.",
-                 ],
-    'Downsize': ["Desce!",
+              "Vai ficar registrado em seu arquivo permanente."],
+ 'Downsize': ["Desce!",
               "Sabe como descer?",
               "Vamos entrar direto no assunto.",
               "O que houve? Você parece deprimido.",
@@ -2591,10 +2575,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
               "Quer um tamanho menor por apenas mais uma moeda?",
               "Experimente este tamanho!",
               "Tem em um tamanho menor.",
-              "Este ataque é tamanho único!",
-                 ],
-    # Hmmm - where is double talker?
-    'EvictionNotice': ["Mudança à vista.",
+              "Este ataque é tamanho único!"],
+ 'EvictionNotice': ["Mudança à vista.",
                     "Arrume as malas, Toon.",
                     "É hora de arrumar outro lugar para morar.",
                     "Considere-se servido.",
@@ -2604,9 +2586,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                     "Vou espirrar você daqui.",
                     "Você está deslocado.",
                     "Prepare-se para ser realocado.",
-                    "Você está abrigado.",
-                       ],
-    'EvilEye': ["Estou botando um mau-olhado em você.",
+                    "Você está abrigado."],
+ 'EvilEye': ["Estou botando um mau-olhado em você.",
              "Você fica de olho vivo nisso para mim?",
              "Espere. Tem alguma coisa no meu olho.",
              "Estou de olho em você!",
@@ -2615,9 +2596,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
              "Você vai levar um soco no olho!",
              "Minha crueldade não está de molho, abre o olho!",
              "Vou colocar você no olho do furacão!",
-             "Estou dando com os olhos em você.",
-                ],
-    'Filibuster':["Devo encher?",
+             "Estou dando com os olhos em você."],
+ 'Filibuster':["Devo encher?",
                "Isso vai demorar um pouco.",
                "Poderia fazer isso o dia todo.",
                "Não preciso nem respirar fundo.",
@@ -2626,22 +2606,20 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                "Posso tagarelar sem parar.",
                "Tem problema se eu puxar a sua orelha?",
                "Acho que vou papear à vontade.",
-               "Sempre consigo dar o meu recado.",
-                  ],
-    'FingerWag': ["Já te disse milhares de vezes.",
+               "Sempre consigo dar o meu recado."],
+ 'FingerWag': ["Já te disse milhares de vezes.",
                "Olha aqui, Toon.",
                "Não me faça rir.",
                "Não me faça ir até aí.",
                "Já cansei de repetir.",
                "Fim de papo, eu já falei.",
-               "\Você não tem respeito por nós,  "+ Cogs +"."
+               "Você não tem respeito por nós,  "+ Cogs +"."
                "Acho que está na hora de você prestar atenção.",
                "Blá, Blá, Blá, Blá, Blá.",
                "Não me obrigue a interromper a reunião.",
                "Será que eu vou ter que separar vocês?",
-               "Já passamos por isto antes.",
-                  ],
-    'Fired': ["É fogo! O jeito é fazer um churrasquinho.",
+               "Já passamos por isto antes."],
+ 'Fired': ["É fogo! O jeito é fazer um churrasquinho.",
            "Vai esquentar por aqui.",
            "Assim, o frio passa.",
            "Espero que você tenha sangue frio.",
@@ -2658,9 +2636,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "Eu sou fogo na roupa.",
            "Só aticei o fogo um pouquinho, né?",
            "Olha, um churrasquinho crocante.",
-           "Você não devia sair por aí malpassado.",
-              ],
-    'FountainPen': ["Vai deixar mancha.",
+           "Você não devia sair por aí malpassado."],
+ 'FountainPen': ["Vai deixar mancha.",
                  "Vamos assinar embaixo.",
                  "Esteja preparado para alguns danos irreparáveis.",
                  "Você vai precisar de um bom tintureiro.",
@@ -2670,9 +2647,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                  "Você entende a minha letra?",
                  "Isso é que é carregar nas tintas.",
                  "Seu desempenho babou.",
-                 "Não é chato quando isso acontece?",
-                    ],
-    'FreezeAssets': ["Seus bens são meus.",
+                 "Não é chato quando isso acontece?"],
+ 'FreezeAssets': ["Seus bens são meus.",
                   "Está sentindo um vento? É o cheque voador.",
                   "Espero que não tenha planos.",
                   "Isso vai manter você na geladeira.",
@@ -2683,9 +2659,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                   "Você vai ver, no duro.",
                   "O gelo queima.",
                   "Espero que goste de frios.",
-                  "Tenho muito sangue frio.",
-                     ],
-    'GlowerPower': ["Está olhando para mim?",
+                  "Tenho muito sangue frio."],
+ 'GlowerPower': ["Está olhando para mim?",
                  "Disseram que tenho olhos muito penetrantes.",
                  "Gosto de estar no fio da navalha.",
                  "Caçamba, caramba, meus quatro-olhos não são bambas?",
@@ -2695,9 +2670,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                  "Enche os olhos.",
                  "Estou de olho, piolho.",
                  "Olhe nos meus olhos...",
-                 "Podemos dar uma espiada no seu futuro?",
-                    ],
-    'GuiltTrip': ["Você vai ficar com um baita sentimento de culpa!",
+                 "Podemos dar uma espiada no seu futuro?"],
+ 'GuiltTrip': ["Você vai ficar com um baita sentimento de culpa!",
                "Está se sentindo culpado?",
                "É tudo culpa sua!",
                "Sempre ponho a culpa de tudo em você.",
@@ -2707,9 +2681,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                "Só vou perdoar você daqui a um milhão de anos!",
                "Está preparado para viajar na maionese da culpa?",
                "Ligue para mim quando voltar de viagem.",
-               "Quando você volta de viagem?",
-                  ],
-    'HalfWindsor': ["Esta é a gravata mais elegante que você já viu!",
+               "Quando você volta de viagem?"],
+ 'HalfWindsor': ["Esta é a gravata mais elegante que você já viu!",
                  "Procure não apertar tanto.",
                  "Você não viu nem metade do nó em que você se meteu.",
                  "Você tem sorte de eu não saber francês.",
@@ -2717,9 +2690,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                  "Aposto como você nunca VIU um nó francês!",
                  "Esta gravata não é para o seu bico.",
                  "Eu não deveria ter gasto esta gravata com você.",
-                 "Você não vale nem o nó desta gravata!",
-                  ],
-    'HangUp': ["Você foi desconectado.",
+                 "Você não vale nem o nó desta gravata!"],
+ 'HangUp': ["Você foi desconectado.",
             "Tchau!",
             "Está na hora de terminar a sua conexão.",
             "...e não ligue de novo!",
@@ -2729,10 +2701,9 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
             "Acho que você está meio desligado.",
             "Parece que você está com mau contato.",
             "Seu tempo acabou.",
-            "Espero que tenha ouvido em claro e bom som.",
-            "Foi engano.",
-               ],
-    'HeadShrink': ["Parece que você tem ido ao analista.",
+            "Espero que tenha ouvido em claro e bom som."
+            "Foi engano."],
+ 'HeadShrink': ["Parece que você tem ido ao analista.",
                 "Querida, encolhi o analista.",
                 "Espero que não precise analisar o seu amor-próprio.",
                 "Você se abriu?",
@@ -2741,9 +2712,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                 "Você vai abrir a cabeça?",
                 "Levanta essa cabeça! Ou será que é melhor abaixar?",
                 "Os objetos podem ser maiores do que parecem.",
-                "Os melhores Toons vêm nos menores frascos.",
-                   ],
-    'HotAir':["Estamos tendo uma discussão acalorada.",
+                "Os melhores Toons vêm nos menores frascos."],
+ 'HotAir':["Estamos tendo uma discussão acalorada.",
            "Está rolando uma onda de calor.",
            "Atingi o meu ponto de ebulição.",
            "Que vento cortante.",
@@ -2754,9 +2724,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "Acho que está na hora de botar lenha na fogueira.",
            "Deixe-me acender uma relação de trabalho.",
            "Tenho umas observações inflamadas pra você.",
-           "Ataque aéreo!!!",
-              ],
-    'Jargon':["Que besteira.",
+           "Ataque aéreo!!!"],
+ 'Jargon':["Que besteira.",
            "Veja se você consegue ver algum sentido nisso.",
            "Espero que tenha sido claro como água.",
            "Parece que vou ter que falar mais alto.",
@@ -2765,9 +2734,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "Devo sustentar a minha opinião neste assunto.",
            "Olha, as palavras podem machucar você.",
            "Entendeu o que eu quis dizer?",
-           "Palavras, palavras, palavras, palavras, palavras.",
-              ],
-    'Legalese':["Você deve se conformar e desistir.",
+           "Palavras, palavras, palavras, palavras, palavras."],
+ 'Legalese':["Você deve se conformar e desistir.",
              "Você vai ser derrotado, legalmente falando.",
              "Você está ciente das implicações legais?",
              "Você não está acima da lei!",
@@ -2778,9 +2746,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
              "Os resultados deste ataque podem variar.",
              "Este ataque não tem validade legal quando proibido.",
              "Você não se enquadra no meu sistema legal!",
-             "Você não sabe lidar com assuntos jurídicos.",
-                ],
-    'Liquidate':["Gosto de manter as coisas fluindo.",
+             "Você não sabe lidar com assuntos jurídicos."],
+ 'Liquidate':["Gosto de manter as coisas fluindo.",
               "Você está com algum problema de fluxo de caixa?",
               "Vou ter que lavar os seus bens.",
               "É hora de você ser levado pelo fluxo.",
@@ -2789,9 +2756,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
               "Você escorrega que nem sabão.",
               "Está caindo tudo em cima de você.",
               "Acho que você vai por ralo abaixo.",
-              "Você tomou uma lavada.",
-                 ],
-    'MarketCrash':["Vou acabar com a sua festa.",
+              "Você tomou uma lavada."],
+ 'MarketCrash':["Vou acabar com a sua festa.",
                 "Você não vai sobreviver à queda.",
                 "Sou mais do que o mercado pode aguentar.",
                 "Tenho uma queda por você!",
@@ -2801,9 +2767,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                 "É melhor você sair fora rapidamente!",
                 "Vender! Vender! Vender!",
                 "Devo liderar a recessão?",
-                "Todo mundo está saindo fora, você não vai?",
-                   ],
-    'MumboJumbo':["Deixe-me explicar melhor.",
+                "Todo mundo está saindo fora, você não vai?"],
+ 'MumboJumbo':["Deixe-me explicar melhor.",
                "É muito simples.",
                "Vamos fazer desta maneira.",
                "Deixe-me ampliar para você.",
@@ -2812,9 +2777,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                "Caramba, isso é que é encher a boca.",
                "Algumas pessoas me chamam de exagerado.",
                "Posso me meter?",
-               "Acho que estas são as palavras certas.",
-                   ],
-    'ParadigmShift':["Cuidado! Eu saio pela tangente.",
+               "Acho que estas são as palavras certas."],
+ 'ParadigmShift':["Cuidado! Eu saio pela tangente.",
                   "Prepare-se para mudar radicalmente!"
                   "Não é uma mudança interessante?"
                   "Você vai ter que desviar de caminho.",
@@ -2822,9 +2786,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                   "Acabou o desvio!",
                   "Você nunca trabalhou tanto neste desvio.",
                   "Estou transviando você!",
-                  "Olhe para o meu rabo de olho!",
-                     ],
-    'PeckingOrder':["Este aqui é para quem berra mais.",
+                  "Olhe para o meu rabo de olho!"],
+ 'PeckingOrder':["Este aqui é para quem berra mais.",
                  "Prepare-se para o grito de guerra.",
                  "Por falta de um grito, morre um burro no atoleiro.",
                  "Vou ganhar no grito.",
@@ -2832,9 +2795,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                  "Se gritos resolvessem, porcos não morreriam!",
                  "A ordem está valendo, no grito!",
                  "Por que não grito com alguém do meu tamanho? Ah!",
-                 "Cão que ladra não morde.",
-                    ],
-    'PickPocket': ["Deixe-me verificar os seus pertences.",
+                 "Cão que ladra não morde."],
+ 'PickPocket': ["Deixe-me verificar os seus pertences.",
                 "E aí, qual é o pó?",
                 "É mais fácil do que tirar doce de criança.",
                 "Golpe de mestre.",
@@ -2847,9 +2809,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                 "Você nem vai sentir.",
                 "Dois pra mim, um pra você.",
                 "Está bom assim.",
-                "Você não vai precisar mesmo...",
-                   ],
-    'PinkSlip': ["Tente imaginar que está tudo azul.",
+                "Você não vai precisar mesmo..."],
+ 'PinkSlip': ["Tente imaginar que está tudo azul.",
               "Tá com medo? Você está azul!",
               "Com certeza, este bilhete vai fazer você ficar azul.",
               "Êpa, acho que mudei de cor, né?",
@@ -2858,9 +2819,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
               "Estou azul de fome!",
               "Você se importa que eu passe aí para ver se está tudo azul?",
               "O azul não é exatamente a sua cor.",
-              "Toma seu bilhete azul e fora daqui!",
-                 ],
-    'PlayHardball': ["Então você quer jogar bola comigo?",
+              "Toma seu bilhete azul e fora daqui!"],
+ 'PlayHardball': ["Então você quer jogar bola comigo?",
                   "Você não quer jogar bola comigo.",
                   "Chuta forte!",
                   "Passa, cara, passa!",
@@ -2871,9 +2831,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                   "São 45 minutos do segundo tempo!",
                   "Você não consegue jogar comigo!",
                   "Vou atingir você.",
-                  "Vou dar um chute com efeito na bola!",
-                    ],
-    'PoundKey': ["É hora de retornar algumas ligações.",
+                  "Vou dar um chute com efeito na bola!"],
+ 'PoundKey': ["É hora de retornar algumas ligações.",
               "Gostaria de fazer uma ligação a cobrar.",
               "Trrriiimmm - é para você!",
               "Você quer brincar com o Jogo da Velha?",
@@ -2882,9 +2841,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
               "Vou dar um golpe neste número.",
               "Deixe-me ligar para fazer uma surpresinha.",
               "Vou ligar para você.",
-              "O.K. Toon, é o fim para você.",
-                 ],
-    'PowerTie': ["Eu ligo mais tarde, você parece enrolado na gravata.",
+              "O.K. Toon, é o fim para você."],
+ 'PowerTie': ["Eu ligo mais tarde, você parece enrolado na gravata.",
               "Você está pronto para uma gravata?",
               "Senhoras e senhores, esta é a gravata!",
               "É melhor aprender a dar este nó.",
@@ -2893,21 +2851,19 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
               "Está sentindo o aperto?",
               "Minha gravata é muito mais poderosa que a sua!",
               "Eu tenho o poder do nó!",
-              "Pelos poderes do nó, vou engravatar você.",
-                 ],
-    'PowerTrip': ["Faça as malas, vamos fazer uma pequena viagem.",
+              "Pelos poderes do nó, vou engravatar você."],
+ 'PowerTrip': ["Faça as malas, vamos fazer uma pequena viagem.",
                "Você fez uma boa viagem?",
                "Boa viagem, acho que nos veremos na próxima temporada.",
                "Como foi a viagem?",
-               "Desculpe ter \"viajado\" dessa maneira!",
+               'Desculpe ter "viajado" dessa maneira!',
                "Você parece viajandão.",
                "Agora, você sabe quem é a autoridade!",
                "Tenho muito mais autoridade do que você.",
                "Quem manda agora?",
                "Você não pode lutar contra o poder.",
-               "O poder corrompe, principalmente em minhas mãos!",
-                  ],
-    'Quake': ["Vamos balançar, agitar e rolar.",
+               "O poder corrompe, principalmente em minhas mãos!"],
+ 'Quake': ["Vamos balançar, agitar e rolar.",
            "Tem muita vibração por aqui!",
            "As suas canelas estão tremendo.",
            "Aí vem ele, este é grande!",
@@ -2915,9 +2871,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "Agora é que a terra vai tremer!",
            "E aí, quem é que está agitando? Você!",
            "Já esteve em um terremoto?",
-           "Agora, você está em território de tremores!",
-              ],
-    'RazzleDazzle': ["Leia os meus lábios.",
+           "Agora, você está em território de tremores!"],
+ 'RazzleDazzle': ["Leia os meus lábios.",
                   "Que acha da minha dentadura?",
                   "Não acha que tenho charme?",
                   "Vou impressionar você.",
@@ -2927,9 +2882,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                   "Chocante, né?",
                   "Vou dar um fim nisso.",
                   "Passo o fio dental após cada refeição.",
-                  "Sorria!",
-                     ],
-    'RedTape': ["Isto deve acalmar o bicho.",
+                  "Sorria!"],
+ 'RedTape': ["Isto deve acalmar o bicho.",
              "Vou te amarrar por um tempo.",
              "Você está acorrentado.",
              "Veja se consegue cortar caminho por aqui.",
@@ -2938,9 +2892,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
              "Vou me certificar de que você não vai escapulir.",
              "Vou ocupar você com alguma coisa.",
              "Tente desatar o nó.",
-             "Espero que você concorde com os tópicos da reunião.",
-                ],
-'ReOrg': ["Você não gostou da maneira como eu reorganizei as coisas!",
+             "Espero que você concorde com os tópicos da reunião."],
+ 'ReOrg': ["Você não gostou da maneira como eu reorganizei as coisas!",
            "Talvez um pouco de organização seja bom.",
            "Você não é tão ruim assim, só precisa se organizar.",
            "Você gosta do meu tino para organização?",
@@ -2949,21 +2902,19 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "Você parece um pouco desorganizado.",
            "Espera um pouco enquanto eu reorganizo os seus pensamentos.",
            "Só vou esperar até que você se organize um pouco mais.",
-           "Você se importa se eu só der uma reorganizadinha?",
-              ],
-    'RestrainingOrder': ["Você precisa levar broncas de vez em quando.",
+           "Você se importa se eu só der uma reorganizadinha?"],
+ 'RestrainingOrder': ["Você precisa levar broncas de vez em quando.",
                       "Estou te jogando na cara uma ordem repressora!",
                       "Você não pode chegar nem um metro e meio perto de mim.",
                       "Talvez seja melhor você manter distância.",
                       "Entre na linha.",
-                         Cogs + "! Reprimam este Toon!",
+                      Cogs + "! Reprimam este Toon!",
                       "Tente entrar na linha sozinho.",
                       "Espero que eu esteja sendo bem repressor com você.",
                       "Veja se você consegue acabar com essa repressão!",
                       "Estou ordenando que você se reprima!",
-                      "Por que não começamos com uma repressão básica?"
-                         ],
-    'Rolodex': ["O seu cartão está aqui, em algum lugar.",
+                      "Por que não começamos com uma repressão básica?"],
+ 'Rolodex': ["O seu cartão está aqui, em algum lugar.",
              "Aqui está o número do dedetizador.",
              "Quero dar o meu cartão a você.",
              "Tenho o seu número bem aqui.",
@@ -2973,9 +2924,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
              "Cuidado com a papelada solta.",
              "Vou apontar o dedo para a letra que desejo.",
              "É assim que eu consigo entrar em contato com você?",
-             "Quero ter certeza de que manteremos o contato.",
-                ],
-    'RubberStamp': ["Eu sempre causo uma boa impressão.",
+             "Quero ter certeza de que manteremos o contato."],
+ 'RubberStamp': ["Eu sempre causo uma boa impressão.",
                  "É importante aplicar uma pressão firme e bem distribuída.",
                  "Impressos perfeitos todas as vezes.",
                  "Quero carimbar você.",
@@ -2984,9 +2934,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
                  "Você possui uma entrega de PRIORIDADE.",
                  "Vou me certificar de que a minha mensagem foi RECEBIDA.",
                  "Você não vai a lugar nenhum - você tem uma TARIFA POSTAL A PAGAR.",
-                 "Preciso de uma resposta IMEDIATA.",
-                    ],
-    'RubOut': ["E agora, desapareceu!",
+                 "Preciso de uma resposta IMEDIATA."],
+ 'RubOut': ["E agora, desapareceu!",
             "Sinto que perdi você em algum lugar.",
             "Decidi deixar você de fora.",
             "Eu sempre apago todos os obstáculos.",
@@ -2997,9 +2946,8 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
             "Estou vendo você... Agora, não vejo você.",
             "Vai ficar meio esmaecido.",
             "Vou eliminar o problema.",
-            "Deixe-me cuidar das suas áreas problemáticas.",
-               ],
-    'Sacked':["Parece que você foi embrulhado.",
+            "Deixe-me cuidar das suas áreas problemáticas."],
+ 'Sacked':["Parece que você foi embrulhado.",
            "Está no saco.",
            "Você foi embolsado.",
            "Papel ou plástico?",
@@ -3009,7 +2957,7 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
            "O seu tempo acabou aqui, você vai ser ensacado!",
            "Deixe-me ensacar isto para você.",
            "Nenhuma defesa se iguala ao meu ataque com sacos!"],
-    'Schmooze':["Você nunca vai ver quando chega.",
+ 'Schmooze':["Você nunca vai ver quando chega.",
              "Vai ficar legal em você.",
              "Você conseguiu.",
              "Não quero despejar nada em você.",
@@ -3020,7 +2968,7 @@ SuitAttackTaunts = {'Audit': ["Seus livros não têm balanço.",
              "Isso merece um bom tapinha nas costas.",
              "Vou falar bem de você para todo mundo.",
              "Detesto tirá-lo do seu pedestal, mas..."],
-  'Shake': ["Você está bem no epicentro.",
+ 'Shake': ["Você está bem no epicentro.",
            "Você está em cima da falha.",
            "Vai ser um sacolejo só.",
            "Acho que isso é um desastre natural.",
@@ -3167,7 +3115,7 @@ KnockKnockContestJokes = {2100: ["Wally", "Wally não está olhando, joga torta 
         6: ["Adon", "Adondé que esses Cogs tão saindo?"],
        30: ["Bacon", "Bacon uma torta ia bem."],
        28: ["Isaías", "Isaías mas voltou no bondinho."],
-       12: ["Julieta", "Julieta me chamando praquele prédio Cog com você pra eu te Toonar."]}}
+   12: ["Julieta", "Julieta me chamando praquele prédio Cog com você pra eu te Toonar."]}}
 KnockKnockJokes = [["Quem", "Aqui tem eco, não?"],
  ["Kika", "Kikalor!"],
  ["Joe", "Você é Joetromundo?"],
@@ -3419,46 +3367,37 @@ VampireMickeyChatter = (["Bem-vindo ao "+lToontownCentral+".",
   "Vou brincar de doces ou travessuras!",
   "Shhh, vem comigo."])
 FieldOfficeMickeyChatter = ["Você já ouviu falar do Escritórios de Campo do Agitador?"]
-MinnieChatter = (
-    [ # Greetings
-     "Bem-vindo à Melodilândia.",
-     "Oi, meu nome é "+ Minnie +". Qual é o seu?"
-        ],
-    [ # Comments
-     "As colinas ganham vida com o som da música!",
-        # the merry no longer goes round
-        #"Não deixe de tentar andar no carrossel gigante!",
-     "Sua roupa é legal, %.",
-     "Ei, você viu o "+ Mickey +"?",
-     "Se você vir meu amigo "+ Goofy +", dê um oi para ele por mim.",
-     "Uau, há milhares de "+ Cogs +" perto da Sonholândia do"+Donald+".",
-     "Ouvi falar que tem neblina no "+lDonaldsDock+".",
-     "Não deixe de experimentar o labirinto dos "+lDaisyGardens+".",
-     "Acho que vou catar algumas canções.",
-     "Ei, %, olha aquilo lá.",
-     "Adoro o som da música.",
-     "Aposto que você não sabia que a Melodilândia também é chamada de ToadaTown! Ah, ah, ah!",
-     "Adoro jogo da memória. E você?",
-     "Gosto de fazer as pessoas rirem.",
-     "Cara, andar sobre rodas o dia todo não é moleza para os pés!",
-     "Bonita camisa, %.",
-     "Aquilo no chão é uma balinha?",
-     "Eu ouvi " + Daisy + " dizer que ela plantou novas flores no jardim.",
-        ],
-    [ # Goodbyes
-     "Caramba, estou atrasada para o meu encontro com o "+ Mickey +"!",
-     "Parece que é hora de "+ Pluto +" jantar.",
-     "É hora de tirar um cochilo. Vou para a Sonholândia.",
-        ]
-    )
+MinnieChatter = (["Bem-vindo à Melodilândia.", "Oi, meu nome é "+ Minnie +". Qual é o seu?"], ["As colinas ganham vida com o som da música!",
+ "Sua roupa é legal, %.",
+ "Ei, você viu o "+ Mickey +"?",
+ "Se você vir meu amigo "+ Goofy +", dê um oi para ele por mim.",
+ "Uau, há milhares de "+ Cogs +" perto da Sonholândia do"+Donald+".",
+ "Ouvi falar que tem neblina no "+lDonaldsDock+".",
+ "Não deixe de experimentar o labirinto dos "+lDaisyGardens+".",
+ "Acho que vou catar algumas canções.",
+ "Ei, %, olha aquilo lá.",
+ "Adoro o som da música.",
+ "Aposto que você não sabia que a Melodilândia também é chamada de ToadaTown! Ah, ah, ah!",
+ "Adoro jogo da memória. E você?",
+ "Gosto de fazer as pessoas rirem.",
+ "Cara, andar sobre rodas o dia todo não é moleza para os pés!",
+ "Bonita camisa, %.",
+ "Aquilo no chão é uma balinha?",
+ "Eu ouvi " + Daisy + " dizer que ela plantou novas flores no jardim."],
+[ # Goodbyes
+ "Caramba, estou atrasada para o meu encontro com o "+ Mickey +"!",
+ "Parece que é hora de "+ Pluto +" jantar.",
+ "É hora de tirar um cochilo. Vou para a Sonholândia.",
+]
+)
 
 WinterMinnieCChatter = (
-     [ # Greetings
-      "Oi, eu sou a Minnie Natalina!",
-      "Bem-vindo à terra das canções de natal!",
-      "Feliz feriado de inverno!",
-      "Feliz feriado de inverno, %!",
-         ],
+ [ # Greetings
+  "Oi, eu sou a Minnie Natalina!",
+  "Bem-vindo à terra das canções de natal!",
+  "Feliz feriado de inverno!",
+  "Feliz feriado de inverno, %!",
+     ],
 [ # Comments
 "Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
 "Cante uma melodia, Toon!",
@@ -4657,18 +4596,14 @@ PartiesPageInvitedTab = ""
 PartiesPageTitleHost = ""
 PartiesPageTitleInvited = ""
 
-# MapPage.py
 MapPageTitle = "Mapa"
 MapPageBackToPlayground = "Voltar para o pátio"
 MapPageBackToCogHQ = "Voltar para o Quartel de Cogs"
 MapPageGoHome = "Ir para casa"
-# hood name, street name
 MapPageYouAreHere = "Você está em: %s %s"
 MapPageYouAreAtHome = "Você está em\nsua propriedade"
 MapPageYouAreAtSomeonesHome = "Você está na propriedade de %s"
 MapPageGoTo = "Ir para\n%s"
-
-# OptionsPage.py
 OptionsPageTitle = "Opções"
 OptionsPagePurchase = "Assine já!"
 OptionsPageLogout = "Sair"
@@ -4677,8 +4612,8 @@ OptionsPageMusicOnLabel = "A música está ligada."
 OptionsPageMusicOffLabel = "A música está desligada."
 OptionsPageSFXOnLabel = "Os efeitos sonoros estão ligados."
 OptionsPageSFXOffLabel = "Os efeitos sonoros estão desligados."
-OptionsPageToonChatSoundsOnLabel = "   Type Chat Sounds are on."
-OptionsPageToonChatSoundsOffLabel = "   Type Chat Sounds are off."
+OptionsPageToonChatSoundsOnLabel = "   Tipo de áudio do Chat estão ligados."
+OptionsPageToonChatSoundsOffLabel = "   Tipo de áudio do Chat estão desligados."
 OptionsPageFriendsEnabledLabel = "Aceito fazer novas amizades."
 OptionsPageFriendsDisabledLabel = "Não aceito fazer amizades."
 OptionsPageSpeedChatStyleLabel = "Cor do Chat rápido"
@@ -4690,11 +4625,9 @@ OptionsPageChange = "Alterar"
 OptionsPageDisplaySettings = "Vídeo: %(screensize)s, %(api)s"
 OptionsPageDisplaySettingsNoApi = "Vídeo: %(screensize)s"
 OptionsPageExitConfirm = "Sair de Toontown?"
-
 DisplaySettingsTitle = "Configurações de vídeo"
 DisplaySettingsIntro = "As configurações a seguir são usadas para determinar a maneira como Toontown é exibida em seu computador. Provavelmente, não será necessário ajustá-las, a menos que você esteja tendo algum problema."
 DisplaySettingsIntroSimple = "Você pode ajustar a resolução da tela com um valor maior para melhorar o contraste do texto e dos gráficos em Toontown, mas, dependendo da placa de vídeo do seu computador, alguns valores mais altos podem fazer que o jogo fique lento ou trave."
-
 DisplaySettingsApi = "API de gráfico:"
 DisplaySettingsResolution = "Resolução:"
 DisplaySettingsWindowed = "Em uma janela"
@@ -4705,8 +4638,6 @@ DisplaySettingsApplyWarning = "Quando você pressionar OK, as configurações de
 DisplaySettingsAccept = "Pressione em OK para manter as novas configurações, ou em Cancelar para voltar às anteriores. Se você não pressionar nada, as configurações voltarão em %s segundos automaticamente aos valores anteriores."
 DisplaySettingsRevertUser = "As configurações de vídeo anteriores foram restauradas."
 DisplaySettingsRevertFailed = "As configurações de vídeo selecionadas não funcionam em seu computador. As configurações de vídeo anteriores foram restauradas."
-
-# TrackPage.py
 TrackPageTitle = "Treinamento de tipos de piadas"
 TrackPageShortTitle = "Treinamento de piadas"
 TrackPageSubtitle = "Execute as Tarefas Toon para aprender a usar novas piadas!"
@@ -4714,35 +4645,15 @@ TrackPageTraining = "Você está treinando para usar as Piadas de %s.\nQuando ex
 TrackPageClear = "Você não está treinando nenhum tipo de piadas agora."
 TrackPageFilmTitle = "Filme de\ntreinamento\nde %s"
 TrackPageDone = "FIM"
-
-# QuestPage.py
 QuestPageToonTasks = "Tarefas Toon"
-# questName, toNpcName, toNpcBuilding, toNpcStreetName, toNpcLocationName, npcName
-#QuestPageDelivery = "%s\nPara: %s\n  %s\n  %s\n  %s\n\nDe: %s"
-# questName, toNpcName, toNpcBuilding, toNpcStreetName, toNpcLocationName, npcName
-#QuestPageVisit = "%s %s\n  %s\n  %s\n  %s\n\nDe: %s"
-# questName, toNpcName, toNpcBuilding, toNpcStreetName, toNpcLocationName
-# Choose between trackA and trackB.
-#
-# To choose, go see:
-#   Flippy
-#   Town Hall
-#   Playground
-#   Toontown Central
-#QuestPageTrackChoice = "%s\n\nPara escolher, selecione:\n  %s\n  %s\n  %s\n  %s"
-# questName, npcName, buildingName, streetName, locationName
 QuestPageChoose = "Escolha"
 QuestPageLocked = "Travado"
-# building name, street name, Npc location
 QuestPageDestination = "%s\n%s\n%s"
-# npc name, building name, street name, Npc location
 QuestPageNameAndDestination = "%s\n%s\n%s\n%s"
-
 QuestPosterHQOfficer = lHQOfficerM
 QuestPosterHQBuildingName = lToonHQ
 QuestPosterHQStreetName = "Qualquer rua"
 QuestPosterHQLocationName = "Qualquer bairro"
-
 QuestPosterTailor = "Costureiro"
 QuestPosterTailorBuildingName = "Loja de Roupas"
 QuestPosterTailorStreetName = "Qualquer pátio"
@@ -4751,7 +4662,7 @@ QuestPosterPlayground = "No pátio"
 QuestPosterAtHome = "Na sua casa"
 QuestPosterInHome = "Em sua casa"
 QuestPosterOnPhone = "No seu telefone"
-QuestPosterEstate = "Na sua propriedade"
+QuestPosterEstate = "Na sua casa"
 QuestPosterAnywhere = "Qualquer lugar"
 QuestPosterAuxTo = "para:"
 QuestPosterAuxFrom = "de:"
@@ -4763,36 +4674,27 @@ QuestPosterLocationOn = ""
 QuestPosterFun = "Só de brincadeira!"
 QuestPosterFishing = "IR PESCAR"
 QuestPosterComplete = "CONCLUIR"
-
-# ShardPage.py
 ShardPageTitle = "Regiões"
 ShardPageHelpIntro = "Cada Região é uma cópia do mundo de Toontown."
 ShardPageHelpWhere = " Você está agora na Região \"%s\"."
 ShardPageHelpWelcomeValley = " Você está agora na Região \"Vale Boas-vindas\", em \"%s\"."
 ShardPageHelpMove = " Para ir até uma nova Região, clique no nome dela."
-
 ShardPagePopulationTotal = "População Total de Toontown:\n%d"
 ShardPageScrollTitle = "Nome População"
 ShardPageLow = "Tranquila"
 ShardPageMed = "Inteligente"
 ShardPageHigh = "Lotada"
 ShardPageChoiceReject = "Desculpe, essa Região está lotada. Por favor, tente outra."
-
-# SuitPage.py
 SuitPageTitle = "Galeria de Cogs"
 SuitPageMystery = DialogQuestion + DialogQuestion + DialogQuestion
 SuitPageQuota = "%s de %s"
 SuitPageCogRadar = "%s presentes"
 SuitPageBuildingRadarS = "%s edifício"
 SuitPageBuildingRadarP = "%s edifícios"
-
-# DisguisePage.py
 DisguisePageTitle = Cog + "Disfarce"
 DisguisePageMeritAlert = "Pronto para a\npromoção!"
 DisguisePageCogLevel = "Nível %s"
 DisguisePageMeritFull = "Completo"
-
-# FishPage.py
 FishPageTitle = "Pescaria"
 FishPageTitleTank = "Balde de peixes"
 FishPageTitleCollection = "Álbum de peixes"
@@ -4810,30 +4712,21 @@ FishPageRodInfo = "Vara %s\n%d - %d quilos"
 FishPageTankTab = "Balde"
 FishPageCollectionTab = "Álbum"
 FishPageTrophyTab = "Troféus"
-
 FishPickerTotalValue = "Balde: %s / %s\nValor: %d balinhas"
-
 UnknownFish = DialogQuestion + DialogQuestion + DialogQuestion
-
 FishingRod = "Vara %s"
-FishingRodNameDict = {
-    0: "Vareta",
-    1: "Bambu",
-    2: "Madeira de lei",
-    3: "Aço",
-    4: "Dourado",
-    }
-FishTrophyNameDict = {
-    0: "Peixinhozinho",
-    1: "Peixinho",
-    2: "Peixe",
-    3: "Peixe-voador",
-    4: "Tubarão",
-    5: "Peixe-espada",
-    6: "Baleia assassina",
-    }
-
-# GardenPage.py
+FishingRodNameDict = {0: "Vareta",
+ 1: "Bambu",
+ 2: "Madeira de lei",
+ 3: "Aço",
+ 4: "Dourado"}
+FishTrophyNameDict = {0: "Peixinhozinho",
+ 1: "Peixinho",
+ 2: "Peixe",
+ 3: "Peixe-voador",
+ 4: "Tubarão",
+ 5: "Peixe-espada",
+ 6: "Baleia assassina"}
 GardenPageTitle = "Jardinagem"
 GardenPageTitleBasket = "Cesto de Flores"
 GardenPageTitleCollection = "Álbum de Flores"
@@ -4849,8 +4742,6 @@ GardenPageValueP = "Valor: %d balinhas"
 FlowerPickerTotalValue = "Cesto: %s / %s\nValor: %d balinhas"
 GardenPageShovelInfo = "%s Pá: %d / %d\n"
 GardenPageWateringCanInfo = "%s Regador: %d / %d"
-
-# KartPage.py
 KartPageTitle = "Karts"
 KartPageTitleCustomize = "Personalizador de karts"
 KartPageTitleRecords = "Melhores recordes pessoais"
@@ -4861,8 +4752,6 @@ KartPageTrophyTab = "Troféus"
 KartPageTrophyDetail = "Troféus %s: %s"
 KartPageTickets = "Bilhetes:"
 KartPageConfirmDelete = "Excluir acessório?"
-
-#plural
 KartShtikerDelete = "Excluir"
 KartShtikerSelect = "Selecionar uma categoria"
 KartShtikerNoAccessories = "Não possui acessórios"
@@ -4874,7 +4763,6 @@ KartShtikerFrontWheelWells = "Acessórios de roda dianteira"
 KartShtikerBackWheelWells = "Acessórios de roda traseira"
 KartShtikerRims = "Acessórios de aro"
 KartShtikerDecals = "Acessórios de decalque"
-#singluar
 KartShtikerBodyColor = "Cor do kart"
 KartShtikerAccColor = "Cor do acessório"
 KartShtikerEngineBlock = "Capô"
@@ -4883,14 +4771,9 @@ KartShtikerFrontWheelWell = "Roda dianteira"
 KartShtikerBackWheelWell = "Roda traseira"
 KartShtikerRim = "Aro"
 KartShtikerDecal = "Decalque"
-
 KartShtikerDefault = "Padrão %s"
 KartShtikerNo = "Nenhum acessório %s"
-
-# QuestChoiceGui.py
 QuestChoiceGuiCancel = lCancel
-
-# TrackChoiceGui.py
 TrackChoiceGuiChoose = "Escolher"
 TrackChoiceGuiCancel = lCancel
 TrackChoiceGuiHEAL = 'Toonar permite que você cure outros Toons que estão na batalha.'
@@ -4898,8 +4781,6 @@ TrackChoiceGuiTRAP = 'Armadilhas são piadas poderosas que devem ser usadas com 
 TrackChoiceGuiLURE = 'Use Iscas para abalar os Cogs ou faça-os cair em armadilhas.'
 TrackChoiceGuiSOUND = 'As piadas Sonoras afetam todos os Cogs, mas não são muito poderosas.'
 TrackChoiceGuiDROP = "As piadas Cadentes fazem muitos estragos, mas não são muito precisas."
-
-# EmotePage.py
 EmotePageTitle = "Expressões / Emoções"
 EmotePageDance = "Você montou a seguinte sequência de dança:"
 EmoteJump = "Saltitante"
@@ -4908,17 +4789,9 @@ EmoteHappy = "Feliz"
 EmoteSad = "Triste"
 EmoteAnnoyed = "Aborrecido"
 EmoteSleep = "Sonolento"
-
-# TIP Page
 TIPPageTitle = "DICA"
-
-# SuitBase.py
 SuitBaseNameWithLevel = "%(name)s\n%(dept)s\nNível %(level)s"
-
-# HealthForceAcknowledge.py
 HealthForceAcknowledgeMessage = "Você não pode sair do parque até que o seu Risômetro esteja sorrindo!"
-
-# InventoryNew.py
 InventoryTotalGags = "Total de piadas\n%d / %d"
 InventroyPinkSlips = "%s Bilhetes Azuis"
 InventroyPinkSlip = "1 Bilhete Azul"
@@ -4928,7 +4801,6 @@ InventoryDeleteHelp = "Clique em uma piada para EXCLUIR."
 InventorySkillCredit = "Crédito de habilidades:\n%s"
 InventorySkillCreditNone = "Crédito de habilidades:\nNenhum"
 InventoryDetailAmount = "%(numItems)s / %(maxItems)s"
-# acc, damage_string, damage, single_or_group
 InventoryDetailData = "Precisão: %(accuracy)s\n%(damageString)s: %(damage)d\n%(singleOrGroup)s"
 InventoryTrackExp = "%(curExp)s / %(nextExp)s"
 InventoryUberTrackExp = "Faltam %(nextExp)s!"
@@ -4947,8 +4819,6 @@ InventoryPass = "PASSAR"
 InventoryFire = "Fogo"
 InventoryClickToAttack = "Clique em uma\npiada para\natacar"
 InventoryDamageBonus = "(+%d)"
-
-# NPCForceAcknowledge.py
 NPCForceAcknowledgeMessage = "Você deve pegar o bondinho antes de sair.\n\n\n\n\nVocê poderá encontrar o bondinho ao lado da Loja de Piadas do Pateta."
 NPCForceAcknowledgeMessage2 = "Muito bem! Você completou a busca pelo bondinho!\nVisite o Quartel dos Toons para solicitar a sua recompensa.\n\n\n\n\n\nO Quartel dos Toons localiza-se próximo ao centro do pátio."
 NPCForceAcknowledgeMessage3 = "Lembre-se de pegar o bondinho.\n\n\n\nVocê pode encontrar o bondinho ao lado da Loja de Piadas do Pateta."
@@ -4958,29 +4828,68 @@ NPCForceAcknowledgeMessage6 = "Excelente trabalho derrotando esses Cogs!\n\n\n\n
 NPCForceAcknowledgeMessage7 = "Não se esqueça de fazer um amigo!\n\n\n\n\n\n\nClique em outro jogador e use o botão Novo amigo."
 NPCForceAcknowledgeMessage8 = "Ótimo! Você fez um novo amigo!\n\n\n\n\n\n\n\n\nAgora, você deve voltar para o Quartel dos Toons."
 NPCForceAcknowledgeMessage9 = "Bom trabalho usando o telefone!\n\n\n\n\n\n\n\n\nVolte para o Quartel dos Toons para pedir a sua recompensa."
-
-# Toon.py
 ToonSleepString = ". . . ZZZ . . ."
-
-# Movie.py
 MovieTutorialReward1 = "Você recebeu 1 ponto de Lançamento! Quando você obtém 10, ganha uma nova piada!"
 MovieTutorialReward2 = "Você recebeu 1 ponto de Esguicho! Quando você obtém 10, ganha uma nova piada!"
 MovieTutorialReward3 = "Muito bom! Você concluiu a sua primeira Tarefa Toon!"
 MovieTutorialReward4 = "Vá para o Quartel dos Toons para pegar a sua recompensa!"
 MovieTutorialReward5 = "Divirta-se!"
-
-# ToontownBattleGlobals.py
-BattleGlobalTracks = ['toonar', 'armadilha', 'isca', 'sonora', 'lançamento', 'esguicho', 'cadente']
+BattleGlobalTracks = ['toonar', 
+ 'armadilha', 
+ 'isca', 
+ 'sonora', 
+ 'lançamento', 
+ 'esguicho', 
+ 'cadente']
 BattleGlobalNPCTracks = ['reabastecer', 'toons atingidos', 'cogs não-atingidos']
-BattleGlobalAvPropStrings = (
-    ('Pena', 'Megafone', 'Batom', 'Bengala', 'Pó mágico', 'Bolinhas de malabarismo', 'Mergulho Elevado'),
-    ('Casca de banana', 'Ancinho', 'Bolas de gude', 'Areia movediça', 'Alçapão', 'TNT', 'Estrada De Ferro'),
-    ('Nota de $1', 'Ímã pequeno', 'Nota de $5', 'Ímã grande', 'Nota de $10', 'Óculos hipnóticos', 'Presentação'),
-    ('Buzina de bicicleta', 'Apito', 'Trombeta', 'Foooonnnn!', 'Tromba de elefante', 'Buzina', 'Cantor de Ópera'),
-    ('Bolinho', 'Fatia de torta de frutas', 'Fatia de torta de creme', 'Torta de frutas inteira', 'Torta de creme inteira', 'Bolo de aniversário', 'Bolo de Casamento'),
-    ('Flor com esguicho', 'Copo d\'água', 'Revólver de água', 'Garrafa de água com gás', 'Mangueira de incêndio', 'Nuvem de chuva', 'Gêiser'),
-    ('Vaso de flor', 'Saco de areia', 'Bigorna', 'Peso pesado', 'Cofre', 'Piano de cauda', 'Toontanic')
-    )
+BattleGlobalAvPropStrings = (('Pena', 
+  'Megafone', 
+  'Batom', 
+  'Bengala', 
+  'Pó mágico', 
+  'Bolinhas de malabarismo', 
+  'Mergulho Elevado'), 
+ ('Casca de banana', 
+  'Ancinho', 
+  'Bolas de gude', 
+  'Areia movediça', 
+  'Alçapão', 
+  'TNT', 
+  'Estrada De Ferro'),
+ ('Nota de $1', 
+  'Ímã pequeno', 
+  'Nota de $5', 
+  'Ímã grande', 
+  'Nota de $10', 
+  'Óculos hipnóticos', 
+  'Presentação'), 
+ ('Buzina de bicicleta', 
+  'Apito', 
+  'Trombeta', 
+  'Foooonnnn!', 
+  'Tromba de elefante', 
+  'Buzina', 
+  'Cantor de Ópera'), 
+ ('Bolinho', 
+   'Fatia de torta de frutas', 
+   'Fatia de torta de creme', 
+   'Torta de frutas inteira', 
+   'Torta de creme inteira', 
+   'Bolo de aniversário', 
+   'Bolo de Casamento'), 
+ ('Flor com esguicho', 
+  "Copo d'água", 
+  'Revólver de água', 
+  'Garrafa de água com gás', 
+  'Mangueira de incêndio', 
+  'Nuvem de chuva', 'Gêiser'), 
+ ('Vaso de flor', 
+  'Saco de areia', 
+  'Bigorna', 
+  'Peso pesado', 
+  'Cofre', 
+  'Piano de cauda', 
+  'Toontanic'))
 BattleGlobalAvPropStringsSingular = (
     ('uma Pena', 'um Megafone', 'um Batom', 'uma Bengala', 'um Pó mágico', 'um conjunto de Bolinhas de malabarismo', 'um Mergulho Elevado'),
     ('uma Casca de banana', 'um Ancinho', 'um conjunto de Bolas de gude', 'uma poça de Areia movediça', 'um Alçapão', 'um TNT', 'uma Estrada de Ferro'),
@@ -5002,66 +4911,38 @@ BattleGlobalAvPropStringsPlural = (
 BattleGlobalAvTrackAccStrings = ("Médio", "Perfeito", "Baixo", "Alto", "Médio", "Alto", "Baixo")
 BattleGlobalLureAccLow = "Baixo"
 BattleGlobalLureAccMedium = "Médio"
-
 AttackMissed = "PERDEU"
-
 NPCCallButtonLabel = 'CHAMAR'
-
-# ToontownLoader.py
 LoaderLabel = "Carregando..."
-
-# PlayGame.py
 HeadingToHood = "Indo %(to)s %(hood)s..." # hood name
 HeadingToYourEstate = "Indo para a sua propriedade..."
 HeadingToEstate = "Indo para a propriedade de %s..."  # avatar name
 HeadingToFriend = "Indo para a propriedade do amigo de %s..."  # avatar name
-
-# Hood.py
 HeadingToPlayground = "Indo para o Pátio..."
 HeadingToStreet = "Indo %(to)s %(street)s..." # Street name
-
-# TownBattle.py
 TownBattleRun = "Voltar correndo para o pátio?"
-
-# TownBattleChooseAvatarPanel.py
 TownBattleChooseAvatarToonTitle = "QUAL TOON?"
-TownBattleChooseAvatarCogTitle = "QUAL " + string.upper(Cog) + "?"
+TownBattleChooseAvatarCogTitle = "QUAL " + Cog.upper() + "?"
 TownBattleChooseAvatarBack = "VOLTAR"
-
-#firecogpanel
 FireCogTitle = "BILHETES AZUIS RESTANTES:%s\nQUAL COG DEMITIR?"
 FireCogLowTitle = "BILHETES AZUIS RESTANTES:%s\nSEM BILHETES SUFICIENTES!"
-
-# TownBattleSOSPanel.py
 TownBattleSOSNoFriends = "Não há amigos para chamar!"
 TownBattleSOSWhichFriend = "Chamar qual amigo?"
 TownBattleSOSNPCFriends = "Toons resgatados"
 TownBattleSOSBack = "VOLTAR"
-
-# TownBattleToonPanel.py
 TownBattleToonSOS = "SOS"
 TownBattleToonFire = "Disparar"
 TownBattleUndecided = "?"
 TownBattleHealthText = "%(hitPoints)s/%(maxHit)s"
-
-# TownBattleWaitPanel.py
 TownBattleWaitTitle = "Aguardando\noutros jogadores..."
 TownSoloBattleWaitTitle = "Aguarde..."
 TownBattleWaitBack = "VOLTAR"
-
-# TownBattleSOSPetSearchPanel.py
 TownBattleSOSPetSearchTitle = "Procurando rabisco\n%s..."
-
-# TownBattleSOSPetInfoPanel.py
 TownBattleSOSPetInfoTitle = "%s está %s"
 TownBattleSOSPetInfoOK = lOK
-
-# Trolley.py
 TrolleyHFAMessage = "Você não pode embarcar no bondinho até que o seu Risômetro esteja sorrindo."
 TrolleyTFAMessage = "\Você não pode embarcar no bondinho até que o " + Mickey +" permita."
 TrolleyHopOff = "Descer"
-
-# DistributedFishingSpot.py
 FishingExit = "Sair"
 FishingCast = "Lançar"
 FishingAutoReel = "Molinete automático"
@@ -5082,8 +4963,6 @@ FishingBootItem = "Bota velha"
 FishingJellybeanItem = "%s balinhas"
 FishingNewEntry = "Novas espécies!"
 FishingNewRecord = "Novo recorde!"
-
-# FishPoker
 FishPokerCashIn = "Morrer\n%s\n%s"
 FishPokerLock = "Bloquear"
 FishPokerUnlock = "Desbloquear"
@@ -5093,8 +4972,6 @@ FishPokerFullHouse = "Full House"
 FishPoker3OfKind = "3 de um naipe"
 FishPoker2Pair = "2 pares"
 FishPokerPair = "Par"
-
-# DistributedTutorial.py
 TutorialGreeting1 = "Oi %s!"
 TutorialGreeting2 = "Oi %s!\nVem cá!"
 TutorialGreeting3 = "Oi %s!\nVem cá!\nUse as teclas de seta!"
@@ -5144,11 +5021,8 @@ TutorialTrolley1 = "Siga-me até o bondinho!"
 TutorialTrolley2 = "Pule nele!"
 TutorialBye1 = "Brinque com alguns jogos!"
 TutorialBye2 = "Divirta-se com alguns jogos!\nCompre algumas piadas!"
-TutorialBye3 = "\Vá encontrar o  "+ Flippy +" quando terminar!"# TutorialForceAcknowledge.py
-
-# TutorialForceAcknowledge.py
+TutorialBye3 = "Vá encontrar o  "+ Flippy +" quando terminar!"
 TutorialForceAcknowledgeMessage = "\Você está indo na direção errada! \Vá encontrar o  "+ Mickey +"!"# SpeedChat
-
 PetTutorialTitle1 = "O Painel dos Rabiscos"
 PetTutorialTitle2 = "Chat rápido dos Rabiscos"
 PetTutorialTitle3 = "Gadálogo dos Rabiscos"
@@ -5157,10 +5031,12 @@ PetTutorialPrev = "Página Anterior"
 PetTutorialDone = lOK
 PetTutorialPage1 = "Clique em um Rabisco para exibir o painel de Rabiscos. Daqui, você pode alimentar, coçar e chamar o Rabisco."
 PetTutorialPage2 = "Use a nova área 'Bichinhos' no menu Chat rápido para fazer com que um Rabisco faça um truque. Se ele fizer, recompense-o para ele melhorar ainda mais!"
-PetTutorialPage3 = "Compre novos truques de Rabiscos no Gadálogo da Clarabela. Truques melhores produzem Toonar melhores!"
+PetTutorialPage3 = "Compre novos truques de Rabiscos no Catálogo da Clarabela. Truques melhores produzem Toonar melhores!"
+
 def getPetGuiAlign():
-	from pandac.PandaModules import TextNode
+	from panda3d.core import TextNode
 	return TextNode.ACenter
+
 
 GardenTutorialTitle1 = "Jardinagem"
 GardenTutorialTitle2 = "Flores"
@@ -5175,55 +5051,31 @@ GardenTutorialPage2 = "As flores são sensíveis, e você precisa descobrir as s
 GardenTutorialPage3 = "Use uma piada para plantar uma árvore.  Alguns dias depois, essa piada vai melhorar!!  Mas cuide bem da saúde dela, ou a melhoria se vai."
 GardenTutorialPage4 = "Para plantar, regar, cavar ou fazer a colheita no seu jardim, ande até estes locais."
 GardenTutorialPage5 = "Estátuas podem ser compradas no Catálogo da Clarabela. Aumenta suas habilidades para destravar as estátuas mais extravagantes."
-
-# Playground.py
-PlaygroundDeathAckMessage = "Os" + Cogs + " levaram todas as suas piadas!\n\nVocê está triste. Você não pode sair do pátio até ficar feliz."
-
-# FactoryInterior.py
+PlaygroundDeathAckMessage = TheCogs + " levaram todas as suas piadas!\n\nVocê está triste. Você não pode sair do pátio até ficar feliz."
 ForcedLeaveFactoryAckMsg = "O Supervisor da fábrica foi derrotado antes de você alcançá-lo. Você não recuperou nenhuma parte do Cog."
-
-# MintInterior
 ForcedLeaveMintAckMsg = "O Supervisor do Andar da Casa da Moeda foi derrotado antes de você alcançá-lo. Você não recuperou nenhuma Grana Cog."
-
-# DistributedFactory.py
 HeadingToFactoryTitle = "Dirigindo-se a %s..."
 ForemanConfrontedMsg = "%s está lutando com o Supervisor da fábrica!"
-
-# DistributedMint.py
 MintBossConfrontedMsg = "%s está lutando com o Supervisor!"
-
-# DistributedStage.py
 StageBossConfrontedMsg = "%s está lutando com o Funcionário!"
 stageToonEnterElevator = "%s \nentrou no elevador"
 ForcedLeaveStageAckMsg = "O Funcionário da Lei foi derrotado antes de você alcançá-lo. Você não recuperou nenhum Aviso de Júri."
-
-# DistributedMinigame.py
 MinigameWaitingForOtherPlayers = "Aguardando outros jogadores..."
 MinigamePleaseWait = "Aguarde..."
 DefaultMinigameTitle = "Título do minijogo"
 DefaultMinigameInstructions = "Instruções do minijogo"
-HeadingToMinigameTitle = "Dirigindo-se a %s..." # minigame title
-
-# MinigamePowerMeter.py
+HeadingToMinigameTitle = "Dirigindo-se a %s..."
 MinigamePowerMeterLabel = "Medidor de potência"
 MinigamePowerMeterTooSlow = "Muito\ndevagar"
 MinigamePowerMeterTooFast = "Muito\nrápido"
-
-# DistributedMinigameTemplate.py
 MinigameTemplateTitle = "Modelo de minijogo"
 MinigameTemplateInstructions = "Este é um modelo de minijogo. Use-o para criar novos minijogos."
-
-# DistributedCannonGame.py
 CannonGameTitle = "Jogo do canhão"
 CannonGameInstructions = "Atire o seu Toon na torre de água o mais rápido que puder. Use o mouse ou as teclas de seta para mirar o canhão. Seja rápido e ganhe uma grande recompensa para todos!"
 CannonGameReward = "RECOMPENSA"
-
-# DistributedTwoDGame.py
 TwoDGameTitle = "Fuga dos Cartoons"
 TwoDGameInstructions = "Fuja dos " + Cog + " o mais rápido que você puder. Use as setas para correr/pular e Ctrl para esguichar " + Cog + ". Colete " + Cog + " tesouros para ganhar mais pontos."
 TwoDGameElevatorExit = "SAÍDA"
-
-# DistributedTugOfWarGame.py
 TugOfWarGameTitle = "Cabo de guerra"
 TugOfWarInstructions = "Toque alternadamente nas teclas de seta para a esquerda e para a direita rápido o suficiente para alinhar a barra verde com a linha vermelha. Não toque nelas muito devagar, ou você acabará na água!"
 TugOfWarGameGo = "COMEÇAR!"
@@ -5231,17 +5083,14 @@ TugOfWarGameReady = "Pronto..."
 TugOfWarGameEnd = "Bom jogo!"
 TugOfWarGameTie = "Você empatou!"
 TugOfWarPowerMeter = "Medidor"
-
-# DistributedPatternGame.py
 PatternGameTitle = "Acompanhe a "+ Minnie
-PatternGameInstructions = "A " + Minnie + " mostrará uma sequência de dança." + \
-                       "Tente repetir a dança da "+ Minnie +" exatamente como você vê usando as teclas de seta!"
-PatternGameWatch   = "Observe estes passos de dança..."
-PatternGameGo      = "COMEÇAR!"
-PatternGameRight   = "Bom, %s!"
-PatternGameWrong   = "Ops!"
+PatternGameInstructions = "A " + Minnie + " mostrará uma sequência de dança." + "Tente repetir a dança da "+ Minnie +" exatamente como você vê usando as teclas de seta!"
+PatternGameWatch = "Observe estes passos de dança..."
+PatternGameGo = "COMEÇAR!"
+PatternGameRight = "Bom, %s!"
+PatternGameWrong = "Ops!"
 PatternGamePerfect = "Perfeito, %s!"
-PatternGameBye     = "Obrigado por jogar!"
+PatternGameBye = "Obrigado por jogar!"
 PatternGameWaitingOtherPlayers = "Aguardando outros jogadores..."
 PatternGamePleaseWait = "Aguarde..."
 PatternGameFaster = "Você foi\nmais rápido!"
@@ -5252,16 +5101,12 @@ PatternGameOtherFastest = "\nfoi o mais rápido!"
 PatternGameGreatJob = "Muito bom!"
 PatternGameRound = "Rodada %s!" # Round 1! Round 2! ..
 PatternGameImprov = "You did great!  Now Improv!"
-
-# DistributedRaceGame.py
 RaceGameTitle = "Jogo de corrida"
 RaceGameInstructions = "Clique em um número. Escolha bem! Você só avançará se ninguém mais escolher o mesmo número."
 RaceGameWaitingChoices = "Aguardando os outros jogadores escolherem..."
 RaceGameCardText = "%(name)s aposta: %(reward)s"
 RaceGameCardTextBeans = "%(name)s recebe: %(reward)s"
-RaceGameCardTextHi1 = "%(name)s é um Toon fabuloso!"  # this category might eventually have secret game hints, etc
-
-# RaceGameGlobals.py
+RaceGameCardTextHi1 = "%(name)s é um Toon fabuloso!"
 RaceGameForwardOneSpace    = " avança 1 espaço"
 RaceGameForwardTwoSpaces   = " avança 2 espaços"
 RaceGameForwardThreeSpaces = " avança 3 espaços"
@@ -5274,19 +5119,13 @@ RaceGameInstantWinner = "Vencedor imediato!"
 RaceGameJellybeans2 = "2 balinhas"
 RaceGameJellybeans4 = "4 balinhas"
 RaceGameJellybeans10 = "10 balinhas!"
-
-# DistributedRingGame.py
 RingGameTitle = "Jogo dos anéis"
-# color
 RingGameInstructionsSinglePlayer = "Tente nadar através do número máximo de anéis %s que conseguir. Para nadar, use as teclas de seta."
-# color
 RingGameInstructionsMultiPlayer = "Tente nadar através dos anéis %s. Os outros jogadores tentarão nadar através dos outros anéis coloridos. Para nadar, use as teclas de seta."
 RingGameMissed = "PERDEU"
 RingGameGroupPerfect = "GRUPO\nPERFEITO!!"
 RingGamePerfect = "PERFEITO!"
 RingGameGroupBonus = "BÔNUS DO GRUPO"
-
-# RingGameGlobals.py
 ColorRed = "vermelhos"
 ColorGreen = "verdes"
 ColorOrange = "laranja"
@@ -5294,16 +5133,10 @@ ColorPurple = "lilases"
 ColorWhite = "brancos"
 ColorBlack = "pretos"
 ColorYellow = "amarelos"
-
-# DistributedDivingGame.py #localize
 DivingGameTitle = "Mergulho pro Tesouro"
-# color
 DivingInstructionsSinglePlayer = "Tesouros irão aparecer no fundo do lago. Use as setas para nadar. Evite os peixes e leve os tesouros para o barco!"
-# color
 DivingInstructionsMultiPlayer = " Tesouros irão aparecer no fundo do lago. Use as setas para nadar. Trabalhem juntos para levar os tesouros para o barco!"
 DivingGameTreasuresRetrieved = "Tesouros Recuperados"
-
-#Distributed Target Game
 TargetGameTitle = "Estilingue do Toon"
 TargetGameInstructionsSinglePlayer = "Acerta na velocidade do alvo"
 TargetGameInstructionsMultiPlayer = "Acerta quantos alvos conseguir"
@@ -5312,59 +5145,39 @@ TargetGameCountdown = "Lançamento forçado em %s segundos"
 TargetGameCountHelp = "Bata nas setas esquerda e direita para conseguir potência, pare para lançar"
 TargetGameFlyHelp = "Aperte para baixo para abrir o guarda-chuva"
 TargetGameFallHelp = "Use as teclas de seta para aterrissar no alvo"
-TargetGameBounceHelp = " Bater e quicar pode tirar você do alvo"
-
-#Distributed Photo Game
 PhotoGameScoreTaken = "%s: %s\nVocê: %s"
 PhotoGameScoreBlank = "Placar: %s"
-PhotoGameScoreOther = "\n%s"#"Placar: %s\n%s"
-PhotoGameScoreYou = "\nMelhor Bônus!"#"Placar: %s\nMelhor Bônus!"
-
-
-# DistributedTagGame.py
+PhotoGameScoreOther = "\n%s"
+PhotoGameScoreYou = "\nMelhor Bônus!"
 TagGameTitle = "Jogo de pique"
 TagGameInstructions = "Pegue os tesouros. Você não pode pegar os tesouros se o pique estiver com você!"
 TagGameYouAreIt = "Está com você!"
 TagGameSomeoneElseIsIt = "Está com %s!"
-
-# DistributedMazeGame.py
 MazeGameTitle = "Jogo do labirinto"
 MazeGameInstructions = "Pegue os tesouros. Tente pegar todos, mas cuidado com os "+ Cogs +"!"# DistributedCatchGame.py
-
-# DistributedCatchGame.py
 CatchGameTitle = "Jogo de pegar"
 CatchGameInstructions = "Pegue o máximo de %(fruit)s que conseguir. Cuidado com os "+ Cogs +" e tente não 'pegar' nenhuma %(badThing)s!"
 CatchGamePerfect = "PERFEITO!"
-CatchGameApples      = 'maçãs'
-CatchGameOranges     = 'laranjas'
-CatchGamePears       = 'pêras'
-CatchGameCoconuts    = 'cocos'
+CatchGameApples = 'maçãs'
+CatchGameOranges = 'laranjas'
+CatchGamePears = 'pêras'
+CatchGameCoconuts = 'cocos'
 CatchGameWatermelons = 'melancias'
-CatchGamePineapples  = 'abacaxis'
-CatchGameAnvils      = 'bigornas'
-
-# DistributedPieTossGame.py
+CatchGamePineapples = 'abacaxis'
+CatchGameAnvils = 'bigornas'
 PieTossGameTitle = "Jogo de lançamento de tortas"
 PieTossGameInstructions = "Lance as tortas nos alvos."
-
-# DistributedPhotoGame.py
 PhotoGameInstructions = "Tire fotos de acordo com os Toons mostrados na parte de baixo. Mire a câmera usando o mouse, e clique com o botão esquerdo para tirar uma foto. Aperte Ctrl para aumentar ou reduzir o zoom, e olhe em sua volta com as teclas de seta. Fotos com notas maiores ganham mais pontos!"
 PhotoGameTitle = "Diversão Fotográfica"
 PhotoGameFilm = "FILME"
 PhotoGameScore = "Placar da Equipe: %s\n\nMelhores Fotos: %s\n\nPlacar Total: %s"
-
-# DistributedCogThiefGame.py
 CogThiefGameTitle = Cog + " Ladrão"
 CogThiefGameInstructions = "Impeça que os " + Cogs + " roubem nossos barris! Aperte a tecla Ctrl para atirar uma torta. Use as teclas de seta para se mover. Dica: você pode andar nas diagonais."
 CogThiefBarrelsSaved = "%(num)d Barris\nSalvos!"
 CogThiefBarrelSaved = "%(num)d Barril\nSalvo!"
 CogThiefNoBarrelsSaved = "Nenhum Barril\nSalvo"
 CogThiefPerfect = "PERFEITO!!"
-
-# MinigameRulesPanel.py
 MinigameRulesPanelPlay = "JOGAR"
-
-# Purchase.py
 GagShopName = "Loja de Piadas do Pateta"
 GagShopPlayAgain = "JOGAR\nNOVAMENTE"
 GagShopBackToPlayground = "SAIR DE NOVO \nPARA O PÁTIO"
@@ -5372,53 +5185,40 @@ GagShopYouHave = "Você tem %s balinhas para gastar"
 GagShopYouHaveOne = "Você tem 1 balinha para gastar"
 GagShopTooManyProps = "Sinto muito, você tem muitos acessórios"
 GagShopDoneShopping = "FIM DAS\nCOMPRAS"
-# name of a gag
 GagShopTooManyOfThatGag = "Sinto muito, você já tem %s o suficiente"
 GagShopInsufficientSkill = "Você não tem muita habilidade para isso ainda"
-# name of a gag
 GagShopYouPurchased = "Você comprou %s"
 GagShopOutOfJellybeans = "Sinto muito, você não tem mais balinhas!"
 GagShopWaitingOtherPlayers = "Aguardando outros jogadores..."
-# these show up on the avatar panels in the purchase screen
 GagShopPlayerDisconnected = "%s desconectou-se"
 GagShopPlayerExited = "%s saiu"
 GagShopPlayerPlayAgain = "Jogar novamente"
 GagShopPlayerBuying = "Comprando"
-
-# MakeAToon.py
 GenderShopQuestionMickey = "Para criar um Toon menino, clique em mim!"
 GenderShopQuestionMinnie = "Para criar um Toon menina, clique em mim!"
 GenderShopFollow = "Siga-me!"
 GenderShopSeeYou = "Vejo você depois!"
 GenderShopBoyButtonText = "Menino"
 GenderShopGirlButtonText = "Menina"
-
-# BodyShop.py
 BodyShopHead = "Cabeça"
 BodyShopBody = "Corpo"
 BodyShopLegs = "Pernas"
-
-# ColorShop.py
 ColorShopHead = "Cabeça"
 ColorShopBody = "Corpo"
 ColorShopLegs = "Pernas"
 ColorShopToon = "Toon"
 ColorShopParts = "Partes"
 ColorShopAll = "Tudo"
-
-# ClothesShop.py
 ClothesShopShorts = "Short"
 ClothesShopShirt = "Camisa"
 ClothesShopBottoms = "Parte de baixo"
-
-# MakeAToon
 PromptTutorial = "Parabéns!\nVocê é o(a) mais recente morador(a) de Toontown!\n\nDeseja continuar com o Toontorial ou teletransportar-se diretamente para o Centro de Toontown?"
 MakeAToonSkipTutorial = "Pular Toontorial"
 MakeAToonEnterTutorial = "Acessar Toontorial"
 MakeAToonDone = "Feito"
 MakeAToonCancel = lCancel
 MakeAToonNext = lNext
-MakeAToonLast = "Volta"
+MakeAToonLast = "Voltar"
 CreateYourToon = "Clique nas setas para criar o seu Toon."
 CreateYourToonTitle = "Crie o seu Toon"
 ShapeYourToonTitle = "Selecione o Tipo"
@@ -5449,8 +5249,6 @@ PickAName = "Tente usar o jogo Escolha um nome!\nClique aqui -->"
 PickANameButton = "Escolha um nome"
 RejectNameText = "Este nome não é permitido. Tente novamente."
 WaitingForNameSubmission = "Enviando o seu nome..."
-
-# PetshopGUI.py
 PetNameMaster = "PetNameMaster_portuguese.txt"
 PetshopUnknownName = "Nome: ???"
 PetshopDescGender = "Sexo:\t%s"
@@ -5468,16 +5266,13 @@ PetshopReturnConfirm = "Devolver %s?"
 PetshopReturn = "Devolver"
 PetshopChooserTitle = "RABISCOS DE HOJE"
 PetshopGoHomeText = 'Deseja ir à sua propriedade para brincar com seu novo Rabisco?'
-
-# NameShop.py
 NameShopNameMaster = "NameMaster_portuguese.txt"
 NameShopPay = "Assine já!"
 NameShopPlay = "Avaliação gratuita"
 NameShopOnlyPaid = "Somente usuários pagantes\npodem dar nomes aos seus Toons.\nAté que você se inscreva,\nseu nome será\n"
 NameShopContinueSubmission = "Continuar envio"
 NameShopChooseAnother = "Escolha outro nome"
-NameShopToonCouncil = "O Conselho de Toons\nanalisará o seu\nnome."+ \
-                   "A análise pode\nlevar alguns dias.\nEnquanto você espera,\nseu nome será\n"
+NameShopToonCouncil = "O Conselho de Toons\nanalisará o seu\nnome."+ "A análise pode\nlevar alguns dias.\nEnquanto você espera,\nseu nome será\n"
 PleaseTypeName = "Digite o seu nome:"
 AllNewNames = "Todos os novos nomes\ndevem ser aprovados\npelo Conselho de Toons."
 NameMessages = "Use sua criatividade e lembre-se:\nnada de nomes relacionados com a Disney, por favor."
@@ -5488,8 +5283,7 @@ PeriodOnlyAfterLetter = "Você pode usar um ponto no nome, mas apenas depois de 
 ApostropheOnlyAfterLetter = "Você pode usar um apóstrofo no nome, mas apenas depois de uma letra."
 NoNumbersInTheMiddle = "Dígitos numéricos podem não aparecer no meio da palavra."
 ThreeWordsOrLess = "Seu nome deve ter três palavras ou menos."
-CopyrightedNames = (
- "mickey",
+CopyrightedNames = ("mickey",
  "mickey mouse",
  "mickeymouse",
  "minnie",
@@ -5502,14 +5296,32 @@ CopyrightedNames = (
  "patodonald",
  "pluto",
  "goofy",
- "pateta",
-    )
-NumToColor = ['Branco', 'Pêssego', 'Vermelho vivo', 'Vermelho', 'Castanho',
-              'Siena', 'Marrom', 'Canela', 'Coral', 'Laranja',
-              'Amarelo', 'Creme', 'Cítrico', 'Limão', 'Verde-água',
-              'Verde', 'Azul-claro', 'Verde-azul', 'Azul',
-              'Verde-musgo', 'Azul-turquesa', 'Azul cinzento', 'Lilás',
-              'Púrpura', 'Rosa']
+ "pateta")
+NumToColor = ['Branco', 
+ 'Pêssego', 
+ 'Vermelho vivo', 
+ 'Vermelho', 
+ 'Castanho', 
+ 'Siena', 
+ 'Marrom', 
+ 'Canela', 
+ 'Coral', 
+ 'Laranja',            
+ 'Amarelo', 
+ 'Creme', 
+ 'Cítrico', 
+ 'Limão', 
+ 'Verde-água',
+ 'Verde', 
+ 'Azul-claro', 
+ 'Verde-azul', 
+ 'Azul',
+ 'Verde-musgo', 
+ 'Azul-turquesa',
+ 'Azul cinzento',
+ 'Lilás',
+ 'Púrpura', 
+ 'Rosa']
 AnimalToSpecies = {
     'dog'   : 'Cachorro',
     'cat'   : 'Gato',
@@ -5526,8 +5338,6 @@ ToonAlreadyExists = "Você já tem um Toon com o nome %s!"
 NameAlreadyInUse = "Este nome já foi usado!"
 EmptyNameError = "Você deve primeiramente inserir um nome."
 NameError = "Sinto muito. Este nome não vai funcionar."
-
-# NameCheck.py
 NCTooShort = 'Este nome é muito curto.'
 NCNoDigits = 'O nome não pode conter números.'
 NCNeedLetters = 'Cada palavra do nome deve conter algumas letras.'
@@ -5537,15 +5347,11 @@ NCMixedCase = 'Este nome tem muitas letras em maiúsculas.'
 NCBadCharacter = "O seu nome não pode conter o caractere '%s'"
 NCGeneric = 'Sinto muito, este nome não vai funcionar.'
 NCTooManyWords = 'O seu nome não pode ter mais de quatro palavras.'
-NCDashUsage = ("Hífens podem ser usados apenas para ligar duas palavras"
-            "(como em 'Bu-Bu').")
+NCDashUsage = ("Hífens podem ser usados apenas para ligar duas palavras (como em 'Bu-Bu').")
 NCCommaEdge = "O seu nome não pode começar ou terminar com vírgula."
 NCCommaAfterWord = "Você não pode começar uma palavra com vírgula."
-NCCommaUsage = ('Este nome não usa vírgulas corretamente. As vírgulas devem'
-                'juntar duas palavras, como no nome "Dr. Quack, MD".'
-                'As vírgulas devem também ser seguidas por um espaço.')
-NCPeriodUsage = ('Este nome não usa pontos corretamente. Os pontos são'
-                 'permitidos somente em palavras como "Sr.", "Sra.", "J.P.", etc.')
+NCCommaUsage = ('Este nome não usa vírgulas corretamente. As vírgulas devem juntar duas palavras, como no nome "Dr. Quack, MD". As vírgulas devem também ser seguidas por um espaço.')
+NCPeriodUsage = ('Este nome não usa pontos corretamente. Os pontos são permitidos somente em palavras como "Sr.", "Sra.", "J.P.", etc.')
 NCApostrophes = 'Este nome tem excesso de apóstrofos.'
 
 # DistributedTrophyMgrAI.py
@@ -5586,18 +5392,13 @@ SuitInvasionBulletin2 = lToonHQ+": %s dominaram Toontown!!!"
 
 # DistributedHQInterior.py
 LeaderboardTitle = "Pelotão Toon"
-
-# QuestScript.txt
 QuestScriptTutorialMickey_1 = "Toontown ganhou um novo cidadão! Você tem piadas de reserva?"
 QuestScriptTutorialMickey_2 = "Claro, %s!"
 QuestScriptTutorialMickey_3 = "O Tutorial Tom vai contar para você tudo sobre os Cogs.\aTchauzinho!"
 QuestScriptTutorialMickey_4 = "Vem cá! Use as teclas de seta para mover-se."
-
-# These are needed to correspond to the Japanese gender specific phrases
 QuestScriptTutorialMinnie_1 = "Toontown ganhou um novo cidadão! Você tem piadas de reserva?"
 QuestScriptTutorialMinnie_2 = "Claro, %s!"
 QuestScriptTutorialMinnie_3 = "O Tutorial Tom vai contar para você tudo sobre os Cogs.\aTchauzinho!"
-
 QuestScript101_1 = "Estes são os COGS. Eles são robôs que estão tentando dominar Toontown."
 QuestScript101_2 = "Há vários tipos diferentes de COGS e..."
 QuestScript101_3 = "...eles transformam os alegres edifícios dos Toons..."
@@ -5612,7 +5413,6 @@ QuestScript101_11 = "OH NÃO! Há um COG na porta da minha loja!"
 QuestScript101_12 = "AJUDE-ME, POR FAVOR! Derrote este COG!"
 QuestScript101_13 = "Esta é a sua primeira Tarefa Toon!"
 QuestScript101_14 = "Vamos nessa! Vá derrotar aquele Puxa-saco!"
-
 QuestScript110_1 = "Bom trabalho; você derrotou aquele Puxa-saco. Deixe-me dar a você um Álbum Toon..."
 QuestScript110_2 = "O livro é cheio de coisas legais."
 QuestScript110_3 = "Abra-o para eu mostrar a você."
@@ -5624,7 +5424,6 @@ QuestScript110_8 = "Dê uma volta no bondinho para ganhar balinhas e poder compr
 QuestScript110_9 = "Para ir até o bondinho, saia pela porta logo atrás de mim e siga até o pátio."
 QuestScript110_10 = "Agora, feche o livro e encontre o bondinho!"
 QuestScript110_11 = "Volte para o Quartel dos Toons quando já estiver pronto. Tchau!"
-
 QuestScriptTutorialBlocker_1 = "Oi, e aí, pessoal?"
 QuestScriptTutorialBlocker_2 = "Alô?"
 QuestScriptTutorialBlocker_3 = "Ah! Você não sabe usar o Chat rápido!"
@@ -5633,14 +5432,6 @@ QuestScriptTutorialBlocker_5 = "Muito bom!\aO local para onde você está indo t
 QuestScriptTutorialBlocker_6 = "Se você quiser conversar com seus amigos usando o teclado, há um outro botão que pode ser usado."
 QuestScriptTutorialBlocker_7 = "Ele se chama botão \"Conversar\". Você precisa ativar o Chat Rápido Plus no site de Toontown para usá-lo."
 QuestScriptTutorialBlocker_8 = "Boa sorte! Vejo você depois!"
-
-"""
-GagShopTut
-
-You will also earn the ability to use other types of gags.
-
-"""
-
 QuestScriptGagShop_1 = "Bem-vindo à Loja de Piadas!"
 QuestScriptGagShop_1a = "Aqui é o lugar onde os Toons vêm comprar piadas para usar contra os Cogs."
 #QuestScriptGagShop_2 = "Este pote mostra quantas balinhas você tem."
@@ -5784,7 +5575,6 @@ GardenTypeName = 'Materiais de Jardim'
 RentalTypeName = 'Item de Aluguel'
 GardenStarterTypeName = 'Kit de Jardinagem'
 NametagTypeName = "Crachá"
-AccessoryTypeNames = "Acessórios"
 
 
 # Make sure numbers match up to CatalogItemTypes.py
@@ -5807,238 +5597,8 @@ CatalogItemTypeNames = {
     15: GardenStarterTypeName, 
     16: NametagTypeName, 
     17: "TOON_STATUE_ITEM",
-    18: "ANIMATED_FURNITURE_ITEM",
-    19: AccessoryTypeNames,
-}   
-
-HatStylesDescriptions = {
-    'hbb1': "Boné de Baseball Verde",
-    'hbb2': "Boné de Baseball Azul",
-    'hbb3': "Boné de Baseball Laranja",
-    'hsf1': "Chapéu de Safari Bege",
-    'hsf2': "Chapéu de Safari Marrom",
-    'hsf3': "Chapéu de Safari Verde",
-    'hrb1': "Laço Rosa",
-    'hrb2': "Laço Vermelho",
-    'hrb3': "Laço Roxo",
-    'hht1': "Chapéu de Coração Rosa",
-    'hht2': "Chapéu de Coração Amarelo",
-    'htp1': "Black Top Chapéu",
-    'htp2': "Blue Top Chapéu",
-    'hav1': "Chapéu de Birgona",
-    'hfp1': "Flower Chapéu",
-    'hsg1': "Sandbag Chapéu",
-    'hwt1': "Weight Chapéu",
-    'hfz1': "Chapéu do Aladdin",
-    'hgf1': "Chapéu de Golf",
-    'hpt1': "Chapéu de Aniversário",
-    'hpt2': "Chapéu de Festa Toon",
-    'hpb1': "Chapéu Chique",
-    'hcr1': "Cabelo de Palhaço",
-    'hcw1': "Cowboy Chapéu",
-    'hpr1': "Chapéu de Pirata",
-    'hpp1': "Propeller Chapéu",
-    'hfs1': "Chapéu de Pescaria",
-    'hsb1': "Chapéu Mexicano",
-    'hst1': "Straw Chapéu",
-    'hsu1': "Sun Chapéu",
-    'hrb4': "Yellow Bow",
-    'hrb5': "Checker Bow",
-    'hrb6': "Light Red Bow",
-    'hrb7': "Rainbow Bow",
-    'hat1': "Antenna Thingy",
-    'hhd1': "Beehive Hairdo",
-    'hbw1': "Bowler Chapéu",
-    'hch1': "Chapéu de Chefe",
-    'hdt1': "Chapéu de Detetive",
-    'hft1': "Fancy Feathers Chapéu",
-    'hfd1': "Chapéu do Indiana Jones",
-    'hmk1': "Chapéu da Banda do Mickey",
-    'hft2': "Feather Headband",
-    'hhd2': "Pompadour Hairdo",
-    'hpc1': "Princess Chapéu",
-    'hrh1': "Archer Chapéu",
-    'hhm1': "Roman Helmet",
-    'hat2': "Spider Antenna Thingy",
-    'htr1': "Tiara",
-    'hhm2': "Viking Helmet",
-    'hwz1': "Chapéu de Bruxa",
-    'hwz2': "Chapéu do Mickey Feiticeiro",
-    'hhm3': "Capacete de Conquistador",
-    'hhm4': "Firefighter Helmet",
-    'hfp2': "Anti-Cog Control Chapéu",
-    'hhm5': "Miner Chapéu",
-    'hnp1': "Napoleon Chapéu",
-    'hpc2': "Boné de Piloto",
-    'hph1': "Cop Chapéu",
-    'hwg1': "Rainbow Wacky Wig",
-    'hbb4': "Boné de Baseball Amarelo",
-    'hbb5': "Boné de Baseball Vermelho",
-    'hbb6': "Boné de Baseball Aqua",
-    'hsl1': "Sailor Chapéu",
-    'hfr1': "Chapéu de Samba",
-    'hby1': "Bobby Chapéu",
-    'hrb8': "Pink Dots Bow",
-    'hjh1': "Chapéu de Bobo da Corte",
-    'hbb7': "Boné de Baseball Roxo",
-    'hrb9': "Green Checker Bow",
-    'hwt2': "Chapéu de Inverno",
-    'hhw1': "Bandana",
-    'hhw2': "Chapéu de Toonosauro",
-    'hob1': "Jamboree Chapéu",
-    'hbn1': "Chapéu de Passaro by Brianna",
-    }
-
-GlassesStylesDescriptions = {
-    'grd1': "Óculos Pronto",
-    'gmb1': "White Mini Blinds",
-    'gnr1': "Purple Narrow Glasses",
-    'gst1': "Óculos de Estrela Amarela",
-    'g3d1': "Óculos de Filme",
-    'gav1': "Óculos de Aviator",
-    'gce1': "Óculos de Olho de Cato",
-    'gdk1': "Óculos Normal",
-    'gjo1': "Óculos de Cortinas de Celebridade",
-    'gsb1': "Máscara de Mergulho",
-    'ggl1': "Óculos Maneiro",
-    'ggm1': "Groucho Glasses",
-    'ghg1': "Óculos de Coração",
-    'gie1': "Bug Eye Glasses",
-    'gmt1': "Black Secret ID Mask",
-    'gmt2': "Blue Secret ID Mask",
-    'gmt3': "Máscara de Carnaval Azul",
-    'gmt4': "Máscara de Carnaval Roxo",
-    'gmt5': "Máscara de Carnaval Verde Azul",
-    'gmn1': "Monocle",
-    'gmo1': "Smooch Glasses",
-    'gsr1': "Square Frame Glasses",
-    'ghw1': "Skull Eyepatch",
-    'ghw2': "Gem Eyepatch",
-    'gag1': "Óculos de Olhos de Alien por Alexandra",
-    }
-
-BackpackStylesDescriptions = {
-    'bpb1': "Mochila Azul",
-    'bpb2': "Mochila Laranja",
-    'bpb3': "Mochila Roxa",
-    'bpd1': "Red Dot Backpack",
-    'bpd2': "Yellow Dot Backpack",
-    'bwg1': "Bat Wings",
-    'bwg2': "Bee Wings",
-    'bwg3': "DragonFly Wings",
-    'bst1': "Scuba Tank",
-    'bfn1': "Shark Fin",
-    'baw1': "White Angel Wings",
-    'baw2': "Rainbow Angel Wings",
-    'bwt1': "Toys Backpack",
-    'bwg4': "Butterfly Wings",
-    'bwg5': "Pixie Wings",
-    'bwg6': "Dragon Wings",
-    'bjp1': "Jet Pack",
-    'blg1': "Bug Backpack",
-    'bsa1': "Mochila de Ursinho Teddy",
-    'bwg7': "Bird wings",
-    'bsa2': "Plush Cat Pack",
-    'bsa3': "Plush Dog Pack",
-    'bap1': "Airplane Wings",
-    'bhw1': "Pirate Sword",
-    'bhw2': "Super Toon Cape",
-    'bhw3': "Vampire Cape",
-    'bhw4': "Rabo de Toonsauro",
-    'bob1': "Jamboree Pack",
-    'bfg1': "Mochila de Ataque de Piadas",
-    'bfl1': "Mochila de Cog por Savanah",
-    }
-
-ShoesStylesDescriptions = {
-    'sat1': "Sapatos de Atlético Verde",
-    'sat2': "Sapatos de Atlético Vermelho",
-    'smb1': "Botas Verdes de Toon",
-    'scs1': "Tênis Verde de Atleta",
-    'swt1': "Sapatos Wingtips",
-    'smj1': "Sapatos Pretos Elegantes",
-    'sdk1': "Sapatos de Barcos",
-    'sat3': "Sapatos de Atlético Amarelo",
-    'scs2': "Tênis Preto de Atleta",
-    'scs3': "Tênis Branco de Atleta",
-    'scs4': "Tênis Rosa de Atleta",
-    'scb1': "Botas de Caubói",
-    'sfb1': "Botas Roxas",
-    'sht1': "Tênis Verde de Artista High Top",
-    'smj2': "Sapatos Marrons Elegantes",
-    'smj3': "Sapatos Vermelhos Elegantes",
-    'ssb1': "Botas Vermelhas de Super Toon",
-    'sts1': "Sapatos de Tênis Verde",
-    'sts2': "Sapatos de Tênis Rosa",
-    'scs5': "Tênis Vermelho de Atleta",
-    'smb2': "Botas Verdes-azuis de Toon",
-    'smb3': "Botas Marrons de Toon",
-    'smb4': "Botas Amarelas de Toon",
-    'sfb2': "Botas Quadradas Azuis",
-    'sfb3': "Botas Verdes de Corações",
-    'sfb4': "Botas de Pontos Cinza",
-    'sfb5': "Botas de Estrelas Laranjas",
-    'sfb6': "Botas de Estrelas Rosas",
-    'slf1': "Sapatos Loafers",
-    'smj4': "Sapatos Roxos Elegantes",
-    'smt1': "Botas de Motorciclo",
-    'sox1': "Sapatos Oxfords",
-    'srb1': "Botas Rosas de Chuva",
-    'sst1': "Botas de Alegria",
-    'swb1': "Botas Bege de Inverno",
-    'swb2': "Botas Rosas de Inverno",
-    'swk1': "Botas de Trabalho",
-    'scs6': "Tênis Amarelo de Atleta",
-    'smb5': "Botas Rosas de Toon",
-    'sht2': "Tênis Rosa de Artista High Top",
-    'srb2': "Botas de Pontos Vermelhos de Chuva",
-    'sts3': "Sapatos de Tênis Roxo",
-    'sts4': "Sapatos de Tênis Violeta",
-    'sts5': "Sapatos de Tênis Amarelo",
-    'srb3': "Bolas Azuis de Chuva",
-    'srb4': "Botas Amarelas de Chuva",
-    'sat4': "Sapatos de Atlético Preto",
-    'shw1': "Sapatos de Pirata",
-    'shw2': "Pata de Toonsauro",
-    }
-
-AccessoryNamePrefix = {
-    0: "chápeu de unisex ",
-    1: "óculos de unisex ",
-    2: "mochila de unisex ",
-    3: "sapatos de unisex ",
-    4: "chápeu de menino ",
-    5: "óculos de menino ",
-    6: "mochila de menino ",
-    7: "sapatos de menino ",
-    8: "chápeu de menina ",
-    9: "óculos de menina ",
-    10: "mochila de menina ",
-    11: "sapatos de menina ",
-    }
-
-AwardManagerAccessoryNames = {}
-AccessoryTypeNames = {}
-for accessoryId in list(CatalogAccessoryItemGlobals.AccessoryTypes.keys()):
-    accessoryInfo = CatalogAccessoryItemGlobals.AccessoryTypes[accessoryId]
-    if accessoryInfo[0] % 4 == 0:
-        accessoryStyleDescription = ChapéuStylesDescriptions
-    elif accessoryInfo[0] % 4 == 1:
-        accessoryStyleDescription = GlassesStylesDescriptions
-    elif accessoryInfo[0] % 4 == 2:
-        accessoryStyleDescription = BackpackStylesDescriptions
-    else:
-        accessoryStyleDescription = ShoesStylesDescriptions
-    if accessoryInfo[3]:
-        AwardManagerAccessoryNames[accessoryId] = AccessoryNamePrefix[accessoryInfo[0]] + accessoryStyleDescription[accessoryInfo[1]]
-    AccessoryTypeNames[accessoryId] = accessoryStyleDescription[accessoryInfo[1]]
-
-# Make sure this is in sync with ToonDNA.ShirtStyles
-ShirtStylesDescriptions = {
-    # -------------------------------------------------------------------------
-    # Boy styles
-    # -------------------------------------------------------------------------
-    'bss1': "básica",
+    18: "ANIMATED_FURNITURE_ITEM"}   
+ShirtStylesDescriptions = {'bss1': "básica",
     'bss2': "uma listra",
     'bss3': "colarinho",
     'bss4': "duas listras",
@@ -6053,10 +5613,6 @@ ShirtStylesDescriptions = {
     'bss13': "camiseta lightning bolt (especial)",
     'bss14': "camiseta 19 (especial)",
     'bss15': "camisa panamá",
-
-    # -------------------------------------------------------------------------
-    # Girl styles
-    # -------------------------------------------------------------------------
     'gss1': "básica",
     'gss2': "uma listra",
     'gss3': "colarinho",
@@ -6072,11 +5628,6 @@ ShirtStylesDescriptions = {
     'gss13': "com corações",
     'gss14': "com estrelas (especial)",
     'gss15': "com flores",
-
-    # -------------------------------------------------------------------------
-    # Special Catalog-only shirts. 
-    # -------------------------------------------------------------------------
-    # yellow hooded - Series 1
     'c_ss1': "amarela com capuz - Série 1",
     'c_ss2': "amarela com palmeira - Série 1",
     'c_ss3': "roxa com estrelas - Série 2",
@@ -6091,21 +5642,25 @@ ShirtStylesDescriptions = {
     'c_gss5': "quimono azul-piscina com listra (feminina) – NÃO USADO",
     'c_ss4' : "Camiseta tingida (unissex) - Série 3",
     'c_ss5': "azul-claro com azul e listra branca (masculina) - Série 3",
-    'c_ss6': "camisa de vaqueiro 1: Série 4",
-    'c_ss7': "camisa de vaqueiro 2: Série 4",
-    'c_ss8': "camisa de vaqueiro 3: Série 4",
-    'c_ss9': "camisa de vaqueiro 4: Série 4",
-    'c_ss10': "camisa de vaqueiro 5: Série 4",
-    'c_ss11': "camisa de vaqueiro 6: Série 4",
-    
-    # Special Holiday-themed shirts.
+    'c_ss6': "camisa de caubói 1: Série 4",
+    'c_ss7': "camisa de caubói 2: Série 4",
+    'c_ss8': "camisa de caubói 3: Série 4",
+    'c_ss9': "camisa de caubói 4: Série 4",
+    'c_ss10': "camisa de caubói 5: Série 4",
+    'c_ss11': "camisa de caubói 6: Série 4",
     'hw_ss1': "Fantasma de Halloween",
     'hw_ss2': "Abóbora de Halloween",
+    'hw_ss3': "Vampiro de Halloween",
+    'hw_ss4': "Tartaruga de Halloween",
+    'hw_ss5': "Abelha de Halloween",
+    'hw_ss6': "Pirata de Halloween",
+    'hw_ss7': "Super Toon de Halloween",
+    'hw_ss8': "Vampiro sem capa de Halloween",
+    'hw_ss9': "Dinossauro de Halloween",
     'wh_ss1': "Feriado de Inverno 1",
     'wh_ss2': "Feriado de Inverno 2",
     'wh_ss3': "Feriado de Inverno 3",
     'wh_ss4': "Feriado de Inverno 4",
-
     'vd_ss1': "Dia dos namorados, rosa com corações vermelhos (feminina)",
     'vd_ss2': "Dia dos namorados, vermelha com corações brancos",
     'vd_ss3': "Dia dos namorados, branca com corações alados (masculina)",
@@ -6125,12 +5680,9 @@ ShirtStylesDescriptions = {
     'j4_ss2': "Fogos de Artifício de 4 de julho",
     'c_ss12': "Catálogo série 7, Verde com botões de amarelos", 
     'c_ss13': "Catálogo série 7, Roxo com flor grande", 
-
     'pj_ss1': "Camisa de Pijama de banana azul", 
     'pj_ss2': "Camisa de Pijama de chifre vermelho",
     'pj_ss3': "Camisa de Pijama de óculos roxos",
-    
-    # Special award clothes
     'sa_ss1': "Camisa Listrada",
     'sa_ss2': "Camisa de Pesca 1",
     'sa_ss3': "Camisa de Pesca 2",
@@ -6170,12 +5722,10 @@ ShirtStylesDescriptions = {
     'sa_ss37': "Camisa de Bondinho 3",
     'sa_ss38': "Camisa de Pesca 5",
     'sa_ss39': "Camisa de Golfe 4",
-    #
     'sa_ss40': "Camisa de Halloween da Bruxa da Lua",
     'sa_ss41': "Camisa de Férias de Inverno de Trenó",
     'sa_ss42': "Camisa de Halloween da Lua Maluca",
     'sa_ss43': "Camisa das Férias de Inverno de Luvas de Inverno",
-    #
     'sa_ss44': "Camisa de Pesca 6",
     'sa_ss45': "Camisa de Pesca 7",
     'sa_ss46': "Camisa de Golfe 5",
@@ -6187,15 +5737,10 @@ ShirtStylesDescriptions = {
     'sa_ss52': "Camisa do Bondinho 5",
     'sa_ss53': "Camisa de Salvador de Edifícios 4",
     'sa_ss54': "Camisa de Salvador de Edifícios 5",
-    #
     'sa_ss55': "Camisa de Aniversário",
-
-    # Scientists
     'sc_1': "Camisa de Cientista Top 1",
     'sc_2': "Camisa de Cientista Top 2",
     'sc_3': "Camisa de Cientista Top 3 ",
-
-    # Silly Story Shirts
     'sil_1': "Camisa de Caixa de Correio Boba",
     'sil_2': "Camisa de Lixeira Boba",
     'sil_3': "Camisa de Laboratório Maluco bobinho",
@@ -6204,36 +5749,15 @@ ShirtStylesDescriptions = {
     'sil_6': "Camisa de Esmaga Cog bobinho",
     'sil_7': "Blusa Festa da Vitória 1",
     'sil_8': "Blusa Festa da Vitória 2",
-
-    # Placeholder Emblem Shirts
     'emb_us1': "camisa de emblema de espaço reservado 1",
     'emb_us2': "camisa de emblema de espaço reservado 2",
     'emb_us3': "camisa de emblema de espaço reservado 3",
-
-    # Sellbot Icon Shirt
     'sb_1': "Camisa de Ícone do Robô Vendedor ",
-
-    # Lawbot Icon Shirt
     'lb_1': "Camisa de Ícone do Rôbo da Lei",
-
-    # Jellybean Shirt
     'jb_1': "Camisa de Balinha",
-
-    # Doodle Shirt
     'jb_2': "Camisa de Rabisco",
-
-    # Get Connected Shirt
-    'ugcms': "Fique conectado ao Agitador",
-
-    # name: [ shirtIdx, sleeveIdx, [(ShirtColorIdx, sleeveColorIdx), ... ]]
-    }
-
-# Make sure this is in sync with ToonDNA.BottomStyles
+    'ugcms': "Fique conectado ao Agitador"}
 BottomStylesDescriptions = {
-    # name: [ bottomIdx, [bottomColorIdx, ...]]
-    # -------------------------------------------------------------------------
-    # Boy styles (shorts)
-    # -------------------------------------------------------------------------
     'bbs1': "básico com bolsos",
     'bbs2': "cinto",
     'bbs3': "cargo",
@@ -6245,8 +5769,6 @@ BottomStylesDescriptions = {
     'vd_bs1': "Shorts de dia dos namorados",
     'vd_bs2': "Verde com coração vermelho",
     'vd_bs3': "Brim azul com coração verde e vermelho",
-
-    # Catalog only shorts
     'c_bs1': "Laranja com listras laterais azuis",
     'c_bs2': "Azul com listras e pregas douradas",
     'c_bs5': 'Listras verdes - série 7',
@@ -6258,12 +5780,6 @@ BottomStylesDescriptions = {
     'wh_bs2': 'Shorts de Feriado de Inverno Estilo 2',
     'wh_bs3': 'Shorts de Feriado de Inverno Estilo 3',
     'wh_bs4': 'Shorts de Feriado de Inverno Estilo 4',
-    
-    # -------------------------------------------------------------------------
-    # Girl styles (shorts and skirts)
-    # -------------------------------------------------------------------------
-    # skirts
-    # -------------------------------------------------------------------------
     'gsk1': 'básica',
     'gsk2': 'bolinhas (especial)',
     'gsk3': 'listras verticais',
@@ -6271,18 +5787,12 @@ BottomStylesDescriptions = {
     'gsk5': 'estampa de flor',
     'gsk6': '2 bolsos (especial)',
     'gsk7': 'saia de brim',
-    
-    # shorts
-    # -------------------------------------------------------------------------
     'gsh1': 'básico com bolsos',
     'gsh2': 'florido',
     'gsh3': 'shorts de brim',
-    # Special catalog-only skirts and shorts.
     'c_gsk1': 'saia azul com borda bege e botão ',
     'c_gsk2': 'saia roxa com rosa e fita',
     'c_gsk3': 'saia violeta com amarelo e estrela',
-
-    # Valentines skirt
     'vd_gs1': 'Saia vermelha com corações',
     'vd_gs2': 'Saia rosa com corações',
     'vd_gs3': 'Saia de brim azul com coração verde e vermelho',
@@ -6290,7 +5800,6 @@ BottomStylesDescriptions = {
     'sd_gs1': 'Shorts de dia de São Patrício',
     'c_gsk5': 'Saias de vaqueira 1',
     'c_gsk6': 'Saias de vaqueira 2',
-    # Western shorts
     'c_bs3': 'Shorts de caubói 1',
     'c_bs4': 'Shorts de caubói 2',
     'j4_bs1': 'Shorts de 4 de julho',
@@ -6303,232 +5812,416 @@ BottomStylesDescriptions = {
     'wh_gsk2': 'Saia de Feriado de Inverno Estilo 2',
     'wh_gsk3': 'Saia de Feriado de Inverno Estilo 3',
     'wh_gsk4': 'Saia de Feriado de Inverno Estilo 4',
-    
     'sa_bs1': "Shorts de Pesca",
     'sa_bs2': "Shorts de Jardinagem",
     'sa_bs3': "Shorts de Festa",
     'sa_bs4': "Shorts de Corrida",
     'sa_bs5': "Shorts de Verão",
+    'sa_bs6': "Shorts de Golfe",
+    'sa_bs7': "Shorts de Abelha de Halloween",
+    'sa_bs8': "Shorts de Super Toon de Halloween",
+    'sa_bs9': "Shorts de Salvar o Edifício de Halloween",
     'sa_gs1': "Saia de Pesca",
     'sa_gs2': "Saia de Jardinagem",
     'sa_gs3': "Saia de Festa",
     'sa_gs4': "Saia de Corrida",
-    'sa_gs5': "Saia de Verão",
-    }
+    'sa_gs5': "Saia de Verão"}
 
 AwardMgrBoy = "masculino"
 AwardMgrGirl = "feminino"
 AwardMgrUnisex = "unissex"
 AwardMgrShorts = "shorts"
-AwardMgrSkirt = "saia"
+AwardMgrSaia = "saia"
 AwardMgrShirt = "camisa"
-
-# Special Event Strings to display in  mailbox screen
-SpecialEventMailboxStrings = {
-    1: "Um item especial do conselho Toon",
-    2: "Prêmio do Torneio de Pesca de Melville",
-    3: "Prêmio do Torneio de Pesca de Billy Bud",
-    }
-
-# Rental items"
+SpecialEventMailboxStrings = {1: "Um item especial do conselho Toon",
+ 2: "Prêmio do Torneio de Pesca de Melville",
+ 3: "Aqui está seu Prêmio do Torneio de Pesca de Billy Bud",
+ 4: "Aqui está seu prêmio pelo Convite de Abril do Bosque de Bolotas! Parabéns!",
+ 5: "Aqui está seu prêmio do Campeonato no Bosque de Bolotas! Parabéns!",
+ 6: "Aqui está seu prêmio da Extravaganza de Dando-Presentes! Parabéns!",
+ 7: "Aqui está seu prêmio do Dia da Maratona no Ano-Novo Top dos Toons! Parabéns!",
+ 8: "Aqui está seu prêmio do Fim de Semana Perfeita do Bondinho dos Jogos! Parabéns!",
+ 9: "Aqui está seu prêmio da Loucura do Bondinho dos Jogos! Parabéns!",
+ 10: "Aqui está seu prêmio do Fim de Semana do Grande Prémio! Parabéns!",
+ 11: "Aqui está seu prêmio da Corrida de Cavalos da Tarefa dos Toons! Parabéns!",
+ 12: "Aqui está seu prêmio da Maratona de Salvar Edifício! Parabéns!",
+ 13: "Aqui está seu prêmio do Torneio de Maioria dos Cogs Derrotados! Parabéns!",
+ 14: "Aqui está seu prêmio do Torneio de Maioria de V.P.s Derrotados! Parabéns!",
+ 15: "Aqui está seu prêmio Operação: Robô Vendedor Tempestade! Parabéns!"}
 RentalHours = "Horas de"
 RentalOf = "De"
 RentalCannon = "Canhões!"
-RentalTime = "Horas de"
 RentalGameTable = "Mesa de Jogo!"
-
 EstateCannonGameEnd = "O aluguel do Jogo de Canhão acabou."
 GameTableRentalEnd = "O aluguel da Mesa de Jogo acabou."
-
 MessageConfirmRent = "Iniciar o aluguel? Cancele para guardar o aluguel para depois"
 MessageConfirmGarden = "Você quer mesmo iniciar um jardim?"
-
-#nametag Names
 NametagPaid = "Crachá de Cidadão"
 NametagAction = "Crachá de Ação"
 NametagFrilly = "Crachá Chique"
-
 FurnitureYourOldCloset = "seu armário velho"
 FurnitureYourOldBank = "seu banco velho"
-
-# How to put quotation marks around chat items--don't translate yet.
+TrunkHatGui = 'Chapéus'
+TrunkGlassesGUI = 'Óculos'
+TrunkBackpackGUI = 'Mochilas'
+TrunkShoesGUI = 'Sapatos'
 ChatItemQuotes = '"%s"'
-
-# CatalogFurnitureItem.py
-FurnitureNames = {
-  100: "Poltrona",
-  105: "Poltrona",
-  110: "Cadeira",
-  120: "Cadeira de escrivaninha",
-  130: "Cadeira de jardim",
-  140: "Cadeira lagosta",
-  145: "Cadeira salva-vidas",
-  150: "Banco de sela",
-  160: "Cadeira nativa",
-  170: "Cadeira-bolinho",
-  200: "Cama",
-  205: "Cama",
-  210: "Cama",
-  220: "Cama banheira",
-  230: "Cama de folhas",
-  240: "Cama-barco",
-  250: "Rede de cáctus",
-  260: "Cama de sorvete",
-  270: "Olivia Erin & Cat's Bed",
-  300: "Pianola",
-  310: "Órgão de tubo",
-  400: "Lareira",
-  410: "Lareira",
-  420: "Lareira redonda",
-  430: "Lareira",
-  440: "Lareira-maçã",
-  450: "Lareira Irlandesa",
-  460: "Lareira Irlandesa Acesa", 
-  470: "Lareira Acesa",
-  480: "Lareira Circular Acesa", 
-  490: "Lareira Acesa",
-  491: "Lareira Acesa",
-  492: "Lareira em Forma de Maçã Acesa",
-  500: "Armário",
-  502: "Armário com 15 itens",
-  504: "Armário com 20 itens",
-  506: "Armário com 25 itens",
-  510: "Armário",
-  512: "Armário com 15 itens",
-  514: "Armário com 20 itens",
-  516: "Armário com 25 itens",
-  600: "Abajur pequeno",
-  610: "Abajur grande",
-  620: "Abajur de mesa",
-  625: "Abajur de mesa",
-  630: "Abajur da Margarida",
-  640: "Abajur da Margarida",
-  650: "Abajur da Água-viva",
-  660: "Abajur da Água-viva",
-  670: "Abajur do vaqueiro",
-  700: "Cadeira estofada",
-  705: "Cadeira estofada",
-  710: "Sofá",
-  715: "Sofá",
-  720: "Sofá de feno",
-  730: "Sofá-torta",
-  800: "Escrivaninha",
-  810: "Mesinha",
-  900: "Porta-guarda-chuva",
-  910: "Cabideiro",
-  920: "Lata de lixo",
-  930: "Cogumelo vermelho",
-  940: "Cogumelo amarelo",
-  950: "Cabideiro",
-  960: "Mesinha-barril",
-  970: "Planta cáctus",
-  980: "Tenda",
-  990: "O Fan (Leque) de Julieta", 
-  1000: "Tapete grande",
-  1010: "Tapete redondo",
-  1015: "Tapete redondo",
-  1020: "Tapete pequeno",
-  1030: "Capacho de folha",
-  1100: "Vitrina",
-  1110: "Vitrina",
-  1120: "Estante alta",
-  1130: "Estante baixa",
-  1140: "Arca-sundae",
-  1200: "Mesinha lateral",
-  1210: "Mesa pequena",
-  1215: "Mesa pequena",
-  1220: "Mesinha de centro",
-  1230: "Mesinha de centro",
-  1240: "Mesa Snorkel",
-  1250: "Mesa-biscoito",
-  1260: "Mesa do quarto",
-  1300: "Banco 1.000 Balas",
-  1310: "Banco 2.500 Balas",
-  1320: "Banco 5.000 Balas",
-  1330: "Banco 7.500 Balas",
-  1340: "Banco 10.000 Balas",
-  1399: "Telefone",
-  1400: "Toon Cezanne",
-  1410: "Flores",
-  1420: "Mickey Moderno",
-  1430: "Toon Rembrandt",
-  1440: "Toonescape",
-  1441: "Cavalo Assobiador",
-  1442: "Estrela Toon",
-  1443: "Não é Torta",
-  1450: "Mickey é Minnie",
-  1500: "Rádio",
-  1510: "Rádio",
-  1520: "Rádio",
-  1530: "Televisão",
-  1600: "Vasinho",
-  1610: "Vaso alto",
-  1620: "Vasinho",
-  1630: "Vaso alto",
-  1640: "Vasinho",
-  1650: "Vasinho",
-  1660: "Vaso Coral",
-  1661: "Vaso de concha",
-  1670: "Rose Vase",
-  1680: "Rose Watercan",
-  1700: "Carrocinha de pipoca",
-  1710: "Joaninha",
-  1720: "Chafariz",
-  1725: "Lavadora de roupa",
-  1800: "Aquário",
-  1810: "Aquário",
-  1900: "Peixe-espada",
-  1910: "Tubarão-martelo",
-  1920: "Chifres de pendurar",
-  1930: "Sombreiro simples",
-  1940: "Sombreiro elegante",
-  1950: "Apanhador de sonhos",
-  1960: "Ferradura",
-  1970: "Retrato de búfalo",
-  2000: "Balanço de doces",
-  2010: "Escorregada de torta",
-  3000: "Banheira banana split",
-  10000: "Moranga",
-  10010: "Abóbora",
-  10020: "Árvore de Natal",
-  10030: "Guirlanda de Natal"
-  }
-
-# CatalogClothingItem.py
-ClothingArticleNames = (
- "Camisa",
+FurnitureNames = {100: "Poltrona",
+ 105: "Poltrona",
+ 110: "Cadeira",
+ 120: "Cadeira de escrivaninha",
+ 130: "Cadeira de jardim",
+ 140: "Cadeira lagosta",
+ 145: "Cadeira salva-vidas",
+ 150: "Banco de sela",
+ 160: "Cadeira nativa",
+ 170: "Cadeira-bolinho",
+ 200: "Cama",
+ 205: "Cama",
+ 210: "Cama",
+ 220: "Cama banheira",
+ 230: "Cama de folhas",
+ 240: "Cama-barco",
+ 250: "Rede de cáctus",
+ 260: "Cama de sorvete",
+ 270: "Olivia Irlandesa & Cama de Gato",
+ 300: "Pianola",
+ 310: "Órgão de tubo",
+ 400: "Lareira",
+ 410: "Lareira",
+ 420: "Lareira redonda",
+ 430: "Lareira",
+ 440: "Lareira-maçã",
+ 450: "Lareira Irlandesa",
+ 460: "Lareira Irlandesa Acesa", 
+ 470: "Lareira Acesa",
+ 480: "Lareira Circular Acesa", 
+ 490: "Lareira Acesa",
+ 491: "Lareira Acesa",
+ 492: "Lareira em Forma de Maçã Acesa",
+ 500: "Armário",
+ 502: "Armário com 15 itens",
+ 504: "Armário com 20 itens",
+ 506: "Armário com 25 itens",
+ 510: "Armário",
+ 512: "Armário com 15 itens",
+ 514: "Armário com 20 itens",
+ 516: "Armário com 25 itens",
+ 600: "Abajur pequeno",
+ 610: "Abajur grande",
+ 620: "Abajur de mesa",
+ 625: "Abajur de mesa",
+ 630: "Abajur da Margarida",
+ 640: "Abajur da Margarida",
+ 650: "Abajur da Água-viva",
+ 660: "Abajur da Água-viva",
+ 670: "Abajur do caubói",
+ 700: "Cadeira estofada",
+ 705: "Cadeira estofada",
+ 710: "Sofá",
+ 715: "Sofá",
+ 720: "Sofá de feno",
+ 730: "Sofá-torta",
+ 800: "Escrivaninha",
+ 810: "Mesinha",
+ 900: "Porta-guarda-chuva",
+ 910: "Cabideiro",
+ 920: "Lata de lixo",
+ 930: "Cogumelo vermelho",
+ 940: "Cogumelo amarelo",
+ 950: "Cabideiro",
+ 960: "Mesinha-barril",
+ 970: "Planta cáctus",
+ 980: "Tenda",
+ 990: "O Fan (Leque) de Julieta", 
+ 1000: "Tapete grande",
+ 1010: "Tapete redondo",
+ 1015: "Tapete redondo",
+ 1020: "Tapete pequeno",
+ 1030: "Capacho de folha",
+ 1100: "Vitrina",
+ 1110: "Vitrina",
+ 1120: "Estante alta",
+ 1130: "Estante baixa",
+ 1140: "Arca-sundae",
+ 1200: "Mesinha lateral",
+ 1210: "Mesa pequena",
+ 1215: "Mesa pequena",
+ 1220: "Mesinha de centro",
+ 1230: "Mesinha de centro",
+ 1240: "Mesa Snorkel",
+ 1250: "Mesa-biscoito",
+ 1260: "Mesa do quarto",
+ 1300: "Banco 1.000 Balas",
+ 1310: "Banco 2.500 Balas",
+ 1320: "Banco 5.000 Balas",
+ 1330: "Banco 7.500 Balas",
+ 1340: "Banco 10.000 Balas",
+ 1399: "Telefone",
+ 1400: "Toon Cezanne",
+ 1410: "Flores",
+ 1420: "Mickey Moderno",
+ 1430: "Toon Rembrandt",
+ 1440: "Toonescape",
+ 1441: "Cavalo Assobiador",
+ 1442: "Estrela Toon",
+ 1443: "Não é Torta",
+ 1450: "Mickey é Minnie",
+ 1500: "Rádio",
+ 1510: "Rádio",
+ 1520: "Rádio",
+ 1530: "Televisão",
+ 1600: "Vasinho",
+ 1610: "Vaso alto",
+ 1620: "Vasinho",
+ 1630: "Vaso alto",
+ 1640: "Vasinho",
+ 1650: "Vasinho",
+ 1660: "Vaso Coral",
+ 1661: "Vaso de concha",
+ 1670: "Rose Vase",
+ 1680: "Rose Watercan",
+ 1700: "Carrocinha de pipoca",
+ 1710: "Joaninha",
+ 1720: "Chafariz",
+ 1725: "Lavadora de roupa",
+ 1800: "Aquário",
+ 1810: "Aquário",
+ 1900: "Peixe-espada",
+ 1910: "Tubarão-martelo",
+ 1920: "Chifres de pendurar",
+ 1930: "Sombreiro simples",
+ 1940: "Sombreiro elegante",
+ 1950: "Apanhador de sonhos",
+ 1960: "Ferradura",
+ 1970: "Retrato de búfalo",
+ 2000: "Balanço de doces",
+ 2010: "Escorregada de torta",
+ 3000: "Banheira banana split",
+ 10000: "Moranga",
+ 10010: "Abóbora",
+ 10020: "Árvore de Natal",
+ 10030: "Guirlanda de Natal"}
+AwardManagerFurnitureNames = {100: "Poltrona A - Séries 1",
+ 105: "Poltrona A - Séries 7",
+ 110: "Cadeira - Séries 1",
+ 120: "Cadeira de escrivaninha - Séries 2",
+ 130: "Cadeira de jardim - Séries 2",
+ 140: "Cadeira lagosta - Séries 3",
+ 145: "Cadeira salva-vidas - Séries 4",
+ 150: "Banco de sela - Séries 4",
+ 160: "Cadeira nativa - Séries 4",
+ 170: "Cadeira-bolinho - Séries 6",
+ 200: "Cama de Cama de Menino - Mobília Inicial",
+ 205: "Cama de Cama de Menino Séries 7",
+ 210: "Cama de Cama de Menina - Séries 1",
+ 220: "Cama banheira",
+ 230: "Cama de folhas",
+ 240: "Cama-barco",
+ 250: "Rede de cáctus",
+ 260: "Cama de sorvete",
+ 270: "Olivia Irlandesa & Cama de Gato - Cama do Bondinho",
+ 300: "Pianola",
+ 310: "Órgão de tubo",
+ 400: "Lareira - Lareira Quadrada Mobília Inicial",
+ 410: "Lareira - Lareira Menina Séries 1",
+ 420: "Lareira redonda",
+ 430: "Lareira - sala de insetos séries 2",
+ 440: "Lareira-maçã",
+ 450: "Lareira Irlandesa - coral",
+ 460: "Lareira Irlandesa Acesa - coral", 
+ 470: "Lareira Acesa - lareira quadrada com fogo",
+ 480: "Lareira Circular Acesa", 
+ 490: "Lareira Acesa - lareira menina com fogo",
+ 491: "Lareira Acesa - lareira de quarto de insetos",
+ 492: "Lareira em Forma de Maçã Acesa",
+ 500: "Armário",
+ 502: "Armário menino com 15 itens",
+ 504: "Armário menino com 20 itens",
+ 506: "Armário menino com 25 itens",
+ 510: "Armário menina - 10 itens iniciais",
+ 512: "Armário menina com 15 itens",
+ 514: "Armário menina com 20 itens",
+ 516: "Armário menina com 25 itens",
+ 600: "Abajur pequeno",
+ 610: "Abajur grande",
+ 620: "Abajur de mesa",
+ 625: "Abajur de mesa",
+ 630: "Abajur da Margarida 1",
+ 640: "Abajur da Margarida 2",
+ 650: "Abajur da Água-viva 1",
+ 660: "Abajur da Água-viva 2",
+ 670: "Abajur do caubói",
+ 700: "Cadeira estofada - Séries 1",
+ 705: "Cadeira estofada - Séries 7",
+ 710: "Sofá - séries 1",
+ 715: "Sofá - séries 7",
+ 720: "Sofá de feno",
+ 730: "Sofá-torta",
+ 800: "Escrivaninha",
+ 810: "Mesinha",
+ 900: "Porta-guarda-chuva",
+ 910: "Cabideiro - séries 1",
+ 920: "Lata de lixo",
+ 930: "Cogumelo vermelho",
+ 940: "Cogumelo amarelo",
+ 950: "Cabideiro",
+ 960: "Mesinha-barril",
+ 970: "Planta cáctus",
+ 980: "Tenda",
+ 990: "O Leque de Julieta - leque de piada", 
+ 1000: "Tapete grande",
+ 1010: "Tapete redondo - Séries 1",
+ 1015: "Tapete redondo - Séries 7",
+ 1020: "Tapete pequeno",
+ 1030: "Capacho de folha",
+ 1100: "Vitrina - Vermelha",
+ 1110: "Vitrina - Amarela",
+ 1120: "Estante alta",
+ 1130: "Estante baixa",
+ 1140: "Arca-sundae",
+ 1200: "Mesinha lateral",
+ 1210: "Mesa pequena",
+ 1215: "Mesa pequena",
+ 1220: "Mesinha de centro",
+ 1230: "Mesinha de centro",
+ 1240: "Mesa Snorkel",
+ 1250: "Mesa-biscoito",
+ 1260: "Mesa do quarto",
+ 1300: "Banco 1.000 Balas",
+ 1310: "Banco 2.500 Balas",
+ 1320: "Banco 5.000 Balas",
+ 1330: "Banco 7.500 Balas",
+ 1340: "Banco 10.000 Balas",
+ 1399: "Telefone",
+ 1400: "Toon Cezanne",
+ 1410: "Flores",
+ 1420: "Mickey Moderno",
+ 1430: "Toon Rembrandt",
+ 1440: "Toonescape",
+ 1441: "Cavalo Assobiador",
+ 1442: "Estrela Toon",
+ 1443: "Não é Torta",
+ 1450: "Mickey e Minnie",
+ 1500: "Rádio A séries 2",
+ 1510: "Rádio B séries 1",
+ 1520: "Rádio C séries 2",
+ 1530: "Televisão",
+ 1600: "Vasinho A",
+ 1610: "Vaso alto A",
+ 1620: "Vasinho B",
+ 1630: "Vaso alto B",
+ 1640: "Vasinho C",
+ 1650: "Vasinho D",
+ 1660: "Vaso Coral",
+ 1661: "Vaso de concha",
+ 1670: "Rose Vase",
+ 1680: "Rose Watercan",
+ 1700: "Carrocinha de pipoca",
+ 1710: "Joaninha",
+ 1720: "Chafariz",
+ 1725: "Lavadora de roupa",
+ 1800: "Aquário",
+ 1810: "Aquário",
+ 1900: "Peixe-espada",
+ 1910: "Tubarão-martelo",
+ 1920: "Chifres de pendurar",
+ 1930: "Sombreiro simples",
+ 1940: "Sombreiro elegante",
+ 1950: "Apanhador de sonhos",
+ 1960: "Ferradura",
+ 1970: "Retrato de búfalo",
+ 2000: "Balanço de doces",
+ 2010: "Escorregada de torta",
+ 3000: "Banheira banana split",
+ 10000: "Moranga",
+ 10010: "Abóbora",
+ 10020: "Árvore de Natal",
+ 10030: "Guirlanda de Natal"}
+ClothingArticleNames = ("Camisa",
  "Camisa",
  "Camisa",
  "Bermuda",
  "Bermuda",
  "Saia",
- "Bermuda",
-    )
-
-ClothingTypeNames = {
-    1400: "Camisa do Mateus",
-    1401: "Camisa da Jéssica",
-    1402: "Camisa da Marisa",
-    1600: "Traje de Armadilha",
-    1601: "Traje de Som",
-    1602: "Traje de Isca",
-    1603: "Traje de Armadilha",
-    1604: "Traje de Som",
-    1605: "Traje de Isca",
-    1606: "Traje de Armadilha",
-    1607: "Traje de Som",
-    1608: "Traje de Isca",
-    }
-
-# CatalogSurfaceItem.py
-SurfaceNames = (
- "Papel de parede",
+ "Bermuda")
+ClothingTypeNames = {1001: "Camisa do Fantasma",
+ 1002: "Camisa de Ábobora",
+ 1112: "Camisa de Abelha",
+ 1113: "Camisa de Pirata",
+ 1114: "Camisa de Super Toon",
+ 1115: "Camisa de Abelha",
+ 1116: "Camisa do Toonosauro",
+ 1117: "Shorts de Abelha",
+ 1118: "Shorts de Pirata",
+ 1119: "Shorts de Super Toon",
+ 1120: "Shorts de Vampiro",
+ 1121: "Shorts de Toonosauro",
+ 1122: "Shorts de Abelha",
+ 1123: "Shorts de Pirata",
+ 1124: "Shorts de Super Toon",
+ 1125: "Shorts de Vampiro",
+ 1126: "Shorts de Toonosauro",
+ 1127: "Pirate Saia",
+ 1304: "Camisa de O",
+ 1305: "Shorts do O",
+ 1306: "Saia do O",
+ 1400: "Camisa do Mateus",
+ 1401: "Camisa da Jéssica",
+ 1402: "Camisa da Marisa",
+ 1600: "Traje de Armadilha",
+ 1601: "Traje de Som",
+ 1602: "Traje de Isca",
+ 1603: "Traje de Armadilha",
+ 1604: "Traje de Som",
+ 1605: "Traje de Isca",
+ 1606: "Traje de Armadilha",
+ 1607: "Traje de Som",
+ 1608: "Traje de Isca",
+ 1723: "Camisa de Abelha",
+ 1724: "Camisa de Super Toon",
+ 1734: "Shorts de Abelha",
+ 1735: "Shorts de Super Toon",
+ 1739: "Saia de Abelha",
+ 1740: "Saia de Super Toon",
+ 1743: "Camisa de Esqueleto",
+ 1744: "Camisa de Aranha",
+ 1745: "Shorts de Aranha",
+ 1746: "Shorts de Esqueleto",
+ 1747: "Saia de Esqueleto",
+ 1748: "Saia de Aranha",
+ 1749: "Silly Mailbox Shirt",
+ 1750: "Silly Trash Can Shirt",
+ 1751: "Loony Labs Shirt",
+ 1752: "Silly Hydrant Shirt",
+ 1753: "Silly Meter Shirt",
+ 1754: "Cog-Crusher Shirt",
+ 1755: "Cog-Crusher Shorts",
+ 1756: "Cog-Crusher Shorts",
+ 1757: "Victory Party Shirt",
+ 1758: "Relaxed Victory Shirt",
+ 1763: "Smashed Sellbot Shirt",
+ 1764: "Most V.P.s Defeated Shirt",
+ 1765: "Sellbot Smasher Shirt",
+ 1766: "Sellbot Smasher Shorts",
+ 1767: "Sellbot Smasher Shorts",
+ 1768: "Jellybean Bank Shirt",
+ 1769: "Doodle Shirt",
+ 1770: "Vampire Shirt",
+ 1771: "Turtle Shirt",
+ 1772: "Vampire Shorts",
+ 1773: "Vampire Shorts",
+ 1774: "Turtle Shorts",
+ 1775: "Turtle Shorts",
+ 1776: "Get Connected Mover & Shaker Shirt",
+ 1782: "Racing Shirt 3",
+ 1783: "Racing Shorts 1",
+ 1784: "Racing Saia 1"}
+SurfaceNames = ("Papel de parede",
  "Moldura do teto",
  "Piso",
  "Lambri",
- "Moldura",
-    )
-
+ "Moldura")
 WallpaperNames = {
     1000: "Pergaminho",
     1100: "Milão",
@@ -6559,7 +6252,7 @@ WallpaperNames = {
     3600: "Debaixo d'água",
     3700: "Botinas",
     3800: "Cáctus",
-    3900: "Chapéu de vaqueiro",
+    3900: "Chapéu de caubói",
     10100: "Gatos",
     10200: "Morcegos",
     11000: "Flocos de neve",
@@ -6700,7 +6393,7 @@ CatalogPurchaseClosetFull = "O seu armário está cheio. Apesar disso, você pod
 CatalogAcceptClosetFull = "O seu armário está cheio. Entre em casa e exclua alguma coisa do seu armário para liberar espaço para o item antes de retirá-lo da caixa de correio."
 CatalogAcceptShirt = "Você está vestindo agora a sua nova camisa. O que você estava vestindo antes foi transferido para o seu armário."
 CatalogAcceptShorts = "Você está vestindo agora o seu novo short. O que você estava vestindo antes foi transferido para o seu armário."
-CatalogAcceptSkirt = "Você está vestindo agora a sua nova saia. A que você estava vestindo antes foi transferida para o seu armário."
+CatalogAcceptSaia = "Você está vestindo agora a sua nova saia. A que você estava vestindo antes foi transferida para o seu armário."
 CatalogAcceptPole = "Agora, você está pronto para pescar uns peixes maiores com sua nova vara!"
 CatalogAcceptPoleUnneeded = "Você já tem uma vara de pescar melhor do que esta!"
 CatalogAcceptChat = "Você ganhou uma nova frase de Chat rápido!"
@@ -7517,7 +7210,7 @@ NPCToonNames = {
     9219: "Condessa",
     9220: "Ney Nervoso",
     9221: "Zéfiro",
-    9222: "Vaqueiro George",
+    9222: "caubói George",
     9223: "Vado Levado",
     9224: "Cuca P. Gol",
     9225: "Henriqueta Inquieta",
@@ -8117,10 +7810,10 @@ ClosetNo = lNo
 ClosetVerifyDelete = "Excluir mesmo %s?"
 ClosetShirt = "esta camisa"
 ClosetShorts = "este short"
-ClosetSkirt = "esta saia"
+ClosetSaia = "esta saia"
 ClosetDeleteShirt = "Excluir\ncamisa"
 ClosetDeleteShorts = "Excluir\nshort"
-ClosetDeleteSkirt = "Excluir\nsaia"
+ClosetDeleteSaia = "Excluir\nsaia"
 
 # EstateLoader.py
 EstateOwnerLeftMessage = "Sinto muito, o dono desta propriedade saiu. Você será enviado ao pátio em %s segundos"
@@ -9385,12 +9078,7 @@ GardenGagTree = "TODO??? "
 GardenUberGag = "TODO??? "
 
 def getRecipeBeanText(beanTuple):
- """
-    dado um múltiplo de balinhas, ex. (0,6), retorna uma versão de texto para
-    ser exibida para o usuário. (ex: uma balinha vermelha e amarela)
- """
-    #first check if all the beans are the same, so we can say something
-    #like 7 red jellybeans
+
     retval = ""
     if not beanTuple:
         return retval
@@ -9403,8 +9091,7 @@ def getRecipeBeanText(beanTuple):
 
     if allTheSame:
         if len(beanTuple) > 1:
-            retval = "%d %s balinhas" % (len(beanTuple),
-                                           BeanColorWords[beanTuple[0]])
+            retval = "%d %s balinhas" % (len(beanTuple), BeanColorWords[beanTuple[0]])
         else:
             retval = "uma balinha %s" % BeanColorWords[beanTuple[0]]
     else:
@@ -9425,22 +9112,17 @@ GardenTextMagicBeansB = "Outras Balas"
 GardenSpecialDiscription = "Este texto deveria explicar como usar certo especial do jardim"
 GardenSpecialDiscriptionB = "Este texto deveria explicar como usar certo especial do jardim, podicrê!"
 GardenTrophyAwarded = "Uau! Você tem %s de %s flores. Isso merece um troféu e uma melhora na Risada!"
-GardenTrophyNameDict = {
-    0: "Carrinho de Mão",
-    1: "Pás",
-    2: "Flor",
-    3: "Regador",
-    4: "Tubarão",
-    5: "Peixe-Espada",
-    6: "Baleia Assassina",
-    }
+GardenTrophyNameDict = {0: "Carrinho de Mão",
+ 1: "Pás",
+ 2: "Flor",
+ 3: "Regador",
+ 4: "Tubarão",
+ 5: "Peixe-Espada",
+ 6: "Baleia Assassina"}
 SkillTooLow = "Habilidade\nBaixa Demais"
 NoGarden = "Nenhum \nJardim"
 
 def isVowelStart(str):
- """
-    A utility function to return true if the first letter in the str is a vowel
- """
     retval = False
     if str and len(str)>0:
         vowels = ['A','E','I','O','U']
@@ -9449,10 +9131,7 @@ def isVowelStart(str):
             retval = True
     return retval
 
-def getResultPlantedSomethingSentence( flowerName):
- """
-    Returns a gramatically correct sentence when you've successfully planted something
- """
+def getResultPlantedSomethingSentence(flowerName):
     if isVowelStart(flowerName):
         retval = ResultPlantedSomethingAn % flowerName
     else:
@@ -9461,7 +9140,6 @@ def getResultPlantedSomethingSentence( flowerName):
     return retval
 
 
-#Stuff for trolley metagame
 TravelGameTitle = "Trilhos de Bonde"
 TravelGameInstructions = "Clique para cima ou para baixo para definir seu número de votos.  Clique no botão votar para lançar os votos. Chegue ao seu objetivo secreto para conseguir balinhas extras. Ganhe mais votos quando se der bem nos outros jogos."
 TravelGameRemainingVotes = "Votos Restantes:"
@@ -9473,8 +9151,6 @@ TravelGameUp = "PARA CIMA."
 TravelGameDown = "PARA BAIXO."
 TravelGameVoteWithExclamation = "Vote!"
 TravelGameWaitingChoices = "Aguardando que outros jogadores votem..."
-# cross the bridge later when the first choice is different for each node,
-# e.g. NorthWest, NorthEast, etc.
 TravelGameDirections = ['PARA CIMA', 'PARA BAIXO']
 TravelGameTotals = 'Totais '
 TravelGameReasonVotesPlural = 'O bonde está indo para %(dir)s, vencendo por %(numVotes)de votos.'
@@ -9488,94 +9164,77 @@ TravelGameGotBonus = '%(name)s ganhou um bônus de %(numBeans)s balinhas!'
 TravelGameNoOneGotBonus = "Ninguém chegou ao seu objetivo secreto.  Todos ganham 1 balinha."
 TravelGameConvertingVotesToBeans = "Convertendo alguns votos em balinhas..."
 TravelGameGoingBackToShop ="Só resta 1 jogador. Indo para a Loja de Piadas do Pateta."
-
 PairingGameTitle = "Jogo de Memória Toon"
 PairingGameInstructions = "Aperte Delete para virar uma carta. Combine 2 cartas iguais para marcar um ponto. Combine cartas com o brilho de bônus e ganhe um ponto extra. Ganhe mais pontos virando poucas vezes."
 PairingGameInstructionsMulti = "Aperte Delete para virar uma carta. Aperte Ctrl para fazer o sinal para outro jogador virar uma carta. Combine 2 cartas iguais para marcar um ponto. Combine cartas com o brilho de bônus e ganhe um ponto extra. Ganhe mais pontos virando poucas vezes."
 PairingGamePerfect = 'PERFEITO!!'
 PairingGameFlips = 'Viradas:'
 PairingGamePoints = 'Pontos:'
-
 TrolleyHolidayStart = "Vamos começar com os Trilhos de Bonde!  Para jogar, embarque em qualquer bonde com 2 ou mais Toons."
 TrolleyHolidayOngoing = ""
 TrolleyHolidayEnd = "Isso é tudo nos Trilhos de Bonde por hoje.  Até a próxima semana!"
-
 TrolleyWeekendStart = "O Fim de Semana dos Trilhos de Bonde vai começar!  Para jogar, embarque em qualquer bonde com 2 ou mais Toons."
 TrolleyWeekendEnd = "Terminamos com o Fim de Semana dos Trilhos de Bonde."
-
 VineGameTitle = "Cipós da Selva"
 VineGameInstructions = "Chegue ao cipó mais à direita a tempo. Aperte para Cima ou para Baixo para escalar o cipó.  Aperte para Esquerda ou Direita para mudar de direção e pular.  Quanto mais baixo você estiver no cipó, mais rápido poderá saltar dele. Colete as bananas se puder, mas evite os morcegos e aranhas."
-
-# Make sure the golf text matches up with GolfGlobals.py
-GolfCourseNames = {
-    0: "Tacada e Caminhada",
-    1: "Tacadas Divertidas",
-    2: "Todas as Tacadas"
-    }
-
-GolfHoleNames = {
-    0: 'Vitória-em-Uma',
-    1: 'Sem Dúvida até o Buraco',
-    2: 'Só na Descida',
-    3: 'Só Vejo Verde',
-    4: 'Tacadas Quentes',
-    5: 'É na Manteiga',
-    6: 'Balanço do Taco',
-    7: 'Na Tacada das Cinco Horas',
-    8: 'Diversão no Gramadão',
-    9: 'A Bola Cai e a Gente Vibra',
-    10: 'Nada de Bogey',
-    11: 'Hora do Taco',
-    12: 'Santa Tacada!',
-    13: 'Só um Birdie, Vai',
-    14: 'Correndo para o Buraco',
-    15: 'Hora da Tacada',
-    16: 'Buraco ao Alcance',
-    17: 'Mais um Vento e Chega',
-    18: 'Vitória-em-Uma-2',
-    19: 'Sem Dúvida, até o Buraco-2',
-    20: 'Só na Descida-2',
-    21: 'Só Vejo Verde-2',
-    22: 'Tacadas Quentes-2',
-    23: 'É na Manteiga-2',
-    24: 'Balanço do Taco-2',
-    25: 'Na Tacada das Cinco Horas-2',
-    26: 'Diversão no Gramadão-2',
-    27: 'A Bola Cai e a Gente Vibra-2',
-    28: 'Nada de Bogey-2',
-    29: 'Hora do Taco-2',
-    30: 'Santa Tacada!-2',
-    31: 'Só um Birdie, Vai-2',
-    32: 'Correndo para o Buraco-2',
-    33: 'Hora da Tacada-2',
-    34: 'Buraco ao Alcance-2',
-    35: 'Mais um Vento e Chega-2',
-    }
-
+GolfCourseNames = {0: "Tacada e Caminhada",
+ 1: "Tacadas Divertidas",
+ 2: "Todas as Tacadas"}
+GolfHoleNames = {0: 'Vitória-em-Uma',
+ 1: 'Sem Dúvida até o Buraco',
+ 2: 'Só na Descida',
+ 3: 'Só Vejo Verde',
+ 4: 'Tacadas Quentes',
+ 5: 'É na Manteiga',
+ 6: 'Balanço do Taco',
+ 7: 'Na Tacada das Cinco Horas',
+ 8: 'Diversão no Gramadão',
+ 9: 'A Bola Cai e a Gente Vibra',
+ 10: 'Nada de Bogey',
+ 11: 'Hora do Taco',
+ 12: 'Santa Tacada!',
+ 13: 'Só um Birdie, Vai',
+ 14: 'Correndo para o Buraco',
+ 15: 'Hora da Tacada',
+ 16: 'Buraco ao Alcance',
+ 17: 'Mais um Vento e Chega',
+ 18: 'Vitória-em-Uma-2',
+ 19: 'Sem Dúvida, até o Buraco-2',
+ 20: 'Só na Descida-2',
+ 21: 'Só Vejo Verde-2',
+ 22: 'Tacadas Quentes-2',
+ 23: 'É na Manteiga-2',
+ 24: 'Balanço do Taco-2',
+ 25: 'Na Tacada das Cinco Horas-2',
+ 26: 'Diversão no Gramadão-2',
+ 27: 'A Bola Cai e a Gente Vibra-2',
+ 28: 'Nada de Bogey-2',
+ 29: 'Hora do Taco-2',
+ 30: 'Santa Tacada!-2',
+ 31: 'Só um Birdie, Vai-2',
+ 32: 'Correndo para o Buraco-2',
+ 33: 'Hora da Tacada-2',
+ 34: 'Buraco ao Alcance-2',
+ 35: 'Mais um Vento e Chega-2'}
 GolfHoleInOne = "Buraco-em-Uma"
-GolfCondor = "Condor" # four Under Par
-GolfAlbatross = "Albatroz" # three under par
-GolfEagle = "Águia" # two under par
-GolfBirdie = "Passarinho" # one under par
+GolfCondor = "Condor"
+GolfAlbatross = "Albatroz"
+GolfEagle = "Águia"
+GolfBirdie = "Passarinho"
 GolfPar = "Par"
-GolfBogey = "Bogey" # one over par
-GolfDoubleBogey = "Bogey Duplo" # two over par
-GolfTripleBogey = "Bogey Triplo" # three over par
+GolfBogey = "Bogey"
+GolfDoubleBogey = "Bogey Duplo"
+GolfTripleBogey = "Bogey Triplo"
 
-GolfShotDesc = {
-    -4: GolfCondor,
-    -3: GolfAlbatross,
-    -2: GolfEagle,
-    -1: GolfBirdie,
-    0: GolfPar,
-    1: GolfBogey,
-    2: GolfDoubleBogey,
-    3: GolfTripleBogey,
-    }
-
-
+GolfShotDesc = {-4: GolfCondor,
+ -3: GolfAlbatross,
+ -2: GolfEagle,
+ -1: GolfBirdie,
+  0: GolfPar,
+  1: GolfBogey,
+  2: GolfDoubleBogey,
+  3: GolfTripleBogey}
 from toontown.golf import GolfGlobals
-
 CoursesCompleted = "Percursos Concluídos"
 CoursesUnderPar = "Percursos Abaixo do Par"
 HoleInOneShots = "Jogadas de Buraco-em-Uma"
@@ -9589,71 +9248,49 @@ FourPlayerWins = "Jogadas com Quatro Jogadores"
 CourseZeroWins = GolfCourseNames[0] + " Vitórias"
 CourseOneWins = GolfCourseNames[1] + " Vitórias"
 CourseTwoWins = GolfCourseNames[2] + " Vitórias"
-
-GolfHistoryDescriptions = [
-    CoursesCompleted,
-    CoursesUnderPar,
-    HoleInOneShots,
-    EagleOrBetterShots,
-    BirdieOrBetterShots,
-    ParOrBetterShots,
-    MultiPlayerCoursesCompleted,
-    CourseZeroWins,
-    CourseOneWins,
-    CourseTwoWins,
-    ]
-
-GolfTrophyDescriptions = [
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesCompleted][0]) + ' ' + CoursesCompleted,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesCompleted][1]) + ' ' + CoursesCompleted,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesCompleted][2]) + ' ' + CoursesCompleted,
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesUnderPar][0]) + ' ' + CoursesUnderPar,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesUnderPar][1]) + ' ' + CoursesUnderPar,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesUnderPar][2]) + ' ' + CoursesUnderPar,
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.HoleInOneShots][0]) + ' ' + HoleInOneShots,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.HoleInOneShots][1]) + ' ' + HoleInOneShots,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.HoleInOneShots][2]) + ' ' + HoleInOneShots,
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.EagleOrBetterShots][0]) + ' ' + EagleOrBetterShots,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.EagleOrBetterShots][1]) + ' ' + EagleOrBetterShots,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.EagleOrBetterShots][2]) + ' ' + EagleOrBetterShots,
-
-
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.BirdieOrBetterShots][0]) + ' ' + BirdieOrBetterShots,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.BirdieOrBetterShots][1]) + ' ' + BirdieOrBetterShots,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.BirdieOrBetterShots][2]) + ' ' + BirdieOrBetterShots,
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.ParOrBetterShots][0]) + ' ' + ParOrBetterShots,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.ParOrBetterShots][1]) + ' ' + ParOrBetterShots,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.ParOrBetterShots][2]) + ' ' + ParOrBetterShots,
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.MultiPlayerCoursesCompleted][0]) + ' ' + MultiPlayerCoursesCompleted,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.MultiPlayerCoursesCompleted][1]) + ' ' + MultiPlayerCoursesCompleted,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.MultiPlayerCoursesCompleted][2]) + ' ' + MultiPlayerCoursesCompleted,
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseZeroWins][0]) + ' ' + CourseZeroWins,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseZeroWins][1]) + ' ' + CourseZeroWins,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseZeroWins][2]) + ' ' + CourseZeroWins,
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseOneWins][0]) + ' ' + CourseOneWins,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseOneWins][1]) + ' ' + CourseOneWins,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseOneWins][2]) + ' ' + CourseOneWins,
-
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][0]) + ' ' + CourseTwoWins,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][1]) + ' ' + CourseTwoWins,
-    str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][2]) + ' ' + CourseTwoWins,
-
-]
-
-GolfCupDescriptions = [
-    str(GolfGlobals.TrophiesPerCup) + " Troféus ganhos",
-    str(GolfGlobals.TrophiesPerCup * 2) + " Troféus ganhos",
-    str(GolfGlobals.TrophiesPerCup * 3) + " Troféus ganhos",
-]
-
+GolfHistoryDescriptions = [CoursesCompleted,
+ CoursesUnderPar,
+ HoleInOneShots,
+ EagleOrBetterShots,
+ BirdieOrBetterShots,
+ ParOrBetterShots,
+ MultiPlayerCoursesCompleted,
+ CourseZeroWins,
+ CourseOneWins,
+ CourseTwoWins]
+GolfTrophyDescriptions = [str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesCompleted][0]) + ' ' + CoursesCompleted,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesCompleted][1]) + ' ' + CoursesCompleted,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesCompleted][2]) + ' ' + CoursesCompleted,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesUnderPar][0]) + ' ' + CoursesUnderPar,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesUnderPar][1]) + ' ' + CoursesUnderPar,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CoursesUnderPar][2]) + ' ' + CoursesUnderPar,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.HoleInOneShots][0]) + ' ' + HoleInOneShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.HoleInOneShots][1]) + ' ' + HoleInOneShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.HoleInOneShots][2]) + ' ' + HoleInOneShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.EagleOrBetterShots][0]) + ' ' + EagleOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.EagleOrBetterShots][1]) + ' ' + EagleOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.EagleOrBetterShots][2]) + ' ' + EagleOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.BirdieOrBetterShots][0]) + ' ' + BirdieOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.BirdieOrBetterShots][1]) + ' ' + BirdieOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.BirdieOrBetterShots][2]) + ' ' + BirdieOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.ParOrBetterShots][0]) + ' ' + ParOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.ParOrBetterShots][1]) + ' ' + ParOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.ParOrBetterShots][2]) + ' ' + ParOrBetterShots,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.MultiPlayerCoursesCompleted][0]) + ' ' + MultiPlayerCoursesCompleted,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.MultiPlayerCoursesCompleted][1]) + ' ' + MultiPlayerCoursesCompleted,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.MultiPlayerCoursesCompleted][2]) + ' ' + MultiPlayerCoursesCompleted,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseZeroWins][0]) + ' ' + CourseZeroWins,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseZeroWins][1]) + ' ' + CourseZeroWins,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseZeroWins][2]) + ' ' + CourseZeroWins,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseOneWins][0]) + ' ' + CourseOneWins,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseOneWins][1]) + ' ' + CourseOneWins,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseOneWins][2]) + ' ' + CourseOneWins,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][0]) + ' ' + CourseTwoWins,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][1]) + ' ' + CourseTwoWins,
+ str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][2]) + ' ' + CourseTwoWins]
+GolfCupDescriptions = [str(GolfGlobals.TrophiesPerCup) + " Troféus ganhos",
+ str(GolfGlobals.TrophiesPerCup * 2) + " Troféus ganhos",
+ str(GolfGlobals.TrophiesPerCup * 3) + " Troféus ganhos"]
 GolfAvReceivesHoleBest = "%(name)s marcou um novo recorde de tacadas em %(hole)s!"
 GolfAvReceivesCourseBest = "%(name)s marcou um novo recorde de percurso em %(course)s!!"
 GolfAvReceivesCup = "%(name)s ganhou a taça %(cup)s!!  Bônus em pontos de risada!"
@@ -9665,16 +9302,11 @@ GolfWarningMustSwing = "Atenção: você precisa apertar Ctrl na sua próxima ta
 GolfAimInstructions = "Aperte para a Esquerda ou Direita para mirar.\nAperte e segure Ctrl para balançar o taco."
 GolferExited = "%s saiu do percurso de golfe."
 GolfPowerReminder = "Segure Ctrl por Mais Tempo para\nMandar a Bola Mais Longe"
-
-
-# GolfScoreBoard.py
 GolfPar = "Par"
 GolfHole = "Buraco"
 GolfTotal = "Total"
 GolfExitCourse = "Sair do Percurso"
 GolfUnknownPlayer = "???"
-
-# GolfPage.py
 GolfPageTitle = "Golfe"
 GolfPageTitleCustomize = "Personalizador de Golfe"
 GolfPageTitleRecords = "Recordes Pessoais"
@@ -9690,107 +9322,68 @@ GolfCurrentHistory = "%(historyDesc)s Atual: %(num)s"
 GolfTieBreakWinner = "%(name)s venceu o desempate aleatório!"
 GolfSeconds = " -  %(time).2f segundos"
 GolfTimeTieBreakWinner = "%(name)s venceu o desempate por tempo total de mira!!!"
-
-
-
-
 RoamingTrialerWeekendStart = "Está começando a Tour por Toontown! Jogadores podem entrar em qualquer vizinhança de graça!"
 RoamingTrialerWeekendOngoing = "Boas-vindas ao Tour por Toontown! Jogadores podem entrar gratuitamente em qualquer vizinhança!"
 RoamingTrialerWeekendEnd = "Terminamos com o Tour por Toontown."
-
-# change double if ToontownBattleGlobals.getMoreXpHolidayMultiplier() changes
 MoreXpHolidayStart = "Boas novas! Começou o período de Teste Toon, com o dobro de experiência em piadas."
 MoreXpHolidayOngoing = "Olá! Estamos no período de Teste Toon, com o dobro de experiência em piadas."
 MoreXpHolidayEnd = "Terminou o período exclusivo de Teste Toon, com o dobro de experiência em piadas. Obrigado por nos ajudar a Testar!"
-
 JellybeanDayHolidayStart = "É Dia das Balinhas! Ganhe prêmios de Balinhas em dobro nas Festas!"
 JellybeanDayHolidayEnd = "Acabou o Dia das Balinhas. Vejo você no ano que vem."
 PartyRewardDoubledJellybean = "Balinhas em Dobro!"
-
 GrandPrixWeekendHolidayStart = "É o Fim de Semana do Grande Prêmio no Autódromo do Pateta! Quem jogar gratuitamente ou pagando pode obter a maioria dos pontos em três corridas consecutivas."
 GrandPrixWeekendHolidayEnd = "O Fim de Semana do Grande Prêmio acabou. Vejo você no ano que vem."
-
 KartRace_DoubleTickets = "Bilhetes em Dobro"
-
 SellbotNerfHolidayStart = "Operação: Tempestade de Robôs Vendedores está acontecendo agora! Batalha o VP hoje!"
 SellbotNerfHolidayEnd = "Operação: Tempestade de Robôs Vendedores tinha acabado. Bom trabalho, Toons!"
-
 JellybeanTrolleyHolidayStart = "Dia das Balinhas em Dobro para o Bodinho dos Jogos começem!"
 JellybeanTrolleyHolidayEnd = "Dia das Balinhas em Dobro para o Bodinho dos Jogos terminou!"
-
 JellybeanFishingHolidayStart = "Dia das Balinhas em Dobro para Pescaria começem!"
 JellybeanFishingHolidayEnd = "Dia das Balinhas em Dobro para Pescaria terminou!"
-
-JellybeanDayHolidayStart = "É Dia das Balinhas! Ganhe prêmios de Balinhas em dobro nas Festas!"
-JellybeanDayHolidayEnd = "Acabou o Dia das Balinhas. Vejo você no ano que vem."
-
+JellybeanPartiesHolidayStart = "É a Semana de Balinhas! Ganhe recompensas de Balinhas em Dobro!"
+JellybeanPartiesHolidayEnd = "A Semana de Balinhas terminou. Até o ano que vem!"
 JellybeanMonthHolidayStart = "Comemorar Toontown com balinhas em dobro, itens no Catálogo e supresas bobas!"
-
 BankUpgradeHolidayStart = "Algo incrível aconteceu com seu Banco de Balinha!"
-
 HalloweenPropsHolidayStart = "É Halloween em Toontown!"
 HalloweenPropsHolidayEnd = "Halloween terminou. Boo!"
-
 SpookyPropsHolidayStart = "O Medidor de Bobagem gira Toontown em modo de assustador!"
-
 BlackCatHolidayStart = "Cria um Gato Preto - só Hoje!"
 BlackCatHolidayEnd = "O Dia do Gato Preto terminou!"
-
 SpookyBlackCatHolidayStart = "Sexta-feira 13 significa uma explosão de Gato Preto!"
-
 TopToonsMarathonStart = "A Maratona de Ano Novo dos Tops Toons começem!"
 TopToonsMarathonEnd = "A Maratona de Ano Novo dos Tops Toons terminou."
-
 WinterDecorationsStart = "É o tempo de férias de inverno em Toontown!"
 WinterDecorationsEnd = "As férias de inverno acabaram - Feliz Ano Novo!"
-
 WackyWinterDecorationsStart = "Brrr! O Medidor de bobagem vai de bobeira para frio!"
-
-WinterCarolingStart = "Canções de natal chegou para Toontown. Cante para sua Cabeça de Boneco de Neve - veja o Blog para mais detalhes!"
-
+WinterCarolingStart = "A Cantoria chegou para Toontown. Cante para sua Cabeça de Boneco de Neve - veja a Novidade para mais detalhes!"
 ExpandedClosetsStart = "Atenção Toons: Para um limite de tempo, Membros podem comprar o novo item de 50 Armários do Catálogo para um preço baixo de 50 balinhas!"
-
 KartingTicketsHolidayStart = "Pega bilhetes em dobro de Praticar corridas no Autodrómo do Pateta hoje!"
-
 IdesOfMarchStart = "Toons agora VERDE!"
-
 LogoutForced = "Você fez algo errado\n e estamos fazendo seu logout automaticamente,\n sua conta também pode estar congelada.\n Experimente dar uma volta lá fora, é divertido."
-
-# DistributedCountryClub.py
 CountryClubToonEnterElevator = "%s \nentrou no carrinho de golfe."
 CountryClubBossConfrontedMsg = "%s está lutando com o Presidente do Clube!"
-
-# DistributedElevatorFSM.py
 ElevatorBlockedRoom = "Todos os desafios devem ser vencidos antes disso."
-
-# DistributedMolefield.py
 MolesLeft = "Toupeiras Restantes: %d"
 MolesInstruction = "Pisão nas Toupeiras!\nPule nas toupeiras vermelhas!"
 MolesFinished = "Pisão nas Toupeiras vencido!"
 MolesRestarted = "Perdeu no Pisão! Recomeçando..."
-
-# DistributedGolfGreenGame.py
 BustACogInstruction = "Remova a bola Cog!"
 BustACogExit = "Sair por Enquanto"
 BustACogHowto = "Como Jogar"
 BustACogFailure = "Acabou o Tempo!"
 BustACogSuccess = "Sucesso!"
-
-# bossbot golf green games
 GolfGreenGameScoreString = "Quebra-Cabeças Restantes: %s"
 GolfGreenGamePlayerScore = "Resolveu %s"
 GolfGreenGameBonusGag = "Você ganhou %s!"
 GolfGreenGameGotHelp = "%s resolveu um Quebra-Cabeça!"
-
 GolfGreenGameDirections = "Dê tacadas nas bolas usando o mouse\n\n\nCombinar três bolas de uma mesma cor as faz cair\n\n\nRemova todas as bolas Cog da tela"
-
-# DistributedMaze.py
 enterHedgeMaze = "Corra pela Sebe-Labirinto\n para ganhar bônus de risadas!"
 toonFinishedHedgeMaze = "%s \n  terminou em %s lugar!"
-hedgeMazePlaces = ["primeiro","segundo","terceiro","quarto"]
+hedgeMazePlaces = ["primeiro",
+ "segundo",
+ "terceiro",
+ "quarto"]
 mazeLabel = "Corrida no Labirinto!"
-
-# Boarding Group
 BoardingPartyReadme = 'Grupo de Abordagem?'
 BoardingGroupHide = 'Ocultar'
 BoardingGroupShow = 'Exibir Grupo de Abordagem'
@@ -9843,8 +9436,6 @@ BoardingTimeWarning = 'Abordando o elevador em '
 BoardingMore = 'mais'
 BoardingGoShow = 'Indo para\n%s em '
 BoardingGoPreShow = 'Confirmando...'
-
-# DistributedBossbotBoss.py
 BossbotBossName = "Presidente"
 BossbotRTWelcome = "Seus Toons vão precisar de disfarces diferentes."
 BossbotRTRemoveSuit = "Primeiramente, tire suas roupas de Cog..."
@@ -9875,10 +9466,7 @@ BossbotRTLastPromotion = "\aUau, você chegou ao nível %s com sua Roupa de Cog!
 BossbotRTHPBoost = "\aVocê trabalhou bastante para a Resistência.\aO Conselho Toon decidiu lhe dar mais um ponto de Risada. Parabéns!"
 BossbotRTMaxed = "\aVejo que você tem uma Roupa de Cog de nível %s. Impressionante!\aEm nome do Conselho Toon, agradeço por voltar para defender mais Toons!"
 GolfAreaAttackTaunt = "Bola!"
-OvertimeAttackTaunts = [ "É hora de reorganizar.",
-                     "Temos gente para demitir."]
-
-#ElevatorDestination Names
+OvertimeAttackTaunts = ["É hora de reorganizar.", "Temos gente para demitir."]
 ElevatorBossBotBoss = "Batalha do Presidente."
 ElevatorBossBotCourse = "Campo de Golfe Cog"
 ElevatorBossBotCourse0 = "O Front Three (Três da Frente)"
@@ -9896,11 +9484,7 @@ ElevatorLawBotCourse0 = "Escritório A"
 ElevatorLawBotCourse1 = "Escritório B"
 ElevatorLawBotCourse2 = "Escritório C"
 ElevatorLawBotCourse3 = "Escritório D"
-
-# CatalogNameTagItem.py
 DaysToGo = "Espere\n%s Dias"
-
-# DistributedIceGame.py
 IceGameTitle = "Escorregador de Gelo"
 IceGameInstructions = "Chegue o mais perto do centro ao final da segunda rodada. Use as teclas de seta para mudar a direção e a força. Aperte Ctrl para lançar seu Toon. Acerte os barris para ganhar mais pontos, e evite a dinamite!"
 IceGameInstructionsNoTnt = "Chegue o mais perto do centro ao final da segunda rodada. Use as teclas de seta para mudar a direção e a força. Aperte Ctrl para lançar seu Toon. Acerte os barris para ganhar mais pontos."
@@ -9908,22 +9492,16 @@ IceGameWaitingForPlayersToFinishMove = "Aguardando outros jogadores..."
 IceGameWaitingForAISync = "Aguardando outros jogadores..."
 IceGameInfo= "Partida %(curMatch)d/%(numMatch)d, Rodada %(curRound)d/%(numRound)d"
 IceGameControlKeyWarning="Lembre-se de apertar a tecla Ctrl!"
-
-
-#DistributedPicnicTable.py
 PicnicTableJoinButton = "Entrar"
 PicnicTableObserveButton = "Observar"
 PicnicTableCancelButton = "Cancelar"
 PicnicTableTutorial = "Como Jogar"
 PicnicTableMenuTutorial = "Qual jogo você quer aprender?"
 PicnicTableMenuSelect = "Qual jogo você quer jogar?"
-
-#DistributedChineseCheckers.py
 ChineseCheckersGetUpButton = "Levantar-se"
 ChineseCheckersStartButton = "Iniciar Jogo"
 ChineseCheckersQuitButton = "Sair do Jogo"
 ChineseCheckersIts = "É a "
-
 ChineseCheckersYourTurn = "Sua Vez"
 ChineseCheckersGreenTurn = "Vez do Verde"
 ChineseCheckersYellowTurn = "Vez do Amarelo"
@@ -9931,7 +9509,6 @@ ChineseCheckersPurpleTurn = "Vez do Roxo"
 ChineseCheckersBlueTurn = "Vez do Azul"
 ChineseCheckersPinkTurn = "Vez do Rosa"
 ChineseCheckersRedTurn = "Vez do Vermelho"
-
 ChineseCheckersColorG = "Você é o Verde"
 ChineseCheckersColorY = "Você é o Amarelo"
 ChineseCheckersColorP = "Você é o Roxo"
@@ -9939,12 +9516,9 @@ ChineseCheckersColorB = "Você é o Azul"
 ChineseCheckersColorPink = "Você é o Rosa"
 ChineseCheckersColorR = "Você é o Vermelho"
 ChineseCheckersColorO = "Você está Observando"
-
 ChineseCheckersYouWon = "Você acaba de ganhar uma partida de Xadrez Chinês!"
 ChineseCheckers = "Xadrez Chinês."
 ChineseCheckersGameOf = " acaba de ganhar uma partida de "
-
-#GameTutorials.py
 ChineseTutorialTitle1 = "Objetivo"
 ChineseTutorialTitle2 = "Como Jogar"
 ChineseTutorialPrev = "Página Anterior"
@@ -9952,13 +9526,10 @@ ChineseTutorialNext = "Próxima Página"
 ChineseTutorialDone = "Pronto"
 ChinesePage1 = "O objetivo do Xadrez Chinês é ser o primeiro jogador a mover todas as suas peças do triângulo de baixo do tabuleiro até o triângulo do outro lado. O primeiro jogador a conseguir isso vence!"
 ChinesePage2 = "Os jogadores se alternam movendo qualquer pedra de sua própria cor.  Uma pedra pode se mover para um buraco ao lado, ou pode saltar por outras pedras. Os saltos devem passar por um mármore e cair em um buraco livre. É possível combinar saltos para andar mais longe!"
-
 CheckersPage1 = "O objetivo das Damas é deixar o oponente sem poder fazer jogadas. Para isso, você pode capturar todas as suas peças, ou bloqueá-las para que não ele não possa movê-las."
 CheckersPage2 = "Os jogadores se alternam movendo qualquer pedra de sua própria cor. Uma peça pode se mover para um quadrado diagonal à frente. Uma peça só pode se mover para um quadrado que não esteja ocupado por outra peça. As damas seguem as mesmas regras, mas podem se mover para trás."
 CheckersPage3 = "Para capturar uma peça do oponente, você deve saltar sobre ela diagonalmente para o quadrado vazio depois dela. Se você puder fazer alguma captura em sua vez, terá de fazê-la. Você pode combinar capturas, desde que seja com a mesma peça." 
 CheckersPage4 = "Uma peça se torna dama quando chegar à última linha do tabuleiro. Uma peça que acaba de se tornar dama não pode saltar de novo até o próximo turno. Além disso, damas podem se mover para todas as direções e podem mudar de direção ao saltar."
-
-#DistributedCheckers.py
 CheckersGetUpButton = "Levantar-se"
 CheckersStartButton = "Iniciar Jogo"
 CheckersQuitButton = "Sair do Jogo"
@@ -9972,26 +9543,18 @@ CheckersObserver = "Você está Observando"
 RegularCheckers = "Damas."
 RegularCheckersGameOf = " acaba de ganhar uma partida de "
 RegularCheckersYouWon = "Você acaba de ganhar uma partida de Damas!"
-
 MailNotifyNewItems = "Chegou correio para você!"
 MailNewMailButton = "Correio"
 MailSimpleMail = "Bilhete"
 MailFromTag = "Bilhete de: %s"
-
 AwardNotifyNewItems = "Você tem um novo prêmio em sua caixa-de-correiro!"
 AwardNotifyOldItems = "Há ainda prêmios aguardando na sua caixa-de-correiro para você escolher!"
-
-# MailboxScreen.py
 InviteInvitation = "o convite"
 InviteAcceptInvalidError = "O convite não é mais válido."
 InviteAcceptPartyInvalid = "Sua festa foi cancelada."
 InviteAcceptAllOk = "O anfitrião recebeu sua resposta."
 InviteRejectAllOk = "O anfitrião recebeu sua recusa do convite."
-
-
-# Note Months is 1 based, to correspond to datetime
-Months = {
- 1: "JANEIRO",
+Months = {1: "JANEIRO",
  2: "FEVEREIRO",
  3: "MARÇO",
  4: "ABRIL",
@@ -10002,87 +9565,84 @@ Months = {
  9: "SETEMBRO",
 10: "OUTUBRO",
 11: "NOVEMBRO",
-12: "DEZEMBRO"
-}
-
-# Note 0 for Monday to match datetime
-DayNames = ("Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo")
-DayNamesAbbrev = ("SEG", "TER", "QUA", "QUI", "SEX", "SÁB", "DOM")
-
-# numbers must match holiday ids in ToontownGlobals
-HolidayNamesInCalendar = {
-    1: ("Fogos de Artifício de Verão", "Comemore o Verão com um espetáculo de fogos de artifício a cada hora em cada pátio!"),
-    2: ("Fogos de Artifício de Ano Novo", "Feliz Ano Novo! Curta um espetáculo de fogos de artifício a cada hora em cada pátio!"),
-    3: ("Invasão Sanguessuga", "Feliz Halloween! Impeça que os Cogs Sanguessugas invadam Toontown!"),
-    4: ("Decoração de Feriados de Inverno", "Comemore os Feriados de Inverno com árvores e postes de iluminação Toontásticos!"),
-    5: ("Invasão Esqueletocogs", "Impeça que os Esqueletocogs invadam Toontown!"),
-    6: ("Invasão Dr. Celebridade ", "Impeça que os Cogs  do Dr. Celebridade invadam Toontown!"),
-    7: ("Bingo de Peixe", "Quarta-feira do Bingo de Peixe! Todos no lago trabalhando juntos para completar a cartela antes de o tempo esgotar."),
-    8: ("Eleição de Espécie de Toon", "Vote na nova espécie de Toon! Será uma Cabra? Será um Porco?"),
-    9: ("Dia do Gato Preto", "Feliz Halloween! Crie um Toon Gato Preto Toontástico – Só Hoje!"),
-   13: ("Doces ou Travessuras", "Feliz Halloween! Vá atrás das guloseimas por toda Toontown para ganhar uma linda cabeça de abóbora de prêmio!"),
-   14: ("Grande Prêmio", "Segunda-feira do Grande Prêmio no autódromo do Pateta! Para vencer, conquiste o maior número de pontos em três corridas consecutivas!"),
-   16: ("Fim de Semana do Grande Prêmio", "Quem jogar gratuitamente ou pagando compete nas corridas do Autódromo do Pateta!"),
-   17: ("Trilhas do Bondinho", "Quinta-feira das Trilhas do Bondinho! Embarque em qualquer Bondinho para jogar com dois ou mais Toons."),
-   19: ("Sábados Engraçados", "Os sábados são engraçados com o Bingo de Peixe, Grande Prêmio e  Trilhas do Bondinho o dia todo!"),
-   24: ("Idos de Março", "Cuidado com os Idos de Março! Impeça que os Cogs Golpe Sujo invadam Toontown!"),
-   26: ("Decoração de Halloween", "Comemore o Halloween deixando as árvores e  postes de iluminação de Toontown assustadores!"),
-   28: ("Invasão de Inverno", "Os robôs vendedores estão à solta espalhando suas táticas de vendas frias!"),
-   33: ("Surpresa de Robô Vendedor 1", "Surpresa de Robô Vendedor! Impeça que os Cogs Reis da Incerta invadam Toontown!"),
-   34: ("Surpresa de Robô Vendedor 2", "Surpresa de Robô Vendedor! Impeça que os Cogs Sabe-com-quem-está-falando invadam Toontown!"),
-   35: ("Surpresa de Robô Vendedor 3", "Surpresa de Robô Vendedor! Impeça que os Cogs Amigos da Onça invadam Toontown!"),
-   36: ("Surpresa de Robô Vendedor 4", "Surpresa de Robô Vendedor! Impeça que os Cogs Agitadores invadam Toontown!"),
-   37: ("Enigma de Robô Mercenário 1", "Enigma de Robô Mercenário. Impeça que os Cogs Farsantes invadam Toontown!"),
-   38: ("Enigma de Robô Mercenário 2", "Enigma de Robô Mercenário. Impeça que os Cogs Mão de Vaca invadam Toontown!"),
-   39: ("Enigma de Robô Mercenário 3", "Enigma de Robô Mercenário. Impeça que os Cogs Conta-moedinhas invadam Toontown!"),
-   40: ("Enigma de Robô Mercenário 4", "Enigma de Robô Mercenário. Impeça que os Cogs Destruidores de Números invadam Toontown!"),
-   41: ("A Estratégia do Robô da Lei 1", "A Estratégia do Robô da Lei. Impeça que os Cogs Comensais invadam Toontown!"),
-   42: ("A Estratégia do Robô da Lei 2", "A Estratégia do Robô da Lei. Impeça que os Cogs Duplo Sentido invadam Toontown!"),
-   43: ("A Estratégia do Robô da Lei 3", "A Estratégia do Robô da Lei. Impeça que os Cogs Perseguidores de Ambulância invadam Toontown!"),
-   44: ("A Estratégia do Robô da Lei 4", "A Estratégia do Robô da Lei. Impeça que os Cogs Golpe Sujo invadam Toontown!"),
-   45: ("O Problema Com Robôs Chefes 1", "O Problema Com Robôs Chefes. Impeça que os Cogs Puxa-sacos invadam Toontown!"),
-   46: ("O Problema Com Robôs Chefes 2", "O Problema Com Robôs Chefes. Impeça que os Cogs Ratos de Escritório invadam Toontown!"),
-   47: ("O Problema Com Robôs Chefes 3", "O Problema Com Robôs Chefes. Impeça que os Cogs Microempresários invadam Toontown!"),
-   48: ("O Problema Com Robôs Chefes 4", "O Problema Com Robôs Chefes. Impeça que os Cogs Facões invadam Toontown!"),
-   49: ("Dia da Balinha", "Comemore o Dia da Balinha ganhando Balinhas em dobro nas festas!"),
-   53: ("Invasão Reis da Incerta", "Impeça que os Cogs  Reis da Incerta invadam Toontown!"),
-   54: ("Invasão Conta-moedinha", "Impeça que os Cogs  Conta-moedinhas invadam Toontown!"),
-   55: ("Invasão Duplo Sentido", "Impeça que os Cogs  Duplo Sentido invadam Toontown!"),
-   56: ("Invasão de Facão", "Impeça que os Cogs Facões invadam Toontown!"),
-   57: ("Toon Cantando", "Celebra Feriado Congelante por cantando em volta Toontown para uma recompesa \"gelada\" !"),
-   59: ("Dia dos namorados", "Dia dos namorados de Junho 05 a Junho 14!"),
-   72: ("Invasão de Vaquinha de Presépio", "Impeça que os Cogs Vaquinha de Presépios invadam Toontown!"),
-   73: ("Invasão de Pão-duro", "Impeça que os Cogs Pães-duros invadam Toontown!"),
-   74: ("Invasão de Operador de Telemarketing", "Impeça que os Cogs Operadores de Telemarketing invadam Toontown!"),
-   75: ("Invasão de Caça Talentos", "Impeça que os Cogs Caça Talentos invadam Toontown!"),
-   76: ("Invasão de Relações Públicas", "Impeça que os Cogs Relações Públicas invadam Toontown!"),
-   77: ("Invasão de Sacos de Dinheiro", "Impeça que os Cogs Sacos de Dinheiro invadam Toontown!"),
-   78: ("Invasão de Duas Caras", "Impeça que os Cogs Duas Caras invadam Toontown!"),
-   79: ("Invasão de Amizade Fácil", "Impeça que os Cogs Amizades Fáceis invadam Toontown!"),
-   80: ("Invasão de Agiotas", "Impeça que os Cogs Agiotas invadam Toontown!"),
-   81: ("Invasão de Aventureio Corporativo", "Impeça que os Cogs Aventureios Corporativos invadam Toontown!"),
-   82: ("Invasão de Barão Ladrão", "Impeça que os Cogs Barões Ladrões invadam Toontown!"),
-   83: ("Invasão de Macacos Velhos", "Impeça que os Cogs Macacos Velhos invadam Toontown!"),
-   84: ("Invasão de Figurão", "Impeça que os Cogs Figurões invadam Toontown!"),
-   85: ("Invasão de O Rei da Cocada Preta", "Impeça que os Cogs Os Reis da Cocada Preta invadam Toontown!"),
-   86: ("Invasão de Facão", "Impeça que os Cogs Facões invadam Toontown!"),
-   87: ("Invasão de Agitador", "Impeça que os Cogs Agitadores invadam Toontown!"),
-   88: ("Invasão de Duplo Sentido", "Impeça que os Cogs Duplos Sentidos invadam Toontown!"),
-   89: ("Invasão de Mão de vaca", "Impeça que os Cogs Mãos de vaca invadam Toontown!"),
-   90: ("Invasão de Dr.Sabe-com-quem-está-falando", "Impeça que os Cogs Drs.Sabe-com-quem-está-falando invadam Toontown!"),
-   91: ("Invasão de Perseguidores de Ambulância", "Impeça que os Cogs Perseguidores de Ambulância invadam Toontown!"),
-   92: ("Invasão de Microempresário", "Impeça que os Cogs Microempresários invadam Toontown!"),
-   93: ("Invasão de Destruidores de Números", "Impeça que os Cogs Destruidores de Números invadam Toontown!"),
-   95: ("Festas da vitória", "Comemore nosso triunfo histórico contra os Cogs!"), # placeholder
-   96: ("Operação: Robô Vendedor Tempestade!", "Quartel do Robô Vendedor está aberto para todos. Vamos lutar com o VP"),
-   97: ("Dia das Balinhas em Dobro - Bondinho dos Jogos", ""),
-   98: ("Dias das Balinhas em Dobro - Pescaria", ""),
-   99: ("Semana da Balinha", "Comemore a Semana da Balinha como recompensa em Dobro de Balinhas"),
-   101: ("Maratona de Ano-Novo dos Toons", "Chances de vencer a toda hora! "),
-   # Translate
-   #105: ("Idos de Março", "Os Idos de Março estão aqui!"),
-   105: ("Toons de Verde!", "Toons faz uma cena verrde com as Balinhas Verdes na Rua do Carvalho nos Jardins Da Margarida !")}
-
+12: "DEZEMBRO"}
+DayNames = ("Segunda-feira", 
+ "Terça-feira",
+ "Quarta-feira",
+ "Quinta-feira",
+ "Sexta-feira",
+ "Sábado", 
+ "Domingo")
+DayNamesAbbrev = ("SEG",
+ "TER",
+ "QUA",
+ "QUI",
+ "SEX",
+ "SÁB",
+ "DOM")
+HolidayNamesInCalendar = {1: ("Fogos de Artifício de Verão", "Comemore o Verão com um espetáculo de fogos de artifício a cada hora em cada pátio!"),
+ 2: ("Fogos de Artifício de Ano Novo", "Feliz Ano Novo! Curta um espetáculo de fogos de artifício a cada hora em cada pátio!"),
+ 3: ("Invasão Sanguessuga", "Feliz Halloween! Impeça que os Cogs Sanguessugas invadam Toontown!"),
+ 4: ("Decoração de Feriados de Inverno", "Comemore os Feriados de Inverno com árvores e postes de iluminação Toontásticos!"),
+ 5: ("Invasão Esqueletocogs", "Impeça que os Esqueletocogs invadam Toontown!"),
+ 6: ("Invasão Dr. Celebridade ", "Impeça que os Cogs  do Dr. Celebridade invadam Toontown!"),
+ 7: ("Bingo de Peixe", "Quarta-feira do Bingo de Peixe! Todos no lago trabalhando juntos para completar a cartela antes de o tempo esgotar."),
+ 8: ("Eleição de Espécie de Toon", "Vote na nova espécie de Toon! Será uma Cabra? Será um Porco?"),
+ 9: ("Dia do Gato Preto", "Feliz Halloween! Crie um Toon Gato Preto Toontástico – Só Hoje!"),
+ 13: ("Doces ou Travessuras", "Feliz Halloween! Vá atrás das guloseimas por toda Toontown para ganhar uma linda cabeça de abóbora de prêmio!"),
+ 14: ("Grande Prêmio", "Segunda-feira do Grande Prêmio no autódromo do Pateta! Para vencer, conquiste o maior número de pontos em três corridas consecutivas!"),
+ 16: ("Fim de Semana do Grande Prêmio", "Quem jogar gratuitamente ou pagando compete nas corridas do Autódromo do Pateta!"),
+ 17: ("Trilhas do Bondinho", "Quinta-feira das Trilhas do Bondinho! Embarque em qualquer Bondinho para jogar com dois ou mais Toons."),
+ 19: ("Sábados Engraçados", "Os sábados são engraçados com o Bingo de Peixe, Grande Prêmio e  Trilhas do Bondinho o dia todo!"),
+ 24: ("Idos de Março", "Cuidado com os Idos de Março! Impeça que os Cogs Golpe Sujo invadam Toontown!"),
+ 26: ("Decoração de Halloween", "Comemore o Halloween deixando as árvores e  postes de iluminação de Toontown assustadores!"),
+ 28: ("Invasão de Inverno", "Os robôs vendedores estão à solta espalhando suas táticas de vendas frias!"),
+ 33: ("Surpresa de Robô Vendedor 1", "Surpresa de Robô Vendedor! Impeça que os Cogs Reis da Incerta invadam Toontown!"),
+ 34: ("Surpresa de Robô Vendedor 2", "Surpresa de Robô Vendedor! Impeça que os Cogs Sabe-com-quem-está-falando invadam Toontown!"),
+ 35: ("Surpresa de Robô Vendedor 3", "Surpresa de Robô Vendedor! Impeça que os Cogs Amigos da Onça invadam Toontown!"),
+ 36: ("Surpresa de Robô Vendedor 4", "Surpresa de Robô Vendedor! Impeça que os Cogs Agitadores invadam Toontown!"),
+ 37: ("Enigma de Robô Mercenário 1", "Enigma de Robô Mercenário. Impeça que os Cogs Farsantes invadam Toontown!"),
+ 38: ("Enigma de Robô Mercenário 2", "Enigma de Robô Mercenário. Impeça que os Cogs Mão de Vaca invadam Toontown!"),
+ 39: ("Enigma de Robô Mercenário 3", "Enigma de Robô Mercenário. Impeça que os Cogs Conta-moedinhas invadam Toontown!"),
+ 40: ("Enigma de Robô Mercenário 4", "Enigma de Robô Mercenário. Impeça que os Cogs Destruidores de Números invadam Toontown!"),
+ 41: ("A Estratégia do Robô da Lei 1", "A Estratégia do Robô da Lei. Impeça que os Cogs Comensais invadam Toontown!"),
+ 42: ("A Estratégia do Robô da Lei 2", "A Estratégia do Robô da Lei. Impeça que os Cogs Duplo Sentido invadam Toontown!"),
+ 43: ("A Estratégia do Robô da Lei 3", "A Estratégia do Robô da Lei. Impeça que os Cogs Perseguidores de Ambulância invadam Toontown!"),
+ 44: ("A Estratégia do Robô da Lei 4", "A Estratégia do Robô da Lei. Impeça que os Cogs Golpe Sujo invadam Toontown!"),
+ 45: ("O Problema Com Robôs Chefes 1", "O Problema Com Robôs Chefes. Impeça que os Cogs Puxa-sacos invadam Toontown!"),
+ 46: ("O Problema Com Robôs Chefes 2", "O Problema Com Robôs Chefes. Impeça que os Cogs Ratos de Escritório invadam Toontown!"),
+ 47: ("O Problema Com Robôs Chefes 3", "O Problema Com Robôs Chefes. Impeça que os Cogs Microempresários invadam Toontown!"),
+ 48: ("O Problema Com Robôs Chefes 4", "O Problema Com Robôs Chefes. Impeça que os Cogs Facões invadam Toontown!"),
+ 49: ("Dia da Balinha", "Comemore o Dia da Balinha ganhando Balinhas em dobro nas festas!"),
+ 53: ("Invasão Reis da Incerta", "Impeça que os Cogs  Reis da Incerta invadam Toontown!"),
+ 54: ("Invasão Conta-moedinha", "Impeça que os Cogs  Conta-moedinhas invadam Toontown!"),
+ 55: ("Invasão Duplo Sentido", "Impeça que os Cogs  Duplo Sentido invadam Toontown!"),
+ 56: ("Invasão de Facão", "Impeça que os Cogs Facões invadam Toontown!"),
+ 57: ("Toon Cantando", "Celebra Feriado Congelante por cantando em volta Toontown para uma recompesa \"gelada\" !"),
+ 59: ("Dia dos Toons dos namorados", "Dia dos Toons dos namorados de Junho 05 a Junho 14!"),
+ 72: ("Invasão de Vaquinha de Presépio", "Impeça que os Cogs Vaquinha de Presépios invadam Toontown!"),
+ 73: ("Invasão de Pão-duro", "Impeça que os Cogs Pães-duros invadam Toontown!"),
+ 74: ("Invasão de Operador de Telemarketing", "Impeça que os Cogs Operadores de Telemarketing invadam Toontown!"),
+ 75: ("Invasão de Caça Talentos", "Impeça que os Cogs Caça Talentos invadam Toontown!"),
+ 76: ("Invasão de Relações Públicas", "Impeça que os Cogs Relações Públicas invadam Toontown!"),
+ 77: ("Invasão de Sacos de Dinheiro", "Impeça que os Cogs Sacos de Dinheiro invadam Toontown!"),
+ 78: ("Invasão de Duas Caras", "Impeça que os Cogs Duas Caras invadam Toontown!"),
+ 79: ("Invasão de Amizade Fácil", "Impeça que os Cogs Amizades Fáceis invadam Toontown!"),
+ 80: ("Invasão de Agiotas", "Impeça que os Cogs Agiotas invadam Toontown!"),
+ 81: ("Invasão de Aventureio Corporativo", "Impeça que os Cogs Aventureios Corporativos invadam Toontown!"),
+ 82: ("Invasão de Barão Ladrão", "Impeça que os Cogs Barões Ladrões invadam Toontown!"),
+ 83: ("Invasão de Macacos Velhos", "Impeça que os Cogs Macacos Velhos invadam Toontown!"),
+ 84: ("Invasão de Figurão", "Impeça que os Cogs Figurões invadam Toontown!"),
+ 85: ("Invasão de O Rei da Cocada Preta", "Impeça que os Cogs Os Reis da Cocada Preta invadam Toontown!"),
+ 86: ("Invasão de Facão", "Impeça que os Cogs Facões invadam Toontown!"),
+ 87: ("Invasão de Agitador", "Impeça que os Cogs Agitadores invadam Toontown!"),
+ 88: ("Invasão de Duplo Sentido", "Impeça que os Cogs Duplos Sentidos invadam Toontown!"),
+ 89: ("Invasão de Mão de vaca", "Impeça que os Cogs Mãos de vaca invadam Toontown!"),
+ 90: ("Invasão de Dr.Sabe-com-quem-está-falando", "Impeça que os Cogs Drs.Sabe-com-quem-está-falando invadam Toontown!"),
+ 91: ("Invasão de Perseguidores de Ambulância", "Impeça que os Cogs Perseguidores de Ambulância invadam Toontown!"),
+ 92: ("Invasão de Microempresário", "Impeça que os Cogs Microempresários invadam Toontown!"),
+ 93: ("Invasão de Destruidores de Números", "Impeça que os Cogs Destruidores de Números invadam Toontown!"),
+ 95: ("Festas da vitória", "Comemore nosso triunfo histórico contra os Cogs!")}
 UnknownHoliday = "Feriado Desconhecido %d"
 HolidayFormat = "%m/%d "
 TimeZone = "Brazil/West"
@@ -10109,12 +9669,7 @@ CogdoMazeBossHint = "Grandes Cogs leva DOIS golpes para derrotar"
 CogdoMazeMinionHint = "Pequenos Cogs derrubam piadas!"
 CogdoFlyingGameTitle = "Escritórios do Macaco Velho"
 CogdoFlyingGameInstructions = "Voe pelo covil dos Macacos Velhos. Cuidado com obstáculos e com os cogs pelo caminho, e não se esqueça de reabastecer seu helicóptero!"
-CogdoFlyingIntroMovieDialogue = (("Vocês não vão babar na nossas penas, Toons! Nós estavamos destruindo seus barris da sua Risada, e vocês não podem nos impedir!", "Um rebanho de Toons! Nós estamos esmagando seus barris da sua Risadas em nossos %s, e não há nada que vocês possam fazer sobre isso!" % CogdoStomperName, "Vocês não podem sob nos inicitar, Toons! Nós estamos abastecendo nossos escritórios com suas risadas, e vocês não tem poder para nos impedir!"), ("Esta é a Resistência Toon falando! Um passarinho me disse que você pode usar hélices para voar por aí, pegar Barris de Destruição de Memorados e evitar que Risada seja destruída! Boa sorte, Toons!",
-                               "Atenção Toons! Voe com uma hélice e colete Barris de Destruição de Memorados para evitar que nossa Risada seja pisoteada! Resistência Toon desligando!",
-                               "Resistência Toon aqui de novo! Cause uma aba por procurar hélices, vôo para os Barris de Destruição de Memorados, e mantendo nossa Risada de ser esmagada! Tenha Diversão!"),
-                                 ("Squawk! Eu sou ganhador do prêmio Roda dentada de Prata, não preciso disso!",
-                               "Faça o seu melhor, Toons! Vocês vão encontrar nos para ser bastante garratão!",
-                               "Nós vamos ensinar vocês para obedecer a ordem de bicando, Toons!"))
+CogdoFlyingIntroMovieDialogue = (("Vocês não vão babar na nossas penas, Toons! Nós estavamos destruindo seus barris da sua Risada, e vocês não podem nos impedir!", "Um rebanho de Toons! Nós estamos esmagando seus barris da sua Risadas em nossos %s, e não há nada que vocês possam fazer sobre isso!" % CogdoStomperName, "Vocês não podem sob nos inicitar, Toons! Nós estamos abastecendo nossos escritórios com suas risadas, e vocês não tem poder para nos impedir!"), ("Esta é a Resistência Toon falando! Um passarinho me disse que você pode usar hélices para voar por aí, pegar Barris de Destruição de Memorados e evitar que Risada seja destruída! Boa sorte, Toons!", "Atenção Toons! Voe com uma hélice e colete Barris de Destruição de Memorados para evitar que nossa Risada seja pisoteada! Resistência Toon desligando!", "Resistência Toon aqui de novo! Cause uma aba por procurar hélices, vôo para os Barris de Destruição de Memorados, e mantendo nossa Risada de ser esmagada! Tenha Diversão!"), ("Squawk! Eu sou ganhador do prêmio Roda dentada de Prata, não preciso disso!", "Faça o seu melhor, Toons! Vocês vão encontrar nos para ser bastante garratão!", "Nós vamos ensinar vocês para obedecer a ordem de bicando, Toons!"))
 CogdoFlyingGameWaiting = "Aguardando outros Toons%s"
 CogdoFlyingGameFuelLabel = "Combustível"
 CogdoFlyingGameLegalEagleTargeting = "Um Macaco Velho tem percebido vocês!"
@@ -10134,23 +9689,23 @@ CogdoExecutiveSuiteTitle = "Suíte Executiva"
 CogdoExecutiveSuiteIntroMessage = "Ah não, eles pegaram o lojista!\nDerrote os Cogs e liberte o prisioneiro."
 CogdoExecutiveSuiteToonThankYou = "Obrigado pelo resgate!\nSe precisar de ajuda em uma briga, use este cartão SOS para ligar para meu amigo %s."
 CogdoExecutiveSuiteToonBye = "Tchau!"
-SillySurgeTerms = {1:  "Ascensão Divertida!",
-    2:  "Onda de Bobagem!",
-    3:  "Aumento Ridículo!",
-    4:  "Crescimento de Risadinha!",
-    5:  "Estímulo Engraçado!",
-    6:  "Impulso Raro!",
-    7:  "Escalada Doida!",
-    8:  "Salto Feliz!",
-    9:  "Levantamento Insano!",
-    10: "Caminhada Alegre!",
-    11: "Aumento Insano!",
-    12: "Aumento Forçado!"}
+SillySurgeTerms = {1: "Ascensão Divertida!",
+ 2: "Onda de Bobagem!",
+ 3: "Aumento Ridículo!",
+ 4: "Crescimento de Risadinha!",
+ 5: "Estímulo Engraçado!",
+ 6: "Impulso Raro!",
+ 7: "Escalada Doida!",
+ 8: "Salto Feliz!",
+ 9: "Levantamento Insano!",
+ 10: "Caminhada Alegre!",
+ 11: "Aumento Insano!",
+ 12: "Aumento Forçado!"}
 InteractivePropTrackBonusTerms = {0:  "Super Toonar",
-    1:  "",
-    2:  "",
-    3:  "",
-    4:  "Super Lançamento",
-    5:  "Super Esguicho!",
-    6:  ""}
+ 1: "",
+ 2: "",
+ 3: "",
+ 4: "Super Lançamento",
+ 5: "Super Esguicho!",
+ 6: ""}
 PlayingCardUnknown = "Nome de Cartão desconhecido"
