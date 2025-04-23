@@ -69,6 +69,8 @@ WesternPluto = "WesternPluto"
 Flippy = "Flippy"
 Chip   = "Tico"
 Dale   = "Teco"
+Dale = 'Dale'
+JailbirdDale = 'JailbirdDale'
 lTheBrrrgh = 'O Brrrgh'
 lDaisyGardens = 'Jardim da Margarida'
 lDonaldsDock = "Porto do Donald"
@@ -1911,14 +1913,14 @@ BossbotP = "Robôs-chefe"
 LawbotP = "Robôs da Lei"
 CashbotP = "Robôs Mercenários"
 SellbotP = "Robôs Vendedores"
-BossbotSkelS = "um Esqueletocog %s" % (Bossbot)
-LawbotSkelS = "um Esqueletocog %s" % (Lawbot)
-CashbotSkelS = "um Esqueletocog %s" % (Cashbot)
-SellbotSkelS = "um Esqueletocog %s" % (Sellbot)
-BossbotSkelP = "Esqueletocogs %s" % (BossbotP)
-LawbotSkelP = "Esqueletocogs %s" % (LawbotP)
-CashbotSkelP = "Esqueletocogs %s" % (CashbotP)
-SellbotSkelP = "Esqueletocogs %s" % (SellbotP)
+BossbotSkelS = "um Esqueletocog Robô-chefe"
+LawbotSkelS = "um Esqueletocog  Robô da Lei"
+CashbotSkelS = "um Esqueletocog Robô Mercenário"
+SellbotSkelS = "um Esqueletocog Robô Vendedor"
+BossbotSkelP = "Esqueletocogs Robôs-chefes"
+LawbotSkelP = "Esqueletocogs Robôs da Lei"
+CashbotSkelP = "Esqueletocogs Robôs Mercenários"
+SellbotSkelP = "Esqueletocogs Robôs Vendedores"
 SkeleRevivePostFix = " v2.0"
 AvatarDetailPanelOK = lOK
 AvatarDetailPanelCancel = lCancel
@@ -1945,7 +1947,6 @@ AvatarPanelIgnore = "Ignorar"
 AvatarPanelIgnoreCant = "OK"
 AvatarPanelStopIgnoring = "Parar de Ignorar"
 AvatarPanelReport = "Relatar"
-#AvatarPanelCogDetail = "Dept: %s\nNível: %s\n"
 AvatarPanelCogLevel = "Nível: %s"
 AvatarPanelCogDetailClose = lClose
 AvatarPanelDetail = "Detalhes do Toon"
@@ -3084,8 +3085,8 @@ ElevatorGroupMember = "Somente o líder deste grupo pode\ndecidir quando deve en
 KartMinLaff = "Você precisa de %s pontos de risada para poder andar neste carte."
 CogsIncExt = ", Ltda."
 CogsIncModifier = "%s" + CogsIncExt
-CogsInc = Cogs.upper + CogsIncExt
-CogdominiumsExt = " Cogdomínios"
+CogsInc = Cogs.upper() + CogsIncExt
+CogdominiumsExt = " Escritórios de Campo"
 Cogdominiums = Cog.upper() + CogdominiumsExt	       
 DoorKnockKnock = "Toc, toc."
 DoorWhosThere = "Quem é?"
@@ -3111,8 +3112,8 @@ KnockKnockContestJokes = {2100: ["Wally", "Wally não está olhando, joga torta 
         40:["Minnie", "Minnie-pessoas falaram comigo, e isso está me enlouquecendo!"], 
         27:["Disguise", "A Disguisetante perseguição aos Cogs!"]}, 
 2300: ["Justin", "Justin mais algumas peças do Cog e lá vamos nós!"],
-3300: {10: ["Aladdin", "Quartel do Aladdin quer uma palavra com você."],
-        6: ["Adon", "Adondé que esses Cogs tão saindo?"],
+3300: {10: ["Aladdin", "Aladdinheiro no chão"],
+        6: ["Adon", "Adond é que esses Cogs tão saindo?"],
        30: ["Bacon", "Bacon uma torta ia bem."],
        28: ["Isaías", "Isaías mas voltou no bondinho."],
    12: ["Julieta", "Julieta me chamando praquele prédio Cog com você pra eu te Toonar."]}}
@@ -3382,65 +3383,35 @@ MinnieChatter = (["Bem-vindo à Melodilândia.", "Oi, meu nome é "+ Minnie +". 
  "Gosto de fazer as pessoas rirem.",
  "Cara, andar sobre rodas o dia todo não é moleza para os pés!",
  "Bonita camisa, %.",
- "Aquilo no chão é uma balinha?",
- "Eu ouvi " + Daisy + " dizer que ela plantou novas flores no jardim."],
-[ # Goodbyes
- "Caramba, estou atrasada para o meu encontro com o "+ Mickey +"!",
- "Parece que é hora de "+ Pluto +" jantar.",
- "É hora de tirar um cochilo. Vou para a Sonholândia.",
-]
-)
-
-WinterMinnieCChatter = (
- [ # Greetings
-  "Oi, eu sou a Minnie Natalina!",
-  "Bem-vindo à terra das canções de natal!",
-  "Feliz feriado de inverno!",
-  "Feliz feriado de inverno, %!",
-     ],
-[ # Comments
-"Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
-"Cante uma melodia, Toon!",
-"Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
-"Mostre-nos como cantar, Toon!",
-"Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
-"Você consegue cantar uma melodia aqui na Melodyland?",
-"Você obterá mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
-"Essas lâmpadas parecem quentes em seus cachecóis!",
-"Você obterá mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
-"O canto é a coisa!",
-"Você vai ganhar mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
-"Eu sempre vou gostar de você, para melhor ou para verso!",
-"Você vai ganhar mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
-"Tudo fica melhor com uma coroa de flores!",
-],
-[ # Adeus
-"Tenham um feriado de inverno divertido!",
-"Boas trilhas!",
-"Mickey vai me levar para cantar!"])
-
-WinterMinnieDChatter = ([
-"Oi, eu sou a Merry Minnie!",
-"Bem-vindo à terra dos cânticos!",
-"Feliz feriado de inverno!",
-"Feliz feriado de inverno, %!"],
-[ # Comentários
-"Cante uma melodia, Toon!",
-"Mostre-nos como cantar, Toon!",
-"Você consegue cantar uma melodia aqui na Melodyland?",
-"Essas lâmpadas parecem quentes em seus cachecóis!",
-"O canto é o máximo!",
-"Você não pode errar com uma música!",
-"Eu sempre vou gostar de você, para melhor ou para pior!",
-"Tudo fica melhor com uma guirlanda!",
-],
-[ # Adeus
-"Tenham um feriado de inverno divertido!",
-"Boas trilhas!",
-"Mickey vai me levar para cantar!",
-]
-)
-
+ "Aquilo no chão é uma balinha?"], ["Caramba, estou atrasada para o meu encontro com o %s!" % Mickey, "Parece que é hora de %s jantar." % Pluto, "É hora de tirar um cochilo. Vou para a Sonholândia."])
+WinterMinnieCChatter = (["Oi, eu sou a Minnie Natalina!",
+ "Bem-vindo à terra das cantorias",
+ "Feliz feriado de inverno!",
+ "Feliz feriado de inverno, %!"], ["Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
+ "Cante uma melodia, Toon!",
+ "Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
+ "Mostre-nos como cantar, Toon!",
+ "Você obterá mais do que uma Barbearia Musical se você cantar para Bárbara de Sevilha!",
+ "Você consegue cantar uma melodia aqui na Melodyland?",
+ "Você obterá mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
+ "Essas lâmpadas parecem quentes em seus cachecóis!",
+ "Você obterá mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
+ "O canto é a coisa!",
+ "Você vai ganhar mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
+ "Eu sempre vou gostar de você, para melhor ou para verso!",
+ "Você vai ganhar mais do que uma Barbearia Musical se cantar para Bárbara de Sevilha!",
+ "Tudo fica melhor com uma coroa de flores!"], ["Tenham um feriado de inverno divertido!", "Trilhas Felizes!", "Mickey vai me levar para cantar!"])
+WinterMinnieDChatter = (["Oi, eu sou a Minnie Natalina!",
+ "Bem-vindo à terra das cantorias!",
+ "Feliz feriado de inverno!",
+ "Feliz feriado de inverno, %!"], ["Cante uma melodia, Toon!", 
+ "Mostre-nos como cantar, Toon!",
+ "Você consegue cantar uma melodia aqui na Melodyland?",
+ "Essas lâmpadas parecem quentes em seus cachecóis!",
+ "O canto é o máximo!",
+ "Você não pode errar com uma música!",
+ "Eu sempre vou gostar de você, para melhor ou para pior!",
+ "Tudo fica melhor com uma guirlanda!"], ["Tenham um feriado de inverno divertido!", "Trilhas Felizes!", "Mickey vai me levar para cantar!"])
 ValentinesMinnieChatter = (
 [
 "Olá, eu sou a Minnie!",
@@ -5353,9 +5324,6 @@ NCCommaAfterWord = "Você não pode começar uma palavra com vírgula."
 NCCommaUsage = ('Este nome não usa vírgulas corretamente. As vírgulas devem juntar duas palavras, como no nome "Dr. Quack, MD". As vírgulas devem também ser seguidas por um espaço.')
 NCPeriodUsage = ('Este nome não usa pontos corretamente. Os pontos são permitidos somente em palavras como "Sr.", "Sra.", "J.P.", etc.')
 NCApostrophes = 'Este nome tem excesso de apóstrofos.'
-
-# DistributedTrophyMgrAI.py
-#RemoveTrophy = "Quartel dos Toons: Os "+ Cogs +" dominaram um dos edifícios que você salvou!"
 RemoveTrophy = lToonHQ + ': '+ TheCogs +' dominaram um dos edifícios que você salvou!'
 
 # toon\DistributedNPCTailor/Clerk/Fisherman.py
@@ -5480,12 +5448,10 @@ CagedToonInterruptBoss = "Oi! Uhuu! E aí pessoal!"
 CagedToonRescueQuery = "Então, galera de Toons, vocês vêm me salvar?"
 BossCogDiscoverToons = "Hã? Toons! Disfarçar!"
 BossCogAttackToons = "Atacar!!"
-CagedToonDrop = [
- "Bom trabalho! Ele está ficando exausto!",
+CagedToonDrop = ["Bom trabalho! Ele está ficando exausto!",
  "Fique atrás dele! Ele está fugindo!",
  "Pessoal, vocês estão se saindo muito bem!",
- "Fantástico! Você quase o pegou agora!",
-    ]
+ "Fantástico! Você quase o pegou agora!"]
 CagedToonPrepareBattleTwo = "Cuidado, ele está tentando escapar!\aAjudem-me todos! Levantem-se aqui e detenham-no!"
 CagedToonPrepareBattleThree = "Maneiro! Estou quase livre!\aAgora, você precisa atacar o Cog V. P. em pessoa.\aTenho um montão de tortas que você pode usar!\aPule e toque na parte inferior da minha cela para que eu lhe dê algumas tortas.\aPressione a tecla Insert para jogar as tortas quando você as pegar!"
 BossBattleNeedMorePies = "Você precisa de mais tortas!"
@@ -5575,17 +5541,13 @@ GardenTypeName = 'Materiais de Jardim'
 RentalTypeName = 'Item de Aluguel'
 GardenStarterTypeName = 'Kit de Jardinagem'
 NametagTypeName = "Crachá"
-
-
-# Make sure numbers match up to CatalogItemTypes.py
-CatalogItemTypeNames = {
-    0: "INVALID_ITEM",
-    1: FurnitureTypeName, 
-    2: ChatTypeName, 
-    3: ClothingTypeName, 
-    4: EmoteTypeName, 
-    5: "WALLPAPER_ITEM",
-    6: "WindowViewTypeName",
+CatalogItemTypeNames = {0: "INVALID_ITEM",
+ 1: FurnitureTypeName, 
+ 2: ChatTypeName, 
+ 3: ClothingTypeName, 
+ 4: EmoteTypeName, 
+ 5: "WALLPAPER_ITEM",
+ 6: "WindowViewTypeName",
     7: "FLOORING_ITEM",
     8: "MOULDING_ITEM",
     9: "WAINSCOTING_ITEM",
@@ -5631,17 +5593,17 @@ ShirtStylesDescriptions = {'bss1': "básica",
     'c_ss1': "amarela com capuz - Série 1",
     'c_ss2': "amarela com palmeira - Série 1",
     'c_ss3': "roxa com estrelas - Série 2",
-    'c_bss1': "listras azuis (masculina) - Série 1",
-    'c_bss2': "laranja (masculina) - Série 1",
-    'c_bss3': "verde-limão com listra (masculina) - Série 2",
-    'c_bss4': "quimono vermelho com xadrez (masculina) - Série 2",
-    'c_gss1': "azul com listras amarelas (feminina) - Série 1",
-    'c_gss2': "rosa e bege com flor (feminina) - Série 1",
-    'c_gss3': "azul e dourado com listras ondulantes (feminina) - Série 2",
-    'c_gss4': "azul e rosa com arco (feminina) - Série 2",
-    'c_gss5': "quimono azul-piscina com listra (feminina) – NÃO USADO",
+    'c_bss1': "listras azuis (só meninos) - Série 1",
+    'c_bss2': "laranja (só meninos) - Série 1",
+    'c_bss3': "verde-limão com listra (só meninos) - Série 2",
+    'c_bss4': "quimono vermelho com xadrez (só meninos) - Série 2",
+    'c_gss1': "azul com listras amarelas (só meninas) - Série 1",
+    'c_gss2': "rosa e bege com flor (só meninas) - Série 1",
+    'c_gss3': "azul e dourado com listras ondulantes (só meninas) - Série 2",
+    'c_gss4': "azul e rosa com arco (só meninas) - Série 2",
+    'c_gss5': "quimono azul-piscina com listra (só meninas) – NÃO USADO",
     'c_ss4' : "Camiseta tingida (unissex) - Série 3",
-    'c_ss5': "azul-claro com azul e listra branca (masculina) - Série 3",
+    'c_ss5': "azul-claro com azul e listra branca (só meninos) - Série 3",
     'c_ss6': "camisa de caubói 1: Série 4",
     'c_ss7': "camisa de caubói 2: Série 4",
     'c_ss8': "camisa de caubói 3: Série 4",
@@ -5652,21 +5614,17 @@ ShirtStylesDescriptions = {'bss1': "básica",
     'hw_ss2': "Abóbora de Halloween",
     'hw_ss3': "Vampiro de Halloween",
     'hw_ss4': "Tartaruga de Halloween",
-    'hw_ss5': "Abelha de Halloween",
-    'hw_ss6': "Pirata de Halloween",
-    'hw_ss7': "Super Toon de Halloween",
-    'hw_ss8': "Vampiro sem capa de Halloween",
-    'hw_ss9': "Dinossauro de Halloween",
     'wh_ss1': "Feriado de Inverno 1",
     'wh_ss2': "Feriado de Inverno 2",
     'wh_ss3': "Feriado de Inverno 3",
     'wh_ss4': "Feriado de Inverno 4",
-    'vd_ss1': "Dia dos namorados, rosa com corações vermelhos (feminina)",
+    'vd_ss1': "Dia dos namorados, rosa com corações vermelhos (meninas)",
     'vd_ss2': "Dia dos namorados, vermelha com corações brancos",
-    'vd_ss3': "Dia dos namorados, branca com corações alados (masculina)",
+    'vd_ss3': "Dia dos namorados, branca com corações alados (meninos)",
     'vd_ss4': "Dia dos namorados, rosa com corações flamejantes",
     'vd_ss5': "Dia dos namorados 2009, branca com cupido vermelho",
     'vd_ss6': "Dia dos namorados 2009, azul com verde e corações vermelhos",
+    'vd_ss7': "Dia dos namorados 2010, vermelho com asas brancas",
     'sd_ss1': "Dia de São Patrício, camisa com trevo-de-quatro-folhas",
     'sd_ss2': "Dia de São Patrício, camisa com pote de ouro",
     'tc_ss1': "Concurso de Camiseta, Colete de Pesca",
@@ -5696,11 +5654,11 @@ ShirtStylesDescriptions = {'bss1': "básica",
     'sa_ss11': "Camisa de Verão 2",
     'sa_ss12': "Camisa de Golfe 1",
     'sa_ss13': "Camisa de Golfe 2",
-    'sa_ss14': "Camisa de Fantasia de Halloween 1",
-    'sa_ss15': "Camisa de Fantasia de Halloween 2",
+    'sa_ss14': "Camisa de Abelha",
+    'sa_ss15': "Camisa de SuperToon",
     'sa_ss16': "Camisa de Maratona 1",
-    'sa_ss17': "Camisa de Salvador de Edifícios 1",
-    'sa_ss18': "Camisa de Salvador de Edifícios 2",
+    'sa_ss17': "Camisa de Salvar Edifícios 1",
+    'sa_ss18': "Camisa de Salvar Edifícios 2",
     'sa_ss19': "Camisa de Tarefa de Toon 1",
     'sa_ss20': "Camisa de Tarefa de Toon 2",
     'sa_ss21': "Camisa de Bondinho 1",
@@ -5711,33 +5669,7 @@ ShirtStylesDescriptions = {'bss1': "básica",
     'sa_ss26': "Camisa de Maioria de Cogs Derrotados",
     'sa_ss27': "Camisa de Maioria de V.P.s Derrotados",
     'sa_ss28': "Camisa de Esmagador do Robô Vendedor",
-    'sa_ss29': "Camisa de Maioria de J.C.s Derrotados",
-    'sa_ss30': "Camisa de Esmagador do Robô da Lei",
-    'sa_ss31': "Camisa de Corrida 3",
-    'sa_ss32': "Camisa de Pesca 4",
-    'sa_ss33': "Camisa de Golfe 3",
-    'sa_ss34': "Camisa Premiada de Maioria de Cogs Derrotados 2",
-    'sa_ss35': "Camisa de Corrida 4",
-    'sa_ss36': "Camisa de Salvador de Edifícios 3",
-    'sa_ss37': "Camisa de Bondinho 3",
-    'sa_ss38': "Camisa de Pesca 5",
-    'sa_ss39': "Camisa de Golfe 4",
-    'sa_ss40': "Camisa de Halloween da Bruxa da Lua",
-    'sa_ss41': "Camisa de Férias de Inverno de Trenó",
-    'sa_ss42': "Camisa de Halloween da Lua Maluca",
-    'sa_ss43': "Camisa das Férias de Inverno de Luvas de Inverno",
-    'sa_ss44': "Camisa de Pesca 6",
-    'sa_ss45': "Camisa de Pesca 7",
-    'sa_ss46': "Camisa de Golfe 5",
-    'sa_ss47': "Camisa de Corrida 5",
-    'sa_ss48': "Camisa de Corrida 6",
-    'sa_ss49': "Camisa de Maioria de Cogs Derrotados 3",
-    'sa_ss50': "Camisa de Maioria de Cogs Derrotados 4",
-    'sa_ss51': "Camisa do Bondinho 4",
-    'sa_ss52': "Camisa do Bondinho 5",
-    'sa_ss53': "Camisa de Salvador de Edifícios 4",
-    'sa_ss54': "Camisa de Salvador de Edifícios 5",
-    'sa_ss55': "Camisa de Aniversário",
+    'sa_ss31': "Camisa de Corrida 3", 
     'sc_1': "Camisa de Cientista Top 1",
     'sc_2': "Camisa de Cientista Top 2",
     'sc_3': "Camisa de Cientista Top 3 ",
@@ -5747,13 +5679,12 @@ ShirtStylesDescriptions = {'bss1': "básica",
     'sil_4': "Camisa de Hidrante Bobo",
     'sil_5': "Camisa de Buzina de Medidor de Bobagem",
     'sil_6': "Camisa de Esmaga Cog bobinho",
-    'sil_7': "Blusa Festa da Vitória 1",
-    'sil_8': "Blusa Festa da Vitória 2",
+    'sil_7': "Camisa de Festa da Vitória 1",
+    'sil_8': "Camisa de Festa da Vitória 2",
     'emb_us1': "camisa de emblema de espaço reservado 1",
     'emb_us2': "camisa de emblema de espaço reservado 2",
     'emb_us3': "camisa de emblema de espaço reservado 3",
-    'sb_1': "Camisa de Ícone do Robô Vendedor ",
-    'lb_1': "Camisa de Ícone do Rôbo da Lei",
+    'sb_1': "Camisa de Ícone do Robô Vendedor",
     'jb_1': "Camisa de Balinha",
     'jb_2': "Camisa de Rabisco",
     'ugcms': "Fique conectado ao Agitador"}
@@ -9642,7 +9573,13 @@ HolidayNamesInCalendar = {1: ("Fogos de Artifício de Verão", "Comemore o Verã
  91: ("Invasão de Perseguidores de Ambulância", "Impeça que os Cogs Perseguidores de Ambulância invadam Toontown!"),
  92: ("Invasão de Microempresário", "Impeça que os Cogs Microempresários invadam Toontown!"),
  93: ("Invasão de Destruidores de Números", "Impeça que os Cogs Destruidores de Números invadam Toontown!"),
- 95: ("Festas da vitória", "Comemore nosso triunfo histórico contra os Cogs!")}
+ 95: ("Festas da vitória", "Comemore nosso triunfo histórico contra os Cogs!")
+ 96: ("Operação: Tempesade do Robô Vendedor", lSellbotHQ + "está aberto para todos. Vamos lutar com o VP!"),
+ 97: ("Dia das Balinhas em Dobro - Bondinho dos Jogos", ""),
+ 98: ("Dia das Balinhas em Dobro - Pescaria", ""),
+ 99: ("Semana das Balinhas", "Comemore a semana das balinhas com balinhas em dobro como recompensas!"),
+ 101: ("Dia da Maratona de Ano-Novo dos Top Toons", "Chances para vencer a toda hora! Veja o que é de Novo no Blog para mais detalhes!"),
+ 105: ("Idos de Março", "Os Idos de Março estão aqui!")}
 UnknownHoliday = "Feriado Desconhecido %d"
 HolidayFormat = "%m/%d "
 TimeZone = "Brazil/West"
