@@ -2133,7 +2133,7 @@ ToonHealJokes = [['O que faz TIQUE-TIQUE-TIQUE-AU?', 'Um c\xc3\xa3on\xc3\xb4metr
  ['Um \xc3\xa9 pouco, dois \xc3\xa9 bom, tr\xc3\xaas \xc3\xa9 demais. O que s\xc3\xa3o quatro e cinco?', 'Nove.'],
  ['Qual \xc3\xa9 a corrente que, por mais forte que seja, n\xc3\xa3o consegue segurar o navio?', 'A corrente marinha.'],
  ['O que \xc3\xa9 que tem boca e um s\xc3\xb3 dente e chama a aten\xc3\xa7\xc3\xa3o de muita gente?', 'O sino.'],
- ['Qual deve ser o comprimento m\xc3\xa1ximo de uma perna?', 'O suficiente para alcan\xc3\xa7ar o ch\xc3\xa3o.'],
+ ['Qual deve ser o comprimenta coisa de uma perna?', 'O suficiente para alcan\xc3\xa7ar o ch\xc3\xa3o.'],
  ['O que \xc3\xa9 uma mol\xc3\xa9cula?', '\xc3\x89 uma "Meninula Sap\xc3\xa9cula".'],
  ['Como se pode escrever a maior palavra do mundo?', 'Com a caneta.'],
  ['Que refei\xc3\xa7\xc3\xa3o \xc3\xa9 colocada sobre a \xc3\xa1gua e n\xc3\xa3o afunda?', 'A b\xc3\xb3ia.'],
@@ -3301,9 +3301,9 @@ WinterMickeyCChatter = (['Ol\xc3\xa1, eu sou o Mickey Natalino!',
   'Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Fel\xc3\xadcia certamente retribuir\xc3\xa1 o favor!',
   'Adoro esta \xc3\xa9poca do ano!',
   'Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Fel\xc3\xadcia certamente retribuir\xc3\xa1 o favor!',
-  'Estou me sentindo alegria, e voc\xc3\xaa?',
+  'Estou me sentindo alegre, e voc\xc3\xaa?',
   'Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Fel\xc3\xadcia certamente retribuir\xc3\xa1 o favor!',
-  'Conhece todas as can\xc3\xa7\xc3\xb5es natalinas?',
+  'Conhece todas cantorias boas?',
   'Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Fel\xc3\xadcia certamente retribuir\xc3\xa1 o favor!',
   'Oh puxa vida! Eu amo Feriado de Inverno!',
   'Cante sua alegria sazonal nas Campainhas Ding-dong para o Mundo e a Fel\xc3\xadcia certamente retribuir\xc3\xa1 o favor!',
@@ -3315,12 +3315,12 @@ ValentinesMickeyChatter = (['Ol\xc3\xa1, eu sou o Mickey!',
   'Bem-vindo ao Centro de Toontown dos namorados!',
   'Feliz Toon dos namorados!',
   'Feliz Toon dos namorados, %'], ['O Amor estar no ar! E borboletas!',
-  'Esses cora\xc3\xa7\xc3\xb5es s\xc3\xa3o bons para aumentar a Risada!',
+  'Esses cora\xc3\xa7\xc3\xb5es s\xc3\xa3o bons para acrescentar a Risada!',
   'Espero que a Minnie goste do que eu dei a ela!',
   'O Cat\xc3\xa1logo tem muitos presentes do Toon dos namorados!',
   'Lan\xc3\xa7a uma festa de Toon dos namorados!',
   'Mostre aos Cogs, com uma torta na cara, que voc\xc3\xaa os ama!',
-  'Vou levar a Minnie para o Caf\xc3\xa9 Maluco!',
+  'Vou levar a Minnie para o Caf\xc3\xa9 Levado!',
   'A Minnie vai querer chocolates ou flores?'], ['Adorei sua visita!',
   'Diga a Minnie que eu vou busc\xc3\xa1-la em breve!'])
 WinterMickeyDChatter = (['Ol\xc3\xa1, eu sou o Mickey Natalino!',  
@@ -3330,14 +3330,13 @@ WinterMickeyDChatter = (['Ol\xc3\xa1, eu sou o Mickey Natalino!',
   'Basta olhar para aquelas luzes das \xc3\xa1rvores! Que Vis\xc3\xa3o!',
   'Nenhuma criatura est\xc3\xa1 se mexendo, exceto este rato aqui!',
   'Eu amo essa \xc3\xa9poca do ano!',
-  'Estou me sentindo alegria, e voc\xc3\xaa?',
-  'Conhece todas as can\xc3\xa7\xc3\xb5es natalinas?',
+  'Estou me sentindo alegre, e voc\xc3\xaa?',
+  'Conhece todas cantorias boas?',
   'Oh puxa vida! Eu amo Feriado de Inverno!',
-  'Acho que est\xc3\xa1 na hora de colocar luvas mais quentinhas!'],
-  ['Tenha um Feliz Feriado de Inverno!',
-   'Desejos calorosos para voc\xc3\xaa!',
-   'Caramba, desculpe, voc\xc3\xaa tem que ir. At\xc3\xa9 mais!',
-   'Vou cantar com a Minnie!'])
+  'Acho que troco minhas luvas por luvas de Inverno!'], ['Tenha um Feliz Feriado de Inverno!',
+  'Desejos calorosos para voc\xc3\xaa!',
+  'Caramba, desculpe, voc\xc3\xaa tem que ir. At\xc3\xa9 mais!',
+  'Vou cantar com a Minnie!'])
 VampireMickeyChatter = (['Bem-vindo ao '+lToontownCentral+'.',
   'Oi, meu nome \xc3\xa9 '+Mickey+'. Qual \xc3\xa9 o seu?',
   'Feliz Halloween!',
@@ -3355,7 +3354,7 @@ VampireMickeyChatter = (['Bem-vindo ao '+lToontownCentral+'.',
   'Se voc\xc3\xaa pensa jogar travessura est\xc3\xa1 na Loja de Divers\xc3\xb5es e Jogos, v\xc3\xa1 ver Ralf Desocupado para uma travessura!'
   'Voc\xc3\xaa viu o Toon com a cabe\xc3\xa7a de ab\xc3\xb3bora?',
   'Se voc\xc3\xaa pensa jogar travessura est\xc3\xa1 na Loja de Divers\xc3\xb5es e Jogos, v\xc3\xa1 ver Ralf Desocupado para uma travessura!'
-  'Buu!  Assustei voc\xc3\xaa?',
+  'Buu! Assustei voc\xc3\xaa?',
   'Se voc\xc3\xaa pensa jogar travessura est\xc3\xa1 na Loja de Divers\xc3\xb5es e Jogos, v\xc3\xa1 ver Ralf Desocupado para uma travessura!'
   'N\xc3\xa3o se esque\xc3\xa7a de escovar suas presas',
   'Se voc\xc3\xaa pensa jogar travessura est\xc3\xa1 na Loja de Divers\xc3\xb5es e Jogos, v\xc3\xa1 ver Ralf Desocupado para uma travessura!'
@@ -3370,38 +3369,38 @@ VampireMickeyChatter = (['Bem-vindo ao '+lToontownCentral+'.',
   'Shhh, vem comigo.'])
 FieldOfficeMickeyChatter = ['Voc\xc3\xaa j\xc3\xa1 ouviu falar do Escrit\xc3\xb3rios de Campo do Agitador?']
 MinnieChatter = (['Bem-vindo \xc3\xa0 Melodil\xc3\xa2ndia.', 'Oi, meu nome \xc3\xa9 '+ Minnie +'. Qual \xc3\xa9 o seu?'], ['As colinas ganham vida com o som da m\xc3\xbasica!',
- 'Sua roupa \xc3\xa9 legal, %.',
- 'Ei, voc\xc3\xaa viu o '+ Mickey +'?',
- 'Se voc\xc3\xaa vir meu amigo '+ Goofy +', d\xc3\xaa um oi para ele por mim.',
- 'Uau, h\xc3\xa1 milhares de '+ Cogs +' perto da Sonhol\xc3\xa2ndia do'+Donald+'.',
- 'Ouvi falar que tem neblina no '+lDonaldsDock+'.',
- 'N\xc3\xa3o deixe de experimentar o labirinto dos '+lDaisyGardens+'.',
- 'Acho que vou catar algumas can\xc3\xa7\xc3\xb5es.',
- 'Ei, %, olha aquilo l\xc3\xa1.',
- 'Adoro o som da m\xc3\xbasica.',
- 'Aposto que voc\xc3\xaa n\xc3\xa3o sabia que a Melodil\xc3\xa2ndia tamb\xc3\xa9m \xc3\xa9 chamada de ToadaTown! Ah, ah, ah!',
- 'Adoro jogo da mem\xc3\xb3ria. E voc\xc3\xaa?',
- 'Gosto de fazer as pessoas rirem.',
- 'Cara, andar sobre rodas o dia todo n\xc3\xa3o \xc3\xa9 moleza para os p\xc3\xa9s!',
- 'Bonita camisa, %.',
- 'Aquilo no ch\xc3\xa3o \xc3\xa9 uma balinha?'], ['Caramba, estou atrasada para o meu encontro com o %s!' % Mickey, 'Parece que \xc3\xa9 hora de %s jantar.' % Pluto, '\xc3\x89 hora de tirar um cochilo. Vou para a Sonhol\xc3\xa2ndia.'])
+  'Sua roupa \xc3\xa9 legal, %.',
+  'Ei, voc\xc3\xaa viu o '+ Mickey +'?',
+  'Se voc\xc3\xaa vir meu amigo '+ Goofy +', d\xc3\xaa um oi para ele por mim.',
+  'Uau, h\xc3\xa1 milhares de '+ Cogs +' perto da Sonhol\xc3\xa2ndia do'+Donald+'.',
+  'Ouvi falar que tem neblina no '+lDonaldsDock+'.',
+  'N\xc3\xa3o deixe de experimentar o labirinto dos '+lDaisyGardens+'.',
+  'Acho que vou catar algumas can\xc3\xa7\xc3\xb5es.',
+  'Ei, %, olha aquilo l\xc3\xa1.',
+  'Adoro o som da m\xc3\xbasica.',
+  'Aposto que voc\xc3\xaa n\xc3\xa3o sabia que a Melodil\xc3\xa2ndia tamb\xc3\xa9m \xc3\xa9 chamada de ToadaTown! Ah, ah, ah!',
+  'Adoro jogo da mem\xc3\xb3ria. E voc\xc3\xaa?',
+  'Gosto de fazer as pessoas rirem.',
+  'Cara, andar sobre rodas o dia todo n\xc3\xa3o \xc3\xa9 moleza para os p\xc3\xa9s!',
+  'Bonita camisa, %.',
+  'Aquilo no ch\xc3\xa3o \xc3\xa9 uma balinha?'], ['Caramba, estou atrasada para o meu encontro com o %s!' % Mickey, 'Parece que \xc3\xa9 hora de %s jantar.' % Pluto, '\xc3\x89 hora de tirar um cochilo. Vou para a Sonhol\xc3\xa2ndia.'])
 WinterMinnieCChatter = (['Oi, eu sou a Minnie Natalina!',
- 'Bem-vindo \xc3\xa0 terra das cantorias',
- 'Feliz feriado de inverno!',
- 'Feliz feriado de inverno, %!'], ['Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se voc\xc3\xaa cantar para B\xc3\xa1rbara de Sevilha!',
- 'Cante uma melodia, Toon!',
- 'Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se voc\xc3\xaa cantar para B\xc3\xa1rbara de Sevilha!',
- 'Mostre-nos como cantar, Toon!',
- 'Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se voc\xc3\xaa cantar para B\xc3\xa1rbara de Sevilha!',
- 'Voc\xc3\xaa consegue cantar uma melodia aqui na Melodyland?',
- 'Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se cantar para B\xc3\xa1rbara de Sevilha!',
- 'Essas l\xc3\xa2mpadas parecem quentes em seus cachec\xc3\xb3is!',
- 'Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se cantar para B\xc3\xa1rbara de Sevilha!',
- 'O canto \xc3\xa9 a coisa!',
- 'Voc\xc3\xaa vai ganhar mais do que uma Barbearia Musical se cantar para B\xc3\xa1rbara de Sevilha!',
- 'Eu sempre vou gostar de voc\xc3\xaa, para melhor ou para verso!',
- 'Voc\xc3\xaa vai ganhar mais do que uma Barbearia Musical se cantar para B\xc3\xa1rbara de Sevilha!',
- 'Tudo fica melhor com uma coroa de flores!'], ['Tenham um feriado de inverno divertido!', 'Trilhas Felizes!', 'Mickey vai me levar para cantar!'])
+  'Bem-vindo \xc3\xa0 terra das cantorias',
+  'Feliz feriado de inverno!',
+  'Feliz feriado de inverno, %!'], ['Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se voc\xc3\xaa cantar para B\xc3\xa1rbara de Sevilha!',
+  'Cante uma melodia, Toon!',
+  'Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se voc\xc3\xaa cantar para B\xc3\xa1rbara de Sevilha!',
+  'Mostre-nos como cantar, Toon!',
+  'Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se voc\xc3\xaa cantar para B\xc3\xa1rbara de Sevilha!',
+  'Voc\xc3\xaa consegue cantar uma melodia aqui na Melodyland?',
+  'Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se cantar para B\xc3\xa1rbara de Sevilha!',
+  'Essas l\xc3\xa2mpadas parecem quentes em seus cachec\xc3\xb3is!',
+  'Voc\xc3\xaa obter\xc3\xa1 mais do que uma Barbearia Musical se cantar para B\xc3\xa1rbara de Sevilha!',
+  'O canto \xc3\xa9 a coisa!',
+  'Voc\xc3\xaa vai ganhar mais do que uma Barbearia Musical se cantar para B\xc3\xa1rbara de Sevilha!',
+  'Eu sempre vou gostar de voc\xc3\xaa, para melhor ou para pior!',
+  'Voc\xc3\xaa vai ganhar mais do que uma Barbearia Musical se cantar para B\xc3\xa1rbara de Sevilha!',
+  'Tudo fica melhor com uma guirlanda!'], ['Tenham um feriado de inverno divertido!', 'Trilhas Felizes!', 'Mickey vai me levar para cantar!'])
 WinterMinnieDChatter = (['Oi, eu sou a Minnie Natalina!',
   'Bem-vindo \xc3\xa0 terra das cantorias!',
   'Feliz feriado de inverno!',
@@ -3409,159 +3408,210 @@ WinterMinnieDChatter = (['Oi, eu sou a Minnie Natalina!',
   'Mostre-nos como cantar, Toon!',
   'Voc\xc3\xaa consegue cantar uma melodia aqui na Melodil\xc3\xa2ndia?',
   'Essas l\xc3\xa2mpadas parecem quentes em seus cachec\xc3\xb3is!',
-  'O canto \xc3\xa9 o m\xc3\xa1ximo!',
+  'O canto \xc3\xa9 a coisa!',
   'Voc\xc3\xaa n\xc3\xa3o pode errar com uma m\xc3\xbasica!',
   'Eu sempre vou gostar de voc\xc3\xaa, para melhor ou para pior!',
   'Tudo fica melhor com uma guirlanda!'], ['Tenham um feriado de inverno divertido!', 'Trilhas Felizes!', 'Mickey vai me levar para cantar!'])
 ValentinesMinnieChatter = (['Ol\xc3\xa1, eu sou a Minnie!', 'Feliz Dia dos Namorados!', 'Feliz Dia dos Namorados, %'], ['Espero que o Mickey tenha me dado chocolates ou flores!',
- 'Esses cora\xc3\xa7\xc3\xb5es s\xc3\xa3o bons para aumentar a Risada!',
- 'Eu quero ir a uma festa dos Namorados!',
- 'Espero que o Mickey me leve ao Kooky Cafe!',
- 'Mickey \xc3\xa9 um Toon dos Namorados t\xc3\xa3o bom!',
- 'O que voc\xc3\xaa comprou para o seu Toon dos Namorados?',
- 'Mickey nunca perdeu um Dia dos Toon dos Namorados!'], ['Foi Doce tendo voc\xc3\xaa como Visita'])
-WitchMinnieChatter = (
-[ # Sauda\xc3\xa7\xc3\xb5es
-'Bem-vindo a Terra da M\xc3\xa1gica... quero dizer, Melodil\xc3\xa2ndia!',
-'Ol\xc3\xa1, meu nome \xc3\xa9 Minnie M\xc3\xa1gica! Qual \xc3\xa9 o seu?',
-'Ol\xc3\xa1, acho que voc\xc3\xaa \xc3\xa9 encantadora!',
-'Feliz Dia das Bruxas!',
-'Feliz Dia das Bruxas, %!',
-],
-[ # Comments
-'Ouvi dizer que T\xc3\xa1bata tem guloseimas para a Realmente Kool Katz que pode pregar pe\xc3\xa7as!',
-'\xc3\x89 um dia m\xc3\xa1gico, voc\xc3\xaa n\xc3\xa3o acha?',
-'Ouvi dizer que T\xc3\xa1bata tem guloseimas para a Realmente Kool Katz que pode pregar pe\xc3\xa7as!',
-'Agora, onde eu coloquei meu livro de feiti\xc3\xa7os?',
-'Ouvi dizer que T\xc3\xa1bata tem guloseimas para a Realmente Kool Katz que pode pregar pe\xc3\xa7as!',
-'Abra-Cadabra!',
-'Ouvi dizer que T\xc3\xa1bata tem guloseimas para a Realmente Kool Katz que pode pregar pe\xc3\xa7as!',
-'Toontown parece positivamente assustadora hoje!',
-'Ouvi dizer que T\xc3\xa1bata tem guloseimas para a Realmente Kool Katz que pode pregar pe\xc3\xa7as!',
-'Voc\xc3\xaa tamb\xc3\xa9m est\xc3\xa1 vendo estrelas?',
-'Ouvi dizer que T\xc3\xa1bata tem guloseimas para a Realmente Kool Katz que pode pregar pe\xc3\xa7as!',
-'Roxo \xc3\xa9 realmente minha cor!',
-'Ouvi dizer que Tabitha tem guloseimas para a Really Kool Katz que pode pregar pe\xc3\xa7as!',
-'Espero que seu Halloween seja encantador!',
-'Ouvi dizer que Tabitha tem guloseimas para a Really Kool Katz que pode pregar pe\xc3\xa7as!',
-'Cuidado com as aranhas musicais!',
-'Ouvi dizer que Tabitha tem guloseimas para a Really Kool Katz que pode pregar pe\xc3\xa7as!',
-'Espero que voc\xc3\xaa esteja gostando da nossa divers\xc3\xa3o de Halloween!',
-],
-[ # Goodbyes
-'Vou desaparecer agora!',
-'Hora de eu sumir!',
-'Mickey vai me levar para pedir doces!',
-]
-)
-
-FieldOfficeMinnieChatter = [
-'Todo mundo est\xc3\xa1 falando sobre os novos escrit\xc3\xb3rios de campo do Agitador!'
-]
-
-DaisyChatter = (
-    [ # Greetings
-     'Bem-vindo(a) ao meu Jardim!',
-     'Ol\xc3\xa1, meu nome \xc3\xa9 '+Daisy+'. Qual o seu nome?',
-     '\xc3\x89 muito bom ver voc\xc3\xaa, %!',
-        ],
-    [ # Comments
-     'Minha flor premiada est\xc3\xa1 no centro do labirinto do jardim.',
-     'Eu adoro andar pelo labirinto.',
-     'Eu n\xc3\xa3o v\xc3\xad o '+Goofy+' hoje.',
-     'Eu gostaria de saber onde o '+Goofy+' est\xc3\xa1.',
-     'Voc\xc3\xaa viu o '+Donald+'? Eu n\xc3\xa3o consigo encontr\xc3\xa1-lo em lugar algum.',
-     'Se voc\xc3\xaa vir minha amiga '+Minnie+', por favor diga \'Oi\' por mim.',
-     'Quanto melhor as ferramentas de jardinagem que voc\xc3\xaa tem, melhor ser\xc3\xa1 seu jardim.',
-     'Existem muitos '+Cogs+' perto do '+lDonaldsDock+'.',
-     'Regando seu jardim diariamente voc\xc3\xaa deixa suas plantas felizes.',
-     'Para cultivar uma Margarida Rosa, plante uma balinha amarela e uma vermelha juntas.',
-     '\xc3\x89 facil cultivar uma Margarida Amarela. Basta plantar uma balinha amarela.',
-     'Se voc\xc3\xaa vir areia embaixo de uma planta, est\xc3\xa1 na hora de regar ou ela morrer\xc3\xa1.',
-        ],
-    [ # Goodbyes
-     'Estou indo para Melodil\xc3\xa2ndia para ver %s!' % Minnie,
-     'Preciso correr para o meu picnic com %s!' % Donald,
-     'Acho que vou nadar no '+lDonaldsDock+'.',
-     'Oh, estou com sono. Acho que vou para a Sonhol\xc3\xa2ndia.',
-        ]
-    )
-
-ChipChatter = (
-    [ # Greetings
-     'Boas-vindas a %s!' % lOutdoorZone,
-     'Ol\xc3\xa1, sou ' + Chip + '. Qual \xc3\xa9 o seu nome?',
-     'N\xc3\xa3o, eu sou ' + Chip + '.',
-     '\xc3\x89 t\xc3\xa3o bom ver voc\xc3\xaa, %!',
-     'Somos Tico e Teco!',
-        ],
-    [ # Comments
-     'Gosto de golfe.',
-     'Temos as melhores bolotas de Toontown.',
-     'Os buracos de golfe com vulc\xc3\xb5es s\xc3\xa3o os mais desafiadores para mim.',
-        ],
-    [ # Goodbyes
-     'Vamos at\xc3\xa9 ' + lTheBrrrgh +' brincar com %s.' % Pluto,
-     'Vamos visitar %s e dar um jeito nele.' % Donald,
-     'Acho que vou nadar no ' + lDonaldsDock + '.',
-     'Oh, estou com sono. Acho que vou at\xc3\xa9 a Sonhol\xc3\xa2ndia.',
-        ]
-    )
-
-# Warning Dale's chatter is dependent on on Chip's, they should match up
-DaleChatter = (
-    [ # Greetings
-     '\xc3\x89 t\xc3\xa3o bom ver voc\xc3\xaa, %!',
-     'Ol\xc3\xa1, sou ' + Dale + '. Qual \xc3\xa9 o seu nome?',
-     'Ol\xc3\xa1, sou ' + Chip + '.',
-     'Boas-vindas a %s!' % lOutdoorZone,
-     'Somos Tico e Teco!',
-        ],
-    [ # Comments
-     'Gosto de piqueniques.',
-     'As bolotas s\xc3\xa3o gostosas, experimente.',
-     'Aqueles moinhos tamb\xc3\xa9m s\xc3\xa3o dif\xc3\xadceis.',
-        ],
-    [ # Goodbyes
-     'Hihihi, \xc3\xa9 divertido brincar com ' + Pluto + '.',
-     'Sim, vamos dar um jeito em %s.' % Donald,
-     'Ah, seria refrescante dar uma nadada.',
-     'Estou ficando cansado, uma boa soneca cairia bem.',
-        ]
-    )
-
-GoofyChatter = (
-    [ # Greetings
-     'Bem-vindo aos '+lDaisyGardens+'.',
-     'Oi, meu nome \xc3\xa9 '+ Goofy +'. Qual \xc3\xa9 o seu?',
-     'Puxa, muito legal ver voc\xc3\xaa %!',
-        ],
-    [ # Comments
-     'Cara, com certeza \xc3\xa9 f\xc3\xa1cil se perder no labirinto do jardim!',
-     'N\xc3\xa3o deixe de tentar entrar no labirinto.',
-     'N\xc3\xa3o vi a '+ Daisy +' o dia todo.',
-     'Onde ser\xc3\xa1 que a '+ Daisy +' est\xc3\xa1?',
-     'Ei, voc\xc3\xaa viu o '+ Donald +'?',
-     'Se voc\xc3\xaa vir o meu amigo '+ Mickey +', d\xc3\xaa um oi para ele por mim.',
-     'Ah, n\xc3\xa3o! Esqueci de fazer o caf\xc3\xa9 da manh\xc3\xa3 do '+ Mickey +'!',
-     'Puxa, com certeza h\xc3\xa1 muitos '+ Cogs +' perto do '+lDonaldsDock+'.',
-     'Parece que a '+ Daisy +' plantou novas flores no jardim.',
-     'Na filial da minha Loja de Piadas no Brrrgh, h\xc3\xa1 \xc3\x93culos hipn\xc3\xb3ticos em promo\xc3\xa7\xc3\xa3o por apenas uma balinha!',
-     'As Lojas de piadas do Pateta oferecem as melhores goza\xc3\xa7\xc3\xb5es, truques e com\xc3\xa9dias de toda Toontown!',
-     'Nas Lojas de piadas do Pateta, todas as tortas na cara t\xc3\xaam garantia de fazer rir, ou voc\xc3\xaa tem as suas balinhas de volta!',
-        ],
-    [ # Goodbyes
-     '\Vou para Melodil\xc3\xa2ndia para ver a  '+ Minnie +'!',
-     'Caramba, estou atrasado para o meu jogo com o  '+ Donald + '!',
-     'Acho que vou nadar no Porto do '+lDonaldsDock+'.',
-     '\xc3\x89 hora de tirar um cochilo. Vou para a Sonhol\xc3\xa2ndia.',
-        ]
-    )
-
+  'Esses cora\xc3\xa7\xc3\xb5es s\xc3\xa3o bons para acrescentar a Risada!',
+  'Eu quero ir a uma festa dos Namorados!',
+  'Espero que o Mickey me leve ao Café Levado!',
+  'Mickey \xc3\xa9 um Toon dos Namorados t\xc3\xa3o bom!',
+  'O que voc\xc3\xaa comprou para o seu Toon dos Namorados?',
+  'Mickey nunca perdeu um Dia dos Toon dos Namorados!'], ['Foi Doce tendo voc\xc3\xaa como Visita'])
+WitchMinnieChatter = (['Bem-vindo a Terra da M\xc3\xa1gica... quero dizer, Melodil\xc3\xa2ndia!',
+  'Ol\xc3\xa1, meu nome \xc3\xa9 Minnie M\xc3\xa1gica! Qual \xc3\xa9 o seu?',
+  'Ol\xc3\xa1, acho que voc\xc3\xaa \xc3\xa9 encantadora!',
+  'Feliz Halloween!',
+  'Feliz Halloween, %!'], ['Ouvi dizer que T\xc3\xa1bata tem doces para a Realmente Felinos Felizes que pode pregar pe\xc3\xa7as!',
+  '\xc3\x89 um dia m\xc3\xa1gico, voc\xc3\xaa n\xc3\xa3o acha?',
+  'Ouvi dizer que T\xc3\xa1bata tem doces para a Realmente Felinos Felizes que pode pregar travessuras!',
+  'Agora, onde eu coloquei meu livro de feiti\xc3\xa7os?',
+  'Ouvi dizer que T\xc3\xa1bata tem doces para a Realmente Felinos Felizes que pode pregar travessuras!',
+  'Abra-Cadabra!',
+  'Ouvi dizer que T\xc3\xa1bata tem doces para a Realmente Felinos Felizes que pode pregar travessuras!',
+  'Toontown parece positivamente assustadora hoje!',
+  'Ouvi dizer que T\xc3\xa1bata tem doces para a Realmente Felinos Felizes que pode pregar travessuras!',
+  'Voc\xc3\xaa tamb\xc3\xa9m est\xc3\xa1 vendo estrelas?',
+  'Ouvi dizer que T\xc3\xa1bata tem doces para a Realmente Felinos Felizes que pode pregar travessuras!',
+  'Roxo \xc3\xa9 realmente minha cor!',
+  'Ouvi dizer que Tabitha tem doces para a Realmente Felinos Felizes que pode pregar travessuras!',
+  'Espero que seu Halloween seja encantador!',
+  'Ouvi dizer que Tabitha tem doces para a Realmente Felinos Felizes que pode pregar travessuras!',
+  'Cuidado com as aranhas musicais!',
+  'Ouvi dizer que Tabitha tem doces para a Realmente Felinos Felizes que pode pregar travessuras!',
+  'Espero que voc\xc3\xaa esteja gostando da nossa divers\xc3\xa3o de Halloween!'], ['Vou desaparecer agora!', 'Hora de eu sumir!', 'Mickey vai me levar para pedir doces!'])
+FieldOfficeMinnieChatter = ['Todo mundo est\xc3\xa1 falando sobre os novos escrit\xc3\xb3rios de campo do Agitador!']
+DaisyChatter = (['Bem-vindo(a) ao meu Jardim!', 'Ol\xc3\xa1, meu nome \xc3\xa9 '+Daisy+'. Qual o seu nome?', '\xc3\x89 muito bom ver voc\xc3\xaa, %!'], [
+  'Minha flor premiada est\xc3\xa1 no centro do labirinto do jardim.',
+  'Eu adoro andar pelo labirinto.',
+  'Eu n\xc3\xa3o v\xc3\xad o '+Goofy+' hoje.',
+  'Eu gostaria de saber onde o '+Goofy+' est\xc3\xa1.',
+  'Voc\xc3\xaa viu o '+Donald+'? Eu n\xc3\xa3o consigo encontr\xc3\xa1-lo em lugar algum.',
+  'Se voc\xc3\xaa vir minha amiga '+Minnie+', por favor diga \'Oi\' por mim.',
+  'Quanto melhor as ferramentas de jardinagem que voc\xc3\xaa tem, melhor ser\xc3\xa1 seu jardim.',
+  'Existem muitos '+Cogs+' perto do '+lDonaldsDock+'.',
+  'Regando seu jardim diariamente voc\xc3\xaa deixa suas plantas felizes.',
+  'Para cultivar uma Margarida Rosa, plante uma balinha amarela e uma vermelha juntas.',
+  '\xc3\x89 facil cultivar uma Margarida Amarela. Basta plantar uma balinha amarela.',
+  'Se voc\xc3\xaa vir areia embaixo de uma planta, est\xc3\xa1 na hora de regar ou ela morrer\xc3\xa1.'], ['Estou indo para Melodil\xc3\xa2ndia para ver %s!' % Minnie,
+  'Preciso correr para o meu picnic com %s!' % Donald,
+  'Acho que vou nadar no '+lDonaldsDock+'.',
+  'Oh, estou com sono. Acho que vou para a Sonhol\xc3\xa2ndia.'])
+ValentinesDaisyChatter = (['Oi, eu sou a Margarida!', 'Feliz Dia dos Toons dos Namorados!', 'Feliz Dia dos Toons dos Namorados, %'], ['Espero que o Donald não me dê outra Enguia Amore!',
+  'O Donald vai me levar para o Restaurante Deep-see!',
+  'Eu certamente tenho rosas suficientes!',
+  'Esses corações são bons para acrescentar a risada!',
+  'Eu adoraria ir a uma festa do Dia dos Toons dos Namorados!',
+  'Este é o jardim onde o amor cresce!',
+  'É melhor o Donald não dormir durante o Dia dos Toons dos Namorados de novo!',
+  'Talvez o Donald e eu possamos sair em encontros duplos com o Mickey e a Minnie!'], ['Diga ao Donald que estarei esperando por ele!', 'Tenha um bom Dia dos Namorados!'])
+WinterDaisyCChatter = (['Bem-vindo ao único jardim que cresce no inverno!', 'Feliz feriado de inverno!', 'Feliz feriado de inverno, %!'], ['Suzana, da Artesanato Pínus, é uma verdadeira megera, então por que não fazer um canto para ela?',
+  'Meu jardim precisa de mais visco!',
+  'Suzana, da Artesanato Pínus, é uma verdadeira megera, então por que não fazer um canto para ela?',
+  'Preciso plantar azevinho para o ano que vem!',
+  'Suzana, da Artesanato Pínus, é uma verdadeira megera, então por que não fazer um canto para ela?',
+  'Vou pedir para o Pateta construir uma casinha de gengibre para mim!',
+  'Suzana, da Artesanato Pínus, é uma verdadeira megera, então por que não fazer um canto para ela?',
+  'Essas luzes nas luminárias são lindas!',
+  'Suzana, da Artesanato Pínus, é uma verdadeira megera, então por que não fazer um canto para ela?',
+  'Que azevinho alegre!',
+  'Suzana da Artesanato Pínus é uma verdadeira megera, então por que não fazer um canto para ela?',
+  'Meu boneco de neve não para de derreter!',
+  'Suzana da Artesanato Pínus é uma verdadeira megera, então por que não fazer um canto para ela?', 
+  'Essa pata está enfeitada!',
+  'Suzana da Artesanato Pínus é uma verdadeira megera, então por que não fazer um canto para ela?',
+  'Eu mesma plantei todas essas luzes!'], ['Tenham um ótimo feriado de inverno!',
+  'Feliz plantio!',
+  'Diga ao Donald para passar por aqui com presentes!',
+  'O Donald vai me levar para cantar!'])
+WinterDaisyDChatter = (['Bem-vindo ao único jardim que cresce no inverno!', 'Feliz feriado de inverno!', 'Feliz feriado de inverno, %!'], ['Suzana, da Artesanato Pínus, é uma verdadeira megera, então por que não fazer um canto para ela?',
+  'Meu jardim precisa de mais visco!',
+  'Preciso plantar azevinho para o ano que vem!',
+  'Vou pedir para o Pateta construir uma casinha de gengibre para mim!',
+  'Essas luzes nas luminárias são lindas!',
+  'Que azevinho alegre!',
+  'Meu boneco de neve não para de derreter!', 
+  'Essa pata está enfeitada!',
+  'Eu mesma plantei todas essas luzes!'], ['Tenham um ótimo feriado de inverno!',
+  'Feliz plantio!',
+  'Diga ao Donald para passar por aqui com presentes!',
+  'O Donald vai me levar para cantar!'])
+HalloweenDaisyChatter = (['Bem-vindo ao Daisy Ghosts... Quer dizer, Gardens!', 'Feliz Halloween!', 'Feliz Halloween, %!'], ['Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'Quer dançar?',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'Eu sou um pato com uma saia de poodle!',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'A árvore pirata precisa de água.',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'Doces ou Árvore!',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'Você notou algo estranho nas árvores?',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'Eu deveria plantar umas abóboras!',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'QUEM notou algo diferente nas lâmpadas?',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'O Halloween realmente me cativa!',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'Twig-ou-Trevessura!',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'Coruja, aposto que você não notou as lâmpadas assustadoras!',
+  'Visite meu amigo J. Jardim se você tiver uma travessura e pegue os doces!',
+  'Espero que você esteja gostando da nossa diversão de Halloween!'], ['Donald vai me levar para pedir doces-ou-travessuras!', 'Eu vou para conferir as divertidas decorações de Halloween.'])
+FieldOfficeDaisyChatter = ['Aqueles escritórios de campo agitadores estão surgindo como ervas daninhas!']
+ChipChatter = (['Boas-vindas a %s!' % lOutdoorZone,
+  'Ol\xc3\xa1, sou ' + Chip + '. Qual \xc3\xa9 o seu nome?',
+  'N\xc3\xa3o, eu sou ' + Chip + '.',
+  '\xc3\x89 t\xc3\xa3o bom ver voc\xc3\xaa, %!',
+  'Somos Tico e Teco!'], ['Gosto de golfe.', 'Temos as melhores bolotas de Toontown.', 'Os buracos de golfe com vulc\xc3\xb5es s\xc3\xa3o os mais desafiadores para mim.'], ['Vamos at\xc3\xa9 ' + lTheBrrrgh +' brincar com %s.' % Pluto,
+  'Vamos visitar %s e dar um jeito nele.' % Donald,
+  'Acho que vou nadar no ' + lDonaldsDock + '.', 
+  'Oh, estou com sono. Acho que vou at\xc3\xa9 a Sonhol\xc3\xa2ndia.'])
+ValentinesChipChatter = (['Eu sou Tico!', 'Feliz Dia dos Toons dos Namorados!', 'Feliz Dia dos Toons dos Namorados, %!'], ['O que você me deu de Dia dos Namorados, Teco?',
+  'Esses corações são ótimos para acresentar a risada!',
+  'Você quer ser meu Toon de Namoro, Teco?',
+  'O que você deu para os Cogs no Dia dos Toons dos Namorados?',
+  'Eu adoro o Dia dos Namorados!'], ['Volte quando quiser!'])
+WinterChipChatter = (['Feliz Feriado de Inverno!', 'Vestidos de esquilos natalinos!', 'Feliz Feriado de Inverno, %!'], ['Feliz Feriado de Inverno, Teco!',
+  'Toda essa água pode congelar a qualquer momento!',
+  'Devíamos trocar as bolas de golfe por bolas de neve!',
+  'Se ao menos os esquilos soubessem cantar!',
+  'Você se lembrou de guardar nozes para o inverno?',
+  'Você comprou um presente para os Cogs?'], ['Enlouqueça neste feriado de inverno!', 'Tenha um ótimo feriado de inverno!'])
+HalloweenChipChatter = (['Jogue um pouco de MiniGhoul... Quer dizer, golfe!', 'Feliz Halloween!', 'Feliz Halloween, %!'], ['Estamos loucos por Halloween!',
+  'Você está preso',
+  'Você não pode escapar do braço longo da lei',
+  'Eu sou um Polical!',
+  'Espero que esteja gostando da nossa diversão de Halloween!', 
+  'Jogue golfe e ganhe um Uivo-Em-Um.',
+  'Milhos doces é mais doce que bolotas.',
+  'Espero que esteja gostando da nossa diversão de Halloween!'], ['%, cuidado com os Cogs Sanguessugas!'])
+DaleChatter = (['\xc3\x89 t\xc3\xa3o bom ver voc\xc3\xaa, %!',
+  'Ol\xc3\xa1, sou ' + Dale + '. Qual \xc3\xa9 o seu nome?',
+  'Ol\xc3\xa1, sou ' + Chip + '.',
+  'Boas-vindas a %s!' % lOutdoorZone,
+  'Somos Tico e Teco!'], ['Gosto de piqueniques.', 'As bolotas s\xc3\xa3o gostosas, experimente.', 'Aqueles moinhos tamb\xc3\xa9m s\xc3\xa3o dif\xc3\xadceis.'], ['Hihihi, \xc3\xa9 divertido brincar com ' + Pluto + '.',
+  'Sim, vamos dar um jeito em %s.' % Donald,
+  'Ah, seria refrescante dar uma nadada.',
+  'Estou ficando cansado, uma boa soneca cairia bem.'])
+ValentinesDaleChatter = (['Eu sou o Teco!', 'Feliz Dia dos Toons dos Namorados!', 'Feliz Dia dos Toons Namorados, %!'], ['A mesma coisa do ano passado. Nada!',
+  'Sinto falta das nozes!',
+  'Você quer ser meu Toon de Namoro, Tico?',
+  'Uma torta na cara',
+  'É, está tudo bem.'], ['Volte quando quiser!'])
+WinterDaleChatter = (['Esquilos alegres!',
+  'Oi, somos dois elfos alegres!',
+  'Feliz feriado de inverno!',
+  'Feliz feriado de inverno, %!'], ['Feliz feriado de inverno, Tico!',
+  'Melhor não estar no gêiser quando isso acontecer!',
+  'E os clubes de golfe com gelo!',
+  'Quem já ouviu falar de esquilos cantores?',
+  'Eu disse a VOCÊ para fazer isso!',
+  'Sim, uma torta de creme!'], ['E traga um pouco para nós!', 'Tenham um feliz feriado de inverno!'])
+HalloweenDaleChatter = (['Feliz Halloween, %!', 'Jogue um pouco de MiniGhoul... Quero dizer, golfe!', 'Feliz Halloween!'], ['Somos loucos por Halloween!',
+  'Ótimo, eu preciso de um descanso!',
+  'Mas seus braços são curtos!',
+  'Eu pensei que você fosse o Tico!',
+  'Jogue golfe e ganhe um Uivo-Em-Um',
+  'Milho doce é mais doce que bolota.',
+  'Espero que esteja curtindo nossa diversão de Halloween!'], ['%, cuidado com os Sanguessugas!'])
+GoofyChatter = (['Bem-vindo aos '+lDaisyGardens+'.', 'Oi, meu nome \xc3\xa9 '+ Goofy +'. Qual \xc3\xa9 o seu?', 'Puxa, muito legal ver voc\xc3\xaa %!'], ['Cara, com certeza \xc3\xa9 f\xc3\xa1cil se perder no labirinto do jardim!',
+  'N\xc3\xa3o deixe de tentar entrar no labirinto.',
+  'N\xc3\xa3o vi a '+ Daisy +' o dia todo.',
+  'Onde ser\xc3\xa1 que a '+ Daisy +' est\xc3\xa1?',
+  'Ei, voc\xc3\xaa viu o '+ Donald +'?',
+  'Se voc\xc3\xaa vir o meu amigo '+ Mickey +', d\xc3\xaa um oi para ele por mim.',
+  'Ah, n\xc3\xa3o! Esqueci de fazer o caf\xc3\xa9 da manh\xc3\xa3 do '+ Mickey +'!',
+  'Puxa, com certeza h\xc3\xa1 muitos '+ Cogs +' perto do '+lDonaldsDock+'.',
+  'Parece que a '+ Daisy +' plantou novas flores no jardim.',
+  'Na filial da minha Loja de Piadas no Brrrgh, h\xc3\xa1 \xc3\x93culos hipn\xc3\xb3ticos em promo\xc3\xa7\xc3\xa3o por apenas uma balinha!',
+  'As Lojas de piadas do Pateta oferecem as melhores goza\xc3\xa7\xc3\xb5es, truques e com\xc3\xa9dias de toda Toontown!',
+  'Nas Lojas de piadas do Pateta, todas as tortas na cara t\xc3\xaam garantia de fazer rir, ou voc\xc3\xaa tem as suas balinhas de volta!'], ['Vou para Melodil\xc3\xa2ndia para ver a  '+ Minnie +'!',
+  'Caramba, estou atrasado para o meu jogo com o  '+ Donald + '!',
+  'Acho que vou nadar no Porto do '+lDonaldsDock+'.',
+  '\xc3\x89 hora de tirar um cochilo. Vou para a Sonhol\xc3\xa2ndia.'])
+WinterGoofyChatter = (['Eu sou o Pateta sobre os Feriados!',
+  'Bem-vindo ao Autôdromo da Bola de Neve!',
+  'Feliz feriado de inverno!',
+  'Feliz feriado de inverno, %!'], ['Quem precisa de renas quando se tem um kart veloz?',
+  'Nossa! Já são feriados de inverno?',
+  'Preciso dos meus protetores de ouvido!',
+  'Ainda não fiz compras!',
+  'Não dirija seu kart no gelo!',
+  'Parece que foram feriados de inverno há apenas um ano!',
+  'Presenteie seu kart e o deixe mais bonito!',
+  'Estes karts são melhores do que qualquer trenó velho!'], ['Tenham um ótimo feriado de inverno!', 'Dirijam com segurança agora!', 'Cuidado com as renas voadoras!'])
+ValentinesGoofyChatter = (['Eu sou o Pateta sobre o Dia do Toon dos Namorados!', 'Feliz Dia do Toon dos Namorados!', 'Feliz Dia do Toon dos Namorados, %!'], ['Nossa! Já é o Dia do Toon dos Namorados?',
+  'EU AMO corridas de kart!',
+  'Sejam gentis uns com os outros por aí!',
+  'Mostrem um kart novo para o seu amor!',
+  'Os Toons adoram seus karts!',
+  'Façam novos amigos na pista!'], ['Dirijam com cuidado, agora!', 'Demonstrem um pouco de amor por aí!'])
 GoofySpeedwayChatter = (
     [ # Greetings
      'Bem-vindo a '+lGoofySpeedway+'.',
-     'Oi, meu nome \xc3\xa9 '+Goofy+'. Qual \xc3\xa9 o seu?',
+     'Oi, meu nome \xc3\xa9 '+Goofy+". Qual \xc3\xa9 o seu?",
      'Puxa, muito legal ver voc\xc3\xaa %!',
         ],
     [ # Comments
@@ -3577,13 +3627,11 @@ GoofySpeedwayChatter = (
      'As Lojas de piadas do Pateta oferecem as melhores goza\xc3\xa7\xc3\xb5es, truques e com\xc3\xa9dias de toda Toontown!',
      'Nas Lojas de piadas do Pateta, todas as tortas na cara t\xc3\xaam garantia de fazer rir, ou voc\xc3\xaa tem as suas balinhas de volta!'
         ],
-  [ # Goodbyes
-     'Vou para Melodil\xc3\xa2ndia para ver %s!' % Mickey,
+  ['Vou para Melodil\xc3\xa2ndia para ver %s!' % Mickey,
      'Caramba, estou atrasado para o meu jogo com %s!' % Donald,
      'Acho que vou nadar no '+lDonaldsDock+'.',
      '\xc3\x89 hora de tirar um cochilo. Vou para a Sonhol\xc3\xa2ndia.',
-        ]
-    )
+        ])
 
 DonaldChatter = (
   [ # Greetings
@@ -3808,8 +3856,6 @@ FriendInviterRemainPlayer = '\n(Voc\xc3\xaa vai continuar sendo amigo jogador de
 # DownloadForceAcknowledge.py
 # phase, percent
 DownloadForceAcknowledgeMsg = 'Sinto muito, voc\xc3\xaa n\xc3\xa3o pode avan\xc3\xa7ar porque o download de %(phase)s est\xc3\xa1 apenas %(percent)s%% conclu\xc3\xaddo.\n\nTente novamente mais tarde.'
-
-# TeaserPanel.py
 TeaserTop = ''
 TeaserBottom = ''
 TeaserDefault = ',\nVoc\xc3\xaa precisa ser um associado.\nUna-se!'
@@ -3831,43 +3877,31 @@ TeaserKartingAccessories = 'Personalize seu kart com acess\xc3\xb3rios incr\xc3\
 TeaserGardening = 'Plante flores, construa est\xc3\xa1tuas e cultive \xc3\xa1rvores em seu terreno.'
 TeaserHaveFun = 'Encontre mais divers\xc3\xa3o!'
 TeaserJoinUs = 'Una-se!'
-
-#TeaserCardsAndPosters = ''
-#TeaserFurniture = ''
+TeaserPlantGags = 'Para plantar essas piadas'
+TeaserPickGags = 'Para escolher essas piadas'
+TeaserRestockGags = 'Para reabastecer essas piadas'
+TeaserGetGags = 'Para obter essas piadas'
+TeaserUseGags = 'Para usar essas piadas'
 TeaserMinigames = TeaserOtherHoods
-#TeaserHolidays = ''
 TeaserQuests = TeaserOtherHoods
 TeaserOtherGags = TeaserOtherHoods
-#TeaserRental = ''
-#TeaserBigger = ''
 TeaserTricks = TeaserOtherHoods
-
-# DownloadWatcher.py
-# phase, percent
-DownloadWatcherUpdate = 'Fazendo download %s'
-DownloadWatcherInitializing = 'Iniciando Download...'
-
-# Launcher.py
-LauncherPhaseNames = {
-    0  : 'Inicializa\xc3\xa7\xc3\xa3o',
-    1  : 'Panda',
-    2  : 'Motor',
-    3  : 'Fazer um Toon',
-    3.5: 'Toontorial',
-    4  : 'Parque',
-    5  : 'Ruas',
-    5.5: 'Estados',
-    6  : 'Bairros I',
-    7  : Cog + ' Edif\xc3\xadcios dos',
-    8  : 'Bairros II',
-    9  : Sellbot + ' Quartel dos',
-    10 : Cashbot + ' Quartel dos',
-    11 : Lawbot + ' Quartel dos',
-    12 : Bossbot + ' HQ',
-    13 : 'Festas',
-    }
-
-# Lets make these messages a little more friendly
+LauncherPhaseNames = {0: 'Inicializa\xc3\xa7\xc3\xa3o',
+ 1: 'Panda',
+ 2: 'Engine',
+ 3: 'Fazer um Toon',
+ 3.5: 'Toontorial',
+ 4: 'Parque',
+ 5: 'Ruas',
+ 5.5: 'Casas',
+ 6: 'Bairros I',
+ 7: Cog + ' Edif\xc3\xadcios dos',
+ 8: 'Bairros II',
+ 9: Sellbot + ' Quartel dos',
+ 10: Cashbot + ' Quartel dos',
+ 11: Lawbot + ' Quartel dos',
+ 12: Bossbot + ' Quartel dos',
+ 13: 'Festas'}
 LauncherProgress = '%(name)s (%(current)s de %(total)s)'
 LauncherStartingMessage = 'Iniciando Toontown On-line da Disney...'
 LauncherDownloadFile = 'Fazendo download da atualiza\xc3\xa7\xc3\xa3o de '+ LauncherProgress +'...'
@@ -3890,8 +3924,7 @@ LauncherStartingGame = 'Iniciando Toontown...'
 LauncherRecoverFiles = 'Atualizando Toontown. Recuperando arquivos...'
 LauncherCheckUpdates = 'Verificando atualiza\xc3\xa7\xc3\xb5es de '+ LauncherProgress
 LauncherVerifyPhase = 'Atualizando Toontown...'
-
-# AvatarChoice.py
+LoadingDownloadWatcherUpdate = 'Carregando %s'
 AvatarChoiceMakeAToon = 'Fazer um\nToon'
 AvatarChoicePlayThisToon = 'Jogar com\neste Toon'
 AvatarChoiceSubscribersOnly = 'Assinar\n\n\n\nAgora!'
@@ -3910,19 +3943,8 @@ AvatarChoiceDeletePasswordOK = lOK
 AvatarChoiceDeletePasswordCancel = lCancel
 AvatarChoiceDeleteWrongPassword = 'Esta senha n\xc3\xa3o parece ser a correta. Para excluir este Toon, insira a sua senha.'
 AvatarChoiceDeleteWrongConfirm = 'Voc\xc3\xaa n\xc3\xa3o digitou corretamente. Para excluir %(name)s, digite \'%(confirm)s\' e clique em OK. N\xc3\xa3o digite as aspas. Clique em Cancelar se desistir.'
-
-# AvatarChooser.py
 AvatarChooserPickAToon = 'Escolha um Toon para jogar'
 AvatarChooserQuit = lQuit
-
-# TTAccount.py
-# Fill in %s with phone number from account server
-TTAccountCallCustomerService = 'Ligue para o Atendimento ao Cliente: %s.'
-# Fill in %s with phone number from account server
-TTAccountCustomerServiceHelp = '\nSe precisar de ajuda, ligue para o Atendimento ao Cliente%s.'
-TTAccountIntractibleError = 'Erro.'
-
-# DateOfBirthEntry.py
 DateOfBirthEntryMonths = ['Jan',
  'Fev',
  'Mar', 
@@ -3990,7 +4012,7 @@ EventsPageNewsTabName = 'Not\xc3\xadcias'
 EventsPageNewsTabTitle = 'Not\xc3\xadcias'
 EventsPageNewsDownloading= 'Recuperando Not\xc3\xadcias...'
 EventsPageNewsUnavailable = 'Tico e Teco brincando com a impressora da gr\xc3\xa1fica. Not\xc3\xadcias n\xc3\xa3o dispon\xc3\xadveis.'
-EventsPageNewsPaperTitle = 'TOONTOWN TIMES (GAZETA DE TOONTOWN)'
+EventsPageNewsPaperTitle = 'GAZETA DE TOONTOWN'
 EventsPageNewsLeftSubtitle = 'Ainda s\xc3\xb3 por 1 balinha' 
 EventsPageNewsRightSubtitle = 'Tiragem de nove mil toonplares' 
 NewsPageName = 'Not\xc3\xadcias'
@@ -4045,9 +4067,9 @@ PartyPlannerBeans = 'feij\xc3\xb5es'
 PartyPlannerTotalCost = 'Custo Total:\n%d feij\xc3\xb5es'
 PartyPlannerSoldOut = 'ESGOTADO'
 PartyPlannerBuy = 'COMPRAR'
-PartyPlannerPaidOnly = 'S\xc3\x93 ASSOCIADOS'
-PartyPlannerPartyGrounds = 'MAPA DA FESTA'
-PartyPlannerOkWithGroundsLayout = 'Voc\xc3\xaa j\xc3\xa1 terminou de mover suas Atividades e Decora\xc3\xa7\xc3\xb5es pelo Mapa da Festa?'
+PartyPlannerPaidOnly = 'S\xc3\x93 MEMBROS'
+PartyPlannerPartyGrounds = 'MAPA DA TERRA DAS FESTAS'
+PartyPlannerOkWithGroundsLayout = 'Voc\xc3\xaa j\xc3\xa1 terminou de mover suas Atividades e Decora\xc3\xa7\xc3\xb5es pelo Mapa da Terra das Festas?'
 PartyPlannerChooseFutureTime = 'Por favor, selecione uma hora futura.'
 PartyPlannerInviteButton = 'Enviar Convites'
 PartyPlannerInviteButtonNoFriends = 'Planejar Festa'
@@ -4066,7 +4088,7 @@ PartyPlannerConfirmationDatabaseErrorText = 'Sinto muito, n\xc3\xa3o foi poss\xc
 PartyPlannerConfirmationTooManyText = 'Sinto muito, voc\xc3\xaa j\xc3\xa1 est\xc3\xa1 dando uma festa.\nSe quiser planejar outra, por favor,\ncancele a atual.'
 PartyPlannerInvitationThemeWhatSentence = 'Voc\xc3\xaa est\xc3\xa1 convidado(a) para minha festa de %s! %s!'
 PartyPlannerInvitationThemeWhatSentenceNoFriends = 'Estou dando uma festa de %s! %s!'
-PartyPlannerInvitationThemeWhatActivitiesBeginning = 'Ter\xc3\xa1 '
+PartyPlannerInvitationThemeWhatActivitiesBeginning = 'Isso ter\xc3\xa1 '
 PartyPlannerInvitationWhoseSentence = 'Festa de %s'
 PartyPlannerInvitationTheme = 'Tema'
 PartyPlannerInvitationWhenSentence = 'Ser\xc3\xa1 em %s,\n\xc3\xa0s %s, Hora de Toontown.\nEspero que voc\xc3\xaa apare\xc3\xa7a!'
@@ -4319,7 +4341,7 @@ PartyActivityDefaultJoinDeny = 'Voc\xc3\xaa n\xc3\xa3o pode participar dessa ati
 PartyActivityDefaultExitDeny = 'Voc\xc3\xaa n\xc3\xa3o pode sair dessa atividade no momento. Sinto muito.'
 PartyJellybeanRewardOK = 'OK'
 PartyCatchActivityTitle = 'Atividade Pescaria de Festa'
-PartyCatchActivityInstructions = 'Pegue o m\xc3\xa1ximo de pe\xc3\xa7as de frutas que puder. Tente n\xc3\xa3o "pescar"" quaisquer %(badThing)s!'
+PartyCatchActivityInstructions = 'Pegue a coisa de pe\xc3\xa7as de frutas que puder. Tente n\xc3\xa3o "pescar"" quaisquer %(badThing)s!'
 PartyCatchActivityFinishPerfect = 'JOGO PERFEITO!'
 PartyCatchActivityFinish = 'Bom Jogo!'
 PartyCatchActivityExit = 'SAIR'
@@ -4403,8 +4425,8 @@ PartyCogTitle = 'Cog-de-Guerra'
 PartyCogInstructions = 'Jogue tortas nos cogs para afast\xc3\xa1-los da sua equipe.' + "Quando o momento acabar, a equipe com mais cogs do outro lado vence!" + '\n\nLan\xc3\x7aa com a tecla CONTROL. Mova-se com as SETAS do teclado.'
 PartyCogDistance = '%d p\xc3\xa9s'
 PartyCogTimeUp = "O momento acabou!"
-PartyCogGuiScoreLabel = 'PONTUA\xc3\x87ÃO'
-PartyCogGuiPowerLabel = 'POTÊNCIA'
+PartyCogGuiScoreLabel = 'PONTUA\xc3\x87\xc3\x83O'
+PartyCogGuiPowerLabel = 'POT\xc3\x8aNCIA'
 PartyCogGuiSpamWarning = 'Segure CONTROL para mais pot\xc3\xaancia!'
 PartyCogBalanceBar = 'BALAN\xc3\x87O'
 PartyTugOfWarReady = 'Preparar...'
@@ -4517,14 +4539,18 @@ QuestPosterLocationIn = ''
 QuestPosterLocationOn = ''
 QuestPosterFun = 'S\xc3\xb3 de brincadeira!'
 QuestPosterFishing = 'IR PESCAR'
-QuestPosterConcluir = 'CONCLUIR'
+QuestPosterComplete = 'CONCLUIR'
+QuestPosterConfirmDelete = 'Tem certeza de que deseja excluir esta Tarefa Toon?'
+QuestPosterDeleteBtn = 'Deleta'
+QuestPosterDialogYes = 'Deleta'
+QuestPosterDialogNo = 'Cancelar'
 ShardPageTitle = 'Regi\xc3\xb5es'
 ShardPageHelpIntro = 'Cada Regi\xc3\xa3o \xc3\xa9 uma c\xc3\xb3pia do mundo de Toontown.'
 ShardPageHelpWhere = ' Voc\xc3\xaa est\xc3\xa1 agora na Regi\xc3\xa3o \'%s\'.'
 ShardPageHelpWelcomeValley = ' Voc\xc3\xaa est\xc3\xa1 agora na Regi\xc3\xa3o \'Vale Boas-vindas\', em \'%s\'.'
 ShardPageHelpMove = ' Para ir at\xc3\xa9 uma nova Regi\xc3\xa3o, clique no nome dela.'
 ShardPagePopulationTotal = 'Popula\xc3\xa7\xc3\xa3o Total de Toontown:\n%d'
-ShardPageScrollTitle = 'Nome Popula\xc3\xa7\xc3\xa3o'
+ShardPageScrollTitle = 'Nome            Popula\xc3\xa7\xc3\xa3o'
 ShardPageLow = 'Tranquila'
 ShardPageMed = 'Inteligente'
 ShardPageHigh = 'Lotada'
@@ -4785,27 +4811,73 @@ BattleGlobalAvPropStringsSingular = (('uma Pena',
   'um Cofre', 
   'um Piano de cauda', 
   'o Toontanic'))
-BattleGlobalAvPropStringsPlural = (
-    ('Penas', 'Megafones', 'Batons', 'Bengalas', 'P\xc3\xb3s m\xc3\xa1gicos', 'conjuntos de Bolinhas de malabarismo', 'Mergulhos Elevados'),
-    ('Cascas de banana', 'Ancinhos', 'conjuntos de Bolas de gude', 'po\xc3\xa7as de Areia movedi\xc3\xa7a', 'Al\xc3\xa7ap\xc3\xb5es','TNTs', 'Estradas de Ferro'),
-    ('Notas de $1', '\xc3\x8dm\xc3\xa3s pequenos', 'Contas de $5', '\xc3\x8dm\xc3\xa3s grandes','Contas de $10', 'par de \xc3\x93culos hipn\xc3\xb3ticos', 'Presenta\xc3\xa7\xc3\xa3o'),
-    ('Buzinas de bicicleta', 'Apitos', 'Trombetas', 'Foooonnnns!', 'Trombas de elefante', 'Buzinas', 'Cantor de \xc3\x93pera'),
-    ('Bolinhos', 'Fatias de torta de frutas', 'Fatias de torta de creme','Tortas de frutas inteiras', 'Tortas de creme inteiras', 'Bolos de anivers\xc3\xa1rio', 'Bolo de Casamento'),
-    ('Flores com esguicho', 'Copos d\'\xc3\xa1gua', 'Rev\xc3\xb3lveres de \xc3\xa1gua','Garrafas de \xc3\xa1gua com g\xc3\xa1s', 'Mangueiras de inc\xc3\xaandio', 'Nuvens de chuva', 'G\xc3\xaaiser'),
-    ('Vasos de flor', 'Sacos de areia', 'Bigornas', 'Pesos pesados', 'Cofres','Pianos de cauda', 'Transatl\xc3\xa2nticos')
-    )
-BattleGlobalAvTrackAccStrings = ('M\xc3\xa9dio', 'Perfeito', 'Baixo', 'Alto', 'M\xc3\xa9dio', 'Alto', 'Baixo')
+BattleGlobalAvPropStringsPlural = (('Penas', 
+  'Megafones', 
+  'Batons', 
+  'Bengalas', 
+  'P\xc3\xb3s m\xc3\xa1gicos', 
+  'conjuntos de Bolinhas de malabarismo', 
+  'Mergulhos Elevados'),
+ ('Cascas de banana', 
+  'Ancinhos', 
+  'conjuntos de Bolas de gude', 
+  'po\xc3\xa7as de Areia movedi\xc3\xa7a', 
+  'Al\xc3\xa7ap\xc3\xb5es',
+  'TNTs', 
+  'Estradas de Ferro'), 
+ ('Notas de $1', 
+  '\xc3\x8dm\xc3\xa3s pequenos', 
+  'Contas de $5', 
+  '\xc3\x8dm\xc3\xa3s grandes',
+  'Contas de $10', 
+  'par de \xc3\x93culos hipn\xc3\xb3ticos', 
+  'Presenta\xc3\xa7\xc3\xa3o'),
+ ('Buzinas de bicicleta', 
+  'Apitos', 
+  'Trombetas', 
+  'Foooonnnns!', 
+  'Trombas de elefante', 
+  'Buzinas', 
+  'Cantor de \xc3\x93pera'),
+ ('Bolinhos', 
+  'Fatias de torta de frutas', 
+  'Fatias de torta de creme',
+  'Tortas de frutas inteiras', 
+  'Tortas de creme inteiras', 
+  'Bolos de anivers\xc3\xa1rio', 
+  'Bolo de Casamento'),
+ ('Flores com esguicho', 
+  "Copos d'\xc3\xa1gua", 
+  'Rev\xc3\xb3lveres de \xc3\xa1gua',
+  'Garrafas de \xc3\xa1gua com g\xc3\xa1s', 
+  'Mangueiras de inc\xc3\xaandio', 
+  'Nuvens de chuva', 
+  'G\xc3\xaaiser'),
+ ('Vasos de flor', 
+  'Sacos de areia', 
+  'Bigornas', 
+  'Pesos pesados', 
+  'Cofres',
+  'Pianos de cauda', 
+  'Transatl\xc3\xa2nticos'))
+BattleGlobalAvTrackAccStrings = ('M\xc3\xa9dio', 
+ 'Perfeito', 
+ 'Baixo', 
+ 'Alto', 
+ 'M\xc3\xa9dio', 
+ 'Alto', 
+ 'Baixo')
 BattleGlobalLureAccLow = 'Baixo'
 BattleGlobalLureAccMedium = 'M\xc3\xa9dio'
 AttackMissed = 'PERDEU'
 NPCCallButtonLabel = 'CHAMAR'
 LoaderLabel = 'Carregando...'
-HeadingToHood = 'Indo %(to)s %(hood)s...' # hood name
+HeadingToHood = 'Indo %(to)s %(hood)s...'
 HeadingToYourEstate = 'Indo para a sua propriedade...'
-HeadingToEstate = 'Indo para a propriedade de %s...'  # avatar name
-HeadingToFriend = 'Indo para a propriedade do amigo de %s...'  # avatar name
+HeadingToEstate = 'Indo para a propriedade de %s...'
+HeadingToFriend = 'Indo para a propriedade do amigo de %s...'
 HeadingToPlayground = 'Indo para o P\xc3\xa1tio...'
-HeadingToStreet = 'Indo %(to)s %(street)s...' # Street name
+HeadingToStreet = 'Indo %(to)s %(street)s...'
 TownBattleRun = 'Voltar correndo para o p\xc3\xa1tio?'
 TownBattleChooseAvatarToonTitle = 'QUAL TOON?'
 TownBattleChooseAvatarCogTitle = 'QUAL ' + Cog.upper() + '?'
@@ -4862,7 +4934,7 @@ TutorialGreeting1 = 'Oi %s!'
 TutorialGreeting2 = 'Oi %s!\nVem c\xc3\xa1!'
 TutorialGreeting3 = 'Oi %s!\nVem c\xc3\xa1!\nUse as teclas de seta!'
 TutorialMickeyWelcome = 'Bem-vindo a Toontown!'
-TutorialFlippyIntro = 'Deixe-me apresentar voc\xc3\xaa ao meu amigo '+ Flippy +'...'
+TutorialFlippyIntro = 'Deixe-me apresentar voc\xc3\xaa ao meu amigo %s...'
 TutorialFlippyHi = 'Oi, %s!'
 TutorialQT1 = 'Voc\xc3\xaa pode conversar usando isto.'
 TutorialQT2 = 'Voc\xc3\xaa pode conversar usando isto.\nClique no item e escolha \'Oi\'.'
@@ -4874,24 +4946,24 @@ TutorialChat5 = 'Todos entender\xc3\xa3o se voc\xc3\xaa usar o %s.'
 TutorialChat6 = 'Tente dizer \'Oi\'.'
 TutorialBodyClick1 = 'Muito bem!'
 TutorialBodyClick2 = 'Muito prazer! Quer ser meu amigo?'
-TutorialBodyClick3 = 'Para fazer amizade com '+ Flippy +', clique nele...'
+TutorialBodyClick3 = 'Para fazer amizade com %s, clique nele...' % Flippy
 TutorialHandleBodyClickSuccess = 'Muito bom!'
-TutorialHandleBodyClickFail = 'N\xc3\xa3o \xc3\xa9 assim. Tente clicar em cima do '+ Flippy +'...'
-TutorialFriendsButton = 'Agora, clique no bot\xc3\xa3o 'Amigos' abaixo da figura do '+ Flippy +' no canto direito.'
-TutorialHandleFriendsButton = 'Em seguida, clique no bot\xc3\xa3o 'Sim'..'
+TutorialHandleBodyClickFail = 'N\xc3\xa3o \xc3\xa9 assim. Tente clicar em cima do %s...' % Flippy
+TutorialFriendsButton = "Agora, clique no bot\xc3\xa3o 'Amigos' abaixo da figura do %s no canto direito." % Flippy
+TutorialHandleFriendsButton = "Em seguida, clique no bot\xc3\xa3o 'Sim'.."
 TutorialOK = lOK
 TutorialYes = lYes
 TutorialNo = lNo
-TutorialFriendsPrompt = 'Voc\xc3\xaa quer fazer amizade com o '+ Flippy +'?'
-TutorialFriendsPanelMickeyChat = Flippy + ' aceitou ser seu amigo. Clique em 'Ok' para concluir.'
-TutorialFriendsPanelYes = Flippy + ' disse sim!'
+TutorialFriendsPrompt = 'Voc\xc3\xaa quer fazer amizade com o %s?' % Flippy
+TutorialFriendsPanelMickeyChat = "%s aceitou ser seu amigo. Clique em 'Ok' para concluir." % Flippy
+TutorialFriendsPanelYes = '%s disse sim!' % Flippy
 TutorialFriendsPanelNo = 'Isso n\xc3\xa3o foi muito simp\xc3\xa1tico!'
 TutorialFriendsPanelCongrats = 'Parab\xc3\xa9ns! Voc\xc3\xaa fez seu primeiro amigo.'
 TutorialFlippyChat1 = 'Venha me ver quando estiver pronto para a sua primeira Tarefa Toon!'
 TutorialFlippyChat2 = 'Estarei na PrefeiToona!'
 TutorialAllFriendsButton = 'Voc\xc3\xaa pode ver todos os seus amigos clicando no bot\xc3\xa3o Amigos. Experimente...'
-TutorialEmptyFriendsList = 'No momento, a sua lista est\xc3\xa1 vazia porque o '+ Flippy +' n\xc3\xa3o \xc3\xa9 um jogador real.'
-TutorialCloseFriendsList = 'Clique no bot\xc3\xa3o 'Fechar'\npara fazer que a\nlista desapare\xc3\xa7a'
+TutorialEmptyFriendsList = 'No momento, a sua lista est\xc3\xa1 vazia porque o %s n\xc3\xa3o \xc3\xa9 um jogador real.'
+TutorialCloseFriendsList = "Clique no bot\xc3\xa3o 'Fechar'\npara fazer que a\nlista desapare\xc3\xa7a"
 TutorialShtickerButton = 'O bot\xc3\xa3o do canto direito inferior abre o seu \xc3\x81lbum Toon. Experimente...'
 TutorialBook1 = 'O \xc3\xa1lbum cont\xc3\xa9m v\xc3\xa1rias informa\xc3\xa7\xc3\xb5es \xc3\xbateis, como este mapa de Toontown.'
 TutorialBook2 = 'Voc\xc3\xaa tamb\xc3\xa9m pode verificar o andamento de suas Tarefas Toon.'
@@ -4907,7 +4979,7 @@ TutorialTrolley1 = 'Siga-me at\xc3\xa9 o bondinho!'
 TutorialTrolley2 = 'Pule nele!'
 TutorialBye1 = 'Brinque com alguns jogos!'
 TutorialBye2 = 'Divirta-se com alguns jogos!\nCompre algumas piadas!'
-TutorialBye3 = 'V\xc3\xa1 encontrar o  '+ Flippy +' quando terminar!'
+TutorialBye3 = 'V\xc3\xa1 encontrar o  %s quando terminar!'
 TutorialForceAcknowledgeMessage = '\Voc\xc3\xaa est\xc3\xa1 indo na dire\xc3\xa7\xc3\xa3o errada! \V\xc3\xa1 encontrar o  '+ Mickey +'!'# SpeedChat
 PetTutorialTitle1 = 'O Painel dos Rabiscos'
 PetTutorialTitle2 = 'Chat r\xc3\xa1pido dos Rabiscos'
@@ -4916,7 +4988,7 @@ PetTutorialNext = 'Pr\xc3\xb3xima P\xc3\xa1gina'
 PetTutorialPrev = 'P\xc3\xa1gina Anterior'
 PetTutorialDone = lOK
 PetTutorialPage1 = 'Clique em um Rabisco para exibir o painel de Rabiscos. Daqui, voc\xc3\xaa pode alimentar, co\xc3\xa7ar e chamar o Rabisco.'
-PetTutorialPage2 = 'Use a nova \xc3\xa1rea 'Bichinhos' no menu Chat r\xc3\xa1pido para fazer com que um Rabisco fa\xc3\xa7a um truque. Se ele fizer, recompense-o para ele melhorar ainda mais!'
+PetTutorialPage2 = "Use a nova \xc3\xa1rea 'Bichinhos' no menu Chat r\xc3\xa1pido para fazer com que um Rabisco fa\xc3\xa7a um truque. Se ele fizer, recompense-o para ele melhorar ainda mais!"
 PetTutorialPage3 = 'Compre novos truques de Rabiscos no Cat\xc3\xa1logo da Clarabela. Truques melhores produzem Toonar melhores!'
 
 def getPetGuiAlign():
@@ -5006,7 +5078,7 @@ RaceGameJellybeans2 = '2 balinhas'
 RaceGameJellybeans4 = '4 balinhas'
 RaceGameJellybeans10 = '10 balinhas!'
 RingGameTitle = 'Jogo dos an\xc3\xa9is'
-RingGameInstructionsSinglePlayer = 'Tente nadar atrav\xc3\xa9s do n\xc3\xbamero m\xc3\xa1ximo de an\xc3\xa9is %s que conseguir. Para nadar, use as teclas de seta.'
+RingGameInstructionsSinglePlayer = 'Tente nadar atrav\xc3\xa9s do n\xc3\xbamera coisa de an\xc3\xa9is %s que conseguir. Para nadar, use as teclas de seta.'
 RingGameInstructionsMultiPlayer = 'Tente nadar atrav\xc3\xa9s dos an\xc3\xa9is %s. Os outros jogadores tentar\xc3\xa3o nadar atrav\xc3\xa9s dos outros an\xc3\xa9is coloridos. Para nadar, use as teclas de seta.'
 RingGameMissed = 'PERDEU'
 RingGameGroupPerfect = 'GRUPO\nPERFEITO!!'
@@ -5029,7 +5101,7 @@ TargetGameInstructionsMultiPlayer = 'Acerta quantos alvos conseguir'
 TargetGameBoard = 'Rodada %s - Mantendo o Melhor Placar'
 TargetGameCountdown = 'Lan\xc3\xa7amento for\xc3\xa7ado em %s segundos'
 TargetGameCountHelp = 'Bata nas setas esquerda e direita para conseguir pot\xc3\xaancia, pare para lan\xc3\xa7ar'
-TargetGameFlyHelp = 'Aperte para baixo para abrir o guarda-chuva'
+TargetGameFlyHelp = 'Pressiona para baixo para abrir o guarda-chuva'
 TargetGameFallHelp = 'Use as teclas de seta para aterrissar no alvo'
 PhotoGameScoreTaken = '%s: %s\nVoc\xc3\xaa: %s'
 PhotoGameScoreBlank = 'Placar: %s'
@@ -5040,9 +5112,9 @@ TagGameInstructions = 'Pegue os tesouros. Voc\xc3\xaa n\xc3\xa3o pode pegar os t
 TagGameYouAreIt = 'Est\xc3\xa1 com voc\xc3\xaa!'
 TagGameSomeoneElseIsIt = 'Est\xc3\xa1 com %s!'
 MazeGameTitle = 'Jogo do labirinto'
-MazeGameInstructions = 'Pegue os tesouros. Tente pegar todos, mas cuidado com os '+ Cogs +'!'# DistributedCatchGame.py
+MazeGameInstructions = 'Pegue os tesouros. Tente pegar todos, mas cuidado com os '+ Cogs +'!'
 CatchGameTitle = 'Jogo de pegar'
-CatchGameInstructions = 'Pegue o m\xc3\xa1ximo de %(fruit)s que conseguir. Cuidado com os '+ Cogs +' e tente n\xc3\xa3o 'pegar' nenhuma %(badThing)s!'
+CatchGameInstructions = 'Pegue a coisa de %(fruit)s que conseguir. Cuidado com os '+ Cogs +", e tente n\xc3\xa3o 'pegar' nenhuma %(badThing)s!"
 CatchGamePerfect = 'PERFEITO!'
 CatchGameApples = 'ma\xc3\xa7\xc3\xa3s'
 CatchGameOranges = 'laranjas'
@@ -5053,12 +5125,12 @@ CatchGamePineapples = 'abacaxis'
 CatchGameAnvils = 'bigornas'
 PieTossGameTitle = 'Jogo de lan\xc3\xa7amento de tortas'
 PieTossGameInstructions = 'Lance as tortas nos alvos.'
-PhotoGameInstructions = 'Tire fotos de acordo com os Toons mostrados na parte de baixo. Mire a c\xc3\xa2mera usando o mouse, e clique com o bot\xc3\xa3o esquerdo para tirar uma foto. Aperte Ctrl para aumentar ou reduzir o zoom, e olhe em sua volta com as teclas de seta. Fotos com notas maiores ganham mais pontos!'
+PhotoGameInstructions = 'Tire fotos de acordo com os Toons mostrados na parte de baixo. Mire a c\xc3\xa2mera usando o mouse, e clique com o bot\xc3\xa3o esquerdo para tirar uma foto. Pressiona Ctrl para aumentar ou reduzir o zoom, e olhe em sua volta com as teclas de seta. Fotos com notas maiores ganham mais pontos!'
 PhotoGameTitle = 'Divers\xc3\xa3o Fotogr\xc3\xa1fica'
 PhotoGameFilm = 'FILME'
 PhotoGameScore = 'Placar da Equipe: %s\n\nMelhores Fotos: %s\n\nPlacar Total: %s'
 CogThiefGameTitle = Cog + ' Ladr\xc3\xa3o'
-CogThiefGameInstructions = 'Impe\xc3\xa7a que os ' + Cogs + ' roubem nossos barris! Aperte a tecla Ctrl para atirar uma torta. Use as teclas de seta para se mover. Dica: voc\xc3\xaa pode andar nas diagonais.'
+CogThiefGameInstructions = 'Impe\xc3\xa7a que os ' + Cogs + ' roubem nossos barris! Pressiona a tecla Ctrl para atirar uma torta. Use as teclas de seta para se mover. Dica: voc\xc3\xaa pode andar nas diagonais.'
 CogThiefBarrelsSaved = '%(num)d Barris\nSalvos!'
 CogThiefBarrelSaved = '%(num)d Barril\nSalvo!'
 CogThiefNoBarrelsSaved = 'Nenhum Barril\nSalvo'
@@ -5089,19 +5161,19 @@ GenderShopGirlButtonText = 'Menina'
 BodyShopHead = 'Cabe\xc3\xa7a'
 BodyShopBody = 'Corpo'
 BodyShopLegs = 'Pernas'
+ColorShopToon = 'Cor do Toon'
 ColorShopHead = 'Cabe\xc3\xa7a'
 ColorShopBody = 'Corpo'
 ColorShopLegs = 'Pernas'
-ColorShopToon = 'Toon'
-ColorShopParts = 'Partes'
-ColorShopAll = 'Tudo'
+ColorShopParts = 'Cor das Partes'
+ColorShopAll = 'Cor Single'
 ClothesShopShorts = 'Short'
 ClothesShopShirt = 'Camisa'
 ClothesShopBottoms = 'Parte de baixo'
 PromptTutorial = 'Parab\xc3\xa9ns!\nVoc\xc3\xaa \xc3\xa9 o(a) mais recente morador(a) de Toontown!\n\nDeseja continuar com o Toontorial ou teletransportar-se diretamente para o Centro de Toontown?'
 MakeAToonSkipTutorial = 'Pular Toontorial'
 MakeAToonEnterTutorial = 'Acessar Toontorial'
-MakeAToonDone = 'Feito'
+MakeAToonDone = 'Conclu\xc3\xaddo'
 MakeAToonCancel = lCancel
 MakeAToonNext = lNext
 MakeAToonLast = 'Voltar'
@@ -5208,17 +5280,15 @@ NumToColor = ['Branco',
  'Lil\xc3\xa1s',
  'P\xc3\xbarpura', 
  'Rosa']
-AnimalToSpecies = {
-    'dog'   : 'Cachorro',
-    'cat'   : 'Gato',
-    'mouse' : 'Rato',
-    'horse' : 'Cavalo',
-    'rabbit': 'Coelho',
-    'duck'  : 'Pato',
-    'monkey': 'Macaco',
-    'bear'  : 'Urso',
-    'pig'   : 'Porco'
-    }
+AnimalToSpecies = {'dog': 'Cachorro',
+ 'cat': 'Gato',
+ 'mouse': 'Rato',
+ 'horse': 'Cavalo',
+ 'rabbit': 'Coelho',
+ 'duck': 'Pato',
+ 'monkey': 'Macaco',
+ 'bear': 'Urso',
+ 'pig': 'Porco'}
 NameTooLong = 'Este nome \xc3\xa9 muito longo. Tente novamente.'
 ToonAlreadyExists = 'Voc\xc3\xaa j\xc3\xa1 tem um Toon com o nome %s!'
 NameAlreadyInUse = 'Este nome j\xc3\xa1 foi usado!'
@@ -5441,195 +5511,192 @@ CatalogItemTypeNames = {0: 'INVALID_ITEM',
  17: 'TOON_STATUE_ITEM',
  18: 'ANIMATED_FURNITURE_ITEM',
  19: AccesoriesTypeName}
-HatStylesDescriptions = {
-    'hbb1' : "Bon\xc3\xa9 de Baseball Verde",
-    'hbb2' : "Bon\xc3\xa9 de Baseball Azul",
-    'hbb3' : "Bon\xc3\xa9 de Baseball Laranja",
-    'hsf1' : "Chap\xc3\xa9u de Safari Bege",
-    'hsf2' : "Chap\xc3\xa9u de Safari Marrom",
-    'hsf3' : "Chap\xc3\xa9u de Safari Verde",
-    'hrb1' : "Laço Rosa",
-    'hrb2' : "Laço Vermelho",
-    'hrb3' : "Laço Roxo",
-    'hht1' : "Chap\xc3\xa9u de Coração Rosa",
-    'hht2' : "Chap\xc3\xa9u de Coração Amarelo",
-    'htp1' : "Chap\xc3\xa9u Preto Top",
-    'htp2' : "Chap\xc3\xa9u Azul Top ",
-    'hav1' : "Chap\xc3\xa9u de Birgona",
-    'hfp1' : "Chap\xc3\xa9u da Mary Poppins",
-    'hsg1' : "Chap\xc3\xa9u de Saco de Areia",
-    'hwt1' : "Chap\xc3\xa9u de Peso",
-    'hfz1' : "Chap\xc3\xa9u do Aladdin",
-    'hgf1' : "Chap\xc3\xa9u de Golf",
-    'hpt1' : "Chap\xc3\xa9u de Anivers\xc3\xa1rio",
-    'hpt2' : "Chap\xc3\xa9u de Festa Toon",
-    'hpb1' : "Chap\xc3\xa9u Chique",
-    'hcr1' : "Cabelo de Palhaço",
-    'hcw1' : "Chap\xc3\xa9u de Cauboí",
-    'hpr1' : "Chap\xc3\xa9u de Pirata",
-    'hpp1' : "Chap\xc3\xa9u de H\xc3\xa9lice",
-    'hfs1' : "Chap\xc3\xa9u para Pesca",
-    'hsb1' : "Chap\xc3\xa9u Mexicano",
-    'hst1' : "Chap\xc3\xa9u de Palha",
-    'hsu1' : "Chap\xc3\xa9u de Sol",
-    'hrb4' : "Laço Amarelo",
-    'hrb5' : "Laço Verificador",
-    'hrb6' : "Laço Vermelho Claro",
-    'hrb7' : "Laço Arco-íris",
-    'hat1' : "Antena de Abelha",
-    'hhd1' : "Penteado de colm\xc3\xa9ia",
-    'hbw1' : "Chap\xc3\xa9u-coco",
-    'hch1' : "Chap\xc3\xa9u de Chefe",
-    'hdt1' : "Chap\xc3\xa9u de Detetive",
-    'hft1' : "Chap\xc3\xa9u de penas extravagantes",
-    'hfd1' : "Chap\xc3\xa9u do Indiana Jones",
-    'hmk1' : "Chap\xc3\xa9u da Banda do Mickey",
-    'hft2' : "Chap\xc3\xa9u do Pin\xc3\xb3quio",
-    'hhd2' : "Penteado Pompadour",
-    'hpc1' : "Chap\xc3\xa9u de Princesa",
-    'hrh1' : "Chap\xc3\xa9u de Arco",
-    'hhm1' : "Capacete Romano",
-    'hat2' : "Antena de Aranha",
-    'htr1' : "Tiara",
-    'hhm2' : "Capacete De Viking",
-    'hwz1' : "Chap\xc3\xa9u de Bruxa",
-    'hwz2' : "Chap\xc3\xa9u do Mickey Feiticeiro",
-    'hhm3' : "Capacete de Conquistador",
-    'hhm4' : "Capacete de Bombeiro",
-    'hfp2' : "Chap\xc3\xa9u de contole Anti-Cog",
-    'hhm5' : "Chap\xc3\xa9u do Torpeira",
-    'hnp1' : "Chap\xc3\xa9u de Napoleão",
-    'hpc2' : "Bon\xc3\xa9 de Piloto",
-    'hph1' : "Chap\xc3\xa9u de Policial",
-    'hwg1' : "Peruca Maluca de Arco-íris",
-    'hbb4' : "Bon\xc3\xa9 de Baseball Amarelo",
-    'hbb5' : "Bon\xc3\xa9 de Baseball Vermelho",
-    'hbb6' : "Bon\xc3\xa9 de Baseball Verde Azul",
-    'hsl1' : "Chap\xc3\xa9u do Donald",
-    'hfr1' : "Chap\xc3\xa9u de Samba",
-    'hby1' : "Chap\xc3\xa9u do Bobby",
-    'hrb8' : "Laço de Pontos Rosa",
-    'hjh1' : "Chap\xc3\xa9u de Bobo da Corte",
-    'hbb7' : "Bon\xc3\xa9 de Baseball Roxo",
-    'hrb9' : "Laço Verificador Verde",
-    'hwt2' : "Toca de Inverno",
-    'hhw1' : "Bandana",
-    'hhw2' : "Cabeça de Toonosauro",
-    'hob1' : "Chap\xc3\xa9u Divertido",
-    'hbn1' : "Chap\xc3\xa9u de P\xc3\xa1ssaro por Brianna",
-    }
-
+HatStylesDescriptions = {'hbb1': "Bon\xc3\xa9 de Baseball Verde",
+ 'hbb2': "Bon\xc3\xa9 de Baseball Azul",
+ 'hbb3': "Bon\xc3\xa9 de Baseball Laranja",
+ 'hsf1': "Chap\xc3\xa9u de Safari Bege",
+ 'hsf2': "Chap\xc3\xa9u de Safari Marrom",
+ 'hsf3': "Chap\xc3\xa9u de Safari Verde",
+ 'hrb1': "La\xc3\xa7o Rosa",
+ 'hrb2': "La\xc3\xa7o Vermelho",
+ 'hrb3': "La\xc3\xa7o Roxo",
+ 'hht1': "Chap\xc3\xa9u de Cora\xc3\xa7\xc3\xa3o Rosa",
+ 'hht2': "Chap\xc3\xa9u de Cora\xc3\xa7\xc3\xa3o Amarelo",
+ 'htp1': "Chap\xc3\xa9u Preto Top",
+ 'htp2': "Chap\xc3\xa9u Azul Top ",
+ 'hav1': "Chap\xc3\xa9u de Birgona",
+ 'hfp1': "Chap\xc3\xa9u da Mary Poppins",
+ 'hsg1': "Chap\xc3\xa9u de Saco de Areia",
+ 'hwt1': "Chap\xc3\xa9u de Peso",
+ 'hfz1': "Chap\xc3\xa9u do Aladdin",
+ 'hgf1': "Chap\xc3\xa9u de Golf",
+ 'hpt1': "Chap\xc3\xa9u de Anivers\xc3\xa1rio",
+ 'hpt2': "Chap\xc3\xa9u de Festa Toon",
+ 'hpb1': "Chap\xc3\xa9u Chique",
+ 'hcr1': "Cabelo de Palha\xc3\xa7o",
+ 'hcw1': "Chap\xc3\xa9u de Cauboí",
+ 'hpr1': "Chap\xc3\xa9u de Pirata",
+ 'hpp1': "Chap\xc3\xa9u de H\xc3\xa9lice",
+ 'hfs1': "Chap\xc3\xa9u para Pesca",
+ 'hsb1': "Chap\xc3\xa9u Mexicano",
+ 'hst1': "Chap\xc3\xa9u de Palha",
+ 'hsu1': "Chap\xc3\xa9u de Sol",
+ 'hrb4': "La\xc3\xa7o Amarelo",
+ 'hrb5': "La\xc3\xa7o Verificador",
+ 'hrb6': "La\xc3\xa7o Vermelho Claro",
+ 'hrb7': "La\xc3\xa7o Arco-íris",
+ 'hat1': "Antena de Abelha",
+ 'hhd1': "Penteado de colm\xc3\xa9ia",
+ 'hbw1': "Chap\xc3\xa9u-coco",
+ 'hch1': "Chap\xc3\xa9u de Chefe",
+ 'hdt1': "Chap\xc3\xa9u de Detetive",
+ 'hft1': "Chap\xc3\xa9u de penas extravagantes",
+    'hfd1': "Chap\xc3\xa9u do Indiana Jones",
+    'hmk1': "Chap\xc3\xa9u da Banda do Mickey",
+    'hft2': "Chap\xc3\xa9u do Pin\xc3\xb3quio",
+    'hhd2': "Penteado Pompadour",
+    'hpc1': "Chap\xc3\xa9u de Princesa",
+    'hrh1': "Chap\xc3\xa9u de Arco",
+    'hhm1': "Capacete Romano",
+    'hat2': "Antena de Aranha",
+    'htr1': "Tiara",
+    'hhm2': "Capacete De Viking",
+    'hwz1': "Chap\xc3\xa9u de Bruxa",
+    'hwz2': "Chap\xc3\xa9u do Mickey Feiticeiro",
+    'hhm3': "Capacete de Conquistador",
+    'hhm4': "Capacete de Bombeiro",
+    'hfp2': "Chap\xc3\xa9u de contole Anti-Cog",
+    'hhm5': "Chap\xc3\xa9u do Torpeira",
+    'hnp1': "Chap\xc3\xa9u de Napoleão",
+    'hpc2': "Bon\xc3\xa9 de Piloto",
+    'hph1': "Chap\xc3\xa9u de Policial",
+    'hwg1': "Peruca Maluca de Arco-íris",
+    'hbb4': "Bon\xc3\xa9 de Baseball Amarelo",
+    'hbb5': "Bon\xc3\xa9 de Baseball Vermelho",
+    'hbb6': "Bon\xc3\xa9 de Baseball Verde Azul",
+    'hsl1': "Chap\xc3\xa9u do Donald",
+    'hfr1': "Chap\xc3\xa9u de Samba",
+    'hby1': "Chap\xc3\xa9u do Bobby",
+    'hrb8': "La\xc3\xa7o de Pontos Rosa",
+    'hjh1': "Chap\xc3\xa9u de Bobo da Corte",
+    'hbb7': "Bon\xc3\xa9 de Baseball Roxo",
+    'hrb9': "La\xc3\xa7o Verificador Verde",
+    'hwt2': "Toca de Inverno",
+    'hhw1': "Bandana",
+    'hhw2': "Cabe\xc3\xa7a de Toonosauro",
+    'hob1': "Chap\xc3\xa9u Divertido",
+    'hbn1': "Chap\xc3\xa9u de P\xc3\xa1ssaro por Brianna"}
 GlassesStylesDescriptions = {
-    'grd1' : "Óculos Circular",
-    'gmb1' : "Mini persianas brancas",
-    'gnr1' : "Óculos Limitado Roxo",
-    'gst1' : "Óculos de Estrela Amarela",
-    'g3d1' : "Óculos de Filme",
-    'gav1' : "Óculos de Aviator",
-    'gce1' : "Óculos de Olho de Cato",
-    'gdk1' : "Óculos de Nerd",
-    'gjo1' : "Óculos de Cortinas de Celebridade",
-    'gsb1' : "M\xc3\xa1scara de Mergulho",
-    'ggl1' : "Óculos Maneiro",
-    'ggm1' : "Óculos Groucho",
-    'ghg1' : "Óculos de Coração",
-    'gie1' : "Óculos de Olho de Bug",
-    'gmt1' : "M\xc3\xa1scara Preta Secreta ID",
-    'gmt2' : "M\xc3\xa1scara Azul Secreta ID",
-    'gmt3' : "M\xc3\xa1scara de Carnaval Azul",
-    'gmt4' : "M\xc3\xa1scara de Carnaval Roxa",
-    'gmt5' : "M\xc3\xa1scara de Carnaval Verde Azul",
-    'gmn1' : "Mon\xc3\xb3culo",
-    'gmo1' : "Óculos de Beijo",
-    'gsr1' : "Óculos de Garrafa",
-    'ghw1' : "Pacto Ocular de Caveira",
-    'ghw2' : "Pacto Ocular de Gema",
-    'gag1' : "Óculos de Olhos de Alien por Alexandra",
+    'grd1': "Óculos Circular",
+    'gmb1': "Mini persianas brancas",
+    'gnr1': "Óculos Limitado Roxo",
+    'gst1': "Óculos de Estrela Amarela",
+    'g3d1': "Óculos de Filme",
+    'gav1': "Óculos de Aviator",
+    'gce1': "Óculos de Olho de Cato",
+    'gdk1': "Óculos de Nerd",
+    'gjo1': "Óculos de Cortinas de Celebridade",
+    'gsb1': "M\xc3\xa1scara de Mergulho",
+    'ggl1': "Óculos Maneiro",
+    'ggm1': "Óculos Groucho",
+    'ghg1': "Óculos de Cora\xc3\xa7\xc3\xa3o",
+    'gie1': "Óculos de Olho de Bug",
+    'gmt1': "M\xc3\xa1scara Preta Secreta ID",
+    'gmt2': "M\xc3\xa1scara Azul Secreta ID",
+    'gmt3': "M\xc3\xa1scara de Carnaval Azul",
+    'gmt4': "M\xc3\xa1scara de Carnaval Roxa",
+    'gmt5': "M\xc3\xa1scara de Carnaval Verde Azul",
+    'gmn1': "Mon\xc3\xb3culo",
+    'gmo1': "Óculos de Beijo",
+    'gsr1': "Óculos de Garrafa",
+    'ghw1': "Pacto Ocular de Caveira",
+    'ghw2': "Pacto Ocular de Gema",
+    'gag1': "Óculos de Olhos de Alien por Alexandra",
     }
 
 BackpackStylesDescriptions = {
-    'bpb1' : "Mochila Azul",
-    'bpb2' : "Mochila Laranja",
-    'bpb3' : "Mochila Roxa",
-    'bpd1' : "Mochila de Pontos Rosas",
-    'bpd2' : "Mochila de Pontos Amarelas",
-    'bwg1' : "Asas de Morcegos",
-    'bwg2' : "Asas de Abelha",
-    'bwg3' : "Asas de Dragão que Voa",
-    'bst1' : "Tanque de Mergulho",
-    'bfn1' : "Barbatana de Tubarão",
-    'baw1' : "Asas de Anjo Branco",
-    'baw2' : "Asas de Anjo de Arco-íris",
-    'bwt1' : "Mochila de Brinquedos",
-    'bwg4' : "Asas de Borboleta",
-    'bwg5' : "Asas de Fadas",
-    'bwg6' : "Asas de Dragão",
-    'bjp1' : "Jet Pack",
-    'blg1' : "Mochila de Bug",
-    'bsa1' : "Mochila de Ursinho Teddy",
-    'bwg7' : "Asas de P\xc3\xa1ssaro",
-    'bsa2' : "Mochila de Pelúcia de Gato",
-    'bsa3' : "Mochila de Pelúcia de Cão",
-    'bap1' : "Asas de Avião",
-    'bhw1' : "Espada de Pirata",
-    'bhw2' : "Capa de Super Toon",
-    'bhw3' : "Capa de Vampiro",
-    'bhw4' : "Rabo de Toonsauro",
-    'bob1' : "Mochila de Diversão",
-    'bfg1' : "Mochila de Ataque de Piadas",
-    'bfl1' : "Mochila de Cog por Savanah",
+    'bpb1': "Mochila Azul",
+    'bpb2': "Mochila Laranja",
+    'bpb3': "Mochila Roxa",
+    'bpd1': "Mochila de Pontos Rosas",
+    'bpd2': "Mochila de Pontos Amarelas",
+    'bwg1': "Asas de Morcegos",
+    'bwg2': "Asas de Abelha",
+    'bwg3': "Asas de Dragão que Voa",
+    'bst1': "Tanque de Mergulho",
+    'bfn1': "Barbatana de Tubarão",
+    'baw1': "Asas de Anjo Branco",
+    'baw2': "Asas de Anjo de Arco-íris",
+    'bwt1': "Mochila de Brinquedos",
+    'bwg4': "Asas de Borboleta",
+    'bwg5': "Asas de Fadas",
+    'bwg6': "Asas de Dragão",
+    'bjp1': "Jet Pack",
+    'blg1': "Mochila de Bug",
+    'bsa1': "Mochila de Ursinho Teddy",
+    'bwg7': "Asas de P\xc3\xa1ssaro",
+    'bsa2': "Mochila de Pelúcia de Gato",
+    'bsa3': "Mochila de Pelúcia de Cão",
+    'bap1': "Asas de Avião",
+    'bhw1': "Espada de Pirata",
+    'bhw2': "Capa de Super Toon",
+    'bhw3': "Capa de Vampiro",
+    'bhw4': "Rabo de Toonsauro",
+    'bob1': "Mochila de Diversão",
+    'bfg1': "Mochila de Ataque de Piadas",
+    'bfl1': "Mochila de Cog por Savanah",
     }
 
 ShoesStylesDescriptions = {
-    'sat1' : "Sapatos de Atl\xc3\xa9tico Verde",
-    'sat2' : "Sapatos de Atl\xc3\xa9tico Vermelho",
-    'smb1' : "Botas Verdes de Toon",
-    'scs1' : "T\xc3\xaanis Verde de Atleta",
-    'swt1' : "Sapatos Wingtips",
-    'smj1' : "Sapatos Pretos Elegantes",
-    'sdk1' : "Sapatos de Barcos",
-    'sat3' : "Sapatos de Atl\xc3\xa9tico Amarelo",
-    'scs2' : "T\xc3\xaanis Preto de Atleta",
-    'scs3' : "T\xc3\xaanis Branco de Atleta",
-    'scs4' : "T\xc3\xaanis Rosa de Atleta",
-    'scb1' : "Botas de Caub\xc3\xb3i",
-    'sfb1' : "Botas Roxas",
-    'sht1' : "T\xc3\xaanis Verde de Artista High Top",
-    'smj2' : "Sapatos Marrons Elegantes",
-    'smj3' : "Sapatos Vermelhos Elegantes",
-    'ssb1' : "Botas Vermelhas de Super Toon",
-    'sts1' : "Sapatos de T\xc3\xaanis Verde",
-    'sts2' : "Sapatos de T\xc3\xaanis Rosa",
-    'scs5' : "T\xc3\xaanis Vermelho de Atleta",
-    'smb2' : "Botas Verdes-azuis de Toon",
-    'smb3' : "Botas Marrons de Toon",
-    'smb4' : "Botas Amarelas de Toon",
-    'sfb2' : "Botas Quadradas Azuis",
-    'sfb3' : "Botas Verdes de Corações",
-    'sfb4' : "Botas de Pontos Cinza",
-    'sfb5' : "Botas de Estrelas Laranjas",
-    'sfb6' : "Botas de Estrelas Rosas",
-    'slf1' : "Sapatos Loafers",
-    'smj4' : "Sapatos Roxos Elegantes",
-    'smt1' : "Botas de Motorciclo",
-    'sox1' : "Sapatos Oxfords",
-    'srb1' : "Botas Rosas de Chuva",
-    'sst1' : "Botas de Alegria",
-    'swb1' : "Botas Bege de Inverno",
-    'swb2' : "Botas Rosas de Inverno",
-    'swk1' : "Botas de Trabalho",
-    'scs6' : "T\xc3\xaanis Amarelo de Atleta",
-    'smb5' : "Botas Rosas de Toon",
-    'sht2' : "T\xc3\xaanis Rosa de Artista High Top",
-    'srb2' : "Botas de Pontos Vermelhos de Chuva",
-    'sts3' : "Sapatos de T\xc3\xaanis Roxo",
-    'sts4' : "Sapatos de T\xc3\xaanis Violeta",
-    'sts5' : "Sapatos de T\xc3\xaanis Amarelo",
-    'srb3' : "Bolas Azuis de Chuva",
-    'srb4' : "Botas Amarelas de Chuva",
-    'sat4' : "Sapatos de Atl\xc3\xa9tico Preto",
-    'shw1' : "Sapatos de Pirata",
-    'shw2' : "Pata de Toonsauro"}
+    'sat1': "Sapatos de Atl\xc3\xa9tico Verde",
+    'sat2': "Sapatos de Atl\xc3\xa9tico Vermelho",
+    'smb1': "Botas Verdes de Toon",
+    'scs1': "T\xc3\xaanis Verde de Atleta",
+    'swt1': "Sapatos Wingtips",
+    'smj1': "Sapatos Pretos Elegantes",
+    'sdk1': "Sapatos de Barcos",
+    'sat3': "Sapatos de Atl\xc3\xa9tico Amarelo",
+    'scs2': "T\xc3\xaanis Preto de Atleta",
+    'scs3': "T\xc3\xaanis Branco de Atleta",
+    'scs4': "T\xc3\xaanis Rosa de Atleta",
+    'scb1': "Botas de Caub\xc3\xb3i",
+    'sfb1': "Botas Roxas",
+    'sht1': "T\xc3\xaanis Verde de Artista High Top",
+    'smj2': "Sapatos Marrons Elegantes",
+    'smj3': "Sapatos Vermelhos Elegantes",
+    'ssb1': "Botas Vermelhas de Super Toon",
+    'sts1': "Sapatos de T\xc3\xaanis Verde",
+    'sts2': "Sapatos de T\xc3\xaanis Rosa",
+    'scs5': "T\xc3\xaanis Vermelho de Atleta",
+    'smb2': "Botas Verdes-azuis de Toon",
+    'smb3': "Botas Marrons de Toon",
+    'smb4': "Botas Amarelas de Toon",
+    'sfb2': "Botas Quadradas Azuis",
+    'sfb3': "Botas Verdes de Cora\xc3\xa7ões",
+    'sfb4': "Botas de Pontos Cinza",
+    'sfb5': "Botas de Estrelas Laranjas",
+    'sfb6': "Botas de Estrelas Rosas",
+    'slf1': "Sapatos Loafers",
+    'smj4': "Sapatos Roxos Elegantes",
+    'smt1': "Botas de Motorciclo",
+    'sox1': "Sapatos Oxfords",
+    'srb1': "Botas Rosas de Chuva",
+    'sst1': "Botas de Alegria",
+    'swb1': "Botas Bege de Inverno",
+    'swb2': "Botas Rosas de Inverno",
+    'swk1': "Botas de Trabalho",
+    'scs6': "T\xc3\xaanis Amarelo de Atleta",
+    'smb5': "Botas Rosas de Toon",
+    'sht2': "T\xc3\xaanis Rosa de Artista High Top",
+    'srb2': "Botas de Pontos Vermelhos de Chuva",
+    'sts3': "Sapatos de T\xc3\xaanis Roxo",
+    'sts4': "Sapatos de T\xc3\xaanis Violeta",
+    'sts5': "Sapatos de T\xc3\xaanis Amarelo",
+    'srb3': "Bolas Azuis de Chuva",
+    'srb4': "Botas Amarelas de Chuva",
+    'sat4': "Sapatos de Atl\xc3\xa9tico Preto",
+    'shw1': "Sapatos de Pirata",
+    'shw2': "Pata de Toonsauro"}
 AccessoryNamePrefix = {0: "ch\xc3\xa1peu de unisex",
  1: "\xc3\xb3culos de unisex",
  2: "mochila de unisex",
@@ -5699,7 +5766,7 @@ ShirtStylesDescriptions = {'bss1': 'b\xc3\xa1sica',
     'c_gss3': 'azul e dourado com listras ondulantes (s\xc3\xb3 meninas) - S\xc3\xa9rie 2',
     'c_gss4': 'azul e rosa com arco (s\xc3\xb3 meninas) - S\xc3\xa9rie 2',
     'c_gss5': 'quimono azul-piscina com listra (s\xc3\xb3 meninas) – N\xc3\x83O USADO',
-    'c_ss4' : 'Camiseta tingida (unissex) - S\xc3\xa9rie 3',
+    'c_ss4': 'Camiseta tingida (unissex) - S\xc3\xa9rie 3',
     'c_ss5': 'azul-claro com azul e listra branca (s\xc3\xb3 meninos) - S\xc3\xa9rie 3',
     'c_ss6': 'camisa de caub\xc3\xb3i 1: S\xc3\xa9rie 4',
     'c_ss7': 'camisa de caub\xc3\xb3i 2: S\xc3\xa9rie 4',
@@ -6353,7 +6420,7 @@ WindowViewNames = {10: 'Jardim amplo',
  110: 'Fazenda',
  120: 'Campo Nativo',
  130: 'Rua Principal'}
-SpecialEventNames = {1: 'Prêmio Genérico',
+SpecialEventNames = {1: 'Prêmio Gen\xc3\xa9rico',
  2: 'Torneio de Pesca de Melville',
  3: 'Torneio de Pesca de Billy Budd',
  4: 'Convite de Abril do Bosque de Bolotas',
@@ -6364,12 +6431,12 @@ SpecialEventNames = {1: 'Prêmio Genérico',
  9: 'Loucura de Bondinho dos Jogos',
  10: 'Fim de Semana do Grande Prêmio',
  11: 'Deriva de Tarefas de Toons',
- 12: 'Maratona de Salvar um Prédio',
+ 12: 'Maratona de Salvar um Pr\xc3\xa9dio',
  13: 'Maior Número de Cogs Derrotados',
  14: 'Maior Número de V.P.s Derrotados',
- 15: 'Evento Operação Storm Rôbos Vendedores',
+ 15: 'Evento Opera\xc3\xa7\xc3\xa3o Storm Rôbos Vendedores',
  16: 'Maior Número de C.J.s Derrotados',
- 17: 'Operação Rôbos da Lei Perdem Evento'}
+ 17: 'Opera\xc3\xa7\xc3\xa3o Rôbos da Lei Perdem Evento'}
 NewCatalogNotify = 'H\xc3\xa1 novos itens dispon\xc3\xadveis para serem encomendados por telefone!'
 NewDeliveryNotify = 'Chegou correspond\xc3\xaancia nova em sua caixa de correio!'
 CatalogNotifyFirstCatalog = 'Seu primeiro cat\xc3\xa1logo chegou! Voc\xc3\xaa pode us\xc3\xa1-lo para encomendar novos itens para uso pessoal ou para casa.'
@@ -6460,7 +6527,7 @@ CatalogPurchaseGiftLimitReached = 'Este item n\xc3\xa3o p\xc3\xb4de ser enviado 
 CatalogPurchaseGiftNotEnoughMoney = 'Este item n\xc3\xa3o p\xc3\xb4de ser enviado para %s porque ele n\xc3\xa3o pode pagar.'
 CatalogAcceptGeneralError = 'Este item n\xc3\xa3o p\xc3\xb4de ser exclu\xc3\xaddo da sua caixa de correio por causa de um erro interno do jogo: c\xc3\xb3digo do erro %s.'
 CatalogAcceptRoomError = 'Voc\xc3\xaa n\xc3\xa3o tem espa\xc3\xa7o para isto. Voc\xc3\xaa vai ter que se livrar de alguma coisa.'
-CatalogAcceptLimitError = 'Voc\xc3\xaa j\xc3\xa1 tem o n\xc3\xbamero m\xc3\xa1ximo poss\xc3\xadvel disto. Voc\xc3\xaa vai ter que se livrar de alguma coisa.'
+CatalogAcceptLimitError = 'Voc\xc3\xaa j\xc3\xa1 tem o n\xc3\xbamera coisa poss\xc3\xadvel disto. Voc\xc3\xaa vai ter que se livrar de alguma coisa.'
 CatalogAcceptFitError = 'Isto n\xc3\xa3o serve em voc\xc3\xaa! Voc\xc3\xaa o doa para Toons que precisam.'
 CatalogAcceptInvalidError = 'Este item saiu da moda! Voc\xc3\xaa o doa para Toons que precisam.'
 MailboxOverflowButtonDicard = 'Remover'
@@ -6485,7 +6552,8 @@ HDNonDeletableItem = 'Voc\xc3\xaa n\xc3\xa3o pode excluir itens deste tipo!'
 HDNonDeletableBank = 'Voc\xc3\xaa n\xc3\xa3o pode excluir o seu banco!'
 HDNonDeletableCloset = 'Voc\xc3\xaa n\xc3\xa3o pode excluir o seu arm\xc3\xa1rio!'
 HDNonDeletablePhone = 'Voc\xc3\xaa n\xc3\xa3o pode excluir o seu telefone!'
-HDNonDeletableNotOwner = 'Voc\xc3\xaa n\xc3\xa3o pode excluir as coisas de %s's!'
+HDNonDeletableTrunk = 'Voc\xc3\xaa n\xc3\xa3o pode excluir o seu ba\xc3\xba!'
+HDNonDeletableNotOwner ="Voc\xc3\xaa n\xc3\xa3o pode excluir as coisas de %s's!"
 HDHouseFull = 'Sua casa est\xc3\xa1 cheia. Voc\xc3\xaa precisa excluir algo mais de sua casa ou do s\xc3\xb3t\xc3\xa3o antes de recuperar este item da lixeira.'
 HDHelpDict = {'DoneMoving': 'Decora\xc3\xa7\xc3\xa3o da sala conclu\xc3\xadda.',
  'Attic': 'Mostrar lista de itens do s\xc3\xb3t\xc3\xa3o. O s\xc3\xb3t\xc3\xa3o armazena itens que n\xc3\xa3o est\xc3\xa3o na sala.',
@@ -6532,11 +6600,11 @@ NPCToonNames = {20000: 'Tom Tutorial',
  1000: lToonHQ,
  20001: Flippy,
  2001: Flippy,
-    2002: 'Banqueiro Beto',
-    2003: 'Professor Paulo',
-    2004: 'Cora, a Costureira',
-    2005: 'Bibliotec\xc3\xa1rio Bino',
-    2006: 'Vendedor Alaor',
+ 2002: 'Banqueiro Beto',
+ 2003: 'Professor Paulo',
+ 2004: 'Cora, a Costureira',
+ 2005: 'Bibliotec\xc3\xa1rio Bino',
+ 2006: 'Vendedor Alaor',
     2011: 'Vendedora Isadora',
     2007: lHQOfficerM,
     2008: lHQOfficerM,
@@ -7847,8 +7915,7 @@ PetTrait2descriptions = {
     'surpriseThreshold': ('Sempre surpreso', 'Muito surpreso',
                          'Às vezes surpreso', 'Raramente surpreso',),
     'affectionThreshold': ('Raramente carinhoso', 'Às vezes carinhoso',
-                         'Muito carinhoso', 'Sempre carinhoso',),
-    }
+                         'Muito carinhoso', 'Sempre carinhoso')}
 
 # end translate
 
@@ -7867,9 +7934,39 @@ FireworksNewYearsEveBeginning = lToonHQ+': Feliz Ano Novo!!!!'
 FireworksNewYearsEveEnding = lToonHQ+': Gostou dos Fogos? Logo tem mais!'
 FireworksBeginning = lToonHQ+': Bem-vindo \xc3\xa0 queima de fogos de ver\xc3\xa3o! Divirta-se com o show!'
 FireworksEnding = lToonHQ+': Espero que tenha gostado do show! Um \xc3\xb3timo ver\xc3\xa3o para voc\xc3\xaa!'
-
-# ToontownLoadingScreen.py
-
+BlockerTitle = 'CARREGANDO TOONTOWN...'
+BlockerLoadingTexts = ['Esfregando formas de torta',
+'Assando massas de torta',
+'Esquentando o recheio da torta',
+'Carregando ra\xc3\xa7\xc3\xa3o para Rabisco',
+'Amarrando cip\xc3\xb3s da Selva',
+'Soltando as aranhas que rastejam pelas cip\xc3\xb3s da Selva',
+'Plantando sementes de flores esguichando',
+'Alongando trampolins',
+'Pastoreando porcos',
+"Ajustando sons de 'SPLAT'",
+'Limpando \xc3\xb3culos hipn\xc3\xb3ticos',
+'Desembrulhando tinta para o Toon de Not\xc3\xadcias',
+'Cortando fusíveis de TNT',
+"Instalando placa de 'Em constru\xc3\xa7\xc3\xa3o' no Bosque de Bolotas",
+'Acordando o Pato Donald',
+'Ensinando novos passos para hidrantes dan\xc3\xa7antes',
+'Encadernando \xc3\x81lbuns dos Toons',
+'Analisando sons de patos',
+'Colhendo pods de balinhas',
+'Esvaziando baldes de peixe',
+'Encurralando a lixo na lixeira',
+'Espalhando graxa nos Cogs',
+'Polindo trof\xc3\xa9us de kart',
+'Balan\xc3\xa7ando para pesar pesos de 1 tonelada',
+'Praticando Dan\xc3\xa7as da Vit\xc3\xb3ria',
+'Preparando maluquices',
+"Dando o sinal de 'cinco minutos' para o Mickey Mouse",
+'Testando luvas brancas',
+'Entortando an\xc3\xa9is subaquáticos',
+'Enrolando Burrocracia',
+'Congelando gelo Brrrgh',
+'Afinando pianos que caem']
 TIP_NONE = 0
 TIP_GENERAL = 1
 TIP_STREET = 2
@@ -7978,7 +8075,7 @@ TipDict = {
  'Quando voc\xc3\xaa j\xc3\xa1 tiver derrotado um n\xc3\xbamero suficiente de Cogs, use o \'Radar de Cogs\' clicando nos \xc3\xadcones de Cogs da p\xc3\xa1gina Galeria de Cogs do seu \xc3\x81lbum Toon.',
  'Durante uma batalha, voc\xc3\xaa tem como saber qual Cog os seus companheiros de equipe est\xc3\xa3o atacando; basta olhar para os travess\xc3\xb5es (-) e para os X.',
  'Durante uma batalha, os Cogs carregam uma luz que mostra sua sa\xc3\xbade: o verde significa saud\xc3\xa1vel e o vermelho, quase destru\xc3\xaddo.',
- 'No m\xc3\xa1ximo, quatro Toons podem guerrear ao mesmo tempo.',
+ 'Na coisa, quatro Toons podem guerrear ao mesmo tempo.',
  'Na rua, os Cogs t\xc3\xaam mais probabilidade de entrar em uma briga contra v\xc3\xa1rios Toons do que contra apenas um Toon.',
  'Os dois tipos de Cogs mais dif\xc3\xadceis de cada tipo s\xc3\xb3 s\xc3\xa3o encontrados nos edif\xc3\xadcios.',
  'As Piadas cadentes nunca funcionam contra Cogs iscados.',
@@ -8029,12 +8126,9 @@ TipDict = {
  'Vale a pena a confus\xc3\xa3o: os Cogs virtuais no Quartel dos Rob\xc3\xb4s da Lei n\xc3\xa3o d\xc3\xa3o Avisos de J\xc3\xbari de recompensa.',
  ' Rob\xc3\xb4 Mercen\xc3\xa1rio produz e distribui a sua pr\xc3\xb3pia moeda, Cogbucks, em tr\xc3\xaas formas diferentes: Moedas, D\xc3\xb3lar, e lingotes.',
  ' Aguarde at\xc3\xa9 que o Diretor Financeiro fique doido para lan\xc3\xa7ar um seguro ou o utilize-o como um capacete! Acerte no capacete com outro seguro para peg\xc3\xa1-lo.',
- 'O Rob\xc3\xb4 da Lei obt\xc3\xa9m as partes do traje como recompensa ao concluir a TarefaToon para o Professor Floco.',
-    ),
-  TIP_ESTATE: (
-    # Rabiscos
- 'Os Rabiscos entendem algumas frases do Chat r\xc3\xa1pido. Experimente!',
- 'Use o menu \'Bichinho\' do Chat r\xc3\xa1pido para pedir a seu Rabisco que fa\xc3\xa7a truques.',
+ 'O Rob\xc3\xb4 da Lei obt\xc3\xa9m as partes do traje como recompensa ao concluir a TarefaToon para o Professor Floco.'),
+  TIP_ESTATE: ('Os Rabiscos entendem algumas frases do Chat r\xc3\xa1pido. Experimente!',
+ "Use o menu 'Bichinho' do Chat r\xc3\xa1pido para pedir a seu Rabisco que fa\xc3\xa7a truques.",
  'Voc\xc3\xaa pode ensinar aos Rabiscos truques com as li\xc3\xa7\xc3\xb5es de treinamento do Gad\xc3\xa1logo da Clarabela.',
  'Recompense o seu Rabisco pelos truques.',
  'Se voc\xc3\xaa visitar a propriedade de um amigo, o seu Rabisco lhe far\xc3\xa1 companhia.',
@@ -8048,7 +8142,6 @@ TipDict = {
  'Os truques mais avan\xc3\xa7ados dos Rabiscos recuperam os Toons com mais rapidez.',
  'Rabiscos com mais experi\xc3\xaancia podem fazer mais truques sem ficar t\xc3\xa3o cansados.',
  'Veja uma lista de Rabiscos pr\xc3\xb3ximos em sua Lista de amigos.',
-    # Furniture / Cattlelog
  'Compre m\xc3\xb3veis usando o Gad\xc3\xa1logo da Clarabela e decore a sua casa.',
  'O banco da casa tem mais balinhas.',
  'O arm\xc3\xa1rio da casa tem mais roupas.',
@@ -8069,15 +8162,10 @@ TipDict = {
  'Novos Gad\xc3\xa1logos s\xc3\xa3o entregues toda semana.',
  'Procure os produtos promocionais de estoque limitado no Gad\xc3\xa1logo.',
  'Mova os m\xc3\xb3veis indesejados para a lata de lixo.',
-    # Fish
  'Alguns peixes, como a Cavala Trotante, s\xc3\xa3o mais comuns nas propriedades de Toons.',
-    # Misc
  'Voc\xc3\xaa pode convidar os seus amigos para a sua propriedade usando o Chat r\xc3\xa1pido.',
- 'Voc\xc3\xaa sabia que a cor da sua casa combina com a cor do seu painel Pegar um Toon?',
-    ),
-   TIP_KARTING: (
-    # Goofy Speedway zone specific
- 'Compre um Convers\xc3\xadvel, Utilit\xc3\xa1rio Toon ou Cruzeiro na Loja do Kart do Pateta.',
+ 'Voc\xc3\xaa sabia que a cor da sua casa combina com a cor do seu painel Pegar um Toon?'),
+ TIP_KARTING: ('Compre um Convers\xc3\xadvel, Utilit\xc3\xa1rio Toon ou Cruzeiro na Loja do Kart do Pateta.',
  'Personalize o seu kart com decalques, calotas e muito mais na Loja do Kart do Pateta.',
  'Ganhe bilhetes correndo de kart no Aut\xc3\xb3dromo do Pateta.',
  'Os bilhetes s\xc3\xa3o a \xc3\xbanica moeda aceita na Loja do Kart do Pateta.',
@@ -8087,15 +8175,10 @@ TipDict = {
  'Uma p\xc3\xa1gina especial do seu \xc3\x81lbum Toon permite que voc\xc3\xaa veja seus trof\xc3\xa9us.',
  'O Est\xc3\xa1dio dos Nerds \xc3\xa9 a pista mais f\xc3\xa1cil do Aut\xc3\xb3dromo do Pateta.',
  'A Pista de Pulos tem o maior n\xc3\xbamero de inclina\xc3\xa7\xc3\xb5es e rampas do Aut\xc3\xb3dromo do Pateta.',
- 'A Avenida da Neve \xc3\xa9 a pista mais dif\xc3\xadcil do Aut\xc3\xb3dromo do Pateta.',
-    ),
-   TIP_GOLF: (
-    # Golfing specific
- 'Aperte a tecla Tab para ver de cima o percurso de golfe.',
- 'Aperte a tecla de Seta para Cima para se colocar na dire\xc3\xa7\xc3\xa3o do buraco de golfe.',
- 'Balan\xc3\xa7ar o taco \xc3\xa9 como atirar uma torta.',
-    ),
-    }
+ 'A Avenida da Neve \xc3\xa9 a pista mais dif\xc3\xadcil do Aut\xc3\xb3dromo do Pateta.'),
+ TIP_GOLF: ('Pressiona a tecla Tab para ver de cima o percurso de golfe.',
+ 'Pressiona a tecla de Seta para Cima para se colocar na dire\xc3\xa7\xc3\xa3o do buraco de golfe.',
+ 'Balan\xc3\xa7ar o taco \xc3\xa9 como atirar uma torta.')}
 
 FishGenusNames = {
     0: 'Baiacu',
@@ -8789,7 +8872,7 @@ LawbotBossTempIntro4 = 'Espere um pouco... Voc\xc3\xaas s\xc3\xa3o Toons!'
 LawbotBossTempJury1 = 'A sele\xc3\xa7\xc3\xa3o do j\xc3\xbari vai come\xc3\xa7ar agora.'
 LawbotBossHowToGetEvidence = 'Toque na tribuna da testemunha para pegar a evid\xc3\xaancia.'
 LawbotBossTrialChat1 = 'A sess\xc3\xa3o da Corte est\xc3\xa1 aberta'
-LawbotBossHowToThrowPies = 'Aperte a tecla Insert para arremessar a evid\xc3\xaancia\n nos advogados ou na balan\xc3\xa7a!'
+LawbotBossHowToThrowPies = 'Pressiona a tecla Insert para arremessar a evid\xc3\xaancia\n nos advogados ou na balan\xc3\xa7a!'
 LawbotBossNeedMoreEvidence = 'Voc\xc3\xaa precisa de mais evid\xc3\xaancias!'
 LawbotBossDefenseWins1 = 'Imposs\xc3\xadvel! A defesa venceu?'
 LawbotBossDefenseWins2 = 'N\xc3\xa3o. Eu declaro este julgamento nulo! Um novo julgamento ser\xc3\xa1 agendado.'
@@ -8813,7 +8896,7 @@ WitnessToonNoJuror = 'Oh-oh, sem jurados Toons. Vai ser um julgamento dif\xc3\xa
 WitnessToonOneJuror = 'Legal! Tem 1 Toon no j\xc3\xbari!'
 WitnessToonSomeJurors = 'Legal! Tem %d Toons no j\xc3\xbari!'
 WitnessToonAllJurors = 'Irado! Todos os jurados s\xc3\xa3o Toons!'
-WitnessToonPrepareBattleThree = 'R\xc3\xa1pido, toque na tribuna da testemunha para pegar evid\xc3\xaancias.\aAperte a tecla Insert para arremessar a evid\xc3\xaancia nos advogados, ou no prato da defesa.'
+WitnessToonPrepareBattleThree = 'R\xc3\xa1pido, toque na tribuna da testemunha para pegar evid\xc3\xaancias.\aPressiona a tecla Insert para arremessar a evid\xc3\xaancia nos advogados, ou no prato da defesa.'
 WitnessToonCongratulations = 'Voc\xc3\xaa conseguiu!  Obrigado por uma defesa espetacular!\aAqui ,fique com estes pap\xc3\xa9is deixados pelo Juiz-chefe.\aCom isto voc\xc3\xaa ser\xc3\xa1 capaz de evocar Cogs da sua p\xc3\xa1gina Galeria de Cogs.'
 
 WitnessToonLastPromotion = '\aUau, voc\xc3\xaa atingiu o n\xc3\xadvel %s do seu Disfarce de Cog!\aOs Cogs n\xc3\xa3o s\xc3\xa3o promovidos mais que isso.\aVoc\xc3\xaa n\xc3\xa3o pode mais atualizar o seu Disfarce de Cog, mas ainda pode continuar trabalhando pela Resist\xc3\xaancia!'
@@ -9016,7 +9099,7 @@ ConfirmWiltedFlower = '%(plant)s murchou.  Tem certeza de que quer remov\xc3\xaa
 ConfirmUnbloomingFlower = '%(plant)s n\xc3\xa3o est\xc3\xa1 desabrochando.  Tem certeza de que quer remov\xc3\xaa-la?  Ela n\xc3\xa3o ir\xc3\xa1 para o seu cesto de flores, e voc\xc3\xaa tamb\xc3\xa9m n\xc3\xa3o receber\xc3\xa1 aumento na sua habilidade.'
 ConfirmNoSkillupFlower = 'Tem certeza de que quer remover %(plant)s? Ela n\xc3\xa3o ir\xc3\xa1 para o seu cesto de flores, e voc\xc3\xaa tamb\xc3\xa9m n\xc3\xa3o receber\xc3\xa1 aumento na sua habilidade.'
 ConfirmSkillupFlower = 'Tem certeza de que quer colher %(plant)s?  Ela ir\xc3\xa1 para o seu cesto de flores. Voc\xc3\xaa vai receber um aumento de habilidade.'
-ConfirmMaxedSkillFlower = 'Tem certeza que quer colher as %(plant)s?  Elas ir\xc3\xa3o para sua cesta de flores. Suas habilidades N\xc3\x83O aumentar\xc3\xa3o pois voc\xc3\xaa j\xc3\xa1 atingiu o m\xc3\xa1ximo.'
+ConfirmMaxedSkillFlower = 'Tem certeza que quer colher as %(plant)s?  Elas ir\xc3\xa3o para sua cesta de flores. Suas habilidades N\xc3\x83O aumentar\xc3\xa3o pois voc\xc3\xaa j\xc3\xa1 atingiu a coisa.'
 ConfirmBasketFull = 'Seu cesto de flores est\xc3\xa1 cheio. Venda algumas flores primeiro.'
 ConfirmRemoveTree = 'Tem certeza de que quer remover %(tree)s?'
 ConfirmWontBeAbleToHarvest = ' Se voc\xc3\xaa remover esta \xc3\xa1rvore, voc\xc3\xaa n\xc3\xa3o colher\xc3\xa1 piadas das \xc3\xa1rvores mais altas.'
@@ -9091,7 +9174,7 @@ def getResultPlantedSomethingSentence(flowerName):
     return retval
 
 
-TravelGameTitle = 'Trilhos de Bonde'
+TravelGameTitle = 'Trilhos do Bondinho'
 TravelGameInstructions = 'Clique para cima ou para baixo para definir seu n\xc3\xbamero de votos.  Clique no bot\xc3\xa3o votar para lan\xc3\xa7ar os votos. Chegue ao seu objetivo secreto para conseguir balinhas extras. Ganhe mais votos quando se der bem nos outros jogos.'
 TravelGameRemainingVotes = 'Votos Restantes:'
 TravelGameUse = 'Usar'
@@ -9116,18 +9199,20 @@ TravelGameNoOneGotBonus = 'Ningu\xc3\xa9m chegou ao seu objetivo secreto.  Todos
 TravelGameConvertingVotesToBeans = 'Convertendo alguns votos em balinhas...'
 TravelGameGoingBackToShop ='S\xc3\xb3 resta 1 jogador. Indo para a Loja de Piadas do Pateta.'
 PairingGameTitle = 'Jogo de Mem\xc3\xb3ria Toon'
-PairingGameInstructions = 'Aperte Delete para virar uma carta. Combine 2 cartas iguais para marcar um ponto. Combine cartas com o brilho de b\xc3\xb4nus e ganhe um ponto extra. Ganhe mais pontos virando poucas vezes.'
-PairingGameInstructionsMulti = 'Aperte Delete para virar uma carta. Aperte Ctrl para fazer o sinal para outro jogador virar uma carta. Combine 2 cartas iguais para marcar um ponto. Combine cartas com o brilho de b\xc3\xb4nus e ganhe um ponto extra. Ganhe mais pontos virando poucas vezes.'
+PairingGameInstructions = 'Pressiona Delete para virar uma carta. Combine 2 cartas iguais para marcar um ponto. Combine cartas com o brilho de b\xc3\xb4nus e ganhe um ponto extra. Ganhe mais pontos virando poucas vezes.'
+PairingGameInstructionsMulti = 'Pressiona Delete para virar uma carta. Pressiona Ctrl para fazer o sinal para outro jogador virar uma carta. Combine 2 cartas iguais para marcar um ponto. Combine cartas com o brilho de b\xc3\xb4nus e ganhe um ponto extra. Ganhe mais pontos virando poucas vezes.'
 PairingGamePerfect = 'PERFEITO!!'
 PairingGameFlips = 'Viradas:'
 PairingGamePoints = 'Pontos:'
-TrolleyHolidayStart = 'Vamos come\xc3\xa7ar com os Trilhos de Bonde!  Para jogar, embarque em qualquer bonde com 2 ou mais Toons.'
-TrolleyHolidayOngoing = ''
-TrolleyHolidayEnd = 'Isso \xc3\xa9 tudo nos Trilhos de Bonde por hoje.  At\xc3\xa9 a pr\xc3\xb3xima semana!'
-TrolleyWeekendStart = 'O Fim de Semana dos Trilhos de Bonde vai come\xc3\xa7ar!  Para jogar, embarque em qualquer bonde com 2 ou mais Toons.'
-TrolleyWeekendEnd = 'Terminamos com o Fim de Semana dos Trilhos de Bonde.'
+TrolleyHolidayStart = 'Vamos come\xc3\xa7ar com os Trilhos do Bondinho!  Para jogar, embarque em qualquer bondinho com 2 ou mais Toons.'
+TrolleyHolidayOngoing = 'Bem Vindo! Trilhos do Bondinho est\xc3\xa1 atualmente em andamento'
+TrolleyHolidayEnd = 'Isso \xc3\xa9 tudo nos Trilhos do Bondinho por hoje.  At\xc3\xa9 a pr\xc3\xb3xima semana!'
+TrolleyWeekendStart = 'O Fim de Semana dos Trilhos do Bondinho vai come\xc3\xa7ar!  Para jogar, embarque em qualquer bondinho com 2 ou mais Toons.'
+TrolleyWeekendEnd = 'Terminamos com o Fim de Semana dos Trilhos do Bondinho.'
 VineGameTitle = 'Cip\xc3\xb3s da Selva'
-VineGameInstructions = 'Chegue ao cip\xc3\xb3 mais \xc3\xa0 direita a tempo. Aperte para Cima ou para Baixo para escalar o cip\xc3\xb3.  Aperte para Esquerda ou Direita para mudar de dire\xc3\xa7\xc3\xa3o e pular.  Quanto mais baixo voc\xc3\xaa estiver no cip\xc3\xb3, mais r\xc3\xa1pido poder\xc3\xa1 saltar dele. Colete as bananas se puder, mas evite os morcegos e aranhas.'
+VineGameInstructions = 'Chegue ao cip\xc3\xb3 mais \xc3\xa0 direita a tempo. Pressiona para Cima ou para Baixo para escalar o cip\xc3\xb3.  Pressiona para Esquerda ou Direita para mudar de dire\xc3\xa7\xc3\xa3o e pular.  Quanto mais baixo voc\xc3\xaa estiver no cip\xc3\xb3, mais r\xc3\xa1pido poder\xc3\xa1 saltar dele. Colete as bananas se puder, mas evite os morcegos e aranhas.'
+ValentinesDayStart = 'Feliz Dia dos Toons dos Namorados!'
+
 GolfCourseNames = {0: 'Tacada e Caminhada',
  1: 'Tacadas Divertidas',
  2: 'Todas as Tacadas'}
@@ -9176,7 +9261,6 @@ GolfPar = 'Par'
 GolfBogey = 'Bogey'
 GolfDoubleBogey = 'Bogey Duplo'
 GolfTripleBogey = 'Bogey Triplo'
-
 GolfShotDesc = {-4: GolfCondor,
  -3: GolfAlbatross,
  -2: GolfEagle,
@@ -9248,9 +9332,9 @@ GolfAvReceivesCup = '%(name)s ganhou a ta\xc3\xa7a %(cup)s!!  B\xc3\xb4nus em po
 GolfAvReceivesTrophy = '%(name)s ganhou o trof\xc3\xa9u %(award)s!!'
 GolfRanking = 'Posi\xc3\xa7\xc3\xa3o: \n'
 GolfPowerBarText = '%(power)s%%'
-GolfChooseTeeInstructions = 'Aperte para Esquerda ou Direita para mudar a posi\xc3\xa7\xc3\xa3o do taco.\nAperte Ctrl para selecionar.'
+GolfChooseTeeInstructions = 'Pressiona para Esquerda ou Direita para mudar a posi\xc3\xa7\xc3\xa3o do taco.\nPressiona Ctrl para selecionar.'
 GolfWarningMustSwing = 'Aten\xc3\xa7\xc3\xa3o: voc\xc3\xaa precisa apertar Ctrl na sua pr\xc3\xb3xima tacada.'
-GolfAimInstructions = 'Aperte para a Esquerda ou Direita para mirar.\nAperte e segure Ctrl para balan\xc3\xa7ar o taco.'
+GolfAimInstructions = 'Pressiona para a Esquerda ou Direita para mirar.\nPressiona e segure Ctrl para balan\xc3\xa7ar o taco.'
 GolferExited = '%s saiu do percurso de golfe.'
 GolfPowerReminder = 'Segure Ctrl por Mais Tempo para\nMandar a Bola Mais Longe'
 GolfPar = 'Par'
@@ -9437,8 +9521,8 @@ ElevatorLawBotCourse2 = 'Escrit\xc3\xb3rio C'
 ElevatorLawBotCourse3 = 'Escrit\xc3\xb3rio D'
 DaysToGo = 'Espere\n%s Dias'
 IceGameTitle = 'Escorregador de Gelo'
-IceGameInstructions = 'Chegue o mais perto do centro ao final da segunda rodada. Use as teclas de seta para mudar a dire\xc3\xa7\xc3\xa3o e a for\xc3\xa7a. Aperte Ctrl para lan\xc3\xa7ar seu Toon. Acerte os barris para ganhar mais pontos, e evite a dinamite!'
-IceGameInstructionsNoTnt = 'Chegue o mais perto do centro ao final da segunda rodada. Use as teclas de seta para mudar a dire\xc3\xa7\xc3\xa3o e a for\xc3\xa7a. Aperte Ctrl para lan\xc3\xa7ar seu Toon. Acerte os barris para ganhar mais pontos.'
+IceGameInstructions = 'Chegue o mais perto do centro ao final da segunda rodada. Use as teclas de seta para mudar a dire\xc3\xa7\xc3\xa3o e a for\xc3\xa7a. Pressiona Ctrl para lan\xc3\xa7ar seu Toon. Acerte os barris para ganhar mais pontos, e evite a dinamite!'
+IceGameInstructionsNoTnt = 'Chegue o mais perto do centro ao final da segunda rodada. Use as teclas de seta para mudar a dire\xc3\xa7\xc3\xa3o e a for\xc3\xa7a. Pressiona Ctrl para lan\xc3\xa7ar seu Toon. Acerte os barris para ganhar mais pontos.'
 IceGameWaitingForPlayersToFinishMove = 'Aguardando outros jogadores...'
 IceGameWaitingForAISync = 'Aguardando outros jogadores...'
 IceGameInfo= 'Partida %(curMatch)d/%(numMatch)d, Rodada %(curRound)d/%(numRound)d'
@@ -9540,7 +9624,7 @@ HolidayNamesInCalendar = {1: ('Fogos de Artif\xc3\xadcio de Ver\xc3\xa3o', 'Come
  7: ('Bingo de Peixe', 'Quarta-feira do Bingo de Peixe! Todos no lago trabalhando juntos para completar a cartela antes de o tempo esgotar.'),
  8: ('Elei\xc3\xa7\xc3\xa3o de Esp\xc3\xa9cie de Toon', 'Vote na nova esp\xc3\xa9cie de Toon! Ser\xc3\xa1 uma Cabra? Ser\xc3\xa1 um Porco?'),
  9: ('Dia do Gato Preto', 'Feliz Halloween! Crie um Toon Gato Preto Toont\xc3\xa1stico – S\xc3\xb3 Hoje!'),
- 13: ('Doces ou Travessuras', 'Feliz Halloween! V\xc3\xa1 atr\xc3\xa1s das guloseimas por toda Toontown para ganhar uma linda cabe\xc3\xa7a de ab\xc3\xb3bora de pr\xc3\xaamio!'),
+ 13: ('Doces ou Travessuras', 'Feliz Halloween! V\xc3\xa1 atr\xc3\xa1s das doces por toda Toontown para ganhar uma linda cabe\xc3\xa7a de ab\xc3\xb3bora de pr\xc3\xaamio!'),
  14: ('Grande Pr\xc3\xaamio', 'Segunda-feira do Grande Pr\xc3\xaamio no aut\xc3\xb3dromo do Pateta! Para vencer, conquiste o maior n\xc3\xbamero de pontos em tr\xc3\xaas corridas consecutivas!'),
  16: ('Fim de Semana do Grande Pr\xc3\xaamio', 'Quem jogar gratuitamente ou pagando compete nas corridas do Aut\xc3\xb3dromo do Pateta!'),
  17: ('Trilhas do Bondinho', 'Quinta-feira das Trilhas do Bondinho! Embarque em qualquer Bondinho para jogar com dois ou mais Toons.'),
