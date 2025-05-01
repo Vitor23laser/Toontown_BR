@@ -7882,13 +7882,11 @@ FlowerBasketValue = '%(name)s, voc\xc3\xaa tem %(num)s flores no seu cesto que v
 
 def GetPossesive(name):
     if name[-1:] == 'de':
-        possesive = name + '''
+        possesive = name + ''
     else:
         possesive = name + ''
     return possesive
 
-# PetTraits
-# VERY_BAD, BAD, GOOD, VERY_GOOD
 PetTrait2descriptions = {
     'hungerThreshold': ('Sempre faminto', 'Muito faminto',
                         'Às vezes faminto', 'Raramente faminto',),
@@ -8042,11 +8040,8 @@ TipDict = {
  'Mostre o seu carr\xc3\xa3o e d\xc3\xaa uma turbinada no seu limite de Risadas no Aut\xc3\xb3dromo do Pateta. ',
  'Entre no Aut\xc3\xb3dromo do Pateta pelo t\xc3\xbanel em forma de pneu no p\xc3\xa1tio do Centro de Toontown.',
  'Ganhe pontos de Risada no Aut\xc3\xb3dromo do Pateta.',
- 'O Aut\xc3\xb3dromo do Pateta tem seis pistas de corrida diferentes. '
-   ),
-
-  TIP_STREET: (
- 'H\xc3\xa1 quatro tipos de Cogs: Rob\xc3\xb4s da Lei, Rob\xc3\xb4s Mercen\xc3\xa1rios, Rob\xc3\xb4s Vendedores e Rob\xc3\xb4s-chefe.',
+ 'O Aut\xc3\xb3dromo do Pateta tem seis pistas de corrida diferentes. '),
+TIP_STREET: ('H\xc3\xa1 quatro tipos de Cogs: Rob\xc3\xb4s da Lei, Rob\xc3\xb4s Mercen\xc3\xa1rios, Rob\xc3\xb4s Vendedores e Rob\xc3\xb4s-chefe.',
  'Cada M\xc3\xa9todo de piadas possui diferentes intensidades de precis\xc3\xa3o e dano.',
  'As piadas sonoras afetam todos os Cogs, mas acordam qualquer Cog iscado.',
  'Derrotar os Cogs em ordem estrat\xc3\xa9gica pode aumentar bastante as suas chances de vencer as batalhas.',
@@ -8067,12 +8062,12 @@ TipDict = {
  'As armadilhas s\xc3\xb3 ter\xc3\xa3o utilidade se voc\xc3\xaa ou seus amigos coordenarem o uso de iscas na batalha.',
  'As iscas de alto n\xc3\xadvel t\xc3\xaam menos probabilidade de falhar.',
  'As piadas de n\xc3\xadvel baixo oferecem menor precis\xc3\xa3o contra os Cogs de alto n\xc3\xadvel.',
- 'Os Cogs n\xc3\xa3o podem atacar depois que forem \'iscados\' para a batalha.',
+ "Os Cogs n\xc3\xa3o podem atacar depois que forem 'iscados' para a batalha.",
  'Quando voc\xc3\xaa e seus amigos dominam um Edif\xc3\xadcio de Cogs, voc\xc3\xaas s\xc3\xa3o recompensados com retratos dentro do Edif\xc3\xadcio dos Toons recuperado.',
  'Usar uma piada Toonar em um Toon que possua um Ris\xc3\xb4metro cheio n\xc3\xa3o render\xc3\xa1 nenhuma experi\xc3\xaancia de Toonar.',
  'Os Cogs ficar\xc3\xa3o atordoados por uns momentos quando atingidos por alguma. Assim, aumentam as chances de outras piadas da mesma rodada os atingirem.',
  'As Piadas cadentes t\xc3\xaam menos chance de atingir algu\xc3\xa9m, mas sua precis\xc3\xa3o aumenta quando os Cogs j\xc3\xa1 tiverem sido atingidos por outra piada na mesma rodada.',
- 'Quando voc\xc3\xaa j\xc3\xa1 tiver derrotado um n\xc3\xbamero suficiente de Cogs, use o \'Radar de Cogs\' clicando nos \xc3\xadcones de Cogs da p\xc3\xa1gina Galeria de Cogs do seu \xc3\x81lbum Toon.',
+ "Quando voc\xc3\xaa j\xc3\xa1 tiver derrotado um n\xc3\xbamero suficiente de Cogs, use o 'Radar de Cogs' clicando nos \xc3\xadcones de Cogs da p\xc3\xa1gina Galeria de Cogs do seu \xc3\x81lbum Toon.",
  'Durante uma batalha, voc\xc3\xaa tem como saber qual Cog os seus companheiros de equipe est\xc3\xa3o atacando; basta olhar para os travess\xc3\xb5es (-) e para os X.',
  'Durante uma batalha, os Cogs carregam uma luz que mostra sua sa\xc3\xbade: o verde significa saud\xc3\xa1vel e o vermelho, quase destru\xc3\xaddo.',
  'Na coisa, quatro Toons podem guerrear ao mesmo tempo.',
@@ -8082,8 +8077,7 @@ TipDict = {
  'Os Cogs tendem a atacar o Toon que lhes causou danos maiores.',
  'As piadas sonoras n\xc3\xa3o rendem danos extras contra Cogs iscados.',
  'Se voc\xc3\xaa esperar muito para atacar um Cog iscado, ele acordar\xc3\xa1. As iscas de n\xc3\xadvel mais alto t\xc3\xaam dura\xc3\xa7\xc3\xa3o maior.',
- 'H\xc3\xa1 lagos de pesca em cada rua de Toontown. Algumas ruas possuem peixes exclusivos.',
-    ),
+ 'H\xc3\xa1 lagos de pesca em cada rua de Toontown. Algumas ruas possuem peixes exclusivos.'),
 
   TIP_MINIGAME: (
  'Depois que voc\xc3\xaa preenche a sua jarra de balinhas, qualquer balinha que ganhar nos Jogos no bondinho cair\xc3\xa3o direto no seu banco.',
@@ -9496,7 +9490,7 @@ BossbotGolfSpotLeaving = 'Deixando Bola de Golfe'
 BossbotGolfSpotAdvice = 'Use as teclas para esquerda e direita se quiser girar.\nCtrl dispara.'
 BossbotRewardSpeech1 = 'N\xc3\xa3o! O Presidente do Conselho n\xc3\xa3o vai gostar disso.'
 BossbotRewardSpeech2 = 'Arrrggghhh!!!!'
-BossbotRTCongratulations = 'Voc\xc3\xaa conseguiu!  Voc\xc3\xaa rebaixou o Presidente!\aPegue estes bilhetes azuis que o Presidente deixou para tr\xc3\xa1s.\aCom eles, voc\xc3\xaa vai poder disparar contra Cogs em batalha.'''
+BossbotRTCongratulations = 'Voc\xc3\xaa conseguiu!  Voc\xc3\xaa rebaixou o Presidente!\aPegue estes bilhetes azuis que o Presidente deixou para tr\xc3\xa1s.\aCom eles, voc\xc3\xaa vai poder disparar contra Cogs em batalha.'
 BossbotRTLastPromotion = '\aUau, voc\xc3\xaa chegou ao n\xc3\xadvel %s com sua Roupa de Cog!\aOs Cogs n\xc3\xa3o conseguem promo\xc3\xa7\xc3\xb5es maiores do que essa.\aVoc\xc3\xaa n\xc3\xa3o pode mais atualizar sua Roupa de Cog, mas, certamente, poder\xc3\xa1 continuar trabalhando para a Resist\xc3\xaancia!'
 BossbotRTHPBoost = '\aVoc\xc3\xaa trabalhou bastante para a Resist\xc3\xaancia.\aO Conselho Toon decidiu lhe dar mais um ponto de Risada. Parab\xc3\xa9ns!'
 BossbotRTMaxed = '\aVejo que voc\xc3\xaa tem uma Roupa de Cog de n\xc3\xadvel %s. Impressionante!\aEm nome do Conselho Toon, agrade\xc3\xa7o por voltar para defender mais Toons!'
