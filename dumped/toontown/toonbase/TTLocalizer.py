@@ -1,28 +1,14 @@
-"""
-This module determines what language to run the game in
-and imports the appropriate language module.
-Import this module, not the individual language modules
-to use in the game.
-"""
-
-# Do not import panda modules because it is not downloaded until Phase 3
-# This file is in phase 2
 from pandac.libpandaexpressModules import *
 import string
 import types
 
 try:
-    # Client
-    # The Launcher will define config in the builtin namespace
-    # before importing this file
     language = getConfigExpress().GetString("language", "english")
     checkLanguage = getConfigExpress().GetBool("check-language", 0)
 except:
-    # AI
     language = simbase.config.GetString("language", "english")
     checkLanguage = simbase.config.GetBool("check-language", 0)
 
-# Ask what language we are running in. Returns a string.
 def getLanguage():
     return language
 
@@ -34,7 +20,7 @@ else:
     _languageModule = "toontown.toonbase.TTLocalizer_" + language
 
 print ("from " + _languageModule + " import *")
-from toontown.toonbase.TTLocalizerEnglish import *
+from toontown.toonbase.TTLocalizer_portuguese import *
 
 if checkLanguage:
     l = {}
