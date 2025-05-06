@@ -266,10 +266,10 @@ QuestsDefaultVisitQuestDialog = ('Ouvi falar que _toNpcName_ est\xc3\xa1 procura
 QuestsLocationArticle = ''
 
 def getLocalNum(num):
-	if (num <=9):
-		return str(num) + ''
-	else:
-		return str(num)
+        if (num <=9):
+                return str(num) + ''
+        else:
+                return str(num)
 
 QuestsItemNameAndNum = '%(num)s %(name)s'
 QuestsCogQuestProgress = '%(progress)s de %(numCogs)s derrotados'
@@ -890,7 +890,7 @@ QuestDialogDict = {160: {GREETING: '',
  3236: {QUEST: 'H\xc3\xa1 muitos Rob\xc3\xb4s da Lei por a\xc3\xad.\aVoc\xc3\xaa pode fazer sua parte para ajudar!\aDerrote 3 edif\xc3\xadcios de Rob\xc3\xb4s da Lei.'},
  3237: {QUEST: 'Bom trabalho naqueles edif\xc3\xadcios de Rob\xc3\xb4s da Lei!\aMas agora h\xc3\xa1 muitos Rob\xc3\xb4s Vendedores!\aDerrote 3 edif\xc3\xadcios de Rob\xc3\xb4s Vendedores e volte para buscar sua recompensa.'},
  3238: {QUEST: 'Ah n\xc3\xa3o! Um Cog \'Amizade F\xc3\xa1cil\' roubou a Chave para os '+lDaisyGardens+'!\aVeja se voc\xc3\xaa consegue recuper\xc3\xa1-la.\aLembre-se, o Amizade F\xc3\xa1cil s\xc3\xb3 pode ser encontrado dentro dos edif\xc3\xadcios de Rob\xc3\xb4s Vendedores.'},
- 3239: {QUEST: 'Voc\xc3\xaa achou uma chave, tudo bem, mas esta n\xc3\xa3o \xc3\xa9 a correta!\aPrecisamos da chave dos '+lDaisyGardens+'.\aContinue de olho! Ela ainda est\xc3\xa1 com algum Cog \'Amizade F\xc3\xa1cil\'!'},	
+ 3239: {QUEST: 'Voc\xc3\xaa achou uma chave, tudo bem, mas esta n\xc3\xa3o \xc3\xa9 a correta!\aPrecisamos da chave dos '+lDaisyGardens+'.\aContinue de olho! Ela ainda est\xc3\xa1 com algum Cog \'Amizade F\xc3\xa1cil\'!'},        
  3242: {QUEST: 'Ah n\xc3\xa3o! Um Cog Macaco velho roubou a Chave para os '+lDaisyGardens+'!\aVeja se voc\xc3\xaa consegue recuper\xc3\xa1-la.\aLembre-se, os Macacos-velhos s\xc3\xb3 podem ser encontrados dentro dos edif\xc3\xadcios de Rob\xc3\xb4s da Lei.'},
  3243: {QUEST: 'Voc\xc3\xaa achou uma chave, tudo bem, mas esta n\xc3\xa3o \xc3\xa9 a correta!\aPrecisamos da chave dos '+lDaisyGardens+'.\aContinue de olho! Ela ainda est\xc3\xa1 com algum Cog Macaco velho!'},
  3240: {QUEST: 'Acabei de saber que um Macaco velho roubou um saco de ra\xc3\xa7\xc3\xa3o para p\xc3\xa1ssaros de _toNpcName_ .\aDerrote Macacos velhos at\xc3\xa9 recuperar a ra\xc3\xa7\xc3\xa3o para p\xc3\xa1ssaros do Flor\xc3\xaancio e lev\xc3\xa1-la de volta para ele.\aOs Macacos velhos s\xc3\xb3 s\xc3\xa3o encontrados dentro de edif\xc3\xadcios de Rob\xc3\xb4s da Lei._where_',
@@ -3088,7 +3088,7 @@ CogsIncExt = ', Ltda.'
 CogsIncModifier = '%s' + CogsIncExt
 CogsInc = Cogs.upper() + CogsIncExt
 CogdominiumsExt = ' Escrit\xc3\xb3rios de Campo'
-Cogdominiums = Cog.upper() + CogdominiumsExt	       
+Cogdominiums = Cog.upper() + CogdominiumsExt               
 DoorKnockKnock = 'Toc, toc.'
 DoorWhosThere = 'Quem \xc3\xa9?'
 DoorWhoAppendix = ' Quem?'
@@ -3922,27 +3922,30 @@ SillyPhase1Chatter = ['Se n\xc3\xa3o viu o Medidor de Bobagens, v\xc3\xa1 para o
     'Toontown fica bobinha durante o dia!',
     'Porque as ondas de bobagem na batalha aumentam o n\xc3\xadvel de bobagem de Toontown!',
     'Os objetos da rua est\xc3\xa3o come\xc3\xa7ando a ganhar vida!',
-    'Eu vi um hidrante se movendo na Rua da Bobagem!']
-SillyPhase2Chatter = ['O N\xc3\xadvel de Bobagem continua subindo!',
-  'O Medidor de Bobagens subiu demais e pirou!',
-  'Algu\xc3\xa9m viu uma lixeira se movendo na Rua do Bordo!',
-  'Muitos hidrantes na Rua da Bobagem ganharam vida!',
-  'Uma caixa de correio na Travessa do Farol endoidou!',
-  'V\xc3\xa1 ver o Medidor de Bobagens no Prefeitoona!',
-  'Continue causando aquelas ondas de bobagem!']
+    'Eu vi um hidrante se movendo na Rua da Bobeira!']
+SillyPhase2Chatter = ['N\xc3\xadveis bobos ainda estão subindo!', 
+'O medidor de bobagem subiu mais e ficou mais louco!',
+'Algu\xc3\xa9m viu uma lata de lixo se movendo na Rua das Amendoeiras!', 
+'Muitos hidrantes na Rua da Bobeira ganharam vida!',
+'Uma caixa de correio na Travessa do Farol enlouqueceu!', 
+'V\xc3\xa1 ver o medidor de bobagem na Prefeitoona!', 
+'Continue causando esses surtos bobos!']
 SillyPhase3Chatter = ['Os Cogs odiaram o fato de Toontown ter se tornado t\xc3\xa3o boba!',
   'Fique de olhos abertos para Invas\xc3\xb5es de Cogs!',
   'As Invas\xc3\xb5es de Cogs baixaram o n\xc3\xadvel de bobagem!',
   'O Medidor de Bobagens caiu ap\xc3\xb3s as Invas\xc3\xb5es de Cogs!',
   'Agora todas as ruas de Toontown t\xc3\xaam objetos animados!',
   'Toontown est\xc3\xa1 mais bobinho do que nunca!']
-SillyPhase4Chatter = ['Os hidrantes tornam seus Itens de Esguicho mais eficazes!',
-  'As caixas de correio pegam suas Piadas de lan\xc3\xa7amentos para um algo especial!',
-  'Aquelas Lixeiras doidas podem dar a voc\xc3\xaa um Toonar!',
-  'Os objetos da rua podem lhe ajudar na batalha!',
-  'Eu sei que vamos recuperar o Medidor de Bobagens logo!',
-  'Aproveite o Toontown bobinho!']
-for chatter in [MickeyChatter, DonaldChatter, MinnieChatter, GoofyChatter]:
+SillyPhase4Chatter = ['Os hidrantes de bombeiro tornam suas piadas de Super esguicho!',
+  'As caixas de correio proporcionam suas piadas de super lan\xc3\xa7amento numa entrega especial!',
+  'Essas latas de lixo malucas podem ajudar a dar um acresssimo no seu Super Toonar',
+  'Objetos na rua podem ajudar voc\xc3\xaa na batalha!',
+  'S\xc3\xb3 sei que em breve o Medidor de Bobagem ser\xc3\xa1 reativado!',
+  'Aproveite o Toontown mais bobo!']
+for chatter in [MickeyChatter, 
+ DonaldChatter, 
+ MinnieChatter, 
+ GoofyChatter]:
     chatter[0].extend(SharedChatterGreetings)
     chatter[1].extend(SharedChatterComments)
     chatter[2].extend(SharedChatterGoodbyes)
@@ -5191,8 +5194,8 @@ PetTutorialPage2 = "Use a nova \xc3\xa1rea 'Bichinhos' no menu Chat r\xc3\xa1pid
 PetTutorialPage3 = 'Compre novos truques de Rabiscos no Cat\xc3\xa1logo da Clarabela. Truques melhores produzem Toonar melhores!'
 
 def getPetGuiAlign():
-	from panda3d.core import TextNode
-	return TextNode.ACenter
+        from panda3d.core import TextNode
+        return TextNode.ACenter
 
 
 GardenTutorialTitle1 = 'Jardinagem'
@@ -8207,44 +8210,44 @@ TipDict = {TIP_NONE: (''),
                'Quando o seu balde de pesca estiver cheio, venda os peixes para os pescadores dos p\xc3\xa1tios.',
                'Venda os peixes para o pescador ou dentro das Lojas de Animais.',
                'As varas de pescar mais fortes conseguem pegar peixes mais pesados, mas custam mais balinhas.',
-	       'Voc\xc3\xaa pode comprar varas de pescar mais fortes no Cat\xc3\xa1logo.',	
-	       'Os peixes mais pesados valem mais balinhas na Loja de animais.',	
-	       'Os peixes raros valem mais balinhas na Loja de animais.',	
-	       '\xc3\x80s vezes, voc\xc3\xaa consegue encontrar bolsas de balinhas durante a pesca.',	
-	       'Algumas Tarefas Toon exigem que voc\xc3\xaa pesque itens fora dos lagos.',	
-	       'Os lagos de pesca dos p\xc3\xa1tios possuem peixes diferentes dos lagos das ruas.',	
-	       'Alguns peixes s\xc3\xa3o realmente raros. Continue pescando at\xc3\xa9 pegar todos!',	
-	       'O lago da sua propriedade possui peixes que s\xc3\xb3 podem ser encontrados l\xc3\xa1.',	
-	       'Para cada dez esp\xc3\xa9cies pescadas, voc\xc3\xaa ganhar\xc3\xa1 um trof\xc3\xa9u de pesca!',
-	       'Voc\xc3\xaa pode ver qual peixe pescou no \xc3\x81lbum Toon.',
-	       'Alguns trof\xc3\xa9us de pesca o recompensam com um Acr\xc3\xa9scimo de risadas.',
-	       'A pesca \xc3\xa9 uma boa maneira de ganhar mais balinhas.',
-	       'Adote um Rabisco na Loja de Animais!',
-	       'As lojas de animais t\xc3\xaam Rabiscos novos para vender todos os dias.',
-	       'Visite as lojas de animais todos os dias para ver que Rabiscos novos elas t\xc3\xaam.',
-	       'H\xc3\xa1 diferentes Rabiscos para ado\xc3\xa7\xc3\xa3o nos diferentes bairros.',
-	       'Mostre o seu carr\xc3\xa3o e d\xc3\xaa uma turbinada no seu limite de Risadas no Aut\xc3\xb3dromo do Pateta.',
-	       'Entre no Aut\xc3\xb3dromo do Pateta pelo t\xc3\xbanel em forma de pneu no p\xc3\xa1tio do Centro de Toontown.',
-	       'Ganhe pontos de Risada no Aut\xc3\xb3dromo do Pateta.',
-	       'O Aut\xc3\xb3dromo do Pateta tem seis pistas de corrida diferentes.'),
+               'Voc\xc3\xaa pode comprar varas de pescar mais fortes no Cat\xc3\xa1logo.',        
+               'Os peixes mais pesados valem mais balinhas na Loja de animais.',        
+               'Os peixes raros valem mais balinhas na Loja de animais.',        
+               '\xc3\x80s vezes, voc\xc3\xaa consegue encontrar bolsas de balinhas durante a pesca.',        
+               'Algumas Tarefas Toon exigem que voc\xc3\xaa pesque itens fora dos lagos.',        
+               'Os lagos de pesca dos p\xc3\xa1tios possuem peixes diferentes dos lagos das ruas.',        
+               'Alguns peixes s\xc3\xa3o realmente raros. Continue pescando at\xc3\xa9 pegar todos!',        
+               'O lago da sua propriedade possui peixes que s\xc3\xb3 podem ser encontrados l\xc3\xa1.',        
+               'Para cada dez esp\xc3\xa9cies pescadas, voc\xc3\xaa ganhar\xc3\xa1 um trof\xc3\xa9u de pesca!',
+               'Voc\xc3\xaa pode ver qual peixe pescou no \xc3\x81lbum Toon.',
+               'Alguns trof\xc3\xa9us de pesca o recompensam com um Acr\xc3\xa9scimo de risadas.',
+               'A pesca \xc3\xa9 uma boa maneira de ganhar mais balinhas.',
+               'Adote um Rabisco na Loja de Animais!',
+               'As lojas de animais t\xc3\xaam Rabiscos novos para vender todos os dias.',
+               'Visite as lojas de animais todos os dias para ver que Rabiscos novos elas t\xc3\xaam.',
+               'H\xc3\xa1 diferentes Rabiscos para ado\xc3\xa7\xc3\xa3o nos diferentes bairros.',
+               'Mostre o seu carr\xc3\xa3o e d\xc3\xaa uma turbinada no seu limite de Risadas no Aut\xc3\xb3dromo do Pateta.',
+               'Entre no Aut\xc3\xb3dromo do Pateta pelo t\xc3\xbanel em forma de pneu no p\xc3\xa1tio do Centro de Toontown.',
+               'Ganhe pontos de Risada no Aut\xc3\xb3dromo do Pateta.',
+               'O Aut\xc3\xb3dromo do Pateta tem seis pistas de corrida diferentes.'),
 TIP_STREET: ('H\xc3\xa1 quatro tipos de Cogs: Rob\xc3\xb4s da Lei, Rob\xc3\xb4s Mercen\xc3\xa1rios, Rob\xc3\xb4s Vendedores e Rob\xc3\xb4s-chefe.',
              'Cada M\xc3\xa9todo de piadas possui diferentes intensidades de precis\xc3\xa3o e dano.',
-	     'As piadas sonoras afetam todos os Cogs, mas acordam qualquer Cog iscado.',
-	     'Derrotar os Cogs em ordem estrat\xc3\xa9gica pode aumentar bastante as suas chances de vencer as batalhas.',
-	     'O M\xc3\xa9todo de piadas Toonar permite que voc\xc3\xaa atinja outros Toons na batalha.',
-	     'Os pontos de experi\xc3\xaancia das piadas s\xc3\xa3o dobrados durante uma Invas\xc3\xa3o de Cogs!',
-	     'V\xc3\xa1rios Toons podem se reunir em equipes e usar o mesmo M\xc3\xa9todo de piadas na batalha para conseguir danos extras aos Cogs.',
-	     'Na batalha, as piadas s\xc3\xa3o usadas na ordem de cima para baixo, conforme exibido no Menu de piadas.',
-	     'A fileira de luzes circulares sobre os elevadores do Edif\xc3\xadcio dos Cogs mostram quantos andares haver\xc3\xa1 l\xc3\xa1 dentro.',
+             'As piadas sonoras afetam todos os Cogs, mas acordam qualquer Cog iscado.',
+             'Derrotar os Cogs em ordem estrat\xc3\xa9gica pode aumentar bastante as suas chances de vencer as batalhas.',
+             'O M\xc3\xa9todo de piadas Toonar permite que voc\xc3\xaa atinja outros Toons na batalha.',
+             'Os pontos de experi\xc3\xaancia das piadas s\xc3\xa3o dobrados durante uma Invas\xc3\xa3o de Cogs!',
+             'V\xc3\xa1rios Toons podem se reunir em equipes e usar o mesmo M\xc3\xa9todo de piadas na batalha para conseguir danos extras aos Cogs.',
+             'Na batalha, as piadas s\xc3\xa3o usadas na ordem de cima para baixo, conforme exibido no Menu de piadas.',
+             'A fileira de luzes circulares sobre os elevadores do Edif\xc3\xadcio dos Cogs mostram quantos andares haver\xc3\xa1 l\xc3\xa1 dentro.',
              'Clique em um Cog para ver mais detalhes.', 
-	     'Usar piadas de alto n\xc3\xadvel contra Cogs de baixo n\xc3\xadvel n\xc3\xa3o lhe render\xc3\xa1 nenhum ponto de experi\xc3\xaancia.',
-	     'As piadas que rendem experi\xc3\xaancia possuem um fundo azul no Menu de piadas da batalha.',
-	     'A experi\xc3\xaancia de piadas \xc3\xa9 multiplicada quando usada dentro dos Edif\xc3\xadcios dos Cogs. Os andares mais altos t\xc3\xaam multiplicadores maiores.',
-	     'Quando um Cog \xc3\xa9 derrotado, cada Toon daquela rodada recebe cr\xc3\xa9ditos de Cogs depois que a batalha termina.',
-	     'Cada rua de Toontown possui n\xc3\xadveis e tipos diferentes de Cogs.',
-	     'As cal\xc3\xa7adas s\xc3\xa3o locais seguros, sem Cogs.',
+             'Usar piadas de alto n\xc3\xadvel contra Cogs de baixo n\xc3\xadvel n\xc3\xa3o lhe render\xc3\xa1 nenhum ponto de experi\xc3\xaancia.',
+             'As piadas que rendem experi\xc3\xaancia possuem um fundo azul no Menu de piadas da batalha.',
+             'A experi\xc3\xaancia de piadas \xc3\xa9 multiplicada quando usada dentro dos Edif\xc3\xadcios dos Cogs. Os andares mais altos t\xc3\xaam multiplicadores maiores.',
+             'Quando um Cog \xc3\xa9 derrotado, cada Toon daquela rodada recebe cr\xc3\xa9ditos de Cogs depois que a batalha termina.',
+             'Cada rua de Toontown possui n\xc3\xadveis e tipos diferentes de Cogs.',
+             'As cal\xc3\xa7adas s\xc3\xa3o locais seguros, sem Cogs.',
              'Nas ruas, as portas laterais contam piadas do tipo toc-toc quando voc\xc3\xaa se aproxima delas.',
- 	     'Algumas Tarefas Toon treinam voc\xc3\xaa em novos M\xc3\xa9todos de piadas. Voc\xc3\xaa s\xc3\xb3 pode escolher seis dos sete m\xc3\xa9todos, portanto, escolha direito!',
+              'Algumas Tarefas Toon treinam voc\xc3\xaa em novos M\xc3\xa9todos de piadas. Voc\xc3\xaa s\xc3\xb3 pode escolher seis dos sete m\xc3\xa9todos, portanto, escolha direito!',
              'As armadilhas s\xc3\xb3 ter\xc3\xa3o utilidade se voc\xc3\xaa ou seus amigos coordenarem o uso de iscas na batalha.',
              'As iscas de alto n\xc3\xadvel t\xc3\xaam menos probabilidade de falhar.',
              'As piadas de n\xc3\xadvel baixo oferecem menor precis\xc3\xa3o contra os Cogs de alto n\xc3\xadvel.',
@@ -8268,7 +8271,7 @@ TIP_MINIGAME: ('Depois que voc\xc3\xaa preenche a sua jarra de balinhas, qualque
                'Voc\xc3\xaa pode usar as teclas de seta em vez de o mouse no Jogo no bondinho \'Acompanhe a Minnie\'.',
                'No Jogo do canh\xc3\xa3o, voc\xc3\xaa pode usar as teclas de seta para mover o seu canh\xc3\xa3o e pressionar a tecla \'Control\' para atirar.',
                'No Jogo dos an\xc3\xa9is, voc\xc3\xaa ganha pontos extras quando todo o grupo consegue nadar com sucesso atrav\xc3\xa9s dos an\xc3\xa9is.',
-	       'Um jogo perfeito de Acompanhe a Minnie dobrar\xc3\xa1 seus pontos.',
+               'Um jogo perfeito de Acompanhe a Minnie dobrar\xc3\xa1 seus pontos.',
                'No Cabo de guerra, voc\xc3\xaa ganha mais balinhas se jogar contra um Cog forte.',
                'A dificuldade dos Jogos no bondinho varia conforme o bairro; os do Centro de Toontown s\xc3\xa3o os mais f\xc3\xa1ceis, e os da Sonhol\xc3\xa2ndia do Donald s\xc3\xa3o os mais dif\xc3\xadceis.',
                'Certos Jogos no bondinho s\xc3\xb3 podem ser em grupo.'),
@@ -9025,7 +9028,7 @@ def getRecipeBeanText(beanTuple):
                 retval += ', %s' % BeanColorWords[beanTuple[index]]
 
     return retval
-    
+
 GardenTextMagicBeans = 'Balas M\xc3\xa1gicas'
 GardenTextMagicBeansB = 'Outras Balas'
 GardenSpecialDiscription = 'Este texto deveria explicar como usar certo especial do jardim'
@@ -9045,8 +9048,8 @@ def isVowelStart(str):
     retval = False
     if str and len(str)>0:
         vowels = ['A',
-	 'E', 
-	 'I',
+         'E', 
+         'I',
          'O',
          'U']
         firstLetter = str.upper()[0:1]
