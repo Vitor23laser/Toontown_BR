@@ -3,10 +3,10 @@ import string
 import types
 
 try:
-    language = getConfigExpress().GetString("language", "english")
+    language = getConfigExpress().GetString("language", "portuguese")
     checkLanguage = getConfigExpress().GetBool("check-language", 0)
 except:
-    language = simbase.config.GetString("language", "english")
+    language = simbase.config.GetString("language", "portuguese")
     checkLanguage = simbase.config.GetBool("check-language", 0)
 
 def getLanguage():
