@@ -266,10 +266,10 @@ QuestsDefaultVisitQuestDialog = ('Ouvi falar que _toNpcName_ está procurando po
 QuestsLocationArticle = ''
 
 def getLocalNum(num):
-        if (num <=9):
-                return str(num) + ''
-        else:
-                return str(num)
+	if (num <=9):
+		return str(num) + ''
+	else:
+		return str(num)
 
 QuestsItemNameAndNum = '%(num)s %(name)s'
 QuestsCogQuestProgress = '%(progress)s de %(numCogs)s derrotados'
@@ -890,7 +890,7 @@ QuestDialogDict = {160: {GREETING: '',
  3236: {QUEST: 'Há muitos Robôs da Lei por aí.\x07Você pode fazer sua parte para ajudar!\x07Derrote 3 edifícios de Robôs da Lei.'},
  3237: {QUEST: 'Bom trabalho naqueles edifícios de Robôs da Lei!\x07Mas agora há muitos Robôs Vendedores!\x07Derrote 3 edifícios de Robôs Vendedores e volte para buscar sua recompensa.'},
  3238: {QUEST: "Ah não! Um Cog 'Amizade Fácil' roubou a Chave para os " + lDaisyGardens + '!\x07Veja se você consegue recuperá-la.\x07Lembre-se, o Amizade Fácil só pode ser encontrado dentro dos edifícios de Robôs Vendedores.'},
- 3239: {QUEST: 'Você achou uma chave, tudo bem, mas esta não é a correta!\x07Precisamos da chave dos ' + lDaisyGardens + ".\x07Continue de olho! Ela ainda está com algum Cog 'Amizade Fácil'!"},        
+ 3239: {QUEST: 'Você achou uma chave, tudo bem, mas esta não é a correta!\x07Precisamos da chave dos ' + lDaisyGardens + ".\x07Continue de olho! Ela ainda está com algum Cog 'Amizade Fácil'!"},	
  3242: {QUEST: 'Ah não! Um Cog Macaco velho roubou a Chave para os ' + lDaisyGardens + '!\x07Veja se você consegue recuperá-la.\x07Lembre-se, os Macacos-velhos só podem ser encontrados dentro dos edifícios de Robôs da Lei.'},
  3243: {QUEST: 'Você achou uma chave, tudo bem, mas esta não é a correta!\x07Precisamos da chave dos ' + lDaisyGardens + '.\x07Continue de olho! Ela ainda está com algum Cog Macaco velho!'},
  3240: {QUEST: 'Acabei de saber que um Macaco velho roubou um saco de ração para pássaros de _toNpcName_ .\x07Derrote Macacos velhos até recuperar a ração para pássaros do Florêncio e levá-la de volta para ele.\x07Os Macacos velhos só são encontrados dentro de edifícios de Robôs da Lei._where_',
@@ -4609,7 +4609,7 @@ PartyCogRewardBonus = '\nVocê ganhou %d balinhas adicionais%s porque sua equipe
 PartyCogJellybeanPlural = 's'
 PartyCogSignNote = 'PONTO MÁXIMO\n%s\n%d'
 PartyCogTitle = 'Cog-de-Guerra'
-PartyCogInstructions = 'Lança tortas nos cogs para afastá-los da sua equipe.' + "Quando o momento acabar, a equipe com mais cogs do outro lado vence!" + '\n\nPressiona a tecla CTRL para lançar as Tortas Inteiras de Creme. E mova-se com as SETAS do teclado.'
+PartyCogInstructions = 'Jogue tortas nos cogs para afastá-los da sua equipe.' + "Quando o momento acabar, a equipe com mais cogs do outro lado vence!" + '\n\nLan\xc3\x07aa com a tecla CONTROL. Mova-se com as SETAS do teclado.'
 PartyCogDistance = '%d pés'
 PartyCogTimeUp = "O momento acabou!"
 PartyCogGuiScoreLabel = 'PONTUAÇÃO'
@@ -4633,11 +4633,7 @@ CalendarPartyGo = 'Festejar!'
 CalendarPartyFinished = 'Acabou...'
 CalendarPartyCancelled = 'Cancelado.'
 CalendarPartyNeverStarted = 'Nunca Aconteceu.'
-PartiesPageTitle = 'Festas'
-PartiesPageHostTab = 'Organização'
-PartiesPageInvitedTab = 'Convites'
-PartiesPageTitleHost = 'Minha Próxima Festa'
-PartiesPageTitleInvited = 'Convites para Festas'
+NPCFriendPanelRemaining = 'Restantes %s'
 MapPageTitle = 'Mapa'
 MapPageBackToPlayground = 'Voltar para o pátio'
 MapPageBackToCogHQ = 'Voltar para o Quartel de Cogs'
@@ -5183,8 +5179,8 @@ PetTutorialPage2 = "Use a nova área 'Bichinhos' no menu Chat rápido para fazer
 PetTutorialPage3 = 'Compre novos truques de Rabiscos no Catálogo da Clarabela. Truques melhores produzem Toonar melhores!'
 
 def getPetGuiAlign():
-        from pandac.PandaModules import TextNode
-        return TextNode.ACenter
+	from pandac.PandaModules import TextNode
+	return TextNode.ACenter
 
 
 GardenTutorialTitle1 = 'Jardinagem'
@@ -5908,7 +5904,7 @@ for accessoryId in list(CatalogAccessoryItemGlobals.AccessoryTypes.keys()):
     if accessoryInfo[3]:
         AwardManagerAccessoryNames[accessoryId] = AccessoryNamePrefix[accessoryInfo[0]] + accessoryStyleDescription[accessoryInfo[1]]
     AccessoryTypeNames[accessoryId] = accessoryStyleDescription[accessoryInfo[1]]
-CamisaStylesDescriptions = {'bss1': 'básica',
+ShirtStylesDescriptions = {'bss1': 'básica',
  'bss2': 'uma listra',
  'bss3': 'colarinho',
  'bss4': 'duas listras',
@@ -5962,6 +5958,11 @@ CamisaStylesDescriptions = {'bss1': 'básica',
  'hw_ss2': 'Abóbora de Halloween',
  'hw_ss3': 'Vampiro de Halloween',
  'hw_ss4': 'Tartaruga de Halloween',
+ 'hw_ss5': 'Abelha de Halloween', 
+ 'hw_ss6': 'Pirata de Halloween',
+ 'hw_ss7': 'Super Toon de Haloween',
+ 'hw_ss8': 'Vampiro sem capa de Halloween',
+ 'hw_ss9': 'Dinossauro de Halloween',
  'wh_ss1': 'Feriado de Inverno 1',
  'wh_ss2': 'Feriado de Inverno 2',
  'wh_ss3': 'Feriado de Inverno 3',
@@ -5975,6 +5976,7 @@ CamisaStylesDescriptions = {'bss1': 'básica',
  'vd_ss7': 'Dia dos namorados 2010, vermelho com asas brancas',
  'sd_ss1': 'Dia de São Patrício, camisa com trevo-de-quatro-folhas',
  'sd_ss2': 'Dia de São Patrício, camisa com pote de ouro',
+ 'sd_ss3': 'Camisa de Toon verde de Idos de Março',
  'tc_ss1': 'Concurso de Camiseta, Colete de Pesca',
  'tc_ss2': 'Concurso de Camiseta, Aquário',
  'tc_ss3': 'Concurso de Camiseta, Pegada',
@@ -6012,12 +6014,36 @@ CamisaStylesDescriptions = {'bss1': 'básica',
  'sa_ss21': 'Camisa de Bondinho 1',
  'sa_ss22': 'Camisa de Bondinho 2',
  'sa_ss23': 'Camisa de Inverno 1',
- 'sa_ss24': 'Camisa de Fantasia de Halloween 3',
- 'sa_ss25': 'Camisa de Fantasia de Halloween 4',
+ 'sa_ss24': 'Camisa de Esqueleto de Halloween 3',
+ 'sa_ss25': 'Camisa de Aranha de Halloween 4',
  'sa_ss26': 'Camisa de Maioria de Cogs Derrotados',
  'sa_ss27': 'Camisa de Maioria de V.P.s Derrotados',
  'sa_ss28': 'Camisa de Esmagador do Robô Vendedor',
- 'sa_ss31': 'Camisa de Corrida 3', 
+ 'sa_ss31': 'Camisa de Corrida 3',
+ 'sa_ss32': 'Camisa de Pesca 4',
+ 'sa_ss33': 'Camisa de Golfe 3',
+ 'sa_ss34': 'Camisa de Maioria de Cogs Derrotados 2',
+ 'sa_ss35': 'Camisa de Corrida 4',
+ 'sa_ss36': 'Camisa de Salvador de Edifícios 3',
+ 'sa_ss37': 'Camisa de Bondinho 3',
+ 'sa_ss38': 'Camisa de Pesca 5',
+ 'sa_ss39': 'Camiseta de Golfe 4',
+ 'sa_ss40': 'Camisa de Bruxa da Lua de Halloween',
+ 'sa_ss41': 'Camisa de Trenó do Feriado de Inverno',
+ 'sa_ss42': 'Camisa de Lua Maluca de Halloween',
+ 'sa_ss43': 'Camisa de Luva de Inverno do Feriado de Inverno',
+ 'sa_ss44': 'Camisa de Pesca 6',
+ 'sa_ss45': 'Camisa de Pesca 7',
+ 'sa_ss46': 'Camiseta de Golfe 5',
+ 'sa_ss47': 'Camisa de Corrida 5',
+ 'sa_ss48': 'Camisa de Corrida 6',
+ 'sa_ss49': 'Camisa de Maioria de Cogs Derrotados 3',
+ 'sa_ss50': 'Camisa de Maioria de Cogs Derrotados 4',
+ 'sa_ss51': 'Camisa de Bondinho 4',
+ 'sa_ss52': 'Camisa de Bondinho 5',
+ 'sa_ss53': 'Camisa de Salvador de Edifícios 4',
+ 'sa_ss54': 'Camisa de Salvador de Edifícios 5',
+ 'sa_ss55': 'Camisa de Aniversário',
  'sc_1': 'Camisa de Cientista Top 1',
  'sc_2': 'Camisa de Cientista Top 2',
  'sc_3': 'Camisa de Cientista Top 3 ',
@@ -6025,7 +6051,7 @@ CamisaStylesDescriptions = {'bss1': 'básica',
  'sil_2': 'Camisa de Lixeira Boba',
  'sil_3': 'Camisa de Laboratório Tonto',
  'sil_4': 'Camisa de Hidrante Bobo',
- 'sil_5': 'Camisa de Medidor de Bobagem',
+ 'sil_5': 'Camisa de Assobio do Medidor de Bobagem',
  'sil_6': 'Camisa de Esmaga Cog',
  'sil_7': 'Camisa de Festa da Vitória 1',
  'sil_8': 'Camisa de Festa da Vitória 2',
@@ -6050,7 +6076,7 @@ BottomStylesDescriptions = {'bbs1': 'básico com bolsos',
  'c_bs1': 'Laranja com listras laterais azuis',
  'c_bs2': 'Azul com listras e pregas douradas',
  'c_bs5': 'Listras verdes - série 7',
- 'sd_bs1': 'Shorts de Duende de São Patrício',
+ 'sd_bs1': 'Shorts de Dia de São Patrício',
  'pj_bs1': 'Calça de Pijama de banana azul',
  'pj_bs2': 'Calça de Pijama de chifre vermelho',
  'pj_bs3': 'Calça de Pijama de óculos roxos',
@@ -6058,6 +6084,11 @@ BottomStylesDescriptions = {'bbs1': 'básico com bolsos',
  'wh_bs2': 'Shorts de Feriado de Inverno Estilo 2',
  'wh_bs3': 'Shorts de Feriado de Inverno Estilo 3',
  'wh_bs4': 'Shorts de Feriado de Inverno Estilo 4',
+ 'hw_bs1': 'Shorts de Abelha de Halloween masculino',
+ 'hw_bs2': 'Shorts de Pirata de Halloween Masculino',
+ 'hw_bs5': 'Shorts de SuperToon de Halloween masculino',
+ 'hw_bs6': 'Shorts de Vampiro sem capa de Halloween masculino',
+ 'hw_bs7': 'Shorts de Dinossauro de Halloween masculino',
  'gsk1': 'básica',
  'gsk2': 'bolinhas (especial)',
  'gsk3': 'listras verticais',
@@ -6076,6 +6107,7 @@ BottomStylesDescriptions = {'bbs1': 'básico com bolsos',
  'vd_gs3': 'Saia de brim azul com coração verde e vermelho',
  'c_gsk4': 'Saia de arco-íris - Série 3',
  'sd_gs1': 'Shorts de dia de São Patrício',
+ 'sd_gs2': 'Saia de Toon Verde de Ido de Março',
  'c_gsk5': 'Saias de vaqueira 1',
  'c_gsk6': 'Saias de vaqueira 2',
  'c_bs3': 'Shorts de caubói 1',
@@ -6103,7 +6135,41 @@ BottomStylesDescriptions = {'bbs1': 'básico com bolsos',
  'sa_gs2': 'Saia de Jardinagem',
  'sa_gs3': 'Saia de Festa',
  'sa_gs4': 'Saia de Corrida',
- 'sa_gs5': 'Saia de Verão'}
+ 'sa_gs5': 'Saia de Verão',
+ 'sa_gs6': 'Saia de Golfe 1',
+ 'sa_gs7': 'Saia de Abelha de Halloween',
+ 'sa_gs8': 'Saia de Super Toon de Halloween',
+ 'sa_gs9': 'Saia de Salvador de Edifícios 1',
+ 'sa_gs10': 'Saia de Bondinho 1',
+ 'sa_gs11': 'Saia de Esqueleto de Halloween',
+ 'sa_gs12': 'Saia de Esqueleto de Halloween',
+ 'sa_gs13': 'Shorts de Esmagador de Robô da Lei feminino',
+ 'sa_gs14': 'Shorts de Esmagador de Robô Vendedor feminino',
+ 'sa_gs15': 'Saia de Corrida 1',
+ 'sa_gs16': 'Saia de Golfe 2',
+ 'sa_gs17': 'Saia de Corrida 4',
+ 'sa_gs18': 'Saia de Golfe 3',
+ 'sa_gs19': 'Saia de Golfe 4',
+ 'sa_gs20': 'Saia de Corrida 5',
+ 'sa_gs21': 'Saia de Corrida 6',
+ 'sc_bs1': 'Camisa de Cientista da Parte de baixo 1 masculino ',
+ 'sc_bs2': 'Camisa de Cientista da Parte de baixo 2 masculino ',
+ 'sc_bs3': 'Camisa de Cientista da Parte de baixo 3 masculino ',
+ 'sc_gs1': 'Camisa de Cientista da Parte de baixo 1 feminino ',
+ 'sc_gs2': 'Camisa de Cientista da Parte de baixo 2 feminino ',
+ 'sc_gs3': 'Camisa de Cientista da Parte de baixo 2 feminino ',
+ 'sil_bs1': 'Short masculino Esmaga Cog Bobinho',
+ 'sil_gs1': 'Short feminino Esmaga Cog Bobinho',
+ 'hw_bs3': 'Shorts Vampiro de Halloween masculino',
+ 'hw_gs3': 'Shorts Vampiro de Halloween feminino',
+ 'hw_bs4': 'Shorts Tartaruga de Halloween masculino',
+ 'hw_gs4': 'Shorts Tartaruga de Halloween feminino',
+ 'hw_gs1': 'Shorts de Abelha de Halloween feminino',
+ 'hw_gs2': 'Shorts de Pirata de Halloween feminino',
+ 'hw_gs5': 'Shorts de SuperToon de Halloween feminino',
+ 'hw_gs6': 'Shorts de Vampiro sem capa de Halloween feminino',
+ 'hw_gs7': 'Shorts de Dinossauro de Halloween feminino',
+'hw_gsk1': 'Saia de Pirata de Halloween'}
 AwardMgrBoy = 'masculino'
 AwardMgrGirl = 'feminino'
 AwardMgrUnisex = 'unissex'
@@ -6112,19 +6178,19 @@ AwardMgrSaia = 'saia'
 AwardMgrCamisa = 'camisa'
 SpecialEventMailboxStrings = {1: 'Um item especial do conselho Toon',
  2: 'Prêmio do Torneio de Pesca de Melville',
- 3: 'Aqui está seu Prêmio do Torneio de Pesca de Billy Bud',
- 4: 'Aqui está seu prêmio pelo Convite de Abril do Bosque de Bolotas! Parabéns!',
- 5: 'Aqui está seu prêmio do Campeonato no Bosque de Bolotas! Parabéns!',
- 6: 'Aqui está seu prêmio da Extravaganza de Dando-Presentes! Parabéns!',
- 7: 'Aqui está seu prêmio do Dia da Maratona no Ano-Novo Top dos Toons! Parabéns!',
- 8: 'Aqui está seu prêmio do Fim de Semana Perfeita do Bondinho dos Jogos! Parabéns!',
- 9: 'Aqui está seu prêmio da Loucura do Bondinho dos Jogos! Parabéns!',
- 10: 'Aqui está seu prêmio do Fim de Semana do Grande Prémio! Parabéns!',
- 11: 'Aqui está seu prêmio da Corrida de Cavalos da Tarefa dos Toons! Parabéns!',
- 12: 'Aqui está seu prêmio da Maratona de Salvar Edifício! Parabéns!',
- 13: 'Aqui está seu prêmio do Torneio de Maioria dos Cogs Derrotados! Parabéns!',
- 14: 'Aqui está seu prêmio do Torneio de Maioria de V.P.s Derrotados! Parabéns!',
- 15: 'Aqui está seu prêmio Operação: Robô Vendedor Tempestade! Parabéns!'}
+ 3: 'Prêmio do Torneio de Pesca de Billy Bud',
+ 4: 'Prêmio pelo Convite de Abril do Bosque de Bolotas! Parabéns!',
+ 5: 'Prêmio do Campeonato no Bosque de Bolotas! Parabéns!',
+ 6: 'Prêmio da Extravaganza de Dando-Presentes! Parabéns!',
+ 7: 'Prêmio do Dia da Maratona no Ano-Novo Top dos Toons! Parabéns!',
+ 8: 'Prêmio do Fim de Semana Perfeita do Bondinho dos Jogos! Parabéns!',
+ 9: 'Prêmio da Loucura do Bondinho dos Jogos! Parabéns!',
+ 10: 'Prêmio do Fim de Semana do Grande Prémio! Parabéns!',
+ 11: 'Prêmio da Corrida de Cavalos da Tarefa dos Toons! Parabéns!',
+ 12: 'Prêmio da Maratona de Salvar Edifício! Parabéns!',
+ 13: 'Prêmio do Torneio de Maioria dos Cogs Derrotados! Parabéns!',
+ 14: 'Prêmio do Torneio de Maioria de V.P.s Derrotados! Parabéns!',
+ 15: 'Prêmio Operação: Robô Vendedor Tempestade! Parabéns!'}
 RentalHours = 'Horas de'
 RentalOf = 'De'
 RentalCannon = 'Canhões!'
@@ -6138,11 +6204,12 @@ NametagAction = 'Crachá de Ação'
 NametagFrilly = 'Crachá Chique'
 FurnitureYourOldCloset = 'seu armário velho'
 FurnitureYourOldBank = 'seu banco velho'
+FurnitureYourOldTrunk = 'seu baú velho'
 TrunkHatGui = 'Chapéus'
 TrunkGlassesGUI = 'Óculos'
 TrunkBackpackGUI = 'Mochilas'
 TrunkShoesGUI = 'Sapatos'
-ChatItemQuotes = "'%s'"
+ChatItemQuotes = '"%s"'
 FurnitureNames = {100: 'Poltrona',
  105: 'Poltrona',
  110: 'Cadeira',
@@ -6440,9 +6507,9 @@ ClothingTypeNames = {1001: 'Camisa do Fantasma',
  1125: 'Shorts de Vampiro',
  1126: 'Shorts de Toonosauro',
  1127: 'Saia de Pirata',
- 1304: 'Camisa da Letra O',
- 1305: 'Shorts da Letra O',
- 1306: 'Saia da Letra O',
+ 1304: 'Camisa de O',
+ 1305: 'Shorts do O',
+ 1306: 'Saia do O',
  1400: 'Camisa do Mateus',
  1401: 'Camisa da Jéssica',
  1402: 'Camisa da Marisa',
@@ -6476,38 +6543,38 @@ ClothingTypeNames = {1001: 'Camisa do Fantasma',
  1755: 'Shorts de Esmagador de Cogs',
  1756: 'Shorts de Esmagador de Cogs',
  1757: 'Camisa de Festa da Vitória',
- 1758: 'Camisa de Festa Relaxante',
- 1763: 'Camisa de Robô Vendedor Esmagado',
- 1764: 'Camisa de Maioria de V.P.s Detorrados',
- 1765: 'Camisa de Esmagador de Robô Vendedor',
- 1766: 'Shorts de Esmagador de Robô Vendedor',
- 1767: 'Shorts de Esmagador de Robô Vendedor',
- 1768: 'Camisa de Banco de Balinhas',
+ 1758: 'Camisa Relaxada da Vitória',
+ 1763: 'Smashed Sellbot Camisa',
+ 1764: 'Camisa de Maioria de V.P.s Derrotados',
+ 1765: 'Sellbot Smasher Camisa',
+ 1766: 'Sellbot Smasher Shorts',
+ 1767: 'Sellbot Smasher Shorts',
+ 1768: 'Camisa de Banco de Balas',
  1769: 'Camisa de Rabisco',
  1770: 'Camisa de Vampiro',
  1771: 'Camisa de Tartaruga',
- 1772: 'Shorts de de Vampiro ',
+ 1772: 'Shorts de Vampiro',
  1773: 'Shorts de Vampiro',
- 1774: 'Shorts de Tartaruga',
- 1775: 'Shorts de Tartaruga',
- 1776: 'Camisa de Pegar Conexão do Agitador',
+ 1774: 'Turtle Shorts',
+ 1775: 'Turtle Shorts',
+ 1776: 'Camisa de Fique conectado ao Agitador',
  1782: 'Camisa de Corrida 3',
  1783: 'Shorts de Corrida 1',
  1784: 'Saia de Corrida 1',
  1801: 'Camisa da Lua Maluca',
  1802: 'Camisa de Luvas de Neve'}
-AccessoryArticleNames = ('Chapéus',
- 'Óculos',
- 'Mochila',
- 'Sapatos',
- 'Chapéus',
- 'Óculos',
- 'Mochila',
- 'Sapatos',
- 'Chapéus',
- 'Óculos',
- 'Mochila',
- 'Sapatos')
+AccessoryArticleNames = ('Chapéu ',
+ 'Glasses',
+ 'Backpack',
+ 'Shoes',
+ 'Chapéu ',
+ 'Glasses',
+ 'Backpack',
+ 'Shoes',
+ 'Chapéu ',
+ 'Glasses',
+ 'Backpack',
+ 'Shoes')
 SurfaceNames = ('Papel de parede',
  'Moldura do teto',
  'Piso',
@@ -6802,10 +6869,7 @@ NPCToonNames = {20000: 'Tom Tutorial',
  2014: 'Vendedora Elétrica',
  2015: 'Vendedor Molenga',
  2016: 'Planejador de Festa Abóbora', 
- 2017: 'Planejadora de Festa Polly',
- 2018: 'Doutor SurLee',
- 2019: 'Doutor Escuro',
- 2020: 'Professor Prepostera',
+ 2017: 'Planejadora de Festa Polly', 
  2101: 'Dentista Daniel',
  2102: 'Delegada Délis',
  2103: 'Gatinho Funga-funga',
@@ -7979,12 +8043,12 @@ ClosetAreYouSureMessage = 'Você excluiu algumas roupas. Deseja mesmo excluí-la
 ClosetYes = lYes
 ClosetNo = lNo
 ClosetVerifyDelete = 'Excluir mesmo %s?'
-ClosetShirt = 'esta camisa'
+ClosetCamisa = 'esta camisa'
 ClosetShorts = 'este short'
-ClosetSkirt = 'esta saia'
-ClosetDeleteShirt = 'Excluir\ncamisa'
+ClosetSaia = 'esta saia'
+ClosetDeleteCamisa = 'Excluir\ncamisa'
 ClosetDeleteShorts = 'Excluir\nshort'
-ClosetDeleteSkirt = 'Excluir\nsaia'
+ClosetDeleteSaia = 'Excluir\nsaia'
 TrunkNotOwnerMessage = "Este não é o seu baú, mas você pode experimentar os acessórios."
 TrunkNotPaidMessage = 'Somente membros pagos podem usar acessórios, mas você pode experimentá-los.'
 TrunkAreYouSureMessage = 'Você excluiu alguns acessórios. Deseja mesmo excluí-los?'
@@ -8021,8 +8085,6 @@ def GetPossesive(name):
     else:
         possesive = name + ''
     return possesive
-    
-    
 PetTrait2descriptions = {'hungerThreshold': ('Sempre faminto', 
                      'Muito faminto',
                      'Às vezes faminto', 
@@ -8081,6 +8143,8 @@ FireworksJuly4Beginning = lToonHQ+': Bem-vindo à queima de fogos de verão! Div
 FireworksJuly4Ending = lToonHQ+': Espero que tenha gostado do show! Um ótimo verão para você!'
 FireworksJuly14Beginning = lToonHQ+': Fogos de artifício de 14 de julho! Espero que tenha gostado do show!'
 FireworksJuly14Ending = lToonHQ+': Espero que tenha gostado do show!'
+FireworksOctober31Beginng = ''
+FireworksOctober31Ending = ''
 FireworksNewYearsEveBeginning = lToonHQ+': Feliz Ano Novo! Aproveite o show de fogos de artifício!'
 FireworksNewYearsEveEnding = lToonHQ+': Espero que tenha gostado do show! Feliz Ano Novo!'
 FireworksComboBeginning = lToonHQ+': Aproveite muitas risadas com os fogos de artifício do Toon!'
@@ -8112,7 +8176,7 @@ BlockerLoadingTexts = ['Esfregando formas de torta',
  'Balançando para pesar pesos de 1 tonelada',
  'Praticando Danças da Vitória',
  'Preparando maluquices',
- "Dando o sinal de 'cinco minutos' para o Mickey Mouse", 
+ "Dando o sinal de 'cinco minutos' para o Mickey Mouse",
  'Testando luvas brancas',
  'Entortando anéis subaquáticos',
  'Enrolando Burrocracia',
@@ -8981,7 +9045,7 @@ def getRecipeBeanText(beanTuple):
                 retval += ', %s' % BeanColorWords[beanTuple[index]]
 
     return retval
-
+    
 GardenTextMagicBeans = 'Balas Mágicas'
 GardenTextMagicBeansB = 'Outras Balas'
 GardenSpecialDiscription = 'Este texto deveria explicar como usar certo especial do jardim'
@@ -9169,7 +9233,9 @@ GolfTrophyDescriptions = [str(GolfGlobals.TrophyRequirements[GolfGlobals.Courses
  str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][0]) + ' ' + CourseTwoWins,
  str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][1]) + ' ' + CourseTwoWins,
  str(GolfGlobals.TrophyRequirements[GolfGlobals.CourseTwoWins][2]) + ' ' + CourseTwoWins]
-GolfCupDescriptions = [str(GolfGlobals.TrophiesPerCup) + ' Troféus ganhos', str(GolfGlobals.TrophiesPerCup * 2) + ' Troféus ganhos', str(GolfGlobals.TrophiesPerCup * 3) + ' Troféus ganhos']
+GolfCupDescriptions = [str(GolfGlobals.TrophiesPerCup) + ' Troféus ganhos',
+ str(GolfGlobals.TrophiesPerCup * 2) + ' Troféus ganhos',
+ str(GolfGlobals.TrophiesPerCup * 3) + ' Troféus ganhos']
 GolfAvReceivesHoleBest = '%(name)s marcou um novo recorde de tacadas em %(hole)s!'
 GolfAvReceivesCourseBest = '%(name)s marcou um novo recorde de percurso em %(course)s!!'
 GolfAvReceivesCup = '%(name)s ganhou a taça %(cup)s!!  Bônus em pontos de risada!'
@@ -9245,7 +9311,6 @@ ElevatorBlockedRoom = 'Todos os desafios devem ser vencidos antes disso.'
 MolesLeft = 'Toupeiras Restantes: %d'
 MolesInstruction = 'Pisão nas Toupeiras!\nPule nas toupeiras vermelhas!'
 MolesFinished = 'Pisão nas Toupeiras vencido!'
-MolesPityWin = 'Perdeu no Pisão! Mas a Toupeira estava na esquerda.'
 MolesRestarted = 'Perdeu no Pisão! Recomeçando...'
 BustACogInstruction = 'Remova a bola Cog!'
 BustACogExit = 'Sair por Enquanto'
