@@ -7,5 +7,5 @@ set /P PPYTHON_PATH=<PPYTHON_PATH
 
 set LOGIN_TOKEN=playToken
 
-%PPYTHON_PATH% -m toontown.launcher.QuickStartLauncher
+%PPYTHON_PATH% -m toontown.launcher.StartToontownLauncher
 pause
